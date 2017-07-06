@@ -58,6 +58,35 @@
                     <h2>Tell Us About Your Usage ! </h2>
 
                     <div class="form-group">
+
+
+
+                    <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left input_mask">
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="First Name" required="required">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control  has-feedback-left" id="inputSuccess3" placeholder="Last Name" required="required">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"  style="color:lightgreen"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
+                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left " id="inputSuccess5" placeholder="Phone">
+                        <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                      </div>
+
+
+
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div id="gender" class="btn-group" data-toggle="buttons">
