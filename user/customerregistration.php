@@ -82,7 +82,7 @@
                       
                      
                       <div class="col-md-6 col-sm-6 col-xs-12" >
-                          <div id="gender" class="btn-group" data-toggle="buttons">
+                          <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 150px;">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                               <input type="radio" name="gender" value="one"> &nbsp; Single Phase &nbsp;
                             </label>
@@ -93,7 +93,7 @@
                         </div>
                         
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  style="margin-top: 150px;">
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
                         <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
