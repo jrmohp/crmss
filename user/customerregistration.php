@@ -93,7 +93,7 @@
                         </div>
                         
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  style="margin-top: 15px;">
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  style="margin-top: 150px;">
                         <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
