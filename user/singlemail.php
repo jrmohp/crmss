@@ -145,7 +145,7 @@
 
                        
                    </div>
-                       <button type="submit"><span class="btn btn-primary">Send</span></button>
+                       <button type="submit" class="btn btn-primary">Send</button>
                    </form>
 
                     
