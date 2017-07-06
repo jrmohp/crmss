@@ -116,7 +116,7 @@
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control has-feedback-left has-feedback-right " id="inputSuccess5" placeholder="Roof Area">
                         <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
-                         <span class=" form-control-feedback left" aria-hidden="true" style="color:darkgrey">sq.ft</span>
+                         <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
                       </div>
 
                       </div>
