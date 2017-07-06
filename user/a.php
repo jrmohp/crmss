@@ -6,6 +6,8 @@ require("../phpmailer/class.phpmailer.php");
 	$to=$_POST['to'];
 	$subject=$_POST['subject'];
 	$body=$_POST['body'];
+	echo $body;
+	echo $from;
 
 
 $mail = new PHPMailer();
