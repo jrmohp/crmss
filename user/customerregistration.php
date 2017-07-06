@@ -47,6 +47,12 @@
                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
+                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <select class="form-control " id="inputSuccess5" placeholder="Phone">
+                        
+                        <option>Hello</option>
+                        </select>
+                      </div>
 
 
                        
