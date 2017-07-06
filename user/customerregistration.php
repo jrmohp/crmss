@@ -67,8 +67,8 @@
                             <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                               <input type="radio" name="gender" value="Commercial"> Commercial
                             </label>
-                            <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Industrial"> &nbsp; Domestic &nbsp;
+                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="Industrial"> &nbsp; Industrial &nbsp;
                             </label>
                           </div>
                         </div>
