@@ -28,17 +28,17 @@
                     <form class="form-horizontal form-label-left input_mask" action="query_email_controller.php">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required">
+                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="from">
                        
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required">
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required" name="to">
 
                          </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject" >
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject"  name="subject">
                         
                         <br />
 
@@ -136,7 +136,7 @@
 
                   <div id="editor-one" class="editor-wrapper"></div>
 
-                  <textarea name="descr" id="descr" style="display:none;" required="required"></textarea>
+                  <textarea name="descr" id="descr" style="display:none;" required="required" name="body"></textarea>
 
                    </div>
 
