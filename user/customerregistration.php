@@ -94,8 +94,8 @@
                         
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
-                        <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
-                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Units">
+                        <span class="fa fa-envelope form-control-feedback right" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
                       
 
