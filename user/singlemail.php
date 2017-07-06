@@ -140,9 +140,7 @@
 
                    </div>
 
-                       <div class="col-md-3 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Send" required="required">
-
+                      <span class="btn btn-primary">Send</span>
                        
 
 
