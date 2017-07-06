@@ -10,7 +10,7 @@
               <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Tell Us Something About Yourself ! </h2>
+                    <h2>Send Mail </h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
