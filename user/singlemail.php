@@ -38,7 +38,7 @@
                          </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject" required="required">
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject" >
                         
                         <br />
 
@@ -136,14 +136,19 @@
 
                   <div id="editor-one" class="editor-wrapper"></div>
 
-                  <textarea name="descr" id="descr" style="display:none;"></textarea>
+                  <textarea name="descr" id="descr" style="display:none;" required="required"></textarea>
 
                    </div>
 
-                       <div class="col-md-3 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Send" required="required">
+                   </div>
+                   </div>
 
                        
+                   </div>
+                       <button type="submit" class="btn btn-primary">Send</button>
+                   </form>
+
+                    
 
 
                         <?php
