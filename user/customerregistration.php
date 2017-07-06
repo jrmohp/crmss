@@ -51,7 +51,261 @@
                        
                        <select class="form-control">
                          
-                         <option>checks</option>
+                         <option>Select Your City</option>
+                            
+<option>  Anugul (Angul)  </option>
+<option>  Balangir  </option>
+<option>  Baleshwar (Balasore)  </option>
+<option>  Bargarh </option>
+<option>  Baudh (Boudh) </option>
+<option>  Bhadrak </option>
+<option>  Cuttack </option>
+<option>  Debagarh  </option>
+<option>  Dhenkanal </option>
+<option>  Gajapati  </option>
+<option>  Ganjam  </option>
+<option>  Jagatsinghapur  </option>
+<option>  Jajapur </option>
+<option>  Jharsuguda  </option>
+<option>  Kalahandi </option>
+<option>  Kandhamal </option>
+<option>  Kendrapara  </option>
+<option>  Kendujhar </option>
+<option>  Khordha </option>
+<option>  Koraput </option>
+<option>  Malkangiri  </option>
+<option>  Mayurbhanj  </option>
+<option>  Nabarangapur (Nabarangpur)  </option>
+<option>  Nayagarh  </option>
+<option>  Nuapada </option>
+<option>  Puri  </option>
+<option>  Rayagada  </option>
+<option>  Sambalpur </option>
+<option>  Subarnapur  </option>
+<option>  Sundargarh (Sundergarh) </option>
+<option>  Agastinuagan  </option>
+<option>  Anandpur  </option>
+<option>  Anjira  </option>
+<option>  Anugul (Angul)  </option>
+<option>  Arjyapalli  </option>
+<option>  Asika </option>
+<option>  Athagad </option>
+<option>  Athmallik </option>
+<option>  Badagada  </option>
+<option>  Badakodanda </option>
+<option>  Badamba (Nizigarh)  </option>
+<option>  Badmal  </option>
+<option>  Balagoda (Bolani) </option>
+<option>  Balangir  </option>
+<option>  Baleshwar (Balasore)  </option>
+<option>  Baliguda  </option>
+<option>  Balimela  </option>
+<option>  Balipatapur </option>
+<option>  Balugaon  </option>
+<option>  Banaigarh </option>
+<option>  Banapur </option>
+<option>  Bandhbahal  </option>
+<option>  Bangomunda  </option>
+<option>  Banki </option>
+<option>  Barapali  </option>
+<option>  Barbil  </option>
+<option>  Bardol  </option>
+<option>  Bargarh </option>
+<option>  Baripada  </option>
+<option>  Basudebpur  </option>
+<option>  Baudhgarh (Boudh) </option>
+<option>  Belagachhia </option>
+<option>  Bellaguntha (Belaguntha)  </option>
+<option>  Belpahar  </option>
+<option>  Bhabinipur  </option>
+<option>  Bhadrak </option>
+<option>  Bhakarsahi  </option>
+<option>  Bhanjanagar </option>
+<option>  Bhapur  </option>
+<option>  Bhatli  </option>
+<option>  Bhawanipatna  </option>
+<option>  Bhuban  </option>
+<option>  Bhubaneswar </option>
+<option>  Bijepur </option>
+<option>  Binika  </option>
+<option>  Biramitrapur  </option>
+<option>  Birapratappur </option>
+<option>  Bishamakatak (Bissam Cuttack) </option>
+<option>  Borigam </option>
+<option>  Boriguma (Borigumma)  </option>
+<option>  Brahmabarada  </option>
+<option>  Brahmapur (Berhampur) </option>
+<option>  Brajarajnagar </option>
+<option>  Budhapanka  </option>
+<option>  Buguda  </option>
+<option>  Bundia  </option>
+<option>  Burla </option>
+<option>  Byasanagar  </option>
+<option>  Champua </option>
+<option>  Chandapur </option>
+<option>  Chandili  </option>
+<option>  Charibatia  </option>
+<option>  Chhatrapur  </option>
+<option>  Chikiti </option>
+<option>  Chitrakonda </option>
+<option>  Choudwar  </option>
+<option>  Cuttack </option>
+<option>  Dadhapatna  </option>
+<option>  Daitari </option>
+<option>  Damanjodi </option>
+<option>  Danara  </option>
+<option>  Daringbadi  </option>
+<option>  Debagarh  </option>
+<option>  Dera Colliery Township  </option>
+<option>  Dhamanagar  </option>
+<option>  Dhenkanal </option>
+<option>  Digapahandi </option>
+<option>  Dungamal  </option>
+<option>  Erei  </option>
+<option>  Fertilizer Corporation of India Township (F.C.I. Township)  </option>
+<option>  Ganjam  </option>
+<option>  Ghantapada  </option>
+<option>  Godiputamatiapara </option>
+<option>  Golabandha  </option>
+<option>  Gopalpur  </option>
+<option>  Gotamara  </option>
+<option>  Gudari  </option>
+<option>  G. Udayagiri  </option>
+<option>  Gunupur </option>
+<option>  Hatibandha  </option>
+<option>  Hinjilicut  </option>
+<option>  Hirakud </option>
+<option>  Indipur </option>
+<option>  Itamati </option>
+<option>  Jagatsinghapur(Jagatsinghpur) </option>
+<option>  Jajanga </option>
+<option>  Jajapur (Jajpur)  </option>
+<option>  Jalda </option>
+<option>  Jaleshwar (Jaleswar)  </option>
+<option>  Jashipur  </option>
+<option>  Jatani  </option>
+<option>  Jeypur (Jeypore)  </option>
+<option>  Jharsuguda  </option>
+<option>  Jhumpura  </option>
+<option>  Joda  </option>
+<option>  Jorada (Bada) </option>
+<option>  Junagarh  </option>
+<option>  Kabatabandha  </option>
+<option>  Kabisurjyanagar(Kabisuryanagar) </option>
+<option>  Kaipadar  </option>
+<option>  Kalarangiata  </option>
+<option>  Kaliapani </option>
+<option>  Kalyanasingpur  </option>
+<option>  Kamakshyanagar  </option>
+<option>  Kandasar  </option>
+<option>  Kanheipur </option>
+<option>  Kantabanji (Kantabanjhi)  </option>
+<option>  Kantilo </option>
+<option>  Karanjia  </option>
+<option>  Kashinagar  </option>
+<option>  Kendrapara  </option>
+<option>  Kendujhar </option>
+<option>  Kesinga </option>
+<option>  Khaliapali  </option>
+<option>  Khalikote (Khallikote)  </option>
+<option>  Khandapada  </option>
+<option>  Khariar </option>
+<option>  Khariar Road  </option>
+<option>  Khatiguda </option>
+<option>  Khordha </option>
+<option>  Kochinda (Kuchinda) </option>
+<option>  Kodala  </option>
+<option>  Koida </option>
+<option>  Konark  </option>
+<option>  Koraput </option>
+<option>  Kotpad  </option>
+<option>  Krushnanandapur </option>
+<option>  Kuanrmunda  </option>
+<option>  Kukudakhandi  </option>
+<option>  Kulad </option>
+<option>  Kullada </option>
+<option>  Kunjabangarh  </option>
+<option>  Kurumuli  </option>
+<option>  Lalsingi  </option>
+<option>  Lathikata </option>
+<option>  Lochapada </option>
+<option>  Loisinga  </option>
+<option>  Madanpur Rampur </option>
+<option>  Majhihara </option>
+<option>  Makundapur  </option>
+<option>  Malkangiri  </option>
+<option>  Mohana  </option>
+<option>  Mukhiguda </option>
+<option>  Mundamarai  </option>
+<option>  Nabarangapur(Nabarangpur) </option>
+<option>  Nalco </option>
+<option>  Nayagarh  </option>
+<option>  Nilagiri  </option>
+<option>  Nimapada  </option>
+<option>  Nuahata </option>
+<option>  Nuapatna  </option>
+<option>  O.C.L. Industrial Township  </option>
+<option>  Odagaon </option>
+<option>  Padmapur  </option>
+<option>  Palalahada  </option>
+<option>  Palurgada </option>
+<option>  Panposh </option>
+<option>  Papadahandi </option>
+<option>  Paradip </option>
+<option>  Paradipgarh </option>
+<option>  Paralakhemundi  </option>
+<option>  Pathar  </option>
+<option>  Patnagarh </option>
+<option>  Patrapur  </option>
+<option>  Pattamundai </option>
+<option>  Phulabani (Phulbani)  </option>
+<option>  Pipili  </option>
+<option>  Pitala  </option>
+<option>  Polasara  </option>
+<option>  Pratapsasan </option>
+<option>  Puri  </option>
+<option>  Purusottampur </option>
+<option>  Raighar </option>
+<option>  Rairangpur  </option>
+<option>  Rajagangapur(Rajgangpur)  </option>
+<option>  Rajasunakhala </option>
+<option>  Rambha  </option>
+<option>  Ramgarh </option>
+<option>  Ranapurgada </option>
+<option>  Raurkela (Rourkela) </option>
+<option>  Raurkela Industrial Township  </option>
+<option>  Rayagada  </option>
+<option>  Rayagada  </option>
+<option>  Redhakhol (Rairakhol) </option>
+<option>  Remuna  </option>
+<option>  Rengali </option>
+<option>  Rengali Dam Project Township  </option>
+<option>  R. Udayagiri  </option>
+<option>  Sambalpur </option>
+<option>  Saranga </option>
+<option>  Sayadpur  </option>
+<option>  Sheragada </option>
+<option>  Sohela  </option>
+<option>  Sonapur (Sonepur) </option>
+<option>  Soro  </option>
+<option>  Subalaya  </option>
+<option>  Sunabeda  </option>
+<option>  Sundargarh (Sundergarh) </option>
+<option>  Surada  </option>
+<option>  Surala  </option>
+<option>  Suvani  </option>
+<option>  Talcher </option>
+<option>  Talcher Thermal Power Station Township (T.T.P.S. Township)  </option>
+<option>  Tangi </option>
+<option>  Tarbha  </option>
+<option>  Tensa </option>
+<option>  Tikarpada </option>
+<option>  Tipo  </option>
+<option>  Titlagarh </option>
+<option>  Tushura </option>
+<option>  Udala </option>
+<option>  Umarkote (Umerkote) </option>
+<option>  Venkatraipur  </option>
                        </select> 
                        
                       </div>
