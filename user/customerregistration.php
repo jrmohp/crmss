@@ -66,7 +66,7 @@
                     <form class="form-horizontal form-label-left input_mask">
 
 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 5px;">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                               <input type="radio" name="gender" value="Domestic"> &nbsp; Domestic &nbsp;
