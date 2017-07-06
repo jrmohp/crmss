@@ -1,5 +1,5 @@
 <?php
-
+	echo "working";
   if (isset($_POST['to']) && isset($_POST['message']))  
   {	
 	
