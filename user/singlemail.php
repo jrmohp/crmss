@@ -136,7 +136,7 @@
 
                   <div id="editor-one" class="editor-wrapper"></div>
 
-                  <textarea name="descr" id="body"  name="body"></textarea>
+                  <textarea  id="body"  name="body"></textarea>
 
                    </div>
                    <input type="submit" name="">
