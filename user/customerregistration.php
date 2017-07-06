@@ -49,7 +49,7 @@
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select>
+                       <select class="form-control">
                          
                          <option>checks</option>
                        </select> 
