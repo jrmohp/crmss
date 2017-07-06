@@ -81,12 +81,29 @@
                         </div>
 
                      
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div id="gender" class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="one"> &nbsp; Single Phase &nbsp;
+                            </label>
+                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="three"> Three Phase
+                            </label>
+                          </div>
+                        </div>
+
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  has-feedback-left" id="inputSuccess3" placeholder="Last Name" required="required">
-                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"  style="color:lightgreen"></span>
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
+                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left " id="inputSuccess5" placeholder="Phone">
+                        <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                      </div>
+
+
+                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
