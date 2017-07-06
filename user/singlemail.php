@@ -28,12 +28,14 @@
                     <form class="form-horizontal form-label-left input_mask">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required">
-                        
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="From" required="required">
+                       
+                      </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control has has-feedback-right" id="inputSuccess3" placeholder="To" required="required">
-                        
+                        <input type="text" class="form-control  has-feedback-left" id="inputSuccess3" placeholder="To" required="required">
+                       
+                      </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
