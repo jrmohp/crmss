@@ -96,25 +96,31 @@
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
                         <input type="text" class="form-control has-feedback-right has-feedback-left" id="inputSuccess4" placeholder="Units">
                         <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kWh</span>
-                         <span class="form-control-feedback left fa fa-lightbulb-o" aria-hidden="true" style="color:darkgrey"></span>
+                         <span class="form-control-feedback left fa fa-lightbulb-o" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
                       
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control has-feedback-left has-feedback-right " id="inputSuccess5" placeholder="Monthly Bill">
                         <span class="fa fa-file-text form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                         <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">INR</span>
                       </div>
                          <br>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
-                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <input type="text" class="form-control has-feedback-left has-feedback-right" id="inputSuccess4" placeholder="Contract Load">
+                        <span class="fa fa-bolt form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kW</span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control has-feedback-left " id="inputSuccess5" placeholder="Phone">
-                        <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <input type="text" class="form-control has-feedback-left has-feedback-right " id="inputSuccess5" placeholder="Roof Area">
+                        <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                         <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
                       </div>
+
+                      </div>
+                      
 
 
 
