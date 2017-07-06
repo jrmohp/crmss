@@ -139,9 +139,14 @@
                   <textarea name="descr" id="descr" style="display:none;"></textarea>
 
                    </div>
-
-                      <span class="btn btn-primary">Send</span>
+                   </div>
+                   </div>
+                     <span class="btn btn-primary">Send</span>
                        
+                   </div>
+                   </form>
+
+                    
 
 
                         <?php
