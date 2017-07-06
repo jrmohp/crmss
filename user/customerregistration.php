@@ -103,6 +103,7 @@
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control has-feedback-left has-feedback-right " id="inputSuccess5" placeholder="Monthly Bill">
                         <span class="fa fa-file-text form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                         <span class="fa fa-file-text form-control-feedback right" aria-hidden="true" style="color:dark grey">INR</span>
                       </div>
                          <br>
 
