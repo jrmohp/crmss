@@ -52,40 +52,11 @@
                        <select class="form-control">
                          
                          <option>Select Your City</option>
-                            
-<option>  Anugul (Angul)  </option>
-<option>  Balangir  </option>
-<option>  Baleshwar (Balasore)  </option>
-<option>  Bargarh </option>
-<option>  Baudh (Boudh) </option>
-<option>  Bhadrak </option>
-<option>  Cuttack </option>
-<option>  Debagarh  </option>
-<option>  Dhenkanal </option>
-<option>  Gajapati  </option>
-<option>  Ganjam  </option>
-<option>  Jagatsinghapur  </option>
-<option>  Jajapur </option>
-<option>  Jharsuguda  </option>
-<option>  Kalahandi </option>
-<option>  Kandhamal </option>
-<option>  Kendrapara  </option>
-<option>  Kendujhar </option>
-<option>  Khordha </option>
-<option>  Koraput </option>
-<option>  Malkangiri  </option>
-<option>  Mayurbhanj  </option>
-<option>  Nabarangapur (Nabarangpur)  </option>
-<option>  Nayagarh  </option>
-<option>  Nuapada </option>
-<option>  Puri  </option>
-<option>  Rayagada  </option>
-<option>  Sambalpur </option>
-<option>  Subarnapur  </option>
-<option>  Sundargarh (Sundergarh) </option>
-<option>  Agastinuagan  </option>
+                         <option>Other</option>
+                         <option> Agastinuagan  </option>
 <option>  Anandpur  </option>
 <option>  Anjira  </option>
+<option>  Anugul (Angul)  </option>
 <option>  Anugul (Angul)  </option>
 <option>  Arjyapalli  </option>
 <option>  Asika </option>
@@ -97,6 +68,8 @@
 <option>  Badmal  </option>
 <option>  Balagoda (Bolani) </option>
 <option>  Balangir  </option>
+<option>  Balangir  </option>
+<option>  Baleshwar (Balasore)  </option>
 <option>  Baleshwar (Balasore)  </option>
 <option>  Baliguda  </option>
 <option>  Balimela  </option>
@@ -111,13 +84,16 @@
 <option>  Barbil  </option>
 <option>  Bardol  </option>
 <option>  Bargarh </option>
+<option>  Bargarh </option>
 <option>  Baripada  </option>
 <option>  Basudebpur  </option>
+<option>  Baudh (Boudh) </option>
 <option>  Baudhgarh (Boudh) </option>
 <option>  Belagachhia </option>
 <option>  Bellaguntha (Belaguntha)  </option>
 <option>  Belpahar  </option>
 <option>  Bhabinipur  </option>
+<option>  Bhadrak </option>
 <option>  Bhadrak </option>
 <option>  Bhakarsahi  </option>
 <option>  Bhanjanagar </option>
@@ -150,19 +126,25 @@
 <option>  Chitrakonda </option>
 <option>  Choudwar  </option>
 <option>  Cuttack </option>
+<option>  Cuttack </option>
 <option>  Dadhapatna  </option>
 <option>  Daitari </option>
 <option>  Damanjodi </option>
 <option>  Danara  </option>
 <option>  Daringbadi  </option>
 <option>  Debagarh  </option>
+<option>  Debagarh  </option>
 <option>  Dera Colliery Township  </option>
 <option>  Dhamanagar  </option>
+<option>  Dhenkanal </option>
 <option>  Dhenkanal </option>
 <option>  Digapahandi </option>
 <option>  Dungamal  </option>
 <option>  Erei  </option>
 <option>  Fertilizer Corporation of India Township (F.C.I. Township)  </option>
+<option>  G. Udayagiri  </option>
+<option>  Gajapati  </option>
+<option>  Ganjam  </option>
 <option>  Ganjam  </option>
 <option>  Ghantapada  </option>
 <option>  Godiputamatiapara </option>
@@ -170,21 +152,23 @@
 <option>  Gopalpur  </option>
 <option>  Gotamara  </option>
 <option>  Gudari  </option>
-<option>  G. Udayagiri  </option>
 <option>  Gunupur </option>
 <option>  Hatibandha  </option>
 <option>  Hinjilicut  </option>
 <option>  Hirakud </option>
 <option>  Indipur </option>
 <option>  Itamati </option>
+<option>  Jagatsinghapur  </option>
 <option>  Jagatsinghapur(Jagatsinghpur) </option>
 <option>  Jajanga </option>
+<option>  Jajapur </option>
 <option>  Jajapur (Jajpur)  </option>
 <option>  Jalda </option>
 <option>  Jaleshwar (Jaleswar)  </option>
 <option>  Jashipur  </option>
 <option>  Jatani  </option>
 <option>  Jeypur (Jeypore)  </option>
+<option>  Jharsuguda  </option>
 <option>  Jharsuguda  </option>
 <option>  Jhumpura  </option>
 <option>  Joda  </option>
@@ -193,17 +177,21 @@
 <option>  Kabatabandha  </option>
 <option>  Kabisurjyanagar(Kabisuryanagar) </option>
 <option>  Kaipadar  </option>
+<option>  Kalahandi </option>
 <option>  Kalarangiata  </option>
 <option>  Kaliapani </option>
 <option>  Kalyanasingpur  </option>
 <option>  Kamakshyanagar  </option>
 <option>  Kandasar  </option>
+<option>  Kandhamal </option>
 <option>  Kanheipur </option>
 <option>  Kantabanji (Kantabanjhi)  </option>
 <option>  Kantilo </option>
 <option>  Karanjia  </option>
 <option>  Kashinagar  </option>
 <option>  Kendrapara  </option>
+<option>  Kendrapara  </option>
+<option>  Kendujhar </option>
 <option>  Kendujhar </option>
 <option>  Kesinga </option>
 <option>  Khaliapali  </option>
@@ -213,10 +201,12 @@
 <option>  Khariar Road  </option>
 <option>  Khatiguda </option>
 <option>  Khordha </option>
+<option>  Khordha </option>
 <option>  Kochinda (Kuchinda) </option>
 <option>  Kodala  </option>
 <option>  Koida </option>
 <option>  Konark  </option>
+<option>  Koraput </option>
 <option>  Koraput </option>
 <option>  Kotpad  </option>
 <option>  Krushnanandapur </option>
@@ -234,15 +224,20 @@
 <option>  Majhihara </option>
 <option>  Makundapur  </option>
 <option>  Malkangiri  </option>
+<option>  Malkangiri  </option>
+<option>  Mayurbhanj  </option>
 <option>  Mohana  </option>
 <option>  Mukhiguda </option>
 <option>  Mundamarai  </option>
+<option>  Nabarangapur (Nabarangpur)  </option>
 <option>  Nabarangapur(Nabarangpur) </option>
 <option>  Nalco </option>
+<option>  Nayagarh  </option>
 <option>  Nayagarh  </option>
 <option>  Nilagiri  </option>
 <option>  Nimapada  </option>
 <option>  Nuahata </option>
+<option>  Nuapada </option>
 <option>  Nuapatna  </option>
 <option>  O.C.L. Industrial Township  </option>
 <option>  Odagaon </option>
@@ -264,7 +259,9 @@
 <option>  Polasara  </option>
 <option>  Pratapsasan </option>
 <option>  Puri  </option>
+<option>  Puri  </option>
 <option>  Purusottampur </option>
+<option>  R. Udayagiri  </option>
 <option>  Raighar </option>
 <option>  Rairangpur  </option>
 <option>  Rajagangapur(Rajgangpur)  </option>
@@ -276,11 +273,12 @@
 <option>  Raurkela Industrial Township  </option>
 <option>  Rayagada  </option>
 <option>  Rayagada  </option>
+<option>  Rayagada  </option>
 <option>  Redhakhol (Rairakhol) </option>
 <option>  Remuna  </option>
 <option>  Rengali </option>
 <option>  Rengali Dam Project Township  </option>
-<option>  R. Udayagiri  </option>
+<option>  Sambalpur </option>
 <option>  Sambalpur </option>
 <option>  Saranga </option>
 <option>  Sayadpur  </option>
@@ -289,7 +287,9 @@
 <option>  Sonapur (Sonepur) </option>
 <option>  Soro  </option>
 <option>  Subalaya  </option>
+<option>  Subarnapur  </option>
 <option>  Sunabeda  </option>
+<option>  Sundargarh (Sundergarh) </option>
 <option>  Sundargarh (Sundergarh) </option>
 <option>  Surada  </option>
 <option>  Surala  </option>
@@ -297,15 +297,6 @@
 <option>  Talcher </option>
 <option>  Talcher Thermal Power Station Township (T.T.P.S. Township)  </option>
 <option>  Tangi </option>
-<option>  Tarbha  </option>
-<option>  Tensa </option>
-<option>  Tikarpada </option>
-<option>  Tipo  </option>
-<option>  Titlagarh </option>
-<option>  Tushura </option>
-<option>  Udala </option>
-<option>  Umarkote (Umerkote) </option>
-<option>  Venkatraipur  </option>
                        </select> 
                        
                       </div>
