@@ -25,7 +25,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left input_mask" action="../php/singlemailcontroller.php" method="post">
+                    <form class="form-horizontal form-label-left " action="../php/singlemailcontroller.php" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="from">
