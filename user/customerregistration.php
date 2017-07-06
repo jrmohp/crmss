@@ -52,7 +52,7 @@
                        <select class="form-control">
                          
                          <option>Select Your City</option>
-                         <option>Other</option>
+                         <option>Others</option>
                          <option> Agastinuagan  </option>
 <option>  Anandpur  </option>
 <option>  Anjira  </option>
