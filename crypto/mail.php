@@ -1,21 +1,29 @@
 <?php
-
-  	$from = "Smart Solar<admin@smartsolar.co.in>";
-  	$to = "jrmkvk@gmail.com";
-  	$subject = "haire";
-  	$message ="Hello";
-  	
-  	$headers="From:$from"."\r\n"."CC:iterjrm@gmail.com"."BCC:codingjrm@gmail.com"."Subject:$subject";
-  
-
-    if(mail($to, $subject, $message,$headers))
-    {
-      echo "successfull";
-    }
-  else
-  {
-    echo "hauni";    
+ require_once "../pear/Mail.php";
+ 
+ $from = "Sandra Sender <jrm@smartsolar.co.in>";
+ $to = "Ramona Recipient <jrmkvk@gmail.com>";
+ $subject = "Hi!";
+ $body = "Hi,\n\nHow are you?";
+ 
+ $host = "mail.smartsolar.co.in";
+ $username = "jrm@smartsolar.co.in";
+ $password = "sikujyoti";
+ 
+ $headers = array ('From' => $from,
+   'To' => $to,
+   'Subject' => $subject);
+ $smtp = Mail::factory('smtp',
+   array ('host' => $host,
+     'auth' => true,
+     'username' => $username,
+     'password' => $password));
+ 
+ $mail = $smtp->send($to, $headers, $body);
+ 
+ if (PEAR::isError($mail)) {
+   echo("<p>" . $mail->getMessage() . "</p>");
+  } else {
+   echo("<p>Message successfully sent!</p>");
   }
-
-
-?>
+ ?>
