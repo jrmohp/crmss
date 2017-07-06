@@ -34,4 +34,9 @@
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required">
+
+                         </div>
+
+                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject" required="required">
                        
