@@ -47,6 +47,11 @@
                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
+                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left " id="inputSuccess5" placeholder="Phone">
+                        <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                      </div>
+
 
 
 
@@ -119,6 +124,9 @@
                         <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                          <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
                       </div>
+
+
+
 
                
                       
