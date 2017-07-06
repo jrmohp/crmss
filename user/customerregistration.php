@@ -79,7 +79,7 @@
                             </label>
                           </div>
                         </div>
-                        <br>
+                      
                      
                       <div class="col-md-6 col-sm-6 col-xs-12">
                           <div id="gender" class="btn-group" data-toggle="buttons">
@@ -91,7 +91,7 @@
                             </label>
                           </div>
                         </div>
-                         <br> <br>
+                        
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
