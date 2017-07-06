@@ -145,7 +145,7 @@
 
                        
                    </div>
-                       <button type="submit" class="btn btn-primary">Send</button>
+                       <input type="submit" name="">
                    </form>
 
                     
