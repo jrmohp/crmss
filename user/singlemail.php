@@ -45,7 +45,8 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
           
 
-              
+                  <textarea name="descr" id="descr" style="display:none;" required="required" name="body"></textarea>
+
                    </div>
                    <input type="submit" name="">
 
