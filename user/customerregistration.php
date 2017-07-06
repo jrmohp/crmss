@@ -47,12 +47,7 @@
                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
-                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <select class="form-control " id="inputSuccess5" placeholder="Phone">
-                        
-                        <option>Hello</option>
-                        </select>
-                      </div>
+
 
 
                        
@@ -130,23 +125,7 @@
 
 
 
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <div id="gender" class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Domestic"> &nbsp; Domestic &nbsp;
-                            </label>
-                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Commercial"> Commercial
-                            </label>
-                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Industrial"> &nbsp; Industrial &nbsp;
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-
-                      \
+                        
                       <div class="form-group">
                         
                       </div>
