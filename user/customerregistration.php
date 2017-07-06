@@ -96,7 +96,7 @@
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
                         <input type="text" class="form-control has-feedback-right has-feedback-left" id="inputSuccess4" placeholder="Units">
                         <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kWh</span>
-                         <span class="form-control-feedback left fa fa-bulb" aria-hidden="true" style="color:darkgrey"></span>
+                         <span class="form-control-feedback left fa fa-lightbulb-o" aria-hidden="true" style="color:darkgrey"></span>
                       </div>
                       
 
