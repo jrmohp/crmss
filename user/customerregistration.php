@@ -82,7 +82,7 @@
                       
                      
                       <div class="col-md-6 col-sm-6 col-xs-12" >
-                          <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 55px;">
+                          <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 35px;">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                               <input type="radio" name="gender" value="one"> &nbsp; Single Phase &nbsp;
                             </label>
