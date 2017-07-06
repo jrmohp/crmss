@@ -139,13 +139,14 @@
                   <textarea name="descr" id="descr" style="display:none;" required="required" name="body"></textarea>
 
                    </div>
+                   <input type="submit" name="">
 
                    </div>
                    </div>
 
                        
                    </div>
-                       <input type="submit" name="">
+                       
                    </form>
 
                     
