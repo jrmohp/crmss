@@ -16,8 +16,7 @@ $mail->AddAddress("jrmkvk@gmail.com");                  // name is optional
 $mail->AddReplyTo("info@smartsolar.co.in", "Information");
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
-$mail->AddAttachment("/var/tmp/file.tar.gz");         // add attachments
-$mail->AddAttachment("/tmp/image.jpg", "new.jpg");    // optional name
+   // optional name
 $mail->IsHTML(true);                                  // set email format to HTML
 
 $mail->Subject = "Here is the subject";
