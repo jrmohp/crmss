@@ -40,6 +40,7 @@
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject" required="required">
                        
+                       
                         <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
