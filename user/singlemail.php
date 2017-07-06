@@ -139,11 +139,13 @@
                   <textarea name="descr" id="descr" style="display:none;"></textarea>
 
                    </div>
+
                    </div>
                    </div>
-                     <span class="btn btn-primary">Send</span>
+
                        
                    </div>
+                      <span class="btn btn-primary">Send</span>
                    </form>
 
                     
