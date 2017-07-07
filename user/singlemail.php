@@ -77,7 +77,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left " action="a.php" method="post">
+                    <form class="form-horizontal form-label-left "  method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control " id="from" placeholder="From" required="required" name="from">
