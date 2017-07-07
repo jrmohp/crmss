@@ -5,7 +5,59 @@
 ?>
 
 
+<script type="text/javascript">
+  
+
+
+
+    function sendmail()
+    {
+      
+      var from=$('#from').val();
+      var to=$('#to').val();
+      var subject=$('#subject').val();
+      var body=$('#body').innerHTML();
+
+    var data={'mfrom':from,'mto':to,'subject':admin,'body':body};
+
+    
+    
+    
+    $.post('../php/singlemailcontoller.php',data,function(info){
+      if(info==1)
+      {
+          $("#querymsg").addClass('alert alert-success');
+            $('#querymsg').fadeIn();
+          $("#querymsg").html("Reply Submitted");
+           $('#querymsg').delay(1000).fadeOut();
+          
+    
+
+      }
+      else
+      {
+      $("#querymsg").addClass('alert alert-danger');
+        $('#querymsg').fadeIn();
+      $("#querymsg").html("ot Submitted,Contact Admin");
+       $('#querymsg').delay(1000).fadeOut();
+      
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
 <div class="row">
+<div id="querymsg"></div>
 <center>
               <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
@@ -28,17 +80,17 @@
                     <form class="form-horizontal form-label-left " action="a.php" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="from">
+                        <input type="text" class="form-control " id="from" placeholder="From" required="required" name="from">
                        
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required" name="to">
+                        <input type="text" class="form-control  " id="to" placeholder="To" required="required" name="to">
 
                          </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject"  name="subject">
+                        <input type="text" class="form-control  " id="subject" placeholder="Subject"  name="subject">
                         
                         <br />
 
@@ -134,12 +186,12 @@
                     </div>
                   </div>
 
-                  <div id="editor-one" class="editor-wrapper" name="body"></div>
+                  <div id="editor-one" class="editor-wrapper" id="body"></div>
 
-                  <textarea  id="body" ></textarea>
+                  <textarea name="descr" id="descr" style="display:none;" name="body"></textarea>
 
                    </div>
-                   <input type="submit" name="">
+                   <input type="submit" name="" onclick="sendmail()">
 
                    </div>
                    </div>
@@ -150,6 +202,7 @@
                    </form>
 
                     
+
 
 
                         <?php
