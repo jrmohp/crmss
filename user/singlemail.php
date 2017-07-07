@@ -13,6 +13,7 @@ $("#submit").on("click",sendmail);
 
     function sendmail()
     {
+        alert("hello");
       
       var from=$('#from').val();
       var to=$('#to').val();
@@ -20,7 +21,7 @@ $("#submit").on("click",sendmail);
       var body=$('#body').innerHTML();
 
 
-    alert("hello");
+    
     var data={'mfrom':from,'mto':to,'subject':admin,'body':body};
 
     
@@ -81,7 +82,7 @@ $("#submit").on("click",sendmail);
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left "  method="post">
+                    <form class="form-horizontal form-label-left " >
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control " id="from" placeholder="From" required="required" name="from">
