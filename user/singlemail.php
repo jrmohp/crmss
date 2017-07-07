@@ -20,8 +20,7 @@ $("#submit").on("click",sendmail);
       var body=$('#body').innerHTML();
 
 
-      document.write(body);
-
+    alert("hello");
     var data={'mfrom':from,'mto':to,'subject':admin,'body':body};
 
     
