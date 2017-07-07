@@ -1,13 +1,12 @@
 <?php
 require("../phpmailer/class.phpmailer.php");
+require("../php/connect.php");
 
 
-	$from=$_POST['from'];
-	$to=$_POST['to'];
+	$from=$_POST['mfrom'];
+	$to=$_POST['mto'];
 	$subject=$_POST['subject'];
 	$body=$_POST['body'];
-	echo $body;
-	echo $from;
 
 
 $mail = new PHPMailer();
@@ -33,10 +32,10 @@ $mail->Body    = "$body";
 
 if(!$mail->Send())
 {
-   echo "Message could not be sent. <p>";
+  
    echo "Mailer Error: " . $mail->ErrorInfo;
    exit;
 }
 
-echo "Message has been sent";
+echo 1;
 ?>

@@ -23,7 +23,7 @@
     
     
     
-    $.post('../php/singlemailcontoller.php',data,function(info){
+    $.post('a.php',data,function(info){
       if(info==1)
       {
           $("#querymsg").addClass('alert alert-success');
