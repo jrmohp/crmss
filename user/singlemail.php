@@ -23,30 +23,7 @@ $("#submit").on("click",sendmail);
 
 
     
-    var data={'mfrom':from,'mto':to,'subject':admin,'body':body};
-
     
-    
-    
-    $.post('a.php',data,function(info){
-      if(info==1)
-      {
-          $("#querymsg").addClass('alert alert-success');
-            $('#querymsg').fadeIn();
-          $("#querymsg").html("Reply Submitted");
-           $('#querymsg').delay(1000).fadeOut();
-          
-    
-
-      }
-      else
-      {
-      $("#querymsg").addClass('alert alert-danger');
-        $('#querymsg').fadeIn();
-      $("#querymsg").html("ot Submitted,Contact Admin");
-       $('#querymsg').delay(1000).fadeOut();
-      
-      }
     }
 
 
