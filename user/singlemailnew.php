@@ -43,15 +43,16 @@
                         <br />
                         </div>
 
-                        <button class="btn btn-primary" > Submit</button>
+                        <button class="btn btn-primary" id="sub"> Submit</button>
                         </form>
 </div></div></div></center></div>
                         
 
 
 
+
   <script type="text/javascript">
-    
+    $("#sub").on("click",sendmail);
 
   function sendmail()
   {
