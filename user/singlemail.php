@@ -139,7 +139,7 @@
                   <textarea name="descr" id="descr" style="display:none;" ></textarea>
 
                    </div>
-                   <input type="submit" name="">
+                   <input type="submit" name="" onclick="check()">
 
                    </div>
                    </div>
@@ -157,3 +157,16 @@
 
   include "footer.php";
 ?>
+
+
+<script type="text/javascript">
+  
+
+
+function check()
+{
+  alert("workinh");
+}
+
+
+</script>
