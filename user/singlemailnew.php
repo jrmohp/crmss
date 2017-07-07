@@ -25,7 +25,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left " >
+                  
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" class="form-control " id="=mfrom" placeholder="From" required="required" name="mfrom">
@@ -43,8 +43,8 @@
                         <br />
                         </div>
 
-                        <button class="btn btn-primary" id="sub"> Submit</button>
-                        </form>
+                        <button class="btn btn-primary" id="sub" type="submit"> Submit</button>
+                        
 </div></div></div></center></div>
                         
 
