@@ -8,6 +8,7 @@
 <script type="text/javascript">
   
 
+$("#submit").on("click",sendmail);
 
 
     function sendmail()
@@ -195,7 +196,7 @@
                   <textarea name="descr" id="descr" style="display:none;" name="body"></textarea>
 
                    </div>
-                    <button onclick="sendmail()">Send</button>
+                    <button id="submit">Send</button>
 
                    </div>
                    </div>
