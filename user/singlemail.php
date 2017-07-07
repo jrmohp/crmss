@@ -192,9 +192,9 @@ $("#submit").on("click",sendmail);
                     </div>
                   </div>
 
-                  <div id="editor-one" class="editor-wrapper" id="body"></div>
+                  <div id="editor-one" class="editor-wrapper" ></div>
 
-                  <textarea name="descr" id="descr" style="display:none;" name="body"></textarea>
+                  <textarea name="descr" id="descr" style="display:none;" ></textarea>
 
                    </div>
                     <button id="submit">Send</button>
