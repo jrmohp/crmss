@@ -139,7 +139,7 @@
                   <textarea name="descr" id="descr" style="display:none;" ></textarea>
 
                    </div>
-                   <input type="submit" name=""  id="ghj">
+                   <input  name=""  id="ghj">
 
                    </div>
                    </div>
