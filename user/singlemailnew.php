@@ -43,7 +43,7 @@
                         <br />
                         </div>
 
-                        <button class="btn btn-primary" onclick="sendmail()"> Submit</button>
+                        <button class="btn btn-primary" > Submit</button>
                         </form>
 </div></div></div></center></div>
                         
@@ -61,3 +61,4 @@
 
 
   </script>
+
