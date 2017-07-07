@@ -48,11 +48,7 @@
 </div></div></div></center></div>
                         
 
- <?php
 
-
-  include "footer.php";
-?>
 
   <script type="text/javascript">
     
