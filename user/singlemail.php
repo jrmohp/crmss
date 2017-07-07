@@ -4,49 +4,13 @@
   include "regheader.php";
 ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-   <script src="../build/js/custom.min.js"></script>
-<script type="text/javascript">
-  
-
-$("#submit").on("click",sendmail);
-
-
-    function sendmail()
-    {
-        alert("hello");
-      
-      var from=$('#from').val();
-      var to=$('#to').val();
-      var subject=$('#subject').val();
-      var body=$('#body').innerHTML();
-
-
-    
-    
-    }
-
-
-
-
-
-
-
-
-
-
-
-</script>
 
 <div class="row">
-
 <center>
               <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
                   <div class="x_title">
                     <h2>Send Mail </h2>
-                    <div id="querymsg"></div>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -61,20 +25,20 @@ $("#submit").on("click",sendmail);
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left " >
+                    <form class="form-horizontal form-label-left " action="a.php" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="from" placeholder="From" required="required" name="from">
+                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="from">
                        
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="to" placeholder="To" required="required" name="to">
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required" name="to">
 
                          </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="subject" placeholder="Subject"  name="subject">
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject"  name="subject">
                         
                         <br />
 
@@ -170,12 +134,12 @@ $("#submit").on("click",sendmail);
                     </div>
                   </div>
 
-                  <div id="editor-one" class="editor-wrapper" ></div>
+                  <div id="editor-one" class="editor-wrapper"></div>
 
-                  <textarea name="descr" id="descr" style="display:none;" ></textarea>
+                  <textarea name="descr" id="descr" style="display:none;" name="body"></textarea>
 
                    </div>
-                    <button id="submit">Send</button>
+                   <input type="submit" name="">
 
                    </div>
                    </div>
@@ -186,7 +150,6 @@ $("#submit").on("click",sendmail);
                    </form>
 
                     
-
 
 
                         <?php
