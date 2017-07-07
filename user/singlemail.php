@@ -5,6 +5,7 @@
 ?>
 
 <script src="../vendors/jquery/dist/jquery.min.js"></script>
+   <script src="../build/js/custom.min.js"></script>
 <script type="text/javascript">
   
 
