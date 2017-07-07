@@ -4,7 +4,7 @@
   include "regheader.php";
 ?>
 
-
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript">
   
 
