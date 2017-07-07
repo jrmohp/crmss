@@ -18,6 +18,9 @@
       var subject=$('#subject').val();
       var body=$('#body').innerHTML();
 
+
+      document.write(body);
+
     var data={'mfrom':from,'mto':to,'subject':admin,'body':body};
 
     
@@ -192,7 +195,7 @@
                   <textarea name="descr" id="descr" style="display:none;" name="body"></textarea>
 
                    </div>
-                   <input type="submit" name="" onclick="sendmail()">
+                    <button onclick="sendmail()">Send</button>
 
                    </div>
                    </div>
