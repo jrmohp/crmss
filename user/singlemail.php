@@ -28,12 +28,12 @@
                     <form class="form-horizontal form-label-left " >
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="from">
+                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="mfrom">
                        
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required" name="to">
+                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required" name="mto">
 
                          </div>
 
@@ -158,17 +158,6 @@
   include "footer.php";
 ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-    $("#ghj").on("click",check);
-
-function check()
-{
-
-}
 
 
 
-
-</script>
