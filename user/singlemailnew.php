@@ -27,18 +27,18 @@
                     <br />
                     <form class="form-horizontal form-label-left " >
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="inputSuccess2" placeholder="From" required="required" name="mfrom">
+                      <div class="col-md-6 col-sm-6 col-xs-12 >
+                        <input type="text" class="form-control " id="mfrom" placeholder="From" required="required" name="mfrom">
                        
                       </div>
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="To" required="required" name="mto">
+                      <div class="col-md-6 col-sm-6 col-xs-12 ">
+                        <input type="text" class="form-control  " id="mto" placeholder="To" required="required" name="mto">
 
                          </div>
 
-                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess4" placeholder="Subject"  name="subject">
+                       <div class="col-md-12 col-sm-6 col-xs-12 k">
+                        <input type="text" class="form-control  " id="subject" placeholder="Subject"  name="subject">
                         
                         <br />
                         </div>
