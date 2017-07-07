@@ -45,7 +45,7 @@
 
                         <button class="btn btn-primary" onclick="sendmail()"> Submit</button>
                         </form>
-
+</div></div></div></center></div>
                         
 
  <?php
