@@ -139,7 +139,7 @@
                   <textarea name="descr" id="descr" style="display:none;" ></textarea>
 
                    </div>
-                   <input type="submit" name="" onclick="check()">
+                   <input type="submit" name=""  id="ghj">
 
                    </div>
                    </div>
@@ -160,8 +160,12 @@
 
 
 <script type="text/javascript">
-  
+    $("#ghj").on("click",check);
 
+function check()
+{
+
+}
 
 
 
