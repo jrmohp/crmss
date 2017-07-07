@@ -38,7 +38,7 @@
                          </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="inputSuccess3" placeholder="Subject"  name="subject">
+                        <input type="text" class="form-control  " id="inputSuccess4" placeholder="Subject"  name="subject">
                         
                         <br />
 
@@ -136,7 +136,7 @@
 
                   <div id="editor-one" class="editor-wrapper"></div>
 
-                  <textarea name="descr" id="descr" style="display:none;" name="body"></textarea>
+                  <textarea name="descr" id="descr" style="display:none;" ></textarea>
 
                    </div>
                    <input type="submit" name="">
