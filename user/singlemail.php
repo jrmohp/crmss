@@ -163,10 +163,7 @@
   
 
 
-function check()
-{
-  alert("workinh");
-}
+
 
 
 </script>
