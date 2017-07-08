@@ -63,6 +63,8 @@
                       <textarea  class="form-control"  name="body" id="body" placeholder="Message" rows="15"></textarea>
 
                     </div>
+                    </div>
+                    
                     <br>
 
                     <div class="row row-centered center-block" >
