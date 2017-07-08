@@ -64,7 +64,7 @@
 
                     </div>
 
-                    <button  class="btn btn-success" type="submit">Send</button>
+                    <button  class="btn btn-success align-middle" type="submit">Send</button>
                     </form>
                     </div>
 
