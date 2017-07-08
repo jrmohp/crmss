@@ -47,7 +47,7 @@
                     
 						<input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
                     </div>
-                    	
+                    	<br>
 
                     	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
                     <div class="col-md-5 col-sm-5 col-xs-11"  style="margin-left:-2.5%">
