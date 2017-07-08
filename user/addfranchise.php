@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Mega ATV Championship  </title>
+  <title>Franchise Registration | Smart Solar  </title>
 </head>
 <body>
 
@@ -19,10 +19,13 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <!--page content-->
+                 <form  method="post" data-parsley-validate>
+                    	
 
-
-
+                	<h2>Franchise Registration</h2>
+                    <div class="row" style="margin: 0.5%">
+                    	 <div class="ln_solid"></div>
+                   			 <h2>Owner Details</h2 >   
 
                
 
