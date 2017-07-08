@@ -26,9 +26,6 @@
 
 
 
-
-
-
 	if($conn->query($sql))
 	{
 		echo 1;
