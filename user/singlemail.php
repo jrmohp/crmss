@@ -65,8 +65,8 @@
                     </div>
                     <br>
 
-                    <div class="row row-centered" >
-                    <button  class="btn btn-success col-md-4" type="submit" >Send</button>
+                    <div class="row row-centered center-block" >
+                    <button  class="btn btn-success col-md-4 " type="submit" >Send</button>
                     </div>
                     </form>
                     </div>
