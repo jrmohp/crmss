@@ -122,6 +122,7 @@
 	      	              	 <label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
 	           		          <textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
 	                 </div>
+	                 <br>
 
 
 	               
@@ -131,15 +132,15 @@
 
                     	
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="acard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Aadhar card</span></label>
+                  		   <label for="acard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Aadhar Card</span></label>
 
-                    			<input type="text" name="acard" id="acard" class="form-control" placeholder="Aadhar card">			
+                    			<input type="text" name="acard" id="acard" class="form-control" placeholder="Aadhar Card">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="pcard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Pan card</span></label>
+                  		   <label for="pcard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Pan Card</span></label>
 
-                    			<input type="text" name="pcard" id="acard" class="form-control" placeholder="Pan card">			
+                    			<input type="text" name="pcard" id="acard" class="form-control" placeholder="Pan Card">			
                    			 </div>
 
        				</div>
