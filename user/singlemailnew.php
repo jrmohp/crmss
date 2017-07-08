@@ -44,7 +44,7 @@
                         <br />
                         </div>
 
-                        <button class="btn btn-primary" id="sub" type="submit"> Submit</button>
+                        <button class="btn btn-primary" id="sub" > Submit</button>
                         </form>
 </div></div></div></center></div>
                         
