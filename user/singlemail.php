@@ -100,7 +100,7 @@
 
         function DB()
         {
-               alert("HAUCHOI");
+              
 
 
 
@@ -122,8 +122,8 @@
             {
                     $("#querymsg").addClass('alert alert-success');
                       $('#querymsg').fadeIn();
-                    $("#querymsg").html("Reply Submitted");
-                     $('#querymsg').delay(1000).fadeOut();
+                    $("#querymsg").html("Mail Sent");
+                     $('#querymsg').delay(2000).fadeOut();
                     
         
 
@@ -132,7 +132,7 @@
             {
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
-            $("#querymsg").html("Not Submitted,Contact Admin");
+            $("#querymsg").html("Mail Not Sent,Contact 7978555567");
              $('#querymsg').delay(1000).fadeOut();
             
             }
