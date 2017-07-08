@@ -39,9 +39,9 @@
                     <form data-parsley-validate method="post">
 
                     <div class="row">
+                    	<label class="control-label col-sm-1" for="mfrom">chekc</label>
+                    	<div class="col-md-5 col-sm-6 col-xs-10">
 
-                    	<div class="col-md-6 col-sm-6 col-xs-10">
-                    	<label class="control-label col-sm-2" for="mfrom">chekc</label>
                     	<input type="text"  class="form-control"  name="" placeholder="From" id="mfrom">
                     		
                     	</div>
