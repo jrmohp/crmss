@@ -157,14 +157,31 @@
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
                   		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Experience</span></label>
 
-                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Pan Card">			
+                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Experience">			
                    			 </div>
 
-
-
-
-    					               			 
 	                 </div>
+
+	                 <br>
+
+	                  <div class="row">
+                     		
+                  		  <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank Account No.</span></label>
+
+                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="Bank Account No.">			
+                   			 </div>
+
+                   		 <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank IFSC Code</span></label>
+
+                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Bank IFSC Code">			
+                   			 </div>
+
+	                 </div>
+
+
+
 
 
 
