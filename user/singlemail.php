@@ -25,12 +25,13 @@
                     <input type="hidden" name="emailauth" value="sikujyoti">
                     <input type="hidden" name="fromname" value="JRM">
 
+
                     <div class="row">
                     	
                     	<label class="control-label col-sm-1 align-middle" for="mfrom" style="margin:-5px"><h2><span class="label label-info">From</span></h2></label>
                     	<div class="col-md-5 col-sm-6 col-xs-10">
 
-                    	<input type="text"  class="form-control"  name="mfrom" placeholder="From" id="mfrom" disabled="true" value="jrm@smartsolar.co.in">
+                    	<input type="text"  class="form-control"  name="mfrom" placeholder="From" id="mfrom" >
                     		
                     	</div>
 
