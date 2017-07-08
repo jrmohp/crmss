@@ -6,14 +6,15 @@
 	$phone=$_POST['phone'];
 	$address=$_POST['address'];
 	$city=$_POST['city'];
-	$gender=$_POST['gender'];
+	$type=$_POST['type'];
 	$units=$_POST['units'];
 	$monthlybill=$_POST['monthlybill'];
 	$contractload=$_POST['contractload'];
 	$roofarea=$_POST['roofarea'];
+	$phase=$_POST['phase'];
 
 
-	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,load,rarea) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea')";
+	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,load,rarea,phase) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
 
 
 	if($conn->query($sql))

@@ -329,13 +329,13 @@
                     <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 5px;">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Domestic" required="true"> &nbsp; Domestic &nbsp;
+                              <input type="radio" name="type" value="Domestic" required="true"> &nbsp; Domestic &nbsp;
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Commercial"> Commercial
+                              <input type="radio" name="type" value="Commercial"> Commercial
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Industrial"> &nbsp; Industrial &nbsp;
+                              <input type="radio" name="type" value="Industrial"> &nbsp; Industrial &nbsp;
                             </label>
                           </div>
                         </div>
@@ -344,10 +344,10 @@
                       <div class="col-md-6 col-sm-6 col-xs-12" >
                           <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 35px;">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="one"> &nbsp; Single Phase &nbsp;
+                              <input type="radio" name="phase" value="one"> &nbsp; Single Phase &nbsp;
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="three"> Three Phase
+                              <input type="radio" name="phase" value="three"> Three Phase
                             </label>
                           </div>
                         </div>
@@ -396,7 +396,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                           <button type="button" class="btn btn-primary">Cancel</button>
 						   <button class="btn btn-primary" type="reset">Reset</button>
-                          <button type="submit" class="btn btn-success" class="senddata">Submit</button>
+                          <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
 
@@ -425,7 +425,8 @@
         var phone=$('#phone').val();
         var address=$('#address').val();
         var city=$('#city').val();
-        var gender=$('[name="gender"]').val();
+        var gender=$('[name="type"]').val();
+          var phase=$('[name="phase"]').val();
         var units=$('#units').val();
         var monthlybill=$('#monthlybill').val();
         var contractload=$('#contractload').val();
@@ -434,7 +435,7 @@
        
 
 
-        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea};
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
 
         
         
