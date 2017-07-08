@@ -32,7 +32,7 @@
 	}
 	else 
 	{
-		echo 0;
+		echo mysqli_error($conn);
 	}
 
 	?>
