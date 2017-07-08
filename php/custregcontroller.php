@@ -1,4 +1,5 @@
 <?php
+	require("connect.php");
 	$firstname=$_POST['firstname'];
 	$lastname=$_POST['lastname'];
 	$email=$_POST['email'];
@@ -11,6 +12,13 @@
 	$contractload=$_POST['contractload'];
 	$roofarea=$_POST['roofarea'];
 
-	echo $firstname.$lastname.$email.$phone.$address.$city.$gender.$units.$monthlybill.$contractload.$roofarea;
-	require("connect.php");
-?>
+
+	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,load,rarea) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea')";
+
+
+	if($conn->query($sql))
+	{
+		echo 1;
+	}
+
+	?>

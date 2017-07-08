@@ -25,7 +25,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left input_mask" action="../php/custregcontroller.php" method="post">
+                    <form class="form-horizontal form-label-left input_mask"  onsubmit="return false" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
@@ -396,7 +396,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                           <button type="button" class="btn btn-primary">Cancel</button>
 						   <button class="btn btn-primary" type="reset">Reset</button>
-                          <button type="submit" class="btn btn-success">Submit</button>
+                          <button type="submit" class="btn btn-success" class="senddata">Submit</button>
                         </div>
                       </div></center>
 
@@ -405,6 +405,78 @@
                 </div>
 
 
+
+ <script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+ 
+    $("#senddata").on("click",regc);
+ 
+
+        function regc()
+        {
+              
+
+
+
+        var firstname=$('#firstname').val();
+        var lastname=$('#lastname').val();
+        var email=$('#email').val();
+        var phone=$('#phone').val();
+        var address=$('#address').val();
+        var city=$('#city').val();
+        var gender=$('[name="gender"]').val();
+        var units=$('#units').val();
+        var monthlybill=$('#monthlybill').val();
+        var contractload=$('#contractload').val();
+        var roofarea=$('#roofarea').val();
+       
+       
+
+
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea};
+
+        
+        
+        
+        $.post('../php/custregcontroller.php',data,function(info){
+            if(info==1)
+            {
+                alert("hei gala");
+                    $("#querymsg").addClass('alert alert-success');
+                      $('#querymsg').fadeIn();
+                    $("#querymsg").html("Mail Sent And Saved To Databse");
+                     $('#querymsg').delay(2000).fadeOut();
+                    
+        
+
+            }
+            else
+            {
+            $("#querymsg").addClass('alert alert-danger');
+              $('#querymsg').fadeIn();
+            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
+             $('#querymsg').delay(2000).fadeOut();
+            
+            }
+        });
+
+
+    }
+
+
+        
+
+
+
+
+
+
+
+
+
+
+</script>
 <?php
 
 
