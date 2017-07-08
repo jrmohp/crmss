@@ -417,7 +417,7 @@
         {
               
 
-
+          alert("aila");
 
         var firstname=$('#firstname').val();
         var lastname=$('#lastname').val();
@@ -454,6 +454,7 @@
             }
             else
             {
+               alert("aila helani");
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
