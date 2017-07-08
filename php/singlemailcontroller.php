@@ -10,7 +10,7 @@ require("../php/connect.php");
 	$fromname=$_POST['fromname'];
 
 
-		echo $to;
+		echo $to,$from;
 		/*
 $mail = new PHPMailer();
 
