@@ -80,6 +80,9 @@
                     </form>
                     </div>
 
+                    </div>
+                    </body>
+
 	
 <?php
 

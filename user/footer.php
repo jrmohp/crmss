@@ -1,6 +1,6 @@
 
         <footer>
-          <div class="pull-right">
+          <div class="pull-right" style="width:100%">
             <a href="https://autosportsindia.com">&copy Autosports India</a>
           </div>
           <div class="clearfix"></div>
