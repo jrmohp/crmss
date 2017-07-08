@@ -1,6 +1,6 @@
 <?php
 require("../phpmailer/class.phpmailer.php");
-require("../php/connect.php");
+require("connect.php");
 
 
 	$from=$_POST['mfrom'];
@@ -34,7 +34,7 @@ $mail->Subject = $subject;
 $mail->Body    = $body;
 
 
-if(!$mail->Send() &&  )
+if(!$mail->Send()  )
 {
   
    echo "Mailer Error: " . $mail->ErrorInfo;
