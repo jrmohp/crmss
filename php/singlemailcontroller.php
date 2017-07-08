@@ -41,10 +41,9 @@ if(!$mail->Send() &&  )
    exit;
 }
 
-if($conn->query($sql))
-{
+
 
 		echo 1;
-}
+
 
 ?>
