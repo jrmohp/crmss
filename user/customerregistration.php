@@ -48,13 +48,13 @@
                       </div>
 
                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address">
+                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true">
                         <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select name="city" class="form-control">
+                       <select name="city" class="form-control" required="true">
                          
                          <option>Select Your City</option>
                          <option>Others</option>
@@ -329,7 +329,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 5px;">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Domestic"> &nbsp; Domestic &nbsp;
+                              <input type="radio" name="gender" value="Domestic" required="true"> &nbsp; Domestic &nbsp;
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                               <input type="radio" name="gender" value="Commercial"> Commercial
