@@ -19,7 +19,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div id="querymsg"></div>
             
-                    <form data-parsley-validate method="post" action="">
+                    <form data-parsley-validate method="post" >
 
 
                     <input type="hidden" name="emailauth" value="sikujyoti" id="authvalue">
