@@ -15,7 +15,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Form Design <small>different form elements</small></h2>
+                    <h2>Send Email  <small>specified customer</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -35,6 +35,21 @@
                   </div>
                   <div class="x_content">
                     <br />
+
+                    <form data-parsley-validate method="post">
+
+                    <div class="row">
+
+                    	<div class="col-md-6 col-md-6 col-xs-12">
+
+                    	<input type="text"  class="form-control"  name="" placeholder="From">
+                    		
+                    	</div>
+                    	
+
+                    </div>
+
+                    </form>
 
 
 
