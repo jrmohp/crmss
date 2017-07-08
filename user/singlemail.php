@@ -19,7 +19,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form data-parsley-validate method="post">
+                    <form data-parsley-validate method="post" action="../php/singlemailcontroller.php">
 
                     <div class="row">
                     	
@@ -30,7 +30,7 @@
                     		
                     	</div>
 
-                    	<label class="control-label col-sm-1 align-middle" for="to" style="margin:-5px"><h2><span class="label label-info">&nbspTo&nbsp</span></h2></label>
+                    	<label class="control-label col-sm-1 align-middle" for="mto" style="margin:-5px"><h2><span class="label label-info">&nbspTo&nbsp</span></h2></label>
                     	<div class="col-md-5 col-sm-5 col-xs-10">
                     		
                     	<input type="text"  class="form-control"  name="mto" id="mto" placeholder="To">
