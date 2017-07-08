@@ -122,10 +122,20 @@
 	      	              	 <label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
 	           		          <textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
 	                 </div>
-	                
-                    <div class="row">
-                    <div class="ln_solid"></div>
-                   	<h2>Legal Information</h2>
+	                <br>
+
+
+                   
+
+                    <div class="row" style="margin: 0.5%" >
+            	   		 <div class="ln_solid"></div>
+               					<h2>Legal Information</h2>
+
+                		</div>
+
+       				</div>
+
+
 
 
 
