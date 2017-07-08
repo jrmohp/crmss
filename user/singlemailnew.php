@@ -26,7 +26,7 @@
                   <div class="x_content">
                     <br />
                   
-                    <form id="target" method="post">
+                    <form id="target" method="post" data-parsley-validate>
 
                       <div class="col-md-6 col-sm-6 col-xs-12">
                         <input type="text"  class="form-control" id="=mfrom" placeholder="From"  name="mfrom">
