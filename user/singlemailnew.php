@@ -26,14 +26,15 @@
                   <div class="x_content">
                     <br />
                   
+                    <form id="target" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control " id="=mfrom" placeholder="From" required="required" name="mfrom">
+                        <input type="text" class="form-control " id="=mfrom" placeholder="From"  name="mfrom">
                        
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control  " id="mto" placeholder="To" required="required" name="mto">
+                        <input type="text" class="form-control  " id="mto" placeholder="To"  name="mto">
 
                          </div>
 
@@ -44,7 +45,7 @@
                         </div>
 
                         <button class="btn btn-primary" id="sub" type="submit"> Submit</button>
-                        
+                        </form>
 </div></div></div></center></div>
                         
 
