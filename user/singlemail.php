@@ -22,8 +22,8 @@
                     <form data-parsley-validate method="post" action="">
 
 
-                    <input type="hidden" name="emailauth" value="sikujyoti">
-                    <input type="hidden" name="fromname" value="JRM">
+                    <input type="hidden" name="emailauth" value="sikujyoti" id="authvalue">
+                    <input type="hidden" name="fromname" value="JRM"  id="fromname">
 
 
                     <div class="row">
@@ -102,20 +102,18 @@
 
         function DB()
         {
-            var btnid=this.id;
-        var dbid=btnid.slice(3,);
-        var replyid="#reply"+dbid;
-
-
-        var reply=$(replyid).val();
-        var admin=$('#adminid').val();
+            
 
 
         var mfrom=$('#mfrom').val();
         var mto=$('#mto').val();
+        var subject=$('#subject').val();
+         var authvalue=$('#authvalue').val();
+          var fromname=$('#fromname').val();
+        var body=$('#body').val();
 
 
-        var data={'dbid':dbid,'reply':reply,'admin':admin};
+        var data={'mfrom':mfrom,'mto':mto,'subject':subject,'body':body,'authvalue':authvalue,'fromname':fromname};
 
         
         
@@ -135,7 +133,7 @@
             {
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
-            $("#querymsg").html("ot Submitted,Contact Admin");
+            $("#querymsg").html("Not Submitted,Contact Admin");
              $('#querymsg').delay(1000).fadeOut();
             
             }
