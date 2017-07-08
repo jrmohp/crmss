@@ -47,10 +47,18 @@
     <script src="../vendors/moment/min/moment.min.js"></script>
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.7.2/parsley.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.7.2/parsley.min.js"></script>
+
+
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
     
      <script src="../pjs/add_member.js"></script>
     
+
   </body>
 </html>
