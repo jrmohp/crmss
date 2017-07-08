@@ -38,8 +38,9 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email">
+                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onchange="checkemail()">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <span id="email_status" style="color: red"> </span> 
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
@@ -477,6 +478,48 @@
 
 
 */
+   
+          function checkemail()
+{
+ var email=document.getElementById( "email" ).value;
+  
+ if(email)
+ {
+  $.ajax({
+  type: 'post',
+  url: '../php/checkemail.php',
+  data: {
+   user_email:email,
+  },
+  success: function (response) {
+   $( '#email_status' ).html(response);
+   
+      $(':input[type="submit"]').prop('disabled', true);
+
+  
+   if(response=="") 
+   {
+    $(':input[type="submit"]').prop('disabled', false);
+    return true;
+
+
+   }
+   else
+   {
+
+    return false; 
+
+   }
+  }
+  });
+ }
+ else
+ {
+  $( '#email_status' ).html("");
+  $(':input[type="submit"]').prop('disabled', false);
+  return false;
+ }
+}
 
 </script>
 <?php
