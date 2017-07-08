@@ -10,8 +10,8 @@ require("../php/connect.php");
 	$fromname=$_POST['fromname'];
 
 
-		echo $_POST['mfrom'];
-		/*
+		
+		
 $mail = new PHPMailer();
 
 $mail->IsSMTP();                                      // set mailer to use SMTP
@@ -41,5 +41,5 @@ if(!$mail->Send())
    exit;
 }
 
-echo "Message has been sent";*/
+echo "Message has been sent";
 ?>
