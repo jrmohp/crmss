@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
-    <title>Customer Registration</title>
+   
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,18 +49,7 @@
          
         
         <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>Customer Registration</h3>
-
-                
-              </div>
-
-              
-            </div>
-            <div class="clearfix"></div>
+        
 <center>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
