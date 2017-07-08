@@ -1,7 +1,7 @@
 <?php
 require("../phpmailer/class.phpmailer.php");
 require("../php/connect.php");
-
+include_once("../tablestructures/sentemails");
 
 	$from=$_POST['mfrom'];
 	$to=$_POST['mto'];
@@ -9,7 +9,8 @@ require("../php/connect.php");
 	$body=$_POST['body'];
 	$fromname=$_POST['fromname'];
 
-
+mysqli_query($conn"INSERT INTO sentemails(mfrom,mto,subject,body)
+				VALUES('$from','$to','$subject','$body')");
 		
 		
 $mail = new PHPMailer();
@@ -34,12 +35,13 @@ $mail->Subject = $subject;
 $mail->Body    = $body;
 
 
-if(!$mail->Send())
+if(mysqli_affected_rows($conn) > 0)
 {
-  
-   echo "Mailer Error: " . $mail->ErrorInfo;
-   exit;
+ 	echo "Success";
+} 
+else 
+{
+	echo "Error: <br />";
+	echo mysqli_error ($connect);
 }
-
-echo 1;
 ?>
