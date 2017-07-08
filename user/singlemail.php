@@ -64,10 +64,11 @@
 
                     </div>
                     </div>
-                    
+
                     <br>
 
-                    <div class="row row-centered center-block" >
+
+                    <div class="roW pull-center" >
                     <button  class="btn btn-success col-md-4 " type="submit" >Send</button>
                     </div>
                     </form>
