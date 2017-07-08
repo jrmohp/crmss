@@ -132,7 +132,7 @@
             {
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
-            $("#querymsg").html("Mail Not Sent,Contact 7978555567");
+            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
              $('#querymsg').delay(2000).fadeOut();
             
             }
