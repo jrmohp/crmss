@@ -52,8 +52,9 @@
                      </div>
                      <br>
                    	 <div class="row">
-                    				 <label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Father's Name</span></label>
-                  					  <div class="col-md-5 col-sm-5 col-xs-11"  style="margin-left:-2.5%">
+                    				
+                  					  <div class="col-md-6 col-sm-6 col-xs-11"  style="margin-left:-2.5%">
+                  					   <label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Father's Name</span></label>
 
                     						<input type="text" name="fname" id="fname" class="form-control" placeholder="Father's Name">			
                    			
