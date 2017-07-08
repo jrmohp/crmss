@@ -7,7 +7,7 @@ require("../php/connect.php");
 	$to=$_POST['mto'];
 	$subject=$_POST['subject'];
 	$body=$_POST['body'];
-
+	$fromname=$_POST['fromname'];
 
 $mail = new PHPMailer();
 
@@ -18,18 +18,17 @@ $mail->Username = "jrm@smartsolar.co.in";  // SMTP username
 $mail->Password = "sikujyoti"; // SMTP password
 
 $mail->From = $from;
-$mail->FromName = "Mailer";
-$mail->AddAddress("jrmkvk@gmail.com", "Josh Adams");
-$mail->AddAddress("jrmkvk@gmail.com");                  // name is optional
-$mail->AddReplyTo("info@smartsolar.co.in", "Information");
+$mail->FromName =$fromname ;
+$mail->AddAddress($to);
+                 // name is optional
+$mail->AddReplyTo($from, $fromname);
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
    // optional name
 $mail->IsHTML(true);                                  // set email format to HTML
 
-$mail->Subject = "Here is the subject";
-$mail->Body    = "This is the HTML message body <b>in bold!</b>";
-$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+$mail->Subject = $subject;
+$mail->Body    = $body;
 
 if(!$mail->Send())
 {

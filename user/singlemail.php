@@ -22,21 +22,22 @@
                     <form data-parsley-validate method="post" action="../php/singlemailcontroller.php">
 
 
-                    <input type="hidden" name="emailauth">
+                    <input type="hidden" name="emailauth" value="sikujyoti">
+                    <input type="hidden" name="fromname" value="JRM">
 
                     <div class="row">
                     	
                     	<label class="control-label col-sm-1 align-middle" for="mfrom" style="margin:-5px"><h2><span class="label label-info">From</span></h2></label>
                     	<div class="col-md-5 col-sm-6 col-xs-10">
 
-                    	<input type="text"  class="form-control"  name="mfrom" placeholder="From" id="mfrom">
+                    	<input type="text"  class="form-control"  name="mfrom" placeholder="From" id="mfrom" disabled="true" value="jrm@smartsolar.co.in">
                     		
                     	</div>
 
                     	<label class="control-label col-sm-1 align-middle" for="mto" style="margin:-5px"><h2><span class="label label-info">&nbspTo&nbsp</span></h2></label>
                     	<div class="col-md-5 col-sm-5 col-xs-10">
                     		
-                    	<input type="text"  class="form-control"  name="mto" id="mto" placeholder="To">
+                    	<input type="text"  class="form-control"  name="mto" id="mto" placeholder="To" disabled="true" value="iterjrm@gmail.com">
                     		
                     	</div>
                     	
