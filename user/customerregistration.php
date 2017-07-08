@@ -408,7 +408,7 @@
 
 
  <script src="../vendors/jquery/dist/jquery.min.js"></script>
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+ <script type="text/javascript" src="../js/bootbox.min.js"></script>
 <script type="text/javascript">
 
  
@@ -417,10 +417,7 @@
 
         function regc()
         {
-           bootbox.alert({
-    message: "This is an alert with an additional class!",
-    className: 'bb-alternate-modal'
-});
+           bootbox.alert({message: "This is an alert with an additional class!",className: 'bb-alternate-modal'});
 
 
         var firstname=$('#firstname').val();
