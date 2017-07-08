@@ -413,7 +413,7 @@
 
  
     $("#senddata").on("click",regc);
-  modernAlert();
+
 
         function regc()
         {
