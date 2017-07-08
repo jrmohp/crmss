@@ -25,3 +25,18 @@
                   </div>
                   <div class="x_content">
                     <br />
+
+                    <form >
+                      
+                    <div class="row">
+                      
+                    <div class="col-xs-12 col-md-5 col-sm-5">
+
+                    <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" data-parsley-required>
+                      
+                    </div>
+
+                    </div>
+
+
+                    </form>
