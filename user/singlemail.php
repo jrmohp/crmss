@@ -64,7 +64,7 @@
 
                     </div>
 
-                    <div class="row align-middle">
+                    <div class="row row-centered">
                     <button  class="btn btn-success" type="submit">Send</button>
                     </div>
                     </form>
