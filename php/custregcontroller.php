@@ -11,5 +11,6 @@
 	$contractload=$_POST['contractload'];
 	$roofarea=$_POST['roofarea'];
 
+	echo $firstname;
 	require("connect.php");
 ?>
