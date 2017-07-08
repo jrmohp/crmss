@@ -417,10 +417,7 @@
 
         function regc()
         {
-           bootbox.alert({
-    message: "This is an alert with an additional class!",
-    className: 'bb-alternate-modal'
-});
+           bootbox.alert({message: "This is an alert with an additional class!",className: 'bb-alternate-modal'});
 
 
         var firstname=$('#firstname').val();
