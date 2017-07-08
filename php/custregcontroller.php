@@ -17,9 +17,15 @@
 	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,load,rarea,phase) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
 
 
+	echo $sql;
+
 	if($conn->query($sql))
 	{
 		echo 1;
+	}
+	else
+	{
+		die(mysqli_error($conn));
 	}
 
 	?>
