@@ -23,7 +23,7 @@
                     	
 
                 	<h2>Franchise Registration</h2>
-                    <div class="row" style="margin: 0.5%">
+                    <div class="row">
                     	 <div class="ln_solid"></div>
                    			 <h2>Legal & Owner Details</h2 >
 
