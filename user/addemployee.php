@@ -23,6 +23,7 @@
                     	
 
                     <div class="row">
+                     <div class="ln_solid"></div>
                     <h2>Basic Information</h2>
 
                     	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
