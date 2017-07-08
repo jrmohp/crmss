@@ -5,19 +5,10 @@
 ?>
 
 
-<style type="text/css">
-	
-#pagesize
-{
 
-	min-height: 200px;
-
-}
-
-</style>
 	
                  <!-- page content -->
-        
+        <div class="right_col" role="main">
           
 
               
