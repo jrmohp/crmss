@@ -7,7 +7,7 @@
 	<form>
 		
 
-	<input type="text" class="form-control" name="">
+	<input type="text" class="form-control col-md-6" name="">
 
 
 	</form>
