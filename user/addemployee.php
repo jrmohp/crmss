@@ -24,14 +24,19 @@
 
                     <div class="row">
 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                     	
-                    		kdsnfjkdsbkj			
+                    	<input type="text" name="fname" id="fname">			
                     </div>
-                     <div class="col-md-6 col-sm-6 col-xs-12">
-                    	sd;lfnmdsknk
-
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                    
+                     	<input type="text" name="mname" id="mname">
                     </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    
+						<input type="text" name="lname" id="lname">	
+                    </div>
+                    	
                     	
 
 
