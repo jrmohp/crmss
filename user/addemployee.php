@@ -127,16 +127,12 @@
 
                    
 
-                    <div class="row" style="margin:1%">
+                    <div class="row" >
                     	 <div class="ln_solid"></div>
-                   			 <h2>Basic Information</h2>
+                   				 <h2>Legal Information</h2>
 
-                    	
-                  		  <div class="col-md-12 col-sm-12 col-xs-12"  >
-                  		   <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+                    	</div>
 
-                    			<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
-                   			 </div>
                    			 </div>
 
 
