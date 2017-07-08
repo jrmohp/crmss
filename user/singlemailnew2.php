@@ -41,8 +41,8 @@
                     <div class="row">
 
                     	<div class="col-md-6 col-sm-6 col-xs-10">
-                    		<span class="label label-info">Info Label</span>
-                    	<input type="text"  class="form-control"  name="" placeholder="From">
+                    	<label class="control-label col-sm-2" for="mfrom">chekc</label>
+                    	<input type="text"  class="form-control"  name="" placeholder="From" id="mfrom">
                     		
                     	</div>
 
