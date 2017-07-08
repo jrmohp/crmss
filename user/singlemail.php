@@ -19,7 +19,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
             
             
-                    <form data-parsley-validate method="post" >
+                    <form data-parsley-validate method="post" onsubmit="return false">
 
 
                     <input type="hidden" name="emailauth" value="sikujyoti" id="authvalue">
