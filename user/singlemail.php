@@ -68,7 +68,7 @@
                     <br>
 
 
-                    <div class="roW pull-center" >
+                    <div class="row pull-center" >
                     <button  class="btn btn-success col-md-4 " type="submit" >Send</button>
                     </div>
                     </form>
