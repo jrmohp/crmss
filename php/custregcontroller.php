@@ -14,7 +14,17 @@
 	$phase=$_POST['phase'];
 
 
-	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
+
+
+	$query = $db->query("SELECT MAX(id) FROM user"); // execute
+	$max_id = $query->fetch_array(); // fetch
+		$newid=$max_id[0]+1;
+		$ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
+
+
+	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('$ssid','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
+
+
 
 
 
