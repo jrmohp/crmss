@@ -1,7 +1,4 @@
- 
-</div>
-</div>
-</div></div></div></div></div></div></div></div></div></div></div>
+
         <footer>
           <div class="pull-right">
             <a href="https://autosportsindia.com">&copy Autosports India</a>
