@@ -124,12 +124,17 @@
 	                 </div>
 
 
-	                <br>
-                    <div class="row" style="margin: 0.5%" >
-            	   		 <div class="ln_solid"></div>
-               					<h2>Legal Information</h2>
+	               <h2>Employee Registration</h2>
+                    <div class="row" style="margin: 0.5%">
+                    	 <div class="ln_solid"></div>
+                   			 <h2>Basic Information</h2 >
 
-                		</div>
+                    	
+                  		  <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="acard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Aadhar card</span></label>
+
+                    			<input type="text" name="acard" id="acard" class="form-control" placeholder="Aadhar card">			
+                   			 </div>
 
        				</div>
 
