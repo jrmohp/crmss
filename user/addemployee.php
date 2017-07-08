@@ -26,11 +26,11 @@
 
                     <div class="col-md-4 col-sm-4 col-xs-12">
                     	
-                    	<input type="text" name="fname" id="fname">			
+                    	<input type="text" name="fname" id="fname" class="form-control">			
                     </div>
                      <div class="col-md-4 col-sm-4 col-xs-12">
                     
-                     	<input type="text" name="mname" id="mname">
+                     	<input type="text" name="mname" id="mname" class="form-control">
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                     
