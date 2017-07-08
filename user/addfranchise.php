@@ -112,11 +112,13 @@
 
          	<div class="row">
              		<div class="col-md-6 col-sm-6 col-xs-12" >
-      					   	<label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Email Id</span></label>
+      					   	<label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Contact No.</span></label>
 
     						<input type="text" name="fname" id="fname" class="form-control" placeholder="Email Id">			
                    			
-					</div>			label label-info">Contact No.</span></label>
+					
+			     			label label-info">Contact No.</span></label>
+	     			</div>
 
             						<input type="text" name="mname" id="mname" class="form-control" placeholder="Contact No.">			
                    			
@@ -146,7 +148,7 @@
             		          <textarea class="pa form-control" placeholder="Address" rows="5"></textarea>
                      			</div>
                      </div>
-                    			
+
 
 
 
