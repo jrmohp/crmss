@@ -180,6 +180,63 @@
 
 	                 </div>
 
+	                 <br>
+
+	                  <div class="row">
+                     		
+                  		  <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
+
+                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="Contact No.">			
+                   			 </div>
+
+                   		 <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
+
+                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Alternate Contact No.">			
+                   			 </div>
+
+	                 </div>
+
+	                 <br>
+
+	                  <div class="row">
+                     		
+                  		  <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
+
+                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="Email Id">			
+                   			 </div>
+
+                   		 <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Email Id</span></label>
+
+                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Alternate Email Id">			
+                   			 </div>
+
+	                 </div>
+
+	                 <br>
+
+	                  <div class="row">
+                     		
+                  		  <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Phone No.</span></label>
+
+                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="Work Phone No.">			
+                   			 </div>
+
+                   		 <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Email</span></label>
+
+                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Work Email">			
+                   			 </div>
+
+	                 </div>
+
+
+
+
 
 
 
