@@ -417,10 +417,7 @@
 
         function regc()
         {
-            bootbox.alert({
-                           message: "aila",
-                        className: 'bb-alternate-modal'
-                  });
+           alert("aila");
 
 
         var firstname=$('#firstname').val();
@@ -447,16 +444,13 @@
         $.post('../php/custregcontroller.php',data,function(info){
             if(info!=0)
             {
-                bootbox.alert({
-                           message: "Thank You".firstname."For Registering With Us/nYour Smart Solar ID is ".info,
-                        className: 'bb-alternate-modal'
-                  });
+               
                     
                     
         
 
             }
-            else
+            else if(info==0)
             {
                alert("aila helani");
             $("#querymsg").addClass('alert alert-danger');
