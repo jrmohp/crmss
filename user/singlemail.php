@@ -69,7 +69,13 @@
 
 
                     <div class="row pull-center" >
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                     <button  class="btn btn-success col-md-4 " type="submit" >Send</button>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                    </div>
                     </div>
                     </form>
                     </div>
