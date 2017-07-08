@@ -28,17 +28,17 @@
                   
                     <form id="target" method="post">
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
                         <input type="text" class="form-control " id="=mfrom" placeholder="From"  name="mfrom">
                        
                       </div>
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                      <div class="col-md-6 col-sm-6 col-xs-12 ">
                         <input type="text" class="form-control  " id="mto" placeholder="To"  name="mto">
 
                          </div>
 
-                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
+                       <div class="col-md-12 col-sm-6 col-xs-12 ">
                         <input type="text" class="form-control  " id="subject" placeholder="Subject"  name="subject">
                         
                         <br />
