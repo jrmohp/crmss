@@ -408,11 +408,12 @@
 
 
  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+ <script type="text/javascript" src="../js/modernAlert.min.js"></script>
 <script type="text/javascript">
 
- /*
-    $("#senddata").on("click",regc);
  
+    $("#senddata").on("click",regc);
+  modernAlert();
 
         function regc()
         {
@@ -445,10 +446,7 @@
             if(info==1)
             {
                 alert("hei gala");
-                    $("#querymsg").addClass('alert alert-success');
-                      $('#querymsg').fadeIn();
-                    $("#querymsg").html("Mail Sent And Saved To Databse");
-                     $('#querymsg').delay(2000).fadeOut();
+                    
                     
         
 
@@ -477,7 +475,7 @@
 
 
 
-*/
+
    
           function checkemail()
 {
