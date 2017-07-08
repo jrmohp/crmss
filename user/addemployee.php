@@ -24,40 +24,42 @@
 
                 	<h2>Employee Registration</h2>
                     <div class="row">
-                     <div class="ln_solid"></div>
-                    <h2>Basic Information</h2>
+                    	 <div class="ln_solid"></div>
+                   			 <h2>Basic Information</h2>
 
                     	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
-                    <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
+                  		  <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
 
-                    	<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
-                    </div>
+                    			<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
+                   			 </div>
 
 
                          <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Middle Name</span></label>
 
-                    <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-1.5%">
+                  		  <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-1.5%">
 
-                     	<input type="text" name="mname" id="mname" class="form-control" placeholder="Middle Name">
-                    </div>
+                   		  	<input type="text" name="mname" id="mname" class="form-control" placeholder="Middle Name">
+                  		  </div>
 
 
                          <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
-                    <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
+                   		 <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
                     
-						<input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
-                    </div>
-                    	<br>
+							<input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
+                    	</div>
+                     </div>
+                     <br>
+                   	 <div class="row">
+                    				 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
+                  					  <div class="col-md-5 col-sm-5 col-xs-11"  style="margin-left:-2.5%">
 
-                    	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
-                    <div class="col-md-5 col-sm-5 col-xs-11"  style="margin-left:-2.5%">
-
-                    	<input type="text" name="fname" id="fname" class="form-control" placeholder="Father's Name">			
-                    </div>
+                    						<input type="text" name="fname" id="fname" class="form-control" placeholder="Father's Name">			
+                   			
+									</div>
 
 
 
-                    </div>
+                     </div>
 
 
 
