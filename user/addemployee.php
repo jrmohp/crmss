@@ -30,8 +30,8 @@
                     	<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
                     </div>
 
-                         <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Middle<br>Name</span></label>
-                    <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
+                         <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Middle Name</span></label>
+                    <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2%">
                     
                      	<input type="text" name="mname" id="mname" class="form-control" placeholder="Middle Name">
                     </div>
