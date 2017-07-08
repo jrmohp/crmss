@@ -21,6 +21,9 @@
             
                     <form data-parsley-validate method="post" action="../php/singlemailcontroller.php">
 
+
+                    <input type="hidden" name="emailauth">
+
                     <div class="row">
                     	
                     	<label class="control-label col-sm-1 align-middle" for="mfrom" style="margin:-5px"><h2><span class="label label-info">From</span></h2></label>
@@ -59,6 +62,7 @@
 
                       <div class="col-md-12 col-sm-12 col-xs-12">
                       <label class="control-label col-sm-1 align-middle" for="subject" style="margin:-5px"><h2><span class="label label-info">Body</span></h2></label>
+                      <br>
                         
                       <textarea  class="form-control"  name="body" id="body" placeholder="Message" rows="15"  data-parsley-required></textarea>
 
