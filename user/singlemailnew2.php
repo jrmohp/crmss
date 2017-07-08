@@ -4,9 +4,20 @@
   include "header.php";
 ?>
 
+
+<style type="text/css">
+	
+#pagesize
+{
+
+	min-height: 200px;
+
+}
+
+</style>
 	
                  <!-- page content -->
-        <div class="right_col" role="main" style="min-height:200px">
+        <div class="right_col" role="main" id="pagesize">
           
 
               
