@@ -131,6 +131,18 @@
 
                     </div>
 
+                    <div class="row">
+                    	 <div class="ln_solid"></div>
+                   			 <h2>Basic Information</h2>
+
+                    	
+                  		  <div class="col-md-4 col-sm-4 col-xs-12"  >
+                  		   <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+
+                    			<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
+                   			 </div>
+                   			 </div>
+
 
 
 
