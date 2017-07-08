@@ -53,6 +53,16 @@
                     		
                     	</div>
                     </div>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                      <div class="col-md-11 col-sm-11 col-xs-11">
+                      <label class="control-label col-sm-1 align-middle" for="subject" style="margin:-5px"><h2><span class="label label-info">Body</span></h2></label>
+                        
+                      <textarea  class="form-control"  name="body" id="body" placeholder="Message"></textarea>
+
+                    </div>
                     </form>
                     </div>
 
