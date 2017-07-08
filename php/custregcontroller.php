@@ -18,7 +18,8 @@
 
 	$query = $conn->query("SELECT MAX(id) FROM user"); // execute
 	$max_id = $query->fetch_array(); // fetch
-		$newid=$max_id[0]+1;
+		$tid=$max_id[0];
+		$new_id=$tid+1;
 		$ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
 
 
