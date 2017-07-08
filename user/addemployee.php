@@ -62,6 +62,8 @@
 
 
                     </div>
+                    </div>
+                    </body>
 
 	
 <?php
