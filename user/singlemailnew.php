@@ -29,7 +29,7 @@
                     <form id="target" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" class="form-control " id="=mfrom" placeholder="From"  name="mfrom">
+                        <input type="text"   id="=mfrom" placeholder="From"  name="mfrom">
                        
                       </div>
 
