@@ -34,13 +34,17 @@ $mail->Subject = $subject;
 $mail->Body    = $body;
 
 
-if()
+if(!$mail->Send() &&  )
 {
- 	echo "Success";
-} 
-else 
-{
-	echo "Error: <br />";
-	echo mysqli_error ($connect);
+  
+   echo "Mailer Error: " . $mail->ErrorInfo;
+   exit;
 }
+
+if($conn->query($sql))
+{
+
+		echo 1;
+}
+
 ?>
