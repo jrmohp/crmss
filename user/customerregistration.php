@@ -25,7 +25,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left input_mask" action="../php/custregcontroller.php" method="post">
+                    <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
@@ -411,7 +411,7 @@
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
 <script type="text/javascript">
 
- /*
+ 
     $("#senddata").on("click",regc);
 
 
@@ -464,8 +464,7 @@
 
     }
 
-*/
-        
+
 
 
 
