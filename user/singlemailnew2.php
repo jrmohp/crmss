@@ -47,10 +47,10 @@
                     		
                     	</div>
 
-                    	<label class="control-label col-sm-1 align-middle" for="to" style="margin:-5px"><h2><span class="label label-info">To</span></h2></label>
+                    	<label class="control-label col-sm-1 align-middle" for="to" style="margin:-5px"><h2><span class="label label-info">&nbspTo&nbsp</span></h2></label>
                     	<div class="col-md-5 col-sm-5 col-xs-10">
                     		
-                    	<input type="text"  class="form-control"  name="mto" id="mto" placeholder="From">
+                    	<input type="text"  class="form-control"  name="mto" id="mto" placeholder="To">
                     		
                     	</div>
                     	
