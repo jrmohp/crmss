@@ -7,9 +7,7 @@
 
 
 
- 
-                  <div class="x_title">
-                    <h2>Send Email  <small>specified customer</small></h2>
+ <h2>Send Email  <small>specified customer</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -66,9 +64,6 @@
                     </div>
                     </form>
                     </div>
-                    </div>
-                    </div>
- 
 
 	
 <?php
