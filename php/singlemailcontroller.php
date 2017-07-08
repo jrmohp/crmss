@@ -1,6 +1,6 @@
 <?php
 require("../phpmailer/class.phpmailer.php");
-require("../php/connect.php");
+require("connect.php");
 
 
 	$from=$_POST['mfrom'];
