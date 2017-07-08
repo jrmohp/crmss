@@ -8,6 +8,6 @@ require("../php/connect.php");
 	$subject=$_POST['subject'];
 	$body=$_POST['body'];
 
-	echo ""from ".$from."\nto ".$to."\nsubject ". $subject."\nbody ". $body";
+	echo "$from $to $subject $body";
 
 ?>
