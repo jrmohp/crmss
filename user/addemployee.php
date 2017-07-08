@@ -127,13 +127,13 @@
 
                    
 
-                    <div class="row" >
-                    	 <div class="ln_solid"></div>
-                   				 <h2>Legal Information</h2>
+                    <div class="row" style="margin: 0.5%" >
+            	   		 <div class="ln_solid"></div>
+               					<h2>Legal Information</h2>
 
-                    	</div>
+                		</div>
 
-                   			 </div>
+       				</div>
 
 
 
