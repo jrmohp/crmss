@@ -34,7 +34,7 @@ $mail->Subject = $subject;
 $mail->Body    = $body;
 
 
-if(!$mail->Send() &&  )
+if(!$mail->Send()  )
 {
   
    echo "Mailer Error: " . $mail->ErrorInfo;
