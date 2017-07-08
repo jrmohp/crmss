@@ -28,11 +28,11 @@
 
 	if($conn->query($sql))
 	{
-		echo 1;
+		echo $ssid;
 	}
-	else
+	else 
 	{
-		die(mysqli_error($conn));
+		echo 0;
 	}
 
 	?>
