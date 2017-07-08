@@ -21,10 +21,10 @@ $mail->Username = "jrm@smartsolar.co.in";  // SMTP username
 $mail->Password = "sikujyoti"; // SMTP password
 
 $mail->From = $from;
-$mail->FromName =$fromname."|Smart Solar" ;
+$mail->FromName =$fromname." |Smart Solar" ;
 $mail->AddAddress($to);
 $mail->AddAddress($to);                  // name is optional
-$mail->AddReplyTo("info@smartsolar.co.in", "Information");
+$mail->AddReplyTo($from, $fromname);
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
    // optional name
