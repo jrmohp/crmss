@@ -39,15 +39,15 @@
                     <form data-parsley-validate method="post">
 
                     <div class="row">
-                    	<label class="control-label col-sm-1" for="mfrom">chekc</label>
+                    	<label class="control-label col-sm-1" for="mfrom"><span class="label label-info">Info Label</span></label>
                     	<div class="col-md-5 col-sm-6 col-xs-10">
 
-                    	<input type="text"  class="form-control"  name="" placeholder="From" id="mfrom">
+                    	<input type="text"  class="form-control"  name="mfrom" placeholder="From" id="mfrom">
                     		
                     	</div>
 
                     	<div class="col-md-6 col-sm-6 col-xs-10">
-
+                    		<label class="control-label col-sm-1" for="mfrom">From</label>
                     	<input type="text"  class="form-control"  name="" placeholder="From">
                     		
                     	</div>
