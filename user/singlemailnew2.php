@@ -40,7 +40,7 @@
 
                     <div class="row">
                     	
-                    	<label class="control-label col-sm-1 align-middle" for="mfrom" style="margin:-.1em"><h2><span class="label label-info">From</span></h2></label>
+                    	<label class="control-label col-sm-1 align-middle" for="mfrom" style="margin:-10px"><h2><span class="label label-info">From</span></h2></label>
                     	<div class="col-md-5 col-sm-6 col-xs-10">
 
                     	<input type="text"  class="form-control"  name="mfrom" placeholder="From" id="mfrom">
