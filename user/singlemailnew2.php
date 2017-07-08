@@ -40,7 +40,13 @@
 
                     <div class="row">
 
-                    	<div class="col-md-6 col-md-6 col-xs-12">
+                    	<div class="col-md-5 col-md-5 col-xs-10">
+
+                    	<input type="text"  class="form-control"  name="" placeholder="From">
+                    		
+                    	</div>
+
+                    	<div class="col-md-5 col-md-5 col-xs-10">
 
                     	<input type="text"  class="form-control"  name="" placeholder="From">
                     		
