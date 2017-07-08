@@ -64,7 +64,7 @@
 
                     	<label class="control-label col-sm-1 align-middle" for="subject" style="margin:-5px"><h2><span class="label label-info">Subject</span></h2></label>
 
-                    	<div class="col-md-10 col-sm-10 col-xs-10">
+                    	<div class="col-md-12 col-sm-12 col-xs-12">
                     		
                     	<input type="text"  class="form-control"  name="subject" id="subject" placeholder="Subject">
                     		
