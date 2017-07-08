@@ -17,7 +17,7 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = "jrm@smartsolar.co.in";  // SMTP username
 $mail->Password = "sikujyoti"; // SMTP password
 
-$mail->From = "from@smartsolar.co.in";
+$mail->From = $from;
 $mail->FromName = "Mailer";
 $mail->AddAddress("jrmkvk@gmail.com", "Josh Adams");
 $mail->AddAddress("jrmkvk@gmail.com");                  // name is optional
