@@ -446,7 +446,7 @@
             if(info!=0)
             {
                
-                    alertify.alert("Thank You "+firstname+"for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
+                    alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
         
 
             }
