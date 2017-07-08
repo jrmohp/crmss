@@ -9,8 +9,8 @@ require("connect.php");
 	$body=$_POST['body'];
 	$fromname=$_POST['fromname'];
 
+$sql="INSERT INTO sentmails (mfrom,mto,subject,body) VALUES ('$from','$to','$subject','$body')";
 
-		
 		
 $mail = new PHPMailer();
 
@@ -41,9 +41,19 @@ if(!$mail->Send()  )
    exit;
 }
 
-
-
+if($conn->query($sql))
+{
 		echo 1;
+
+}
+else
+{
+	 echo "Contact 7978555567";
+
+}
+
+
+	
 
 
 ?>
