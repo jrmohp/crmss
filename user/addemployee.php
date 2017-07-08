@@ -68,6 +68,25 @@
 
 
                      </div>
+                     <br>
+                     <div class="row">
+                    				
+                  					  <div class="col-md-6 col-sm-6 col-xs-12" >
+                  					   <label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Gender</span></label>
+
+                    						<input type="text" name="Gender" id="Gender" class="form-control" placeholder="Male/Female">			
+                   			
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12" >
+                  					   <label for="dob" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Date Of Birth</span></label>
+
+                    						<input type="text" name="dob" id="dob" class="form-control" placeholder="DD/MM/YYYY">			
+                   			
+									</div>
+
+
+
+                     </div>
 
 
 
