@@ -125,7 +125,7 @@
 
 
 	                 <br>
-                     <div class="row" style="margin: 0.5%">
+                     <div class="row" style="margin: 0.5%;margin-top:5%">
             		 <div class="ln_solid"></div>
                    			 <h2>Legal Information</h2 >
 
