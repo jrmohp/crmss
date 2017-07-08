@@ -138,13 +138,33 @@
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
                   		   <label for="pcard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Pan Card</span></label>
 
-                    			<input type="text" name="pcard" id="acard" class="form-control" placeholder="Pan Card">			
+                    			<input type="text" name="pcard" id="pcard" class="form-control" placeholder="Pan Card">			
                    			 </div>
 	                 </div>
 
 
 	                 <br>
                      
+
+                     <div class="row">
+                     		
+                  		  <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">EPF No.</span></label>
+
+                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="EPF No.">			
+                   			 </div>
+
+                   		 <div class="col-md-6 col-sm-6 col-xs-12"  >
+                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Experience</span></label>
+
+                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Pan Card">			
+                   			 </div>
+
+
+
+
+    					               			 
+	                 </div>
 
 
 
