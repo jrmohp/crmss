@@ -17,14 +17,14 @@
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div id="querymsg"></div>
+            
             
                     <form data-parsley-validate method="post" >
 
 
                     <input type="hidden" name="emailauth" value="sikujyoti" id="authvalue">
                     <input type="hidden" name="fromname" value="JRM"  id="fromname">
-
+                        <div id="querymsg"></div>
 
                     <div class="row">
                     	
