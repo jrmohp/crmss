@@ -23,7 +23,7 @@
                     	
 
                 	<h2>Employee Registration</h2>
-                    <div class="row" style="margin: 0.5%">
+                    <div class="row">
                     	 <div class="ln_solid"></div>
                    			 <h2>Basic Information</h2 >
 
@@ -49,7 +49,11 @@
 							<input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
                     	</div>
                      </div>
+
+
                      <br>
+
+
                    	 <div class="row">
                     				
                   					  <div class="col-md-6 col-sm-6 col-xs-12" >
@@ -140,6 +144,13 @@
 
 
 	                 <br>
+
+                  	 <div class="row">
+                    	 <div class="ln_solid"></div>
+                   			 <h2>Legal & Owner Details</h2 >
+           			 </div>
+
+           			 <br>
 
 
 	                 <div class="row">
