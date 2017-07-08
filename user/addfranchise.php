@@ -66,7 +66,7 @@
                   		  <div class="col-md-4 col-sm-4 col-xs-12" >
                          <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Owner Middle Name</span></label>
 
-                   		  	<input type="text" name="mname" id="mname" class="form-control" placeholder="Owmer Middle Name">
+                   		  	<input type="text" name="mname" id="mname" class="form-control" placeholder="Owner Middle Name">
                   		  </div>
 
 
@@ -76,6 +76,7 @@
 							<input type="text" name="lname" id="lname" class="form-control"  placeholder="Owner Last Name">	
                     	</div>   
 
+             </div>
              </div>
 
              <br>
