@@ -9,7 +9,7 @@ require("../php/connect.php");
 	$body=$_POST['body'];
 	$fromname=$_POST['fromname'];
 
-$sql = "INSERT INTO sentmails(mfrom, mto, subject,body) VALUES ('$from','$to','$subject','$body')";
+
 		
 		
 $mail = new PHPMailer();
