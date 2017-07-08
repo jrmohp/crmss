@@ -123,7 +123,8 @@
 	           		          <textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
 	                 </div>
 	                 <br>
-	                 <div class="ln_solid"></div>
+	                 <div class="row">
+                    	 <div class="ln_solid"></div>
                    			 <h2>Legal Information</h2>
 
 
