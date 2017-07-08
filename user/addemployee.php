@@ -107,7 +107,7 @@
 
                      </div>
                      <br>
-                     <div class="col-md-9 col-sm-9 col-xs-12">
+                     < class="col-md-9 col-sm-9 col-xs-12">
       		              	 <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Permanent Address</span></label>
             		          <textarea class="pa form-control" placeholder="Permanent Address">
                     </div>
