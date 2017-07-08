@@ -133,7 +133,7 @@
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567");
-             $('#querymsg').delay(1000).fadeOut();
+             $('#querymsg').delay(2000).fadeOut();
             
             }
         });
