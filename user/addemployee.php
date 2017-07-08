@@ -23,6 +23,7 @@
                     	
 
                     <div class="row">
+                    <h2>Basic Information</h2>
 
                     	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
                     <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
