@@ -60,7 +60,7 @@
                       <div class="col-md-12 col-sm-12 col-xs-12">
                       <label class="control-label col-sm-1 align-middle" for="subject" style="margin:-5px"><h2><span class="label label-info">Body</span></h2></label>
                         
-                      <textarea  class="form-control"  name="body" id="body" placeholder="Message" rows="40"></textarea>
+                      <textarea  class="form-control"  name="body" id="body" placeholder="Message" rows="15"></textarea>
 
                     </div>
                     </form>
