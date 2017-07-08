@@ -56,7 +56,7 @@
              <div class="row">
 
               <div class="col-md-4 col-sm-4 col-xs-12"  >
-                  		   <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info"Owner First Name</span></label>
+                  		   <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Owner First Name</span></label>
 
                     			<input type="text" name="fname" id="fname" class="form-control" placeholder="Owner First Name">			
                    			 </div>
