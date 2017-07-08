@@ -113,12 +113,12 @@
                      </div>
 
 
-                  </div>
-                   <br>
-                    </div class="col-md-9 col-sm-9 col-xs-12">
-      		              	 <label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
-            		          <textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
-                     </div>
+	                 </div>
+	                 <br>
+	                 </div class="col-md-9 col-sm-9 col-xs-12">
+	      	              	 <label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
+	           		          <textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
+	                 </div>
 
 
 
