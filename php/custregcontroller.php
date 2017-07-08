@@ -14,7 +14,7 @@
 	$phase=$_POST['phase'];
 
 
-	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,load,rarea,phase) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
+	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('0','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
 
 
 	echo $sql;
