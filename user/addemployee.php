@@ -58,6 +58,12 @@
                     						<input type="text" name="fname" id="fname" class="form-control" placeholder="Father's Name">			
                    			
 									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12" >
+                  					   <label for="mname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Mother's Name</span></label>
+
+                    						<input type="text" name="mname" id="mname" class="form-control" placeholder="Mother's Name">			
+                   			
+									</div>
 
 
 
