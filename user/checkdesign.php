@@ -17,6 +17,8 @@
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
+
+            
                     <form data-parsley-validate method="post">
 
                     <div class="row">
