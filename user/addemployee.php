@@ -23,7 +23,7 @@
                     	
 
                 	<h2>Employee Registration</h2>
-                    <div class="row">
+                    <div class="row" style="margin: 0.5%">
                     	 <div class="ln_solid"></div>
                    			 <h2>Basic Information</h2 >
 
@@ -124,11 +124,19 @@
 	                 </div>
 
 
-	                 <br>
-	                 <div class="row">
-	                  <div class="ln_solid"></div>
-	                 	
-	                 </div>
+	                <br>
+                    <div class="row" style="margin: 0.5%" >
+            	   		 <div class="ln_solid"></div>
+               					<h2>Legal Information</h2>
+
+                		</div>
+
+       				</div>
+
+
+
+
+
 
                     </form>
 
