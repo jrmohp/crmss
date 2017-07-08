@@ -9,8 +9,7 @@ include_once("../tablestructures/sentemails");
 	$body=$_POST['body'];
 	$fromname=$_POST['fromname'];
 
-mysqli_query($conn"INSERT INTO sentemails(mfrom,mto,subject,body)
-				VALUES('$from','$to','$subject','$body')");
+$sql = "INSERT INTO sentmails(mfrom, mto, subject,body) VALUES ('$from','$to','$subject','$body')";
 		
 		
 $mail = new PHPMailer();
@@ -35,7 +34,7 @@ $mail->Subject = $subject;
 $mail->Body    = $body;
 
 
-if(mysqli_affected_rows($conn) > 0)
+if()
 {
  	echo "Success";
 } 
