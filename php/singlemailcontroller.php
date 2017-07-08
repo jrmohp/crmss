@@ -21,7 +21,7 @@ $mail->Username = "jrm@smartsolar.co.in";  // SMTP username
 $mail->Password = "sikujyoti"; // SMTP password
 
 $mail->From = $from;
-$mail->FromName =$fromname." |Smart Solar" ;
+$mail->FromName =$fromname." | Smart Solar" ;
 $mail->AddAddress($to);
 $mail->AddAddress($to);                  // name is optional
 $mail->AddReplyTo($from, $fromname);
@@ -36,10 +36,10 @@ $mail->Body    = $body;
 
 if(!$mail->Send())
 {
-   echo "Message could not be sent. <p>";
+  
    echo "Mailer Error: " . $mail->ErrorInfo;
    exit;
 }
 
-echo "Message has been sent";
+echo "1";
 ?>

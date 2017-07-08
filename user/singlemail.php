@@ -17,9 +17,9 @@
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
-
+                <div id="querymsg"></div>
             
-                    <form data-parsley-validate method="post" action="../php/singlemailcontroller.php">
+                    <form data-parsley-validate method="post" action="">
 
 
                     <input type="hidden" name="emailauth" value="sikujyoti">
@@ -78,7 +78,7 @@
                     <div class="col-md-5 col-sm-5 col-xs-5">
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                    <button  class="btn btn-success col-md-4 " type="submit" >Send</button>
+                    <button  class="btn btn-success col-md-4 " type="submit"  id="sendmail">Send</button>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                     </div>
@@ -88,6 +88,75 @@
                     </div>
                     </body>
                     
+
+
+
+       script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+    $("#sendmail").on("click",DB);
+
+
+
+
+        function DB()
+        {
+            var btnid=this.id;
+        var dbid=btnid.slice(3,);
+        var replyid="#reply"+dbid;
+
+
+        var reply=$(replyid).val();
+        var admin=$('#adminid').val();
+
+
+        var mfrom=$('#mfrom').val();
+        var mto=$('#mto').val();
+
+
+        var data={'dbid':dbid,'reply':reply,'admin':admin};
+
+        
+        
+        
+        $.post('../php/singlemailcontroller.php',data,function(info){
+            if(info==1)
+            {
+                    $("#querymsg").addClass('alert alert-success');
+                      $('#querymsg').fadeIn();
+                    $("#querymsg").html("Reply Submitted");
+                     $('#querymsg').delay(1000).fadeOut();
+                    
+        
+
+            }
+            else
+            {
+            $("#querymsg").addClass('alert alert-danger');
+              $('#querymsg').fadeIn();
+            $("#querymsg").html("ot Submitted,Contact Admin");
+             $('#querymsg').delay(1000).fadeOut();
+            
+            }
+        });
+
+
+    }
+
+
+        
+
+
+
+
+
+
+
+
+
+
+</script>
 	
 <?php
 
