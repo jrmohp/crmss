@@ -22,10 +22,10 @@
                     <form  method="post" data-parsley-validate>
                     	
 
-                	<h1.5>Employee Registration</h1.5>
+                	<h2>Employee Registration</h2>
                     <div class="row">
                      <div class="ln_solid"></div>
-                    <h2>Basic Information</h2>
+                    <h1.5>Basic Information</h1.5>
 
                     	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
                     <div class="col-md-3 col-sm-3 col-xs-11"  style="margin-left:-2.5%">
