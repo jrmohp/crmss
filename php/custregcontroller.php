@@ -23,5 +23,9 @@
 	{
 		echo 1;
 	}
+	else
+	{
+		die(mysqli_error($conn));
+	}
 
 	?>
