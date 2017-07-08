@@ -56,7 +56,7 @@
                        
                        <select name="city" class="form-control" required="true">
                          
-                         <option disabled="true">Select Your City</option>
+                         <option disabled="true" selected="true">Select Your City</option>
                          <option>Others</option>
                          <option> Agastinuagan  </option>
 <option>  Anandpur  </option>
