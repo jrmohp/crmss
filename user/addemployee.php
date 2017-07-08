@@ -22,7 +22,7 @@
                     <form  method="post" data-parsley-validate>
                     	
 
-                	<h1>Employee Registration</h1>
+                	<h1.5>Employee Registration</h1.5>
                     <div class="row">
                      <div class="ln_solid"></div>
                     <h2>Basic Information</h2>
