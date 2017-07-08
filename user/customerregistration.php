@@ -417,7 +417,10 @@
 
         function regc()
         {
-              
+            bootbox.alert({
+                           message: "aila",
+                        className: 'bb-alternate-modal'
+                  });
 
 
         var firstname=$('#firstname').val();
