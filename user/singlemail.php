@@ -122,7 +122,7 @@
             {
                     $("#querymsg").addClass('alert alert-success');
                       $('#querymsg').fadeIn();
-                    $("#querymsg").html("Mail Sent");
+                    $("#querymsg").html("Mail Sent And Saved To Databse");
                      $('#querymsg').delay(2000).fadeOut();
                     
         
