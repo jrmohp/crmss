@@ -32,7 +32,7 @@
                       
                     <div class="col-xs-12 col-md-5 col-sm-5">
 
-                    <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" data-parsley-required>
+                    <input type="text" name="firstname" class="form-control " id="firstname" placeholder="First Name" data-parsley-required>
                       
                     </div>
 
