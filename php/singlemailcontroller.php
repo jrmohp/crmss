@@ -1,6 +1,6 @@
 <?php
 require("../phpmailer/class.phpmailer.php");
-require("../php/connect.php");
+require("connect.php");
 
 
 	$from=$_POST['mfrom'];
@@ -10,7 +10,7 @@ require("../php/connect.php");
 	$fromname=$_POST['fromname'];
 
 
-		
+		$sql->
 		
 $mail = new PHPMailer();
 
