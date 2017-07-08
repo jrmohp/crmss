@@ -11,6 +11,7 @@ require("connect.php");
 
 $sql="INSERT INTO sentmails (mfrom,mto,subject,body) VALUES ('$from','$to','$subject','$body')";
 
+
 		
 $mail = new PHPMailer();
 
