@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Mega ATV Championship  </title>
+  <title>Employee Registration | Smart Solar </title>
 </head>
 <body>
 
@@ -22,6 +22,7 @@
                     <form  method="post" data-parsley-validate>
                     	
 
+                	<h1>Employee Registration</h1>
                     <div class="row">
                      <div class="ln_solid"></div>
                     <h2>Basic Information</h2>
