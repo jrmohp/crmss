@@ -1,7 +1,7 @@
 <?php
 require("../phpmailer/class.phpmailer.php");
 require("../php/connect.php");
-include_once("../tablestructures/sentemails");
+
 
 	$from=$_POST['mfrom'];
 	$to=$_POST['mto'];
