@@ -30,9 +30,9 @@ $mail->WordWrap = 50;                                 // set word wrap to 50 cha
    // optional name
 $mail->IsHTML(true);                                  // set email format to HTML
 
-$mail->Subject = "Here is the subject";
-$mail->Body    = "This is the HTML message body <b>in bold!</b>";
-$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+$mail->Subject = $subject;
+$mail->Body    = $body;
+
 
 if(!$mail->Send())
 {
