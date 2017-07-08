@@ -49,8 +49,8 @@
                     </div>
                     	
                     	
-                    	 <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
-                    <div class="col-md-5 col-sm-5 col-xs-11"  style="margin-left:-2.5%">
+                    	 <label for="fname" class="col-md-2 col-sm-2 col-xs-2"><span class="label label-info">Father's Name</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-10"  style="margin-left:-2.5%">
 
                     	<input type="text" name="fname" id="fname" class="form-control" placeholder="Father's Name">			
                     </div>
