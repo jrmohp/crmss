@@ -263,7 +263,7 @@
                     <div class="row">
                         
                         <div class="col-md-4 col-sm-4 col-xs-12"  >
-                         <label for="empid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee IdUsername</span></label>
+                         <label for="empid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Id</span></label>
 
                           <input type="text" name="empid" id="empid" class="form-control" placeholder="Work Phone No.">     
                          </div>
@@ -284,7 +284,7 @@
                   <br>
                   <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 " type="submit" align='center' id="sendmail">Send</button>
+                    <button  class="btn btn-success col-md-4 " type="submit" align='center' id="sendmail">Send</button>
                     </div>
                   </div>
 
