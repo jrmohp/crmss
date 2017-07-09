@@ -36,7 +36,7 @@ if($conn->query($sql))
 }
 else
 {
-	 echo "mysqli_connect_error();";
+	 mysqli_connect_error();
 
 }
 
