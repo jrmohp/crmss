@@ -260,8 +260,9 @@
 
 	                 </div>
 
-
-
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                    <button  class="btn btn-success col-md-4 " type="submit"  id="sendmail">Send</button>
+                    </div>
 
 
 
