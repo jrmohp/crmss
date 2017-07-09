@@ -37,83 +37,83 @@ $sql="INSERT INTO addemployee(empid,username,password,fname,mname,lname,fn,mn,ge
 }
 else
 {
-	if(!isset($_POST['fname']))
+	if(empty($_POST['fname']))
 		{
 			echo "First Name Cannot Be Empty<br>";
 		}
 
-	if(!isset($_POST['lname']))
+	if(empty($_POST['lname']))
 		{
 			echo "Last Name Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['fn']))
+	if(empty($_POST['fn']))
 		{
 			echo "Father's Name Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['mn']))
+	if(empty($_POST['mn']))
 		{
 			echo "Mother's Name Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['gender']))
+	if(empty($_POST['gender']))
 		{
 			echo "Gender Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['dob']))
+	if(empty($_POST['dob']))
 		{
 			echo "Date Of Birth Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['bg']))
+	if(empty($_POST['bg']))
 		{
 			echo "Blood Group Cannot Be Empty<br>";
 		}
 
-	if(!isset($_POST['pa']))
+	if(empty($_POST['pa']))
 		{
 			echo "Permanent Address Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['ta']))
+	if(empty($_POST['ta']))
 		{
 			echo "Temporary Address Cannot Be Empty<br>";
 		}
 
-	if(!isset($_POST['acard']))
+	if(empty($_POST['acard']))
 		{
 			echo "Adhar Card Number Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['accno']))
+	if(empty($_POST['accno']))
 		{
 			echo "Bank Account Number Cannot Be Empty<br>";
 		}
 
-	if(!isset($_POST['ifsc']))
+	if(empty($_POST['ifsc']))
 		{
 			echo "Bank IFSC Code Cannot Be Empty<br>";
 		}
-	if(!isset($_POST['cno']))
+	if(empty($_POST['cno']))
 		{
 			echo "Contatct Number Cannot Be Empty";
 		}
-	if(!isset($_POST['email']))
+	if(empty($_POST['email']))
 		{
 			echo "Email Id Cannot Be Empty";
 		}
-	if(!isset($_POST['wphno']))
+	if(empty($_POST['wphno']))
 		{
 			echo "Work Phone No. Cannot Be Empty";
 		}
-	if(!isset($_POST['wemail']))
+	if(empty($_POST['wemail']))
 		{
 			echo "Work Email Cannot Be Empty";
 		}
-	if(!isset($_POST['empid']))
+	if(empty($_POST['empid']))
 		{
 			echo "Employee Id Cannot Be Empty";
 		}
-	if(!isset($_POST['username']))
+	if(empty($_POST['username']))
 		{
 			echo "Username Cannot Be Empty";
 		}
-	if(!isset($_POST['password']))
+	if(empty($_POST['password']))
 		{
 			echo "Password Cannot Be Empty";
 		}
