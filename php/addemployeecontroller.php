@@ -4,7 +4,7 @@ require("connect.php");
 
 	$fname=$_POST['fname'];
 	$mname=$_POST['mname'];
-	$mname=$_POST['lname'];
+	$lname=$_POST['lname'];
 	$fn=$_POST['fn'];
 	$mn=$_POST['mn'];
 	$gender=$_POST['gender'];
