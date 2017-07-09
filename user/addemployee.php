@@ -259,7 +259,7 @@
                    			 </div>
 
 	                 </div>
-
+                  <br>
                     <div class="row">
                         
                         <div class="col-md-4 col-sm-4 col-xs-12"  >
@@ -281,9 +281,10 @@
                          </div>
 
                    </div>
+                  <br>
                   <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-4 " type="submit"  id="sendmail">Send</button>
+                    <button  class="btn btn-success col-md-12 " type="submit"  id="sendmail">Send</button>
                     </div>
                   </div>
 
