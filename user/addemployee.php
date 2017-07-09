@@ -147,7 +147,7 @@
 
                   	 <div class="row">
                     	 <div class="ln_solid"></div>
-                   			 <h2>Legal & Owner Details</h2 >
+                   			 <h2>Legal Information</h2 >
            			 </div>
 
            			 <br>
