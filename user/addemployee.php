@@ -24,34 +24,33 @@
 
                 	<h2>Employee Registration</h2>
                     <div class="row">
-                    	 <div class="ln_solid"></div>
+                	 	<div class="ln_solid"></div>
                    			 <h2>Basic Information</h2 >
 
                     	
-                  		  <div class="col-md-4 col-sm-4 col-xs-12"  >
-                  		   <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+                  		  	<div class="col-md-4 col-sm-4 col-xs-12"  >
+	              		   		<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
 
-                    			<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
-                   			 </div>
+	                			<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">			
+               			 	</div>
 
 
 
-                  		  <div class="col-md-4 col-sm-4 col-xs-12" >
-                         <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Middle Name</span></label>
+                  		  	<div class="col-md-4 col-sm-4 col-xs-12" >
+                         		<label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Middle Name</span></label>
 
-                   		  	<input type="text" name="mname" id="mname" class="form-control" placeholder="Middle Name">
-                  		  </div>
+                   		  		<input type="text" name="mname" id="mname" class="form-control" placeholder="Middle Name">
+                  		  	</div>
 
 
                       
-                   		 <div class="col-md-4 col-sm-4 col-xs-12"  >
-                    	   <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
+                   		 	<div class="col-md-4 col-sm-4 col-xs-12"  >
+                    	   		<label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
 							             <input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
-                    	 </div>
-                        </div>
-							<input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
-                    	</div>
-                     </div>
+                    	 	</div>
+                       
+                     	</div>
+                 	</div>
 
                      <br>
 
@@ -261,7 +260,7 @@
                    			 </div>
 
 	                 </div>
-	                 
+
 
 
 
