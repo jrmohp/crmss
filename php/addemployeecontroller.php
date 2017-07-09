@@ -91,31 +91,31 @@ else
 		}
 	if(empty($_POST['cno']))
 		{
-			echo "Contatct Number Cannot Be Empty";
+			echo "Contatct Number Cannot Be Empty<br>";
 		}
 	if(empty($_POST['email']))
 		{
-			echo "Email Id Cannot Be Empty";
+			echo "Email Id Cannot Be Empty<br>";
 		}
 	if(empty($_POST['wphno']))
 		{
-			echo "Work Phone No. Cannot Be Empty";
+			echo "Work Phone No. Cannot Be Empty<br>";
 		}
 	if(empty($_POST['wemail']))
 		{
-			echo "Work Email Cannot Be Empty";
+			echo "Work Email Cannot Be Empty<br>";
 		}
 	if(empty($_POST['empid']))
 		{
-			echo "Employee Id Cannot Be Empty";
+			echo "Employee Id Cannot Be Empty<br>";
 		}
 	if(empty($_POST['username']))
 		{
-			echo "Username Cannot Be Empty";
+			echo "Username Cannot Be Empty<br>";
 		}
 	if(empty($_POST['password']))
 		{
-			echo "Password Cannot Be Empty";
+			echo "Password Cannot Be Empty<br>";
 		}
 
 	exit ;
