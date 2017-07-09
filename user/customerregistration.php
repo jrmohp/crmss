@@ -25,7 +25,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left input_mask">
+                    <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
@@ -38,25 +38,26 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email">
+                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <span id="email_status" style="color: red"> </span> 
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone">
+                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone" required="true"> 
                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address">
+                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true">
                         <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select name="city" class="form-control">
+                       <select name="city" class="form-control" required="true">
                          
-                         <option>Select Your City</option>
+                         <option disabled="true" selected="true">Select Your City</option>
                          <option>Others</option>
                          <option> Agastinuagan  </option>
 <option>  Anandpur  </option>
@@ -329,13 +330,13 @@
                     <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 5px;">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Domestic"> &nbsp; Domestic &nbsp;
+                              <input type="radio" name="type" value="Domestic" required="true"> &nbsp; Domestic &nbsp;
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Commercial"> Commercial
+                              <input type="radio" name="type" value="Commercial"> Commercial
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="Industrial"> &nbsp; Industrial &nbsp;
+                              <input type="radio" name="type" value="Industrial"> &nbsp; Industrial &nbsp;
                             </label>
                           </div>
                         </div>
@@ -344,10 +345,10 @@
                       <div class="col-md-6 col-sm-6 col-xs-12" >
                           <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 35px;">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="one"> &nbsp; Single Phase &nbsp;
+                              <input type="radio" name="phase" value="one"> &nbsp; Single Phase &nbsp;
                             </label>
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="three"> Three Phase
+                              <input type="radio" name="phase" value="three"> Three Phase
                             </label>
                           </div>
                         </div>
@@ -396,7 +397,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                           <button type="button" class="btn btn-primary">Cancel</button>
 						   <button class="btn btn-primary" type="reset">Reset</button>
-                          <button type="submit" class="btn btn-success">Submit</button>
+                          <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
 
@@ -405,6 +406,118 @@
                 </div>
 
 
+
+ <script src="../vendors/jquery/dist/jquery.min.js"></script>
+ <script type="text/javascript" src="../js/alertify.js"></script>
+ <link rel="stylesheet" href="../css/alertify.core.css" />
+  <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
+<script type="text/javascript">
+
+ 
+    $("#senddata").on("click",regc);
+
+
+        function regc()
+        {
+           
+
+        var firstname=$('#firstname').val();
+        var lastname=$('#lastname').val();
+        var email=$('#email').val();
+        var phone=$('#phone').val();
+        var address=$('#address').val();
+        var city=$('#city').val();
+        var gender=$('[name="type"]').val();
+          var phase=$('[name="phase"]').val();
+        var units=$('#units').val();
+        var monthlybill=$('#monthlybill').val();
+        var contractload=$('#contractload').val();
+        var roofarea=$('#roofarea').val();
+       
+       
+
+
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
+
+        
+        
+        
+        $.post('../php/custregcontroller.php',data,function(info){
+            if(info!=0)
+            {
+               
+                    alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
+        
+
+            }
+            else if(info==0)
+            {
+               alert("aila helani");
+            $("#querymsg").addClass('alert alert-danger');
+              $('#querymsg').fadeIn();
+            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
+             $('#querymsg').delay(2000).fadeOut();
+            
+            }
+        });
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+   
+          function checkemail()
+{
+ var email=document.getElementById( "email" ).value;
+  
+ if(email)
+ {
+  $.ajax({
+  type: 'post',
+  url: '../php/checkemail.php',
+  data: {
+   user_email:email,
+  },
+  success: function (response) {
+   $( '#email_status' ).html(response);
+   
+      $(':input[type="submit"]').prop('disabled', true);
+
+  
+   if(response=="") 
+   {
+    $(':input[type="submit"]').prop('disabled', false);
+    return true;
+
+
+   }
+   else
+   {
+
+    return false; 
+
+   }
+  }
+  });
+ }
+ else
+ {
+  $( '#email_status' ).html("");
+  $(':input[type="submit"]').prop('disabled', false);
+  return false;
+ }
+}
+
+</script>
 <?php
 
 
