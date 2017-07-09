@@ -1,8 +1,9 @@
 <?php
 require("connect.php");
 
-if(isset($_POST['fname']) && isset($_POST['lname'])&& isset($_POST['fn']) && isset($_POST['mn']) && isset($_POST['gender'])&& isset($_POST['dob'])&& isset($_POST['bg'])&& isset($_POST['pa'])&& isset($_POST['ta'])&& isset($_POST['acard'])&& isset($_POST['accno'])&& isset($_POST['ifsc'])&& isset($_POST['cno'])&& isset($_POST['email'])&& isset($_POST['wphno'])&& isset($_POST['wemail'])&& isset($_POST['username'])&& isset($_POST['password']) && isset($_POST['empid']))	
-{
+if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && !empty($_POST['mn']) && !empty($_POST['gender'])&& !empty($_POST['dob'])&& !empty($_POST['bg'])&& !empty($_POST['pa'])&& !empty($_POST['ta'])&& !empty($_POST['acard'])&& !empty($_POST['accno'])&& !empty($_POST['ifsc'])&& !empty($_POST['cno'])&& !empty($_POST['email'])&& !empty($_POST['wphno'])&& !empty($_POST['wemail'])&& !empty($_POST['username'])&& !empty($_POST['password']) && !empty($_POST['empid']))	
+	{
+
 	$fname=$_POST['fname'];
 	$mname=$_POST['mname'];
 	$lname=$_POST['lname'];
