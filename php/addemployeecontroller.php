@@ -26,10 +26,7 @@ require("connect.php");
 	$wphno=$_POST['wphno'];
 	$wemail=$_POST['wemail'];
 	
-$sql="INSERT INTO addemployee (fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$fname','$mname','$lname','$fn','mn','gender','dob','bg','im','pa','ta','acard','pcard','epf','exp','accno','ifsc,'cno','altcno','email','altemail','wphno','wemail')";
-
-
-		
+$sql="INSERT INTO addemployee (fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc,'$cno','$altcno','$email','$altemail','$wphno','$wemail')";
 
 
 if($conn->query($sql))
