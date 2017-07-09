@@ -1,8 +1,7 @@
 <?php
 require("connect.php");
 
-if(isset($_POST['fname']) && isset($_POST['lname'])&& ((isset($_POST['fn']) || isset($_POST['mn'])) && isset($_POST['gender'])&& isset($_POST['dob'])&& isset($_POST['bg'])&& isset($_POST['pa'])&& isset($_POST['ta'])&& isset($_POST['acard'])&& isset($_POST['accno'])&& isset($_POST['ifsc'])&& isset($_POST['cno'])&& isset($_POST['email'])&& isset($_POST['wphno'])&& isset($_POST['wemail'])&& isset($_POST['username'])&& isset($_POST['password']) && isset($_POST['empid']))	
-{
+
 	$fname=$_POST['fname'];
 	$mname=$_POST['mname'];
 	$lname=$_POST['lname'];
@@ -33,9 +32,7 @@ if(isset($_POST['fname']) && isset($_POST['lname'])&& ((isset($_POST['fn']) || i
 
 $sql="INSERT INTO addemployee(empid,username,password,fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$empid','$username','$password','$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc','$cno','$altcno','$email','$altemail','$wphno','$wemail')";
 
-}
-else
-{
+
 	if(!isset($_POST['fname']))
 		{
 			echo "First Name Cannot Be Empty<br>";
@@ -117,8 +114,7 @@ else
 			echo "Password Cannot Be Empty";
 		}
 
-	exit ;
-}
+
 
 if($conn->query($sql))
 {
