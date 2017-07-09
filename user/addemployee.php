@@ -19,7 +19,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate action="addemployeecontroller.php">
+                    <form  method="post" data-parsley-validate action="../php/addemployeecontroller.php">
                     	
 
                 	<h2>Employee Registration</h2>
