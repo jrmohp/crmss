@@ -76,7 +76,7 @@ else
 			echo "Temporary Address Cannot Be Empty<br>";
 		}
 
-	if(!isset(_POST['acard']))
+	if(!isset($_POST['acard']))
 		{
 			echo "Adhar Card Number Cannot Be Empty<br>";
 		}
