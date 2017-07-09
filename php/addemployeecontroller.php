@@ -36,7 +36,7 @@ if($conn->query($sql))
 }
 else
 {
-	 echo "Contact 7978555567";
+	 echo "mysqli_connect_error();";
 
 }
 
