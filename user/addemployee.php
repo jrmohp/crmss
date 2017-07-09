@@ -46,17 +46,13 @@
                       
                    		 <div class="col-md-4 col-sm-4 col-xs-12"  >
                     	   <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
-<<<<<<< HEAD
 							             <input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
                     	 </div>
                         </div>
-=======
 							<input type="text" name="lname" id="lname" class="form-control"  placeholder="Last Name">	
                     	</div>
                      </div>
 
-
->>>>>>> bd72cf16e18fa108836769107ff1ae1d1906968f
                      <br>
 
 
@@ -265,7 +261,7 @@
                    			 </div>
 
 	                 </div>
-
+	                 
 
 
 
