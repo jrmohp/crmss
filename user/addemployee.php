@@ -57,15 +57,15 @@
                    	 <div class="row">
                     				
                   					  <div class="col-md-6 col-sm-6 col-xs-12" >
-                  					   <label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Father's Name</span></label>
+                  					   <label for="fn" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Father's Name</span></label>
 
-                    						<input type="text" name="fname" id="fn" class="form-control" placeholder="Father's Name">			
+                    						<input type="text" name="fn" id="fn" class="form-control" placeholder="Father's Name">			
                    			
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12" >
-                  					   <label for="mname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Mother's Name</span></label>
+                  					   <label for="mn" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Mother's Name</span></label>
 
-                    						<input type="text" name="mname" id="mn" class="form-control" placeholder="Mother's Name">			
+                    						<input type="text" name="mn" id="mn" class="form-control" placeholder="Mother's Name">			
                    			
 									</div>
 
@@ -80,7 +80,7 @@
                      <div class="row">
                     				
                   					  <div class="col-md-6 col-sm-6 col-xs-12" >
-                  					   <label for="gender" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">gender</span></label>
+                  					   <label for="gender" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Gender</span></label>
 
                     						<input type="text" name="gender" id="gender" class="form-control" placeholder="Male/Female">			
                    			
@@ -175,15 +175,15 @@
                      <div class="row">
                      		
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">EPF No.</span></label>
+                  		   <label for="epf" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">EPF No.</span></label>
 
                     			<input type="text" name="epf" id="epf" class="form-control" placeholder="EPF No.">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Experience</span></label>
+                  		   <label for="exp" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Experience</span></label>
 
-                    			<input type="text" name="experience" id="experience" class="form-control" placeholder="Experience">			
+                    			<input type="text" name="exp" id="exp" class="form-control" placeholder="Experience">			
                    			 </div>
 
 	                 </div>
@@ -193,13 +193,13 @@
 	                  <div class="row">
                      		
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="accNo" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank Account No.</span></label>
+                  		   <label for="accno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank Account No.</span></label>
 
-                    			<input type="text" name="accNo" id="accNo" class="form-control" placeholder="Bank Account No.">			
+                    			<input type="text" name="accno" id="accno" class="form-control" placeholder="Bank Account No.">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="IFSC" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank IFSC Code</span></label>
+                  		   <label for="ifsc" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank IFSC Code</span></label>
 
                     			<input type="text" name="ifsc" id="ifsc" class="form-control" placeholder="Bank IFSC Code">			
                    			 </div>
@@ -211,15 +211,15 @@
 	                  <div class="row">
                      		
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="tno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
+                  		   <label for="cno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
 
-                    			<input type="text" name="tno" id="tno" class="form-control" placeholder="Contact No.">			
+                    			<input type="text" name="cno" id="cno" class="form-control" placeholder="Contact No.">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
+                  		   <label for="altcno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
 
-                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Alternate Contact No.">			
+                    			<input type="text" name="altcno" id="altcno" class="form-control" placeholder="Alternate Contact No.">			
                    			 </div>
 
 	                 </div>
@@ -229,15 +229,15 @@
 	                  <div class="row">
                      		
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
+                  		   <label for="email" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
 
-                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="Email Id">			
+                    			<input type="text" name="email" id="email" class="form-control" placeholder="Email Id">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Email Id</span></label>
+                  		   <label for="altemail" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Email Id</span></label>
 
-                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Alternate Email Id">			
+                    			<input type="text" name="altemail" id="altemail" class="form-control" placeholder="Alternate Email Id">			
                    			 </div>
 
 	                 </div>
@@ -247,15 +247,15 @@
 	                  <div class="row">
                      		
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="EPF" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Phone No.</span></label>
+                  		   <label for="wphno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Phone No.</span></label>
 
-                    			<input type="text" name="EPF" id="EPF" class="form-control" placeholder="Work Phone No.">			
+                    			<input type="text" name="wphno" id="wphno" class="form-control" placeholder="Work Phone No.">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
-                  		   <label for="Experience" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Email</span></label>
+                  		   <label for="wemail" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Email</span></label>
 
-                    			<input type="text" name="Experience" id="Experience" class="form-control" placeholder="Work Email">			
+                    			<input type="text" name="wemail" id="wemail" class="form-control" placeholder="Work Email">			
                    			 </div>
 
 	                 </div>
