@@ -1,7 +1,7 @@
 <?php
 require("connect.php");
 
-if(!empty($_POST['fname']) && !empty($_POST['lname'])&& ((!empty($_POST['fn']) || !empty($_POST['mn'])) && !empty($_POST['gender'])&& !empty($_POST['dob'])&& !empty($_POST['bg'])&& !empty($_POST['pa'])&& !empty($_POST['ta'])&& !empty($_POST['acard'])&& !empty($_POST['accno'])&& !empty($_POST['ifsc'])&& !empty($_POST['cno'])&& !empty($_POST['email'])&& !empty($_POST['wphno'])&& !empty($_POST['wemail'])&& !empty($_POST['username'])&& !empty($_POST['password']) && !empty($_POST['empid']))	
+if(isset($_POST['fname']) && isset($_POST['lname'])&& ((isset($_POST['fn']) || isset($_POST['mn'])) && isset($_POST['gender'])&& isset($_POST['dob'])&& isset($_POST['bg'])&& isset($_POST['pa'])&& isset($_POST['ta'])&& isset($_POST['acard'])&& isset($_POST['accno'])&& isset($_POST['ifsc'])&& isset($_POST['cno'])&& isset($_POST['email'])&& isset($_POST['wphno'])&& isset($_POST['wemail'])&& isset($_POST['username'])&& isset($_POST['password']) && isset($_POST['empid']))	
 {
 	$fname=$_POST['fname'];
 	$mname=$_POST['mname'];
@@ -36,83 +36,83 @@ $sql="INSERT INTO addemployee(empid,username,password,fname,mname,lname,fn,mn,ge
 }
 else
 {
-	if(empty($_POST['fname']))
+	if(!isset($_POST['fname']))
 		{
 			echo "First Name Cannot Be Empty<br>";
 		}
 
-	if(empty($_POST['lname']))
+	if(!isset($_POST['lname']))
 		{
 			echo "Last Name Cannot Be Empty<br>";
 		}
-	if(empty($_POST['fn']))
+	if(!isset($_POST['fn']))
 		{
 			echo "Father's Name Cannot Be Empty<br>";
 		}
-	if(empty($_POST['mn']))
+	if(!isset($_POST['mn']))
 		{
 			echo "Mother's Name Cannot Be Empty<br>";
 		}
-	if(empty($_POST['gender']))
+	if(!isset($_POST['gender']))
 		{
 			echo "Gender Cannot Be Empty<br>";
 		}
-	if(empty($_POST['dob']))
+	if(!isset($_POST['dob']))
 		{
 			echo "Date Of Birth Cannot Be Empty<br>";
 		}
-	if(empty($_POST['bg']))
+	if(!isset($_POST['bg']))
 		{
 			echo "Blood Group Cannot Be Empty<br>";
 		}
 
-	if(empty($_POST['pa']))
+	if(!isset($_POST['pa']))
 		{
 			echo "Permanent Address Cannot Be Empty<br>";
 		}
-	if(empty($_POST['ta']))
+	if(!isset($_POST['ta']))
 		{
 			echo "Temporary Address Cannot Be Empty<br>";
 		}
 
-	if(empty(_POST['acard']))
+	if(!isset(_POST['acard']))
 		{
 			echo "Adhar Card Number Cannot Be Empty<br>";
 		}
-	if(empty($_POST['accno']))
+	if(!isset($_POST['accno']))
 		{
 			echo "Bank Account Number Cannot Be Empty<br>";
 		}
 
-	if(empty($_POST['ifsc']))
+	if(!isset($_POST['ifsc']))
 		{
 			echo "Bank IFSC Code Cannot Be Empty<br>";
 		}
-	if(empty($_POST['cno']))
+	if(!isset($_POST['cno']))
 		{
 			echo "Contatct Number Cannot Be Empty";
 		}
-	if(empty($_POST['email']))
+	if(!isset($_POST['email']))
 		{
 			echo "Email Id Cannot Be Empty";
 		}
-	if(empty($_POST['wphno']))
+	if(!isset($_POST['wphno']))
 		{
 			echo "Work Phone No. Cannot Be Empty";
 		}
-	if(empty($_POST['wemail']))
+	if(!isset($_POST['wemail']))
 		{
 			echo "Work Email Cannot Be Empty";
 		}
-	if(empty($_POST['empid']))
+	if(!isset($_POST['empid']))
 		{
 			echo "Employee Id Cannot Be Empty";
 		}
-	if(empty(_POST['username']))
+	if(!isset($_POST['username']))
 		{
 			echo "Username Cannot Be Empty";
 		}
-	if(empty($_POST['password']))
+	if(!isset($_POST['password']))
 		{
 			echo "Password Cannot Be Empty";
 		}
