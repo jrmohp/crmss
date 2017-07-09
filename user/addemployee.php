@@ -83,7 +83,7 @@
                      <br>
 
 
-                     <div class="row">
+        		 				<div class="row">
                     				
                   					  <div class="col-md-6 col-sm-6 col-xs-12" >
                   					   <label for="gender" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Gender</span></label>
@@ -100,13 +100,13 @@
 
 
 
-                     </div>
+                     			</div>
 
 
-                     <br>
+                     			<br>
 
 
-                     <div class="row">
+                     			<div class="row">
                     				
                   					  <div class="col-md-6 col-sm-6 col-xs-12" >
                   					   <label for="bg" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Blood Group</span></label>
@@ -123,40 +123,40 @@
 
 
 
-                     </div>
-
-
-                     <br>
-
-
-
-                     <div class="row">
-                     		</div class="col-md-9 col-sm-9 col-xs-12">
-      		              	 <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Permanent Address</span></label>
-            		          <textarea class="pa form-control" placeholder="Permanent Address" rows="5"></textarea>
                      			</div>
-                     </div>
+
+
+                     			<br>
+
+
+
+                			 	<div class="row">
+                     				</div class="col-md-9 col-sm-9 col-xs-12">
+      		              	 			<label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Permanent Address</span></label>
+            		          			<textarea class="pa form-control" placeholder="Permanent Address" rows="5"></textarea>
+                 				</div>
+                     			</div>
 
 	                
-	                 <br>
+	                 			<br>
 
 
-	                 <div class="row">
-	                 		</div class="col-md-9 col-sm-9 col-xs-12">
-	      	              	 <label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
-	           		          <textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
-	           		          </div>
-	                 </div>
+	                 			<div class="row">
+	                 				</div class="col-md-9 col-sm-9 col-xs-12">
+	      	              	 			<label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
+	           		          			<textarea class="ta form-control" placeholder="Temporary Address" rows="5"></textarea>
+	           		          	</div>
+	                 			</div>
 
 
-	                 <br>
+	                 			<br>
 
-                  	 <div class="row">
-                    	 <div class="ln_solid"></div>
-                   			 <h2>Legal Information</h2 >
-           			 </div>
+                  	 			<div class="row">
+                    	 			<div class="ln_solid"></div>
+                   			 		<h2>Legal Information</h2 >
+           			 			</div>
 
-           			 <br>
+           						<br>
 
 
 	                 <div class="row">
