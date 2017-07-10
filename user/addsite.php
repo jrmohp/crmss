@@ -71,7 +71,7 @@
 
 			<div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 "  align='center' id="next" >Next</button>
+                    <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="regc()">Next</button>
                     </div>
                     
           	</div>
@@ -84,7 +84,7 @@
 
 <script type="text/javascript">
   
-$("#next").on("click",regc);
+
 
 function regc()
 {
