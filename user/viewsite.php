@@ -13,7 +13,7 @@ if($result=mysqli_query($conn,$query))
    		
     	foreach ($row as $val) 
     	{
-    		echo $val[0];
+    		echo $val;
     	}
 
     }
