@@ -11,8 +11,13 @@ echo "hauchire";
 echo $row[0];*/
 
 
-$result=$conn->mysqli_query($query);
+if($conn->mysqli_query($query))
 
-echo "$result";
-
+{
+	echo $conn->mysqli_query($query);
+}
+else
+{
+	echo mysqli_error($conn);
+}
 ?>
