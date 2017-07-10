@@ -66,11 +66,12 @@
 
 			</div>
 
+
 			<br>
 
 			<div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 " type="submit" align='center' id="sendmail">Send</button>
+                    <button  class="btn btn-success col-md-12 "  align='center' id="next" >Next</button>
                     </div>
                     
           	</div>
@@ -79,8 +80,12 @@
 
 <script type="text/javascript">
   
+$("#next").on("click",regc);
 
-var ec=$('#ecount').val();
+function regc()
+{
+
+  var ec=$('#ecount').val();
 var c=0;
 var s1="<div class='col-md-6 col-sm-6 col-xs-12' ><label for='mname' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>Expense";
 var s2="</span></label><input type='text' name='prop";
@@ -90,9 +95,13 @@ var s4="'class='form-control' placeholder='Expense Name'></div>";
 var totals=s1+c+s2+c+s3+c+s4;
 
 while(c<ec)
+{
 
 
   ec.innerHTML=totals;
+
+}
+
 }
 
 </script>
