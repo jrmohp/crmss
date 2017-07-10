@@ -92,8 +92,8 @@ function regc()
   var ec=$('#ecount').val();
   
 var c=1;
-var s1="<div class='row'><label for='mname' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'><div class='col-md-5 col-sm-5 col-xs-11' >Expense";
-var s2="</span></label><input type='text' name='prop";
+var s1="<div class='row'><label for='mname' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>Expense</span></label><div class='col-md-5 col-sm-5 col-xs-11' >";
+var s2="<input type='text' name='prop";
 var s3="'id='prop";
 var s4="'class='form-control' placeholder='Expense Name'></div></div>";
 
