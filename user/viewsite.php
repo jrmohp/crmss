@@ -34,8 +34,9 @@ if($result=mysqli_query($conn,$query))
     				echo'<div class="col-md-12 col-sm-12 col-xs-12"  >
               		  	<label for="$val" class="col-md-4 col-sm-4 col-xs-4"><span class="label label-info">'.$val.'</span></label>
 
-            			<input type="text" name="$val" id="$val" class="form-control" >			
-    				</div><br>';
+            			<input type="text" name="$val" id="$val" class="form-control"';
+            			echo"placeholder='$val' >			
+    				</div><br>";
 
     	}
     	
