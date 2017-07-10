@@ -71,20 +71,24 @@
 
 			<div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 "  align='center' id="next" >Next</button>
+                    <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="regc()">Next</button>
                     </div>
                     
           	</div>
+
+            <div id="ddata">
+              
+            </div>
 
 
 
 <script type="text/javascript">
   
-$("#next").on("click",regc);
+
 
 function regc()
 {
-
+  alert("hauchi");
   var ec=$('#ecount').val();
 var c=0;
 var s1="<div class='col-md-6 col-sm-6 col-xs-12' ><label for='mname' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>Expense";
@@ -99,6 +103,7 @@ while(c<ec)
 
 
   ec.innerHTML=totals;
+  c++;
 
 }
 
