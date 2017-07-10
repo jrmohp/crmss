@@ -7,7 +7,7 @@ $query ="SELECT property FROM siteid WHERE id='SITE0001'";
 
 $result=mysqli_query($con,$query);
 $row=mysqli_fetch_array($result,MYSQLI_NUM);
-
+echo "hauchi";
 echo $row[0];
 
 ?>
