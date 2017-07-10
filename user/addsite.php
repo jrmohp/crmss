@@ -88,7 +88,7 @@
 
 function regc()
 {
-  alert("hauchi");
+  $('#ddata').empty();
   var ec=$('#ecount').val();
   
 var c=1;
