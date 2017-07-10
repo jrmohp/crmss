@@ -12,4 +12,13 @@
 	$roofarea=$_POST['roofarea'];
 
 	require("connect.php");
+
+	$dbselect=mysqli_select_db($conn,"");
+	if(!$dbselect)
+	{
+		die("Database Not Found");
+	}
+	$sql="insert into table values('$firstname','$lastname','$email','$phone','$address','$city','$gender','$units','$monthlybill','$contractload','$roofarea')";
+
+	$status=mysqli_query($conn,$sql);
 ?>
