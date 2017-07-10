@@ -5,9 +5,14 @@ require("../php/connect.php");
 
 $query ="SELECT property FROM siteid WHERE id='SITE0001'"; 
 
-$result=mysqli_query($conn,$query);
+/*$result=mysqli_query($conn,$query);
 $row=mysqli_fetch_array($result,MYSQLI_NUM);
-echo "hauchi";
-echo $row[0];
+echo "hauchire";
+echo $row[0];*/
+
+
+$result=$conn->mysqli_query($query);
+
+echo "$result";
 
 ?>
