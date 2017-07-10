@@ -84,7 +84,7 @@ $("#next").on("click",regc);
 
 function regc()
 {
-
+  alert("hauchi");
   var ec=$('#ecount').val();
 var c=0;
 var s1="<div class='col-md-6 col-sm-6 col-xs-12' ><label for='mname' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>Expense";
