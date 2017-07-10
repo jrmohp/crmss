@@ -7,6 +7,7 @@ $query = mysql_query("SELECT property FROM siteid WHERE id='SITE0001'");
 
 
 
-echo $query;
+echo $query[0];
+echo $query[1];
 
 ?>
