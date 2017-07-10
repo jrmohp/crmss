@@ -97,10 +97,11 @@ var s2="</span></label><input type='text' name='prop";
 var s3="'id='prop";
 var s4="'class='form-control' placeholder='Expense Name'></div></div>";
 
-var totals=s1+c+s2+c+s3+c+s4;
+
 
 while(c<ec)
 {
+  var totals=s1+c+s2+c+s3+c+s4;
 
 
   $('#ddata').append(totals);
