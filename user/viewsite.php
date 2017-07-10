@@ -1,3 +1,6 @@
+
+
+<table>
 <?php
 
 require("../php/connect.php");
@@ -13,7 +16,7 @@ if($result=mysqli_query($conn,$query))
    		
     	foreach ($row as $val) 
     	{
-    		echo $val;
+    		echo "<tr><td>$val</td></tr>";
     	}
 
     }
@@ -21,3 +24,4 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
+</table>
