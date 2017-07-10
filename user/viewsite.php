@@ -11,10 +11,6 @@
 </head>
 <body>
 
- 	<div class="row" id="body2">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-
-
 <table width="100%"  class="table table-striped table-bordered info-table">
 <?php
 
@@ -45,8 +41,6 @@ if($result=mysqli_query($conn,$query))
 
 ?>
 </table>
-</div>
-                    </div>
                     </body>
 
 	
