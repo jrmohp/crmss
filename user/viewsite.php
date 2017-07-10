@@ -19,7 +19,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
 
-<table>
+<table width="100%"  class="table table-striped table-bordered info-table">
 <?php
 
 require("../php/connect.php");
@@ -35,7 +35,7 @@ if($result=mysqli_query($conn,$query))
    		
     	foreach ($row as $val) 
     	{
-    		echo "<div class="col-md-6 col-sm-6 col-xs-12"  ><tr><td>$val</td>";
+    		echo "<div class="col-md-6 col-sm-6 col-xs-12"  ><tr align='center'><td>$val</td>";
     		echo "<td><input type='text' id='$val' ></td></tr></div>";
     	}
 
