@@ -99,6 +99,7 @@ while(c<ec)
 
 
   ec.innerHTML=totals;
+  c++;
 
 }
 
