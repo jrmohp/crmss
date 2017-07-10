@@ -16,7 +16,7 @@ if($result=mysqli_query($conn,$query))
    		
     	foreach ($row as $val) 
     	{
-    		echo "<tr><td>$val</td>";
+    		echo "<tr><td>$val</td><br>";
     		echo "<td><input type='text' id='$val' ></td></tr>";
     	}
 
