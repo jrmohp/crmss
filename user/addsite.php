@@ -57,11 +57,18 @@
             			<input type="text" name="fname" id="fname" class="form-control" placeholder="Supervisor">			
 	    			</div>
 
+
+	    			<div class="col-md-6 col-sm-6 col-xs-12" >
+                     	<label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Expense count</span></label>
+
+                   		  	<input type="text" name="mname" id="mname" class="form-control" placeholder="Expense Count">
+       		  		</div>
+
 			</div>
 
-			<br>
-
 			
+
+
 
 
 
