@@ -99,7 +99,7 @@ var s4="'class='form-control' placeholder='Expense Name'></div></div>";
 
 
 
-while(c<ec)
+while(c<=ec)
 {
   var totals=s1+c+s2+c+s3+c+s4;
 
