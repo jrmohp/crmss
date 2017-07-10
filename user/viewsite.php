@@ -35,10 +35,10 @@ if($result=mysqli_query($conn,$query))
    		
     	foreach ($row as $val) 
     	{	
-    		echo"<div class="col-md-6 col-sm-6 col-xs-12"  >
-              		  	<label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">".$val."</span></label>
+    				echo"<div class="col-md-6 col-sm-6 col-xs-12"  >
+              		  	<label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">".$val."</span></label>";
 
-            			<input type="text" name="$val" id="$val" class="form-control" placeholder="$val">			
+            			echo"<input type="text" name="$val" id="$val" class="form-control" placeholder="$val">			
     				</div>";
     	}
 
