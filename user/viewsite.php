@@ -4,10 +4,6 @@
   include "header.php";
 ?>
 
-
-
-
- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,16 +28,17 @@ if($result=mysqli_query($conn,$query))
 {
 	 while ($row=mysqli_fetch_row($result))
     {
-   		
+   		echo"<div class="row"> <div class="ln_solid"></div>";
     	foreach ($row as $val) 
     	{	
     				echo"<div class="col-md-6 col-sm-6 col-xs-12"  >
               		  	<label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">".$val."</span></label>";
 
             			echo"<input type="text" name="$val" id="$val" class="form-control" placeholder="$val">			
-    				</div>";
-    	}
+    				</div><br>";
 
+    	}
+    	echo"</div>";
     }
 
 }
