@@ -16,8 +16,8 @@ if($result=mysqli_query($conn,$query))
    		
     	foreach ($row as $val) 
     	{
-    		echo "<tr><td>$val</td>";
-    		echo "<td><input type='text' id='$val' ></td></tr>";
+    		echo "<div class="col-md-6 col-sm-6 col-xs-12"  ><tr><td>$val</td>";
+    		echo "<td><input type='text' id='$val' ></td></tr></div>";
     	}
 
     }
