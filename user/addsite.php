@@ -103,7 +103,7 @@ while(c<ec)
 {
 
 
-  $('ddata').append(totals);
+  $('#ddata').append(totals);
   c++;
 
 }
