@@ -9,6 +9,7 @@ while($row=mysql_fetch_array($query))
 {
 echo sizeof($row);
 $length= sizeof($row);
+echo "hela";
 
 /*foreach($row as $value)
 {
