@@ -12,6 +12,7 @@ if($result=mysqli_query($conn,$sql))
     {
    		echo $row[0];
    		echo $row[1];	
+   		printf ("%s (%s)\n",$row[0],$row[1]);
     }
 
 }
