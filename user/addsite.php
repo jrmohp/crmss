@@ -156,7 +156,7 @@ function addsite()
         
     }
 
- 
+ /*
 
     c2=0;
     var insertcount=0;
@@ -177,7 +177,7 @@ function addsite()
 
         }
         c2++;
-       
+       */
     }
 
 
