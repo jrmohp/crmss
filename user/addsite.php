@@ -165,7 +165,9 @@ function addsite()
 
          alert("IN");
         var siteid=$('#siteid').val();
+         alert(siteid);
         var propfinal=$(propid[c2]).val();
+        alert(propfinal);
         var data={'siteid':siteid,'property':propfinal};
      
         alert("dsfd");
