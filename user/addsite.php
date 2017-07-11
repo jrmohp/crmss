@@ -177,7 +177,11 @@ var insertcount=0;
         $.post('../php/addsitecontroller.php',data,function(info){
             
             
-            insertcount=Number(insertcount)+Number(info);
+            if(info==0) {
+
+      alert("Not Working Contact Admin");
+      break;
+            }
         });
 
      c2++;
@@ -185,16 +189,10 @@ var insertcount=0;
        
     }
 
-    alert(insertcount)   ;  
+    
 
-    if(insertcount==ec)
-    {
-      alert("All Site Properties Added");
-    }
-    else
-    {
-      alert("Not Working Contact Admin");
-    }
+    
+   
 
 
     
