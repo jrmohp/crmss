@@ -155,11 +155,11 @@ function addsite()
     }
 
  alert("OUT");
-
+var insertcount=0;
     c2=0;
 
     while(c2<ec)
-      var insertcount=0;
+      
 
     {
 
