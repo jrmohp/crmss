@@ -121,8 +121,6 @@ while(c<=ec)
 
 function addsite()
 { 
-
-  alert("OUT");
     var ec=$('#ecount').val();
     
     var c2=1;
@@ -156,11 +154,13 @@ function addsite()
         
     }
 
- /*
+ alert("OUT");
 
     c2=0;
-    var insertcount=0;
+
     while(c2<ec)
+      var insertcount=0;
+
     {
 
          alert("IN");
@@ -170,17 +170,10 @@ function addsite()
         
         var data={'siteid':siteid,'property':propfinal};
      
-        $.post('../php/addsitecontroller.php',data,function(info)
-        {
-            insertcount+=info;
-
-
-        }
         c2++;
-       */
+        alert("out");
+       
     }
-
-
 
 
     
