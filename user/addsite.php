@@ -166,7 +166,7 @@ function addsite()
          alert("IN");
         var siteid=$('#siteid').val();
          alert(siteid);
-        var propfinal=$(propid[c2]).val();
+        var propfinal=document.getElementById(propid[c2]).value;
         alert(propfinal);
         var data={'siteid':siteid,'property':propfinal};
      
