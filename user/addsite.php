@@ -123,7 +123,9 @@ function addsite()
 {
     alert("asila");
     var c2=1;
+    alert("asila5");
     var proparr= new Array();
+    alert("asila6");
 
     while(c2<=ec)
     { 
