@@ -160,6 +160,7 @@ function addsite()
     while(c2<ec)
     {
        alert(propval[c2]);
+       c2++;
     }
 
 
