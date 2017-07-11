@@ -144,7 +144,8 @@ function addsite()
     {
          
         propval.push(proparr[c2]);
-        alert(propval[c2]);
+
+       
         if(c2==ec)
         {
           break;
@@ -155,6 +156,11 @@ function addsite()
 
 
     c2=0;
+
+    while(c2<ec)
+    {
+       alert(propval[c2]);
+    }
 
 
     
