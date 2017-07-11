@@ -131,8 +131,7 @@ function addsite()
     { 
       
         proparr.push("'#prop"+c2+"'");
-        alert(c2);
-         alert(proparr[c2]);
+        
        
         c2++;
        
