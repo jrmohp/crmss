@@ -127,7 +127,7 @@ function addsite()
     
     var proparr= new Array();
     var sitename=$('#sitename').val();
-    var supervisor=$('supervisor').val();
+    var supervisor=$('#supervisor').val();
     
     while(c2<=ec)
     { 
