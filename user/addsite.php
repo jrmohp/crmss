@@ -121,6 +121,7 @@ while(c<=ec)
 
 function addsite()
 {
+    alert("asila");
     var c2=1;
     var proparr= new Array();
 
