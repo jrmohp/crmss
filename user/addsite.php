@@ -163,7 +163,7 @@ function addsite()
         var propfinal=$(propid[c2]).val();
         var data={'siteid':siteid,'property':propfinal};
      
-        alert(data);
+        alert("dsfd");
        
     }
 
