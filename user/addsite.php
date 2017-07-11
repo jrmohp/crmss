@@ -177,11 +177,7 @@ var insertcount=0;
         $.post('../php/addsitecontroller.php',data,function(info){
             
             
-            if(info==0) {
-
-      alert("Not Working Contact Admin");
-      break;
-            }
+            
         });
 
      c2++;
