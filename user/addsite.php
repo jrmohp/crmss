@@ -196,13 +196,7 @@ var insertcount=0;
 
     
    
-
-
-    
-
-}
-
- var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
+var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
 
  $.post('../php/addsiteinfocontroller.php',sitedata,function(info){
             
@@ -213,6 +207,12 @@ var insertcount=0;
             }
 
         });
+ 
+
+    
+
+}
+
  
 
 </script>
