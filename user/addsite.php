@@ -80,6 +80,13 @@
               
             </div>
 
+            <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <button  class="btn btn-success col-md-12 "  align='center' id="subm" onclick="addsite()">Add Site</button>
+                    </div>
+                    
+            </div>
+
 
 
 <script type="text/javascript">
@@ -110,6 +117,40 @@ while(c<=ec)
 }
 
 }
+
+
+function addsite()
+{
+    var c2=1;
+    var proparr= new Array();
+
+    while(c2<=ec)
+    {
+        proparr.push("'#prop"+c2+"'");
+        c2++;
+    }
+
+    var propval=new Array();
+    c2=0;
+    while(c2<(ec-1))
+    {
+        propval.push(proparr[c2]);
+    }
+
+
+    c2=0;
+
+
+     while(c2<(ec-1))
+    {
+        alert(propval[c2]);
+    }
+
+
+}
+
+
+ 
 
 </script>
 
