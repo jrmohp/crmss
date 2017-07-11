@@ -156,17 +156,7 @@ function addsite()
         
     }
 
-     var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
-
- $.post('../php/addsiteinfocontroller.php',sitedata,function(info){
-            
-            if(info==1)
-            {
-              alert("Site Information Added");
-
-            }
-
-        });
+    
 
 
 
@@ -212,7 +202,17 @@ var insertcount=0;
 
 }
 
+ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
 
+ $.post('../php/addsiteinfocontroller.php',sitedata,function(info){
+            
+            if(info==1)
+            {
+              alert("Site Information Added");
+
+            }
+
+        });
  
 
 </script>
