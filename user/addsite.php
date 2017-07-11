@@ -184,6 +184,8 @@ var insertcount=0;
        
     }
 
+    alert(insertcount)   ;  
+
     if(insertcount==ec)
     {
       alert("All Site Properties Added");
