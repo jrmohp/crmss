@@ -34,7 +34,7 @@
 	  				<div class="col-md-6 col-sm-6 col-xs-12"  >
               		  	<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
-            			<input type="text" name="fname" id="fname" class="form-control" placeholder="Site Id">			
+            			<input type="text" name="siteid" id="siteid" class="form-control" placeholder="Site Id">			
     				</div>
 
 
@@ -137,13 +137,13 @@ function addsite()
        
     }
 
-    var propval=new Array();
+    var propid=new Array();
     
     c2=0;
     while(c2<ec)
     {
          
-        propval.push(proparr[c2]);
+        propid.push(proparr[c2]);
 
        
         if(c2==ec)
@@ -159,8 +159,12 @@ function addsite()
 
     while(c2<ec)
     {
-       alert(propval[c2]);
-       c2++;
+        var siteid=$('#siteid').val();
+        var propfinal=$(propid[c2]).val();
+        var data={'siteid':siteid,'property':propfinal};
+     
+        alert(data);
+       
     }
 
 
