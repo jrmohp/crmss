@@ -130,9 +130,10 @@ function addsite()
 
     while(c2<=ec)
     { 
-      alert("asila2");
+      
         proparr.push("'#prop"+c2+"'");
         c2++;
+        alert(proparr[c2]);
     }
 
     var propval=new Array();
@@ -140,9 +141,10 @@ function addsite()
     c2=0;
     while(c2<(ec-1))
     {
-         alert("asila4");
+         
         propval.push(proparr[c2]);
         c2++;
+        alert(propval[c2]);
     }
 
 
