@@ -39,19 +39,19 @@
 			}
 		if(empty($_POST['email']))
 			{
-				echo "Mother's Name Cannot Be Empty<br>";
+				echo "Email Cannot Be Empty<br>";
 			}
 		if(empty($_POST['phone']))
 			{
-				echo "Father's Name Cannot Be Empty<br>";
+				echo "Phone No. Cannot Be Empty<br>";
 			}
 		if(empty($_POST['city']))
 			{
-				echo "Gender Cannot Be Empty<br>";
+				echo "Choose Any City Name or Others If City Not Found In The List.<br>";
 			}
 		if(empty($_POST['type']))
 			{
-				echo "Date Of Birth Cannot Be Empty<br>";
+				echo "Usage Type Cannot Be Empty<br>";
 			}
 			exit;
 	}
