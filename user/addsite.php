@@ -130,7 +130,7 @@ function addsite()
     while(c2<=ec)
     { 
       
-        proparr.push("'#prop"+c2+"'");
+        proparr.push("#prop"+c2);
         
        
         c2++;
@@ -166,7 +166,7 @@ function addsite()
          alert("IN");
         var siteid=$('#siteid').val();
          alert(siteid);
-        var propfinal=document.getElementById(propid[c2]).value;
+        var propfinal=$(propid[c2]).val();
         alert(propfinal);
         var data={'siteid':siteid,'property':propfinal};
      
