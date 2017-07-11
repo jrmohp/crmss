@@ -122,12 +122,11 @@ while(c<=ec)
 function addsite()
 { 
     var ec=$('#ecount').val();
-    alert("asila");
+    
     var c2=1;
-    alert("asila5");
+    
     var proparr= new Array();
-    alert("asila6");
-
+    
     while(c2<=ec)
     { 
       
@@ -142,7 +141,7 @@ function addsite()
     }
 
     var propval=new Array();
-     alert("asila3");
+    
     c2=0;
     while(c2<(ec-1))
     {
