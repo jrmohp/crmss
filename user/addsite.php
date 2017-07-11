@@ -42,7 +42,7 @@
 	  				<div class="col-md-6 col-sm-6 col-xs-12" >
                      	<label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Name</span></label>
 
-                   		  	<input type="text" name="mname" id="mname" class="form-control" placeholder="Site Name">
+                   		  	<input type="text" name="sitename" id="sitename" class="form-control" placeholder="Site Name">
        		  		</div>
 
   			</div>
@@ -54,7 +54,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-12"  >
           		   		<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Supervisor</span></label>
 
-            			<input type="text" name="fname" id="fname" class="form-control" placeholder="Supervisor">			
+            			<input type="text" name="supervisor" id="supervisor" class="form-control" placeholder="Supervisor">			
 	    			</div>
 
 
@@ -126,6 +126,8 @@ function addsite()
     var c2=1;
     
     var proparr= new Array();
+    var sitename=$('#sitename').val();
+    var supervisor=$('supervisor').val();
     
     while(c2<=ec)
     { 
@@ -154,6 +156,20 @@ function addsite()
         
     }
 
+     var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
+
+ $.post('../php/addsiteinfocontroller.php',sitedata,function(info){
+            
+            if(info==1)
+            {
+              alert("Site Information Added");
+
+            }
+
+        });
+
+
+
 
 var insertcount=0;
     c2=0;
@@ -176,10 +192,7 @@ var insertcount=0;
 
         $.post('../php/addsitecontroller.php',data,function(info){
             
-            if(info=="1")
-            {
-              insertcount++;
-            }
+            
 
         });
 
@@ -188,7 +201,7 @@ var insertcount=0;
        
     }
 
-    alert(insertcount);
+    alert("Properties Added To Site");
     
 
     
