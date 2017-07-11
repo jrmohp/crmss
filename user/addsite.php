@@ -144,7 +144,7 @@ function addsite()
     {
          
         propid.push(proparr[c2]);
-         alert("l1");
+       
        
         if(c2==ec)
         {
@@ -154,7 +154,7 @@ function addsite()
         
     }
 
- alert("OUT");
+
 var insertcount=0;
     c2=0;
 
@@ -176,8 +176,11 @@ var insertcount=0;
 
         $.post('../php/addsitecontroller.php',data,function(info){
             
-            
-            
+            if(info==1)
+            {
+              insertcount++;
+            }
+
         });
 
      c2++;
@@ -185,6 +188,7 @@ var insertcount=0;
        
     }
 
+    alert(insertcount);
     
 
     
