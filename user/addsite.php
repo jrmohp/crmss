@@ -132,8 +132,13 @@ function addsite()
     { 
       
         proparr.push("'#prop"+c2+"'");
+         alert(proparr[c2]);
+        if(c2==ec)
+        {
+          break;
+        }
         c2++;
-        alert(proparr[c2]);
+       
     }
 
     var propval=new Array();
@@ -143,8 +148,13 @@ function addsite()
     {
          
         propval.push(proparr[c2]);
-        c2++;
         alert(propval[c2]);
+        if(c2==ec)
+        {
+          break;
+        }
+        c2++;
+        
     }
 
 
