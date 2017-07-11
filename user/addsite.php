@@ -170,7 +170,7 @@ function addsite()
         alert(propfinal);
         var data={'siteid':siteid,'property':propfinal};
      
-        alert("dsfd");
+        alert(data);
         c2++;
        
     }
