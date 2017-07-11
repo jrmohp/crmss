@@ -168,7 +168,7 @@ var insertcount=0;
          alert(siteid);
         var propfinal=$(propid[c2]).val();
          alert(propfinal);
-        var data={'siteid':siteid,'property':propfinal};
+        var data={'siteid':siteid,'prop':propfinal};
         
      
         $.post('../php/addsitecontroller.php',data,function(info)
@@ -177,7 +177,7 @@ var insertcount=0;
           alert("inserthela");
 
 
-            insertcount+=info;
+           
 
 
         }

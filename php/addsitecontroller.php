@@ -3,22 +3,22 @@
 require("connect.php");
 
 	$siteid=$_POST['siteid'];
-	$property-$_POST['property'];
+	$property-$_POST['prop'];
 
 	$sql="INSERT INTO siteprop(siteid,property) VALUES ('$siteid','$property')";
 
 
 	if($conn->query($sql))
-{
+	{
 		echo 1;
 
-}
-else
-{
+	}
+	else
+	{
 	 
-  echo 0;
+ 	 echo 0;
 
-}
+	}
 
 
 
