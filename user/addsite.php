@@ -159,7 +159,11 @@ function addsite()
     c2=0;
 
     while(c2<ec)
+
+
     {
+
+         alert("IN");
         var siteid=$('#siteid').val();
         var propfinal=$(propid[c2]).val();
         var data={'siteid':siteid,'property':propfinal};
