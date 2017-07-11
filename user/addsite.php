@@ -141,7 +141,7 @@ function addsite()
     var propval=new Array();
     
     c2=0;
-    while(c2<(ec-1))
+    while(c2<ec)
     {
          
         propval.push(proparr[c2]);
@@ -158,12 +158,7 @@ function addsite()
     c2=0;
 
 
-     while(c2<ec)
-    {
-        alert(propval[c2]);
-        c2++;
-    }
-
+    
 
 }
 
