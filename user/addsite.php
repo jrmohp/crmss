@@ -163,11 +163,11 @@ var insertcount=0;
 
     {
 
-         alert("IN");
+        
         var siteid=$('#siteid').val();
-         alert(siteid);
+         
         var propfinal=$(propid[c2]).val();
-         alert(propfinal);
+        
         var data={'siteid':siteid,'prop':propfinal};
         
         
@@ -176,7 +176,7 @@ var insertcount=0;
 
         $.post('../php/addsitecontroller.php',data,function(info){
             
-            alert(info);
+            
             insertcount=Number(insertcount)+Number(info);
         });
 
