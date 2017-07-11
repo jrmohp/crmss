@@ -121,6 +121,8 @@ while(c<=ec)
 
 function addsite()
 { 
+
+  alert("OUT");
     var ec=$('#ecount').val();
     
     var c2=1;
@@ -154,7 +156,7 @@ function addsite()
         
     }
 
- alert("OUT");
+ 
 
     c2=0;
     var insertcount=0;
