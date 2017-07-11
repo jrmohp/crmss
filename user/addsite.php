@@ -169,6 +169,18 @@ var insertcount=0;
         var propfinal=$(propid[c2]).val();
          alert(propfinal);
         var data={'siteid':siteid,'property':propfinal};
+        
+     
+        $.post('../php/addsitecontroller.php',data,function(info)
+
+        { 
+          alert("inserthela");
+
+
+            insertcount+=info;
+
+
+        }
      
         c2++;
         alert("out");
