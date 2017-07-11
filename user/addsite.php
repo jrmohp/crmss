@@ -176,7 +176,7 @@ var insertcount=0;
 
         $.post('../php/addsitecontroller.php',data,function(info){
             
-            if(info==1)
+            if(info=="1")
             {
               insertcount++;
             }
