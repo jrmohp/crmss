@@ -10,13 +10,13 @@ require("connect.php");
 
 	if($conn->query($sql))
 	{
-		echo 1;
+		echo "1";
 
 	}
 	else
 	{
 	 
- 	 echo 0;
+ 	 echo "0";
 
 	}
 
