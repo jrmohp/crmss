@@ -142,6 +142,7 @@ function addsite()
     {
          alert("asila4");
         propval.push(proparr[c2]);
+        c2++;
     }
 
 
@@ -151,6 +152,7 @@ function addsite()
      while(c2<(ec-1))
     {
         alert(propval[c2]);
+        c2++;
     }
 
 
