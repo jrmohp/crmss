@@ -126,15 +126,18 @@ function addsite()
     var proparr= new Array();
 
     while(c2<=ec)
-    {
+    { 
+      alert("asila2");
         proparr.push("'#prop"+c2+"'");
         c2++;
     }
 
     var propval=new Array();
+     alert("asila3");
     c2=0;
     while(c2<(ec-1))
     {
+         alert("asila4");
         propval.push(proparr[c2]);
     }
 
