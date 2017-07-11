@@ -170,7 +170,33 @@ var insertcount=0;
          alert(propfinal);
         var data={'siteid':siteid,'prop':propfinal};
         
-     
+        
+
+
+
+        $.post('../php/addsitecontroller.php',data,function(info){
+            
+            alert("insert hauchi");
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
      
         c2++;
