@@ -144,7 +144,7 @@ function addsite()
     {
          
         propid.push(proparr[c2]);
-         alert("dsfd");
+         alert("l1");
        
         if(c2==ec)
         {
@@ -154,6 +154,7 @@ function addsite()
         
     }
 
+ alert("OUT");
 
     c2=0;
 
