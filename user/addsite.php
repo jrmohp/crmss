@@ -92,11 +92,11 @@
 <script type="text/javascript">
   
 
-var ec=$('#ecount').val();
+
 function regc()
 {
   $('#ddata').empty();
- 
+ var ec=$('#ecount').val();
   
 var c=1;
 var s1="<div class='row'><label for='mname' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>Expense";
@@ -121,6 +121,7 @@ while(c<=ec)
 
 function addsite()
 { 
+    var ec=$('#ecount').val();
     alert("asila");
     var c2=1;
     alert("asila5");
