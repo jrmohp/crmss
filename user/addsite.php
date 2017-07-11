@@ -171,16 +171,7 @@ var insertcount=0;
         var data={'siteid':siteid,'prop':propfinal};
         
      
-        $.post('../php/addsitecontroller.php',data,function(info)
-
-        { 
-          alert("inserthela");
-
-
-           
-
-
-        }
+        
      
         c2++;
         alert("out");
