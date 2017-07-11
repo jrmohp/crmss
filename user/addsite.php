@@ -157,10 +157,8 @@ function addsite()
  alert("OUT");
 
     c2=0;
-
+    var insertcount=0;
     while(c2<ec)
-      var insertcount=0;
-
     {
 
          alert("IN");
@@ -181,7 +179,7 @@ function addsite()
     }
 
 
-    
+
 
     
 
