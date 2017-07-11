@@ -120,7 +120,7 @@ while(c<=ec)
 
 
 function addsite()
-{
+{ var ec=$('#ecount').val();
     alert("asila");
     var c2=1;
     alert("asila5");
