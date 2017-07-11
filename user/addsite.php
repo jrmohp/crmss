@@ -176,32 +176,21 @@ var insertcount=0;
 
         $.post('../php/addsitecontroller.php',data,function(info){
             
-            alert("insert hauchi");
+            insertcount=insertcount+info;
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-     
-        c2++;
-        alert("out");
+     c2++;
        
+       
+    }
+
+    if(insertcount==ec)
+    {
+      alert("All Site Properties Added");
+    }
+    else
+    {
+      alert("Not Working Contact Admin");
     }
 
 
