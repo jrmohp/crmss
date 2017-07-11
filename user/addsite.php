@@ -131,11 +131,9 @@ function addsite()
     { 
       
         proparr.push("'#prop"+c2+"'");
+        alert(c2);
          alert(proparr[c2]);
-        if(c2==ec)
-        {
-          break;
-        }
+       
         c2++;
        
     }
