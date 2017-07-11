@@ -159,7 +159,7 @@ function addsite()
     c2=0;
 
     while(c2<ec)
-
+      var insertcount=0;
 
     {
 
@@ -167,14 +167,21 @@ function addsite()
         var siteid=$('#siteid').val();
          alert(siteid);
         var propfinal=$(propid[c2]).val();
-        alert(propfinal);
+        
         var data={'siteid':siteid,'property':propfinal};
      
-        alert(data);
+        $.post('../php/addsitecontroller.php',data,function(info)
+        {
+            insertcount+=info;
+
+
+        }
         c2++;
        
     }
 
+
+    
 
     
 

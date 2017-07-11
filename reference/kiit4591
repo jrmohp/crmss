@@ -1,0 +1,32 @@
+kiit4591
+KIIT001$
+
+et_fixed_nav #logo {
+max-height: 160px;
+}
+
+.et-fixed-header #logo {
+  max-height: 160px !important;
+ padding:0 !important;	 
+}
+Change the speed of the shrink:
+#logo {
+transition: all 0.4s ease-in-out;
+}
+Alter the spacing at the top:
+#logo {
+	position: relative;
+	top:-18px;
+}
+Alter the overhang at the bottom:
+#logo {
+	position: absolute;
+	top:-18px;
+}
+
+Scale logo for mobile:
+
+#logo {
+  max-width: 30%;
+  min-width:150px;
+}
