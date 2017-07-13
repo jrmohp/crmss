@@ -34,7 +34,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Smart Solar Control Panel</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Smart Solar</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -60,43 +60,52 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="http://user.atvchampionship.com/profile/index">Dashboard</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/index">Dashboard</a></li>
                       
+                    </ul>
+                  </li>
+
+                   <li><a><i class="fa fa-users"></i>Customers<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                    
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/addcustomer">Add Customer</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/viewcustomer">View Customers</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/singlemail">Send Mail To Customer</a></li>
                     </ul>
                   </li>
                   
                   <li><a><i class="fa fa-user"></i>Employee <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                     
-                      <li><a href="http://user.atvchampionship.com/profile/query">Add Employee</a></li>
-                      <li><a href="http://user.atvchampionship.com/profile/myquery">My Queries</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/addemployee">Add Employee</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/viewemployee">view Employee</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/editemployee">Edit Employee</a></li>
                      
                     </ul>
                   </li>
                     
-                  <li><a><i class="fa fa-users"></i> My Team <span class="fa fa-chevron-down"></span></a>
+                 
+                  <li><a><i class="fa fa-edit"></i>Site Management<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                    
-                      <li><a href="http://user.atvchampionship.com/profile/viewteam">View My Team</a></li>
-                      <li><a href="http://user.atvchampionship.com/profile/addteam">Add Members</a></li>
-                      <li><a href="http://user.atvchampionship.com/profile/addfaculty">Add Faculty</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/addsite">Add Sites</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/viewsites">View Sites</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/addexpenses">Add Expense To Site</a></li>
+                      
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i> Edit Data <span class="fa fa-chevron-down"></span></a>
+
+                  <li><a><i class="fa fa-edit"></i>Franchise Management<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="http://user.atvchampionship.com/profile/editprofile">Edit Profile</a></li>
-                      <li><a href="http://user.atvchampionship.com/profile/editmember">Edit Member</a></li>
-                      <li><a href="http://user.atvchampionship.com/profile/editfaculty">Edit Faculty</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/addfranchise">Add Franchise</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/viewfranchise">View Franchise</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/franchisebilling">Billing</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/jrm/user/assigntofranchise">Assign Project</a></li>
+                      
                       
                     </ul>
                   </li>
                   
-                  </li>
-                  <li><a href="http://user.atvchampionship.com/profile/choosecarnum"><i class="fa fa-car"></i> Choose Car Number <span class="fa fa-chevron-down"></span></a>
-                    
-                  </li>
                   
-                </ul>
               </div>
              
             </div>
