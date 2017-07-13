@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <base href="http://smartsolar.co.in/jrm/user">
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -34,7 +34,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Mega ATV Championship</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Smart Solar Control Panel</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -65,7 +65,7 @@
                     </ul>
                   </li>
                   
-                  <li><a><i class="fa fa-question"></i>Employee <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-user"></i>Employee <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                     
                       <li><a href="http://user.atvchampionship.com/profile/query">Add Employee</a></li>
