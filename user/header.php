@@ -60,7 +60,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="http://http://crm.smartsolar.co.in/user/index">Dashboard</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/index">Dashboard</a></li>
                       
                     </ul>
                   </li>
@@ -68,18 +68,18 @@
                    <li><a><i class="fa fa-users"></i>Customers<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                     
-                      <li><a href="http://http://crm.smartsolar.co.in/user/addcustomer">Add Customer</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/viewcustomer">View Customers</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/singlemail">Send Mail To Customer</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/addcustomer">Add Customer</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/viewcustomer">View Customers</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/singlemail">Send Mail To Customer</a></li>
                     </ul>
                   </li>
                   
                   <li><a><i class="fa fa-user"></i>Employee <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                     
-                      <li><a href="http://http://crm.smartsolar.co.in/user/addemployee">Add Employee</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/viewemployee">view Employee</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/editemployee">Edit Employee</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/addemployee">Add Employee</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/viewemployee">view Employee</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/editemployee">Edit Employee</a></li>
                      
                     </ul>
                   </li>
@@ -87,19 +87,19 @@
                  
                   <li><a><i class="fa fa-edit"></i>Site Management<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="http://http://crm.smartsolar.co.in/user/addsite">Add Sites</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/viewsites">View Sites</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/addexpenses">Add Expense To Site</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/addsite">Add Sites</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/viewsites">View Sites</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/addexpenses">Add Expense To Site</a></li>
                       
                     </ul>
                   </li>
 
                   <li><a><i class="fa fa-edit"></i>Franchise Management<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="http://http://crm.smartsolar.co.in/user/addfranchise">Add Franchise</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/viewfranchise">View Franchise</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/franchisebilling">Billing</a></li>
-                      <li><a href="http://http://crm.smartsolar.co.in/user/assigntofranchise">Assign Project</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/addfranchise">Add Franchise</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/viewfranchise">View Franchise</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/franchisebilling">Billing</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/assigntofranchise">Assign Project</a></li>
                       
                       
                     </ul>
