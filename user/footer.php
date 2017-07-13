@@ -1,7 +1,7 @@
 
         <footer>
           <div class="pull-right" style="width:100%">
-            <a href="https://autosportsindia.com">&copy Autosports India</a>
+            <a href="https://autosportsindia.com">&copy JRM</a>
           </div>
           <div class="clearfix"></div>
         </footer>

@@ -64,11 +64,11 @@
                       
                     </ul>
                   </li>
-                  <li><a href="http://user.atvchampionship.com/profile/payments.php"><i class="fa fa-money"></i>Payment<span class="fa fa-chevron-down"></span></a>
-                  <li><a><i class="fa fa-question"></i>Query <span class="fa fa-chevron-down"></span></a>
+                  
+                  <li><a><i class="fa fa-question"></i>Employee <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                     
-                      <li><a href="http://user.atvchampionship.com/profile/query">Submit A Query</a></li>
+                      <li><a href="http://user.atvchampionship.com/profile/query">Add Employee</a></li>
                       <li><a href="http://user.atvchampionship.com/profile/myquery">My Queries</a></li>
                      
                     </ul>

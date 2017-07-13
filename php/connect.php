@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 	$conn=new mysqli("localhost","smartzts_jrm","sikujyoti753","smartzts_ssjrm");
 

@@ -1,11 +1,24 @@
 <?php
 
 
-  include "regheader.php";
+  include "header.php";
 ?>
 
 
-<div class="row">
+
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Customer | Smart Solar  </title>
+</head>
+<body>
+
+ 	<div class="row" id="body2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <div class="row">
 <center>
               <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
@@ -452,7 +465,7 @@
             }
             else if(info==0)
             {
-             
+               alert("aila helani");
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
@@ -517,7 +530,34 @@
  }
 }
 
-</script>
+</script>\
+
+</div>
+                    
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </div>
+                    </body>
+
+	
 <?php
 
 
