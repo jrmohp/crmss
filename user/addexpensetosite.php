@@ -114,7 +114,7 @@
         var getrid="#"+name+"rate";
 
 
-        var quantity=$(getqid);
+        var quantity=$(getqid).val();
 
 
         alert(quantity);
