@@ -44,7 +44,7 @@ if($result=mysqli_query($conn,$query))
 		{ 
 		  echo "<tr align='center'>";
 	      echo "<td>".$udata['username']."</td>";
-/*	      echo "<td>".$udata['type']."</td>";
+	      echo "<td>".$udata['type']."</td>";
 	      echo "<td>".$udata['firstname']."</td>";
 	      echo "<td>".$udata['lastname']."</td>";
 	      echo "<td>".$udata['email']."</td>";
@@ -58,7 +58,7 @@ if($result=mysqli_query($conn,$query))
 	      echo "<td>".$udata['referredby']."</td>";
 	      echo "<td>".$udata['remarks']."</td>";
 	      echo "<td>".$udata['req']."</td>";
-*/	      echo"</tr>";
+	      echo"</tr>";
     	}   
     }
 }
