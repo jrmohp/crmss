@@ -34,7 +34,34 @@
 	  				<div class="col-md-6 col-sm-6 col-xs-12"  >
               		  	<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
-            			<input type="text" name="siteid" id="siteid" class="form-control" placeholder="Site Id">			
+            		    <select>
+                    
+
+                      <?php 
+
+                            require("../php/connect.php");
+
+                              $siteids="SELECT DISTINCT siteid FROM siteprop";
+
+                             if($result=mysqli_query($conn,$siteids))
+                              {
+                                           while ($row=mysqli_fetch_row($result))
+                                             {
+    
+                                                            foreach ($row as $val) 
+                                                            { 
+                                                                  echo "<option>$val</option>" ;
+
+                                                             }
+      
+                                              }
+
+                              }
+
+                                          ?>
+
+
+                    </select>			
     				</div>
 
 
