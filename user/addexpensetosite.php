@@ -115,10 +115,17 @@
 
 
         var quantity=$(getqid).val();
+        var rate=$(getrid).val();
+
+        var total=quantity*rate;
 
 
-        alert(quantity);
-    }
+        alert(total);
+
+
+
+
+       
   </script>
 
 
