@@ -25,23 +25,26 @@
 					<div class="col-md-4 col-sm-4 col-xs-12"  >
           		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
 
-            			<input type="text" name="fuel" id="fuel" class="form-control" placeholder="Fuel">			
+            			 <input type="number" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity">     
+
 	    			</div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+                   <input type="number" name="fuel" id="fuel" class="form-control" placeholder="Fuel" required="true">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+                   
+
+                  <input type="text" name="fuel" id="fuel" class="form-control" placeholder="Fuel">     
+            </div>
 
 
-	    			<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="empcon" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance</span></label>
-
-                   		  	<input type="text" name="empcon" id="empcon" class="form-control" placeholder="Employee Conveyance">
-       		  		</div>
-
-       		  		<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation</span></label>
-
-                   		  	<input type="text" name="trans" id="trans" class="form-control" placeholder="Transportation">
-       		  		</div>
+	    		
 
 			</div>
+
+
 
 
 			<br>
