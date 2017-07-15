@@ -34,13 +34,13 @@
 
 require("../php/connect.php");
 
-$query ="SELECT * FROM user"; 
+$query = "SELECT * FROM user"; 
 
 if($result=mysqli_query($conn,$query))
 {
-   while ($row=mysqli_fetch_assoc($result))
+   while ($row=mysqli_fetch_row($result))
     {
-		foreach ($row as $udata) 	
+		foreach ($row as $udata) 
 		{ 
 		  echo "<tr align='center'>";
 	      echo "<td>".$udata['username']."</td>";
@@ -62,7 +62,7 @@ if($result=mysqli_query($conn,$query))
     	}   
     }
 }
-			        ?>
+?>
 			    </table>
 			</div>
 		</div>
