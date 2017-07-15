@@ -43,21 +43,21 @@ if($result=mysqli_query($conn,$query))
 		foreach ($row as $val) 
 		{ 
 		  echo "<tr align='center'>";
-	      echo "<td>".$val['username']."</td>";
-	      echo "<td>".$val['type']."</td>";
-	      echo "<td>".$val['firstname']."</td>";
-	      echo "<td>".$val['lastname']."</td>";
-	      echo "<td>".$val['email']."</td>";
-	      echo "<td>".$val['mobile']."</td>";
-	      echo "<td>".$val['peraddress']."</td>";
-	      echo "<td>".$val['city']."</td>";
-		  echo "<td>".$val['mbill']."</td>";
-	      echo "<td>".$val['cload']."</td>";
-	      echo "<td>".$val['rarea']."</td>";
-	      echo "<td>".$val['phase']."</td>";
-	      echo "<td>".$val['referredby']."</td>";
-	      echo "<td>".$val['remarks']."</td>";
-	      echo "<td>".$val['req']."</td>";
+	      echo "<td>".$val[1]."</td>";
+	      echo "<td>".$val[2]."</td>";
+	      echo "<td>".$val[3]."</td>";
+	      echo "<td>".$val[4]."</td>";
+	      echo "<td>".$val[5]."</td>";
+	      echo "<td>".$val[6]."</td>";
+	      echo "<td>".$val[7]."</td>";
+	      echo "<td>".$val[8]."</td>";
+		  echo "<td>".$val[9]."</td>";
+	      echo "<td>".$val[10]."</td>";
+	      echo "<td>".$val[11]."</td>";
+	      echo "<td>".$val[12]."</td>";
+	      echo "<td>".$val[13]."</td>";
+	      echo "<td>".$val[14]."</td>";
+	      echo "<td>".$val[15]."</td>";
 	      echo"</tr>";
 
     	}   
