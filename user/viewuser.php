@@ -20,7 +20,6 @@
             	<table width="100%"  class="table table-striped table-bordered info-table">
              		<tr align="center">
             		
-                		<td><big><b>ID</b></big></td>
 			            <td><big><b>User Name</b></big></td>
 			            <td><big><b>Type</b></big></td>
 			            <td><big><b>First Name</b></big></td>
@@ -50,7 +49,6 @@ if($result=mysqli_query($conn,$query))
 		foreach ($row as $udata) 
 		{ 
 		  echo "<tr align='center'>";
-		  echo "<td>".$udata['id']."</td>";
 	      echo "<td>".$udata['username']."</td>";
 	      echo "<td>".$udata['type']."</td>";
 	      echo "<td>".$udata['firstname']."</td>";
