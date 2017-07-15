@@ -23,9 +23,11 @@
 
 
 
-                      <div class="col-md-6 col-sm-6 col-xs-12"  >
+                      <div class="col-md-12 col-sm-12 col-xs-12"  >
                       <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
+
+                      <form>
                     <select class="form-control" id="siteid">
                     
 
@@ -54,6 +56,8 @@
 
 
                     </select>     
+
+                    </form>
             </div>
                 
 
