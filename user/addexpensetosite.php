@@ -331,52 +331,6 @@ $site=$_POST['siteid'];
       
 
 
-      <?php
-
-require("../php/connect.php");
-
-
-$query ="SELECT property FROM siteprop WHERE siteid='$site'"; 
-
-
-if($result=mysqli_query($conn,$query))
-{
-   while ($row=mysqli_fetch_row($result))
-    {
-    
-      foreach ($row as $val) 
-      { 
-
-          $quantid=$val."quant";
-          $rateid=$val."rate";
-          $totalid=$val."total";
-            echo'<div class="row">
-              <div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$quantid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Quantity'.'</span></label>
-
-                  <input type="text" name="$quantid" id="$quantid" class="form-control"';
-                  echo"placeholder='Quantity' onchange="total($val)" >     
-            </div><br>";
-            echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>
-
-                  <input type="text" name="$rateid" id="$rateid" class="form-control"';
-                  echo"placeholder='Rate' onchange="total($val)">     
-            </div><br>";
-            echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>
-
-                  <input type="text" name="$totalid" id="$totalid" class="form-control"';
-                  echo"placeholder='Total' readonly='true'>     
-            </div></div><br>";
-
-      }
-      
-    }
-
-}
-
-?>
 
                     <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Transaction</button>
 
