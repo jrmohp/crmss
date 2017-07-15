@@ -368,7 +368,7 @@ if($result=mysqli_query($conn,$query))
 
                   <input type="text" name="$totalid" id="$totalid" class="form-control"';
                   echo"placeholder='Total' readonly='true'>     
-            </div></div>";
+            </div></div><br>";
 
       }
       
