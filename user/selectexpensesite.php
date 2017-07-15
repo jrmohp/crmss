@@ -27,7 +27,7 @@
                       <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
 
-                      <form action="addexpensetosite.php">
+                      <form action="addexpensetosite.php" method="post">
                     <select class="form-control" id="siteid" name="siteid">
                     
 
