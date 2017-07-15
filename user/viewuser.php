@@ -11,7 +11,7 @@
 <body>
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                    <!--page content-->
+                    
             	<table width="100%"  class="table table-striped table-bordered info-table">
              		<tr align="center">
 			            <td><big><b>User Name</b></big></td>
@@ -42,7 +42,6 @@ if($result=mysqli_query($conn,$query))
     {	
 		foreach ($row as $val) 
 		{ 
-			if($val['id']!=NULL){
 		  echo "<tr align='center'>";
 	      echo "<td>".$val['username']."</td>";
 	      echo "<td>".$val['type']."</td>";
@@ -59,8 +58,8 @@ if($result=mysqli_query($conn,$query))
 	      echo "<td>".$val['referredby']."</td>";
 	      echo "<td>".$val['remarks']."</td>";
 	      echo "<td>".$val['req']."</td>";
-	      echo"</tr>";
-	  }
+	      echo "</tr>";
+
     	}   
     }
 }
