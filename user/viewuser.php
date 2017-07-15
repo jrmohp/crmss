@@ -40,11 +40,7 @@ if($result=mysqli_query($conn,$query))
 {
    while ($row=mysqli_fetch_row($result))
     {
-    	echo "<pre>";
-    	print_r($row);
-    	echo "</pre>";
-
-/*		foreach ($row as $udata) 
+		foreach ($row as $udata) 
 		{ 
 		  echo "<tr align='center'>";
 	      echo "<td>".$udata['username']."</td>";
@@ -64,7 +60,7 @@ if($result=mysqli_query($conn,$query))
 	      echo "<td>".$udata['req']."</td>";
 	      echo"</tr>";
     	}   
-*/    }
+    }
 }
 ?>
 			    </table>
