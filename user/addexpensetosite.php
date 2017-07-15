@@ -22,6 +22,8 @@ $site=$_POST['siteid'];
 <body>
 
  	<div class="row" id="body2">
+  <form>
+
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -30,7 +32,7 @@ $site=$_POST['siteid'];
           <form action="" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
-                         <?php echo"<input type='text'  readonly='true'  value=$site class='form-control'>" ?>
+                         <?php echo"<input type='text'  readonly='true' id='siteid' value=$site class='form-control'>" ?>
                 </div>
 
             
@@ -328,9 +330,15 @@ $site=$_POST['siteid'];
 
 
 
+
+
       
 
                     </div>
+
+
+                    <button class="btn btn-success"> Add Transaction</button>
+                    </form>
                     </div>
                     </body>
 
