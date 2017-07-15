@@ -122,6 +122,8 @@
 
         alert(total);
 
+      }
+
 
 
 
