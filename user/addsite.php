@@ -39,33 +39,7 @@
 
 
 
-	  				<div class="col-md-6 col-sm-6 col-xs-12" >
-                     	<label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Name</span></label>
-
-                   		  	<input type="text" name="sitename" id="sitename" class="form-control" placeholder="Site Name">
-       		  		</div>
-
-  			</div>
-
-  		  	<br>
-
-			<div class="row">
-
-					<div class="col-md-6 col-sm-6 col-xs-12"  >
-          		   		<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Supervisor</span></label>
-
-            			<input type="text" name="supervisor" id="supervisor" class="form-control" placeholder="Supervisor">			
-	    			</div>
-
-
-	    			<div class="col-md-6 col-sm-6 col-xs-12" >
-                     	<label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Expense Count</span></label>
-
-                   		  	<input type="text" name="ecount" id="ecount" class="form-control" placeholder="Expense Count">
-       		  		</div>
-
-			</div>
-
+	  				
 
 			<br>
 
