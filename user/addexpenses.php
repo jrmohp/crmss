@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Mega ATV Championship  </title>
+  <title>Add Expenses | Smart Solar  </title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
 
-<table width="100%"  class="table table-striped table-bordered info-table">
+
 <?php
 
 require("../php/connect.php");
