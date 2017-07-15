@@ -34,37 +34,25 @@
 	  				<div class="col-md-6 col-sm-6 col-xs-12"  >
               		  	<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
-            		<select class="form-control" id="siteid">
-                 
-                   <?php 
-
-  require("../php/connect.php");
-
-                              $siteids="SELECT DISTINCT siteid FROM siteprop";
-
-                             if($result=mysqli_query($conn,$siteids))
-                              {
-                                           while ($row=mysqli_fetch_row($result))
-                                             {
-    
-                                                            foreach ($row as $val) 
-                                                            { 
-                                                                  echo "<option>$val</option>" ;
-
-                                                             }
-      
-                                              }
-
-                              }
-
-                                          ?>
-
-                </select>	
+            			<input type="text" name="siteid" id="siteid" class="form-control" placeholder="Site Id">			
     				</div>
 
 
+              <div class="col-md-6 col-sm-6 col-xs-12" >
+                      <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Expense Count</span></label>
+
+                          <input type="text" name="ecount" id="ecount" class="form-control" placeholder="Expense Count">
+                </div>
 
 	  				
+
+  			</div>
+
+  		  	<br>
+
+			
+      
+
 
 			<br>
 
@@ -238,10 +226,9 @@ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
                     </div>
                     </body>
 
-
-
-
+	
 <?php
 
-      include "footer.php";
+
+  include "footer.php";
 ?>
