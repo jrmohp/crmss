@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Mega ATV Championship  </title>
+  <title>Select Site | Smart Solar  </title>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
 
 
                       <form action="addexpensetosite.php">
-                    <select class="form-control" id="siteid">
+                    <select class="form-control" id="siteid" name="siteid">
                     
 
                       <?php 
@@ -56,6 +56,8 @@
 
 
                     </select>     
+
+                    <button class="btn btn-success" type="submit">Proceed</button>
 
                     </form>
             </div>
