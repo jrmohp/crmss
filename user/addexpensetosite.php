@@ -26,7 +26,7 @@ $site=$_POST['siteid'];
 
             <div class="row">
 
-          <div class="col-md-10 col-sm-10 col-xs-10" >
+          <div class="col-md-12 col-sm-12 col-xs-12" >
           <form action="" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
@@ -333,7 +333,7 @@ $site=$_POST['siteid'];
 require("../php/connect.php");
 
 
-$query ="SELECT property FROM siteprop WHERE siteid=''"; 
+$query ="SELECT property FROM siteprop WHERE siteid=$site"; 
 
 
 if($result=mysqli_query($conn,$query))
