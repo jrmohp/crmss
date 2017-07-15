@@ -15,13 +15,15 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
 
-<table width="100%"  class="table table-striped table-bordered info-table">
+
 <?php
 
 require("../php/connect.php");
 
 
-$query ="SELECT property FROM siteprop WHERE siteid='SITE0001'"; 
+
+$query ="SELECT property FROM siteprop WHERE siteid="; 
+
 
 
 if($result=mysqli_query($conn,$query))
