@@ -20,6 +20,8 @@
 
             <div class="row">
 
+            <div class="ln_solid"></div>
+
 					<div class="col-md-4 col-sm-4 col-xs-12"  >
           		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
 
@@ -47,12 +49,11 @@
 
             <div class="row">
 
-					<div class="col-md-4 col-sm-4 col-xs-12"  >
-          		   		<label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement</span></label>
+					<div class="col-md-4 col-sm-4 col-xs-12" >
+                     	<label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement</span></label>
 
-            			<input type="text" name="advt" id="advt" class="form-control" placeholder="Advertisement">			
-	    			</div>
-
+                   		  	<input type="text" name="advt" id="advt" class="form-control" placeholder="Advertisement">
+       		  		</div>
 
 	    			<div class="col-md-4 col-sm-4 col-xs-12" >
                      	<label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding</span></label>
