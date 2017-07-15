@@ -25,7 +25,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-12"  >
           		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
 
-            			 <input type="number" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity">     
+            			 <input type="number" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity" onchange="total('fuel')">     
 
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
@@ -105,6 +105,18 @@
                     </body>
 
 	
+
+  <script type="text/javascript">
+    
+    function total(name)
+    {
+        alert(name);
+    }
+  </script>
+
+
+
+
 <?php
 
 
