@@ -11,7 +11,7 @@
 <body>
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                    <!--page content-->
+                    
             	<table width="100%"  class="table table-striped table-bordered info-table">
              		<tr align="center">
 			            <td><big><b>User Name</b></big></td>
