@@ -46,6 +46,10 @@ if($result=mysqli_query($conn,$query))
 {
    while ($row=mysqli_fetch_row($result))
     {
+    	echo "<pre>";
+    	echo $udata;
+    	echo "</pre>";
+    	exit();
 		foreach ($row as $udata) 
 		{ 
 		  echo "<tr align='center'>";
