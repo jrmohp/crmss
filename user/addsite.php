@@ -34,7 +34,7 @@
 	  				<div class="col-md-6 col-sm-6 col-xs-12"  >
               		  	<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
-            		    <select class="form-control">
+            		    <select class="form-control" id="siteid">
                     
 
                       <?php 
