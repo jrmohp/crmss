@@ -15,6 +15,13 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
 
+<div class="col-md-12 col-sm-12 col-xs-12"  >
+<label for="" class="col-md-4 col-sm-4 col-xs-4"><span class="label label-info">Fuel Expense</span></label>
+<input type="text" name="" id="$val" class="form-control" placeholder='$val'> </div><br>
+
+
+<label for="" class="col-md-4 col-sm-4 col-xs-4"><span class="label label-info">Employee Conveyance Expence</span></label>
+<input type="text" name="" id="$val" class="form-control" placeholder='$val'> </div><br>
 
 <?php
 
