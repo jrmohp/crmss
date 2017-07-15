@@ -110,7 +110,14 @@
     
     function total(name)
     {
-        alert(name);
+        var getqid="#"+name+"quant";
+        var getrid="#"+name+"rate";
+
+
+        var quantity=$(getqid);
+
+
+        alert(quantity);
     }
   </script>
 
