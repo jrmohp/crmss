@@ -25,12 +25,12 @@
 					<div class="col-md-4 col-sm-4 col-xs-12"  >
           		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
 
-            			 <input type="number" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity" onchange="total('fuel')">     
+            			 <input type="number" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity" ">     
 
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
-                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Fuel" required="true">    
+                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Fuel" required="true"  onchange="total('fuel')">    
 
                  
             </div>
