@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Expenses | Smart Solar </title>
+  <title>Select Site | Smart Soalar </title>
 </head>
 <body>
 
