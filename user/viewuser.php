@@ -3,11 +3,6 @@
 
   include "header.php";
 ?>
-
-
-
-
- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +14,6 @@
                     <!--page content-->
             	<table width="100%"  class="table table-striped table-bordered info-table">
              		<tr align="center">
-            		
 			            <td><big><b>User Name</b></big></td>
 			            <td><big><b>Type</b></big></td>
 			            <td><big><b>First Name</b></big></td>
@@ -44,9 +38,9 @@ $query ="SELECT * FROM user";
 
 if($result=mysqli_query($conn,$query))
 {
-   while ($row=mysqli_fetch_row($result))
+   while ($row=mysqli_fetch_assoc($result))
     {
-		foreach ($row as $udata) 
+		foreach ($row as $udata) 	
 		{ 
 		  echo "<tr align='center'>";
 	      echo "<td>".$udata['username']."</td>";
@@ -74,7 +68,5 @@ if($result=mysqli_query($conn,$query))
 		</div>
     </body>
 <?php
-
-
   include "footer.php";
 ?>
