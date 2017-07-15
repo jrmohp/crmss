@@ -103,6 +103,12 @@ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
 
             }
 
+            else
+            {
+              alert("Either Site Exist Or Some Error Occured");
+              alert("Try With New Site Name,If Does Not Work Contact Admin");
+            }
+
         });
  
 
