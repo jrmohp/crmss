@@ -32,7 +32,7 @@ $site=$_POST['siteid'];
           <form action="" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
-                         <?php echo"<input type='text'  readonly='true' id='siteid' value=$site class='form-control'>" ?>
+                         <?php echo"<input type='text'  readonly='true' id='siteid' value='$site' class='form-control'>" ?>
                 </div>
 
             
@@ -377,12 +377,10 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
-                    </div>
-
-                    </div>
-                    <br>
 
                     <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Transaction</button>
+
+                    </div>
                     </form>
                     </div>
                     </body>
