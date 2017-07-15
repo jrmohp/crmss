@@ -57,7 +57,7 @@
                   <input type="text" name="supervisor" id="supervisor" class="form-control" placeholder="Supervisor">     
             </div>
 
-
+            </div>
             
 
            <br>
