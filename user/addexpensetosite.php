@@ -328,7 +328,7 @@ $site=$_POST['siteid'];
       <br>
 
 
-      <div class="row">
+      
 
 
       <?php
@@ -346,11 +346,28 @@ if($result=mysqli_query($conn,$query))
     
       foreach ($row as $val) 
       { 
-            echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.'quantity'.'</span></label>
 
-                  <input type="text" name="$val" id="$val" class="form-control"';
-                  echo"placeholder='$val' readonly='true'>     
+          $quantity=$val+"quant";
+          $rate=$val+"rate";
+          $total=$val+"total";
+            echo'<div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+                      <label for="$quantity" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Quantity'.'</span></label>
+
+                  <input type="text" name="$quantity" id="$quantity" class="form-control"';
+                  echo"placeholder='Quantity' onchange="total($val)" >     
+            </div><br>";
+            echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
+                      <label for="$rate" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>
+
+                  <input type="text" name="$rate" id="$rate" class="form-control"';
+                  echo"placeholder='Rate' onchange="total($val)">     
+            </div><br>";
+            echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
+                      <label for="$total" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>
+
+                  <input type="text" name="$total" id="$total" class="form-control"';
+                  echo"placeholder='Total' readonly='true'>     
             </div><br>";
 
       }
