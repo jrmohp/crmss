@@ -3,6 +3,7 @@
 
   include "header.php";
 
+$site=$_POST['siteid'];
 
 
 
@@ -29,7 +30,7 @@
           <form action="" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
-                       
+                         <?php echo"<input type='text'  readonly='true'  value=$site>" ?>
                 </div>
 
             
