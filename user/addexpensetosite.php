@@ -328,45 +328,7 @@ $site=$_POST['siteid'];
 
 
 
-      <div class="row">
 
-<<<<<<< HEAD
-      <?php
-
-require("../php/connect.php");
-
-
-$query ="SELECT property FROM siteprop WHERE siteid='$site'"; 
-
-
-if($result=mysqli_query($conn,$query))
-{
-   while ($row=mysqli_fetch_row($result))
-    {
-    
-      foreach ($row as $val) 
-      { 
-            echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.'</span></label>
-
-                  <input type="text" name="$val" id="$val" class="form-control"';
-                  echo"placeholder='$val' readonly="true">     
-            </div><br>";
-
-      }
-      
-    }
-
-}
-
-?>
-                  </div>
-=======
-
-
-      
-
->>>>>>> 4cf0ee07cc5f39ed7daf721f29464260b9e3227a
                     </div>
                     <br>
 
@@ -401,7 +363,7 @@ if($result=mysqli_query($conn,$query))
 
 
 
-       
+      
   </script>
 
 
