@@ -39,7 +39,7 @@ $query = "SELECT * FROM user";
 if($result=mysqli_query($conn,$query))
 {
    while ($row=mysqli_fetch_row($result))
-    {
+    {	if($val['id']!=NULL)
 		foreach ($row as $val) 
 		{ 
 		  echo "<tr align='center'>";
