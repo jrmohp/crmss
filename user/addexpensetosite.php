@@ -30,7 +30,7 @@
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Rate</span></label>
-                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Fuel" required="true"  onchange="total('fuel')">    
+                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Rate" required="true"  onchange="total('fuel')">    
 
                  
             </div>
@@ -53,52 +53,255 @@
 
             <div class="row">
 
-					<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement</span></label>
+            <div class="ln_solid"></div>
 
-                   		  	<input type="text" name="advt" id="advt" class="form-control" placeholder="Advertisement">
-       		  		</div>
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Quantity</span></label>
 
-	    			<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding</span></label>
+                   <input type="number" name="ecquant" id="ecquant" class="form-control" placeholder="Quantity" onchange="total('ec')">     
 
-                   		  	<input type="text" name="food" id="food" class="form-control" placeholder="Fooding">
-       		  		</div>
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Rate</span></label>
+                   <input type="number" name="ecrate" id="ecrate" class="form-control" placeholder="Rate" required="true"  onchange="total('ec')">    
 
-       		  		<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room</span></label>
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Total</span></label>
 
-                   		  	<input type="text" name="rent" id="rent" class="form-control" placeholder="Rent For Room">
-       		  		</div>
-
-			</div>
-
-
-			<br>
+                  <input type="text" name="ectotal" id="ectotal" class="form-control" placeholder="Employee Conveyance Total" readonly="true" >     
+            </div>
 
 
-			<div class="row">
+          
 
-					<div class="col-md-4 col-sm-4 col-xs-12"  >
-          		   		<label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill</span></label>
-
-            			<input type="text" name="telebill" id="telebill" class="form-control" placeholder="Telephone Bill">			
-	    			</div>
+      </div>
 
 
-	    			<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Electricity Bill</span></label>
 
-                   		  	<input type="text" name="elecbill" id="elecbill" class="form-control" placeholder="Electricity Bill">
-       		  		</div>
 
-       		  		<div class="col-md-4 col-sm-4 col-xs-12" >
-                     	<label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges</span></label>
+      <br>
 
-                   		  	<input type="text" name="postcharge" id="postcharge" class="form-control" placeholder="Postal Cahrges">
-       		  		</div>
+      <div class="row">
 
-			</div>
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Quantity</span></label>
+
+                   <input type="number" name="transquant" id="transquant" class="form-control" placeholder="Quantity" onchange="total('trans')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Rate</span></label>
+                   <input type="number" name="transrate" id="transrate" class="form-control" placeholder="Rate" required="true"  onchange="total('trans')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Total</span></label>
+
+                  <input type="text" name="transtotal" id="transtotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
+
+
+
+      <br>
+
+      <div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Quantity</span></label>
+
+                   <input type="number" name="advtquant" id="advtquant" class="form-control" placeholder="Quantity" onchange="total('advt')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Rate</span></label>
+                   <input type="number" name="advtrate" id="advtrate" class="form-control" placeholder="Rate" required="true"  onchange="total('advt')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Total</span></label>
+
+                  <input type="text" name="advttotal" id="advttotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
+
+
+
+      <br>
+
+      <div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Quantity</span></label>
+
+                   <input type="number" name="foodquant" id="foodquant" class="form-control" placeholder="Quantity" onchange="total('food')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Rate</span></label>
+                   <input type="number" name="foodrate" id="foodrate" class="form-control" placeholder="Rate" required="true"  onchange="total('food')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Total</span></label>
+
+                  <input type="text" name="foodtotal" id="foodtotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
+
+
+
+      <br>
+
+      <div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Quantity</span></label>
+
+                   <input type="number" name="rentquant" id="rentquant" class="form-control" placeholder="Quantity" onchange="total('rent')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Rate</span></label>
+                   <input type="number" name="rentrate" id="rentrate" class="form-control" placeholder="Rate" required="true"  onchange="total('rent')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Total</span></label>
+
+                  <input type="text" name="renttotal" id="renttotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
+
+
+
+      <br>
+
+      <div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Quantity</span></label>
+
+                   <input type="number" name="telebillquant" id="telebillquant" class="form-control" placeholder="Quantity" onchange="total('telebill')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Rate</span></label>
+                   <input type="number" name="telebillrate" id="telebillrate" class="form-control" placeholder="Rate" required="true"  onchange="total('telebill')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Total</span></label>
+
+                  <input type="text" name="telebilltotal" id="telebilltotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
+
+
+
+      <br>
+
+      <div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Electricity Bill Quantity</span></label>
+
+                   <input type="number" name="elecbillquant" id="elecbillquant" class="form-control" placeholder="Quantity" onchange="total('elecbill')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info"Electricity Bill>Electricity Bill Rate</span></label>
+                   <input type="number" name="elecbillrate" id="elecbillrate" class="form-control" placeholder="Rate" required="true"  onchange="total('elecbill')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Electricity Bill Total</span></label>
+
+                  <input type="text" name="elecbilltotal" id="elecbilltotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
+
+
+
+      <br>
+
+      <div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Quantity</span></label>
+
+                   <input type="number" name="postchargequant" id="postchargequant" class="form-control" placeholder="Quantity" onchange="total('postcharge')">     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Rate</span></label>
+                   <input type="number" name="postchargerate" id="postchargerate" class="form-control" placeholder="Rate" required="true"  onchange="total('postcharge')">    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Total</span></label>
+
+                  <input type="text" name="postchargetotal" id="postchargetotal" class="form-control" placeholder="Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
 
                     </div>
                     </div>
