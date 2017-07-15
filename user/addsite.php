@@ -35,7 +35,10 @@
               		  	<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
             		<select class="form-control" id="siteid">
-                  <?php 
+                 
+                   <?php 
+
+  require("../php/connect.php");
 
                               $siteids="SELECT DISTINCT siteid FROM siteprop";
 
@@ -52,9 +55,9 @@
       
                                               }
 
-                                          }
+                              }
 
-                   ?>
+                                          ?>
 
                 </select>	
     				</div>
