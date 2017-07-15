@@ -337,7 +337,7 @@ $site=$_POST['siteid'];
                     </div>
                     <br>
 
-                    <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7"> Add Transaction</button>
+                    <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Transaction</button>
                     </form>
                     </div>
                     </body>
