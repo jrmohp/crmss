@@ -58,7 +58,7 @@ if($result=mysqli_query($conn,$query))
 	      echo "<td>".$val['referredby']."</td>";
 	      echo "<td>".$val['remarks']."</td>";
 	      echo "<td>".$val['req']."</td>";
-	      echo"</tr>";
+	      echo "</tr>";
 
     	}   
     }
