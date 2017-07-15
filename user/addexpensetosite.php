@@ -29,14 +29,15 @@
 
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
-                   <input type="number" name="fuel" id="fuel" class="form-control" placeholder="Fuel" required="true">    
+              <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info"></span></label>
+                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Fuel" required="true">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
-                   
+                   <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
 
-                  <input type="text" name="fuel" id="fuel" class="form-control" placeholder="Fuel">     
+                  <input type="text" name="fueltotal" id="fueltotal" class="form-control" placeholder="Total" readonly="true">     
             </div>
 
 
