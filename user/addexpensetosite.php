@@ -30,14 +30,14 @@
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
-                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Fuel" required="true"  >    
+                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Fuel" required="true"  onchange="total('fuel')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
                    <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel</span></label>
 
-                  <input type="text" name="fueltotal" id="fueltotal" class="form-control" placeholder="Total" readonly="true" onclick="total('fuel')">     
+                  <input type="text" name="fueltotal" id="fueltotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -112,6 +112,7 @@
     {
         var getqid="#"+name+"quant";
         var getrid="#"+name+"rate";
+        var gettotal="#"+name+"total";
 
 
         var quantity=$(getqid).val();
@@ -120,7 +121,9 @@
         var total=quantity*rate;
 
 
-        alert(total);
+        $(gettotal).attr("value",total);
+
+       
 
       }
 
