@@ -104,7 +104,7 @@
              		<div class="col-md-6 col-sm-6 col-xs-12" >
                   					   <label for="fname" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Email Id</span></label>
 
-                    						<input type="text" name="fname" id="fname" class="form-control" placeholder="Email Id">			
+                    						<input type="text" name="fname" id="fname" class="form-control" placeholder="Email Id" type="email">			
                    			
 					</div>			
 									<div class="col-md-6 col-sm-6 col-xs-12" >
