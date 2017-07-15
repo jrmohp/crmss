@@ -325,10 +325,11 @@ $site=$_POST['siteid'];
       </div>
 
 
-
+      <br>
 
 
       <div class="row">
+      <table width="100%"  class="table table-striped table-bordered info-table">
 
       <?php
 
@@ -359,7 +360,8 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
-                  </div>
+</table>
+</div>
 
                     </div>
                     <br>
