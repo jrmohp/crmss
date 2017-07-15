@@ -2,6 +2,11 @@
 
 
   include "header.php";
+
+
+
+
+
 ?>
 
 
@@ -20,7 +25,47 @@
 
             <div class="row">
 
+          <div class="col-md-12 col-sm-12 col-xs-12" >
+                      <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
+
+                          <select class="form-control" id="siteid" name="siteid">
+                    
+
+                      <?php 
+
+                            require("../php/connect.php");
+
+                              $siteids="SELECT DISTINCT siteid FROM siteprop";
+
+                             if($result=mysqli_query($conn,$siteids))
+                              {
+                                           while ($row=mysqli_fetch_row($result))
+                                             {
+    
+                                                            foreach ($row as $val) 
+                                                            { 
+                                                                  echo "<option>$val</option>" ;
+
+                                                             }
+      
+                                              }
+
+                              }
+
+                                          ?>
+
+
+                    </select>     
+                </div>
+
+            
+      </div>
+
+            <div class="row">
+
             <div class="ln_solid"></div>
+
+
 
 					<div class="col-md-4 col-sm-4 col-xs-12"  >
           		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Quantity</span></label>

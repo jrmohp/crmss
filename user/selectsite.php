@@ -27,7 +27,7 @@
                       <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
 
 
-                      <form action="addexpensetosite.php">
+                      <form action="viewsitedetails.php">
                     <select class="form-control" id="siteid" name="siteid">
                     
 
@@ -56,6 +56,8 @@
 
 
                     </select>     
+
+
 
                     <button class="btn btn-success" type="submit">Proceed</button>
 
