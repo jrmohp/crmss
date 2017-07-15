@@ -329,7 +329,7 @@ $site=$_POST['siteid'];
 
 
       <div class="row">
-      <table width="100%"  class="table table-striped table-bordered info-table">
+      
 
       <?php
 
@@ -346,28 +346,12 @@ if($result=mysqli_query($conn,$query))
     
       foreach ($row as $val) 
       { 
-            echo'<div class="row">
-                  <div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.'</span></label>
-
-                  <input type="text" name="$val" id="$val" class="form-control"';
-                  echo"placeholder='$val' readonly='true' onchange="total('postcharge')">     
-            </div><br>";
-
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
                       <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.'</span></label>
 
                   <input type="text" name="$val" id="$val" class="form-control"';
-                  echo"placeholder='$val' readonly='true' onchange="total('postcharge')">     
+                  echo"placeholder='$val' readonly='true'>     
             </div><br>";
-            echo'<div class="row">
-                  <div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.'</span></label>
-
-                  <input type="text" name="$val" id="$val" class="form-control"';
-                  echo"placeholder='$val' readonly='true' >     
-            </div><br>";
-
 
       }
       
@@ -376,7 +360,6 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
-</table>
 </div>
 
                     </div>
