@@ -352,17 +352,17 @@ if($result=mysqli_query($conn,$query))
           $totalid=$val."total";
             echo'<div class="row">
               <div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$quantid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Quantity'.'</span></label>
+                      <label for="$quantid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">".$val." Quantity"."</span></label>
 
-                  <input type="text" name="$quantid" id="$quantid" class="form-control"placeholder='Quantity' onchange="total('$val')" >     
+                  <input type="text" name="$quantid" id="$quantid" class="form-control"placeholder="Quantity" onchange="total('$val')" >     
             </div><br><div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>
+                      <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">".$val." Rate"."</span></label>
 
-                  <input type="text" name="$rateid" id="$rateid" class="form-control"placeholder='Rate' onchange="total('$val')">     
+                  <input type="text" name="$rateid" id="$rateid" class="form-control"placeholder="Rate" onchange="total('$val')">     
             </div><br><div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>
+                      <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">".$val." Total"."</span></label>
 
-                  <input type="text" name="$totalid" id="$totalid" class="form-control"placeholder='Total' readonly='true'>     
+                  <input type="text" name="$totalid" id="$totalid" class="form-control"placeholder="Total" readonly="true">     
             </div></div><br>';
 
       }
