@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Expenses | Smart Solar  </title>
+  <title>Add Expenses | Smart Solar </title>
 </head>
 <body>
 
@@ -15,20 +15,15 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
 
-<div class="col-md-12 col-sm-12 col-xs-12"  >
-<label for="" class="col-md-4 col-sm-4 col-xs-4"><span class="label label-info">Fuel Expense</span></label>
-<input type="text" name="" id="$val" class="form-control" placeholder='$val'> </div><br>
-
-
-<label for="" class="col-md-4 col-sm-4 col-xs-4"><span class="label label-info">Employee Conveyance Expence</span></label>
-<input type="text" name="" id="$val" class="form-control" placeholder='$val'> </div><br>
 
 <?php
 
 require("../php/connect.php");
 
 
-$query ="SELECT property FROM siteprop WHERE siteid='SITE0001'"; 
+
+$query ="SELECT property FROM siteprop WHERE siteid="; 
+
 
 
 if($result=mysqli_query($conn,$query))

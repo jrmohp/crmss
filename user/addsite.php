@@ -57,7 +57,7 @@
                   <input type="text" name="supervisor" id="supervisor" class="form-control" placeholder="Supervisor">     
             </div>
 
-
+            </div>
             
 
            <br>
@@ -101,6 +101,12 @@ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
             {
               alert("Site Information Added");
 
+            }
+
+            else
+            {
+              alert("Either Site Exist Or Some Error Occured");
+              alert("Try With New Site Name,If Does Not Work Contact Admin");
             }
 
         });
