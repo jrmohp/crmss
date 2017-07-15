@@ -22,15 +22,17 @@ $site=$_POST['siteid'];
 <body>
 
  	<div class="row" id="body2">
+  <form>
+
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
 
-          <div class="col-md-10 col-sm-10 col-xs-10" >
+          <div class="col-md-12 col-sm-12 col-xs-12" >
           <form action="" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
-                         <?php echo"<input type='text'  readonly='true'  value=$site class='form-control'>" ?>
+                         <?php echo"<input type='text'  readonly='true' id='siteid' value=$site class='form-control'>" ?>
                 </div>
 
             
@@ -328,6 +330,7 @@ $site=$_POST['siteid'];
 
       <div class="row">
 
+<<<<<<< HEAD
       <?php
 
 require("../php/connect.php");
@@ -358,7 +361,17 @@ if($result=mysqli_query($conn,$query))
 
 ?>
                   </div>
+=======
+
+
+      
+
+>>>>>>> 4cf0ee07cc5f39ed7daf721f29464260b9e3227a
                     </div>
+                    <br>
+
+                    <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Transaction</button>
+                    </form>
                     </div>
                     </body>
 
