@@ -59,7 +59,7 @@
 
 
 
-                    <button class="btn btn-success" type="submit">Proceed</button>
+                    <center><button class="btn btn-success" type="submit" style="margin-top: 8px;">Proceed</button></center>
 
                     </form>
             </div>
