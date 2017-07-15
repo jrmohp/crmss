@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Site | Smart Solar  </title>
+  <title>Edit Site | Smart Solar  </title>
 </head>
 <body>
 
