@@ -327,15 +327,7 @@
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">
                             <thead>
-                            <tr>
-                              <td align="center"><input type="text" class="global_filter" id="global_filter" class="form-control"></td>
-                              <td align="center"><input type="text" class="column_filter" id="col0_filter"></td>
-                               <td align="center"><input type="text" class="column_filter" id="col1_filter"></td>
-                               <td align="center"><input type="text" class="column_filter" id="col2_filter"></td>
-                               <td align="center"><input type="text" class="column_filter" id="col3_filter"></td>
-                               <td align="center"><input type="text" class="column_filter" id="col4_filter"></td>
-
-                            </tr>
+                           
                               <tr>
                                 <th>Name</th>
                                 <th>Type</th>
@@ -343,7 +335,14 @@
                                 <th>Mobile</th>
                                 <th>City</th>
                                 <th>Address</th>
-                                 <th>Address</th>
+                                <th>Monthly Bill</th>
+                                <th>Load</th>
+                                <th>Phase</th>
+                                <th>Referred By</th>
+                                <th>Requirement</th>
+                                <th>Remarks</th>
+
+                                 
 
                               </tr>
                             </thead>
@@ -358,6 +357,12 @@
                                 <td>27</td>
                                 <td>2011/01/25</td>
                                 <td>$112,000</td>
+                                <td>$112,000</td>
+                                 <td>Donna Snider</td>
+                                <td>Customer Support</td>
+                                <td>New York</td>
+                                <td>27</td>
+                                <td>2011/01/25</td>
                                 <td>$112,000</td>
                               </tr>
                             </tbody>
