@@ -123,7 +123,7 @@
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['mobile']."</td>";
         echo "<td>".$row['city']."</td>";
-        echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB()'>Edit</button></td>";
+        echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
        
         echo "</tr>";
 
@@ -195,11 +195,11 @@
               
 
                 
-                function DB()
+                function DB(btnid)
         {
-               var btnid=this.id;
+               
 
-               alert(this.id);
+               alert(btnid);
                var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
 
                alert(link);
