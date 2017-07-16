@@ -34,23 +34,17 @@
   include "header.php";
 ?>
 
+<script type="text/javascript">
+  
 
+$(document).ready(function() {
+    $('#datatable-keytable').DataTable( {
+        keys: true
+    } );
+} );
+</script>
 
-       
-
-           
-
-            <!-- menu profile quick info -->
-           
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-         
-
-            <div class="clearfix"></div>
-
+      
 
 
               <div class="col-md-12 col-sm-12 col-xs-12">
