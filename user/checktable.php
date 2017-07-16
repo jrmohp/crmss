@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Smart Solar  </title>
+  <title>View Customers | Smart Solar  </title>
 
 
 
@@ -54,7 +54,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>KeyTable example <small>Users</small></h2>
+                    <h2>Customer Database<small>Users</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
