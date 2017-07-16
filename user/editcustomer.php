@@ -61,8 +61,9 @@
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
 
-                        <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><img src="https://shots.jotform.com/kade/Screenshots/blue_question_mark.png" height="13px" class="col-md-1 col-sm-1 col-xs-1" /></a>
+
                       </div>
+                      <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><img src="https://shots.jotform.com/kade/Screenshots/blue_question_mark.png" height="13px" class="col-md-1 col-sm-1 col-xs-1" /></a>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required" value="<?php echo $row['lastname']?>">
