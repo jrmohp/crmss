@@ -69,7 +69,7 @@
                     
                       <li><a href="http://crm.smartsolar.co.in/user/addcustomer">Add Customer</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/viewcustomer">View Customers</a></li>
-                       <li><a href="http://crm.smartsolar.co.in/user/editcustomer">Edit Customer</a></li>
+                       <li><a href="http://crm.smartsolar.co.in/user/editcustomerselect">Edit Customer</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/singlemail">Send Mail To Customer</a></li>
                     </ul>
                   </li>
