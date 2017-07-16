@@ -199,7 +199,7 @@
         {
                var btnid=this.id;
 
-               aler(this.id);
+               alert(this.id);
                var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
 
                alert(link);
