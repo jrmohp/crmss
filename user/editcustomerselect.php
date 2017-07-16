@@ -148,7 +148,7 @@
             <script type="text/javascript">
               
 
-                $(".answerquery").on("click",DB);
+                $(".editdata").on("click",DB);
                 function DB()
         {
                var btnid=this.id;
