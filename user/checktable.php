@@ -342,6 +342,7 @@
                                 <th>Address</th>
                                 <th>Monthly Bill</th>
                                 <th>Load</th>
+                                <th>Roof Srea(in sq.ft)</th>
                                 <th>Phase</th>
                                 <th>Referred By</th>
                                 <th>Requirement</th>
