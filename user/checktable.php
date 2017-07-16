@@ -334,7 +334,7 @@
                                 <th>Mobile</th>
                                 <th>City</th>
                                 <th>Address</th>
-                                <th>Requirement</th>
+                               
                               </tr>
                             </thead>
 
