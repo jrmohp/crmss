@@ -47,19 +47,19 @@ $site=$_POST['siteid'];
 					<div class="col-md-4 col-sm-4 col-xs-12"  >
           		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Quantity</span></label>
 
-            			 <input type="number" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity" onchange="total('fuel')">     
+            			 <input type="number" class="qtys" name="fuelquant" id="fuelquant" class="form-control" placeholder="Quantity" onchange="total('fuel')">     
 
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Rate</span></label>
-                   <input type="number" name="fuelrate" id="fuelrate" class="form-control" placeholder="Rate" required="true"  onchange="total('fuel')">    
+                   <input type="number" class="qtys" name="fuelrate" id="fuelrate" class="form-control" placeholder="Rate" required="true"  onchange="total('fuel')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Total</span></label>
 
-                  <input type="text" name="fueltotal" id="fueltotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="fueltotal" id="fueltotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -80,19 +80,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Quantity</span></label>
 
-                   <input type="number" name="ecquant" id="ecquant" class="form-control" placeholder="Quantity" onchange="total('ec')">     
+                   <input type="number" class="qtys" name="ecquant" id="ecquant" class="form-control" placeholder="Quantity" onchange="total('ec')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Rate</span></label>
-                   <input type="number" name="ecrate" id="ecrate" class="form-control" placeholder="Rate" required="true"  onchange="total('ec')">    
+                   <input type="number" class="qtys" name="ecrate" id="ecrate" class="form-control" placeholder="Rate" required="true"  onchange="total('ec')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Total</span></label>
 
-                  <input type="text" name="ectotal" id="ectotal" class="form-control" placeholder="Employee Conveyance Total" readonly="true" >     
+                  <input type="text" class="tots" name="ectotal" id="ectotal" class="form-control" placeholder="Employee Conveyance Total" readonly="true" >     
             </div>
 
 
@@ -112,19 +112,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Quantity</span></label>
 
-                   <input type="number" name="transquant" id="transquant" class="form-control" placeholder="Quantity" onchange="total('trans')">     
+                   <input type="number" class="qtys" name="transquant" id="transquant" class="form-control" placeholder="Quantity" onchange="total('trans')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Rate</span></label>
-                   <input type="number" name="transrate" id="transrate" class="form-control" placeholder="Rate" required="true"  onchange="total('trans')">    
+                   <input type="number" class="qtys" name="transrate" id="transrate" class="form-control" placeholder="Rate" required="true"  onchange="total('trans')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Total</span></label>
 
-                  <input type="text" name="transtotal" id="transtotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="transtotal" id="transtotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -144,19 +144,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Quantity</span></label>
 
-                   <input type="number" name="advtquant" id="advtquant" class="form-control" placeholder="Quantity" onchange="total('advt')">     
+                   <input type="number" class="qtys" name="advtquant" id="advtquant" class="form-control" placeholder="Quantity" onchange="total('advt')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Rate</span></label>
-                   <input type="number" name="advtrate" id="advtrate" class="form-control" placeholder="Rate" required="true"  onchange="total('advt')">    
+                   <input type="number" class="qtys" name="advtrate" id="advtrate" class="form-control" placeholder="Rate" required="true"  onchange="total('advt')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Total</span></label>
 
-                  <input type="text" name="advttotal" id="advttotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="advttotal" id="advttotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -176,19 +176,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Quantity</span></label>
 
-                   <input type="number" name="foodquant" id="foodquant" class="form-control" placeholder="Quantity" onchange="total('food')">     
+                   <input type="number" class="qtys" name="foodquant" id="foodquant" class="form-control" placeholder="Quantity" onchange="total('food')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Rate</span></label>
-                   <input type="number" name="foodrate" id="foodrate" class="form-control" placeholder="Rate" required="true"  onchange="total('food')">    
+                   <input type="number" class="qtys" name="foodrate" id="foodrate" class="form-control" placeholder="Rate" required="true"  onchange="total('food')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Total</span></label>
 
-                  <input type="text" name="foodtotal" id="foodtotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="foodtotal" id="foodtotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -208,19 +208,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Quantity</span></label>
 
-                   <input type="number" name="rentquant" id="rentquant" class="form-control" placeholder="Quantity" onchange="total('rent')">     
+                   <input type="number" class="qtys" name="rentquant" id="rentquant" class="form-control" placeholder="Quantity" onchange="total('rent')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Rate</span></label>
-                   <input type="number" name="rentrate" id="rentrate" class="form-control" placeholder="Rate" required="true"  onchange="total('rent')">    
+                   <input type="number" class="qtys" name="rentrate" id="rentrate" class="form-control" placeholder="Rate" required="true"  onchange="total('rent')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Total</span></label>
 
-                  <input type="text" name="renttotal" id="renttotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="renttotal" id="renttotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -240,19 +240,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Quantity</span></label>
 
-                   <input type="number" name="telebillquant" id="telebillquant" class="form-control" placeholder="Quantity" onchange="total('telebill')">     
+                   <input type="number" class="qtys" name="telebillquant" id="telebillquant" class="form-control" placeholder="Quantity" onchange="total('telebill')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Rate</span></label>
-                   <input type="number" name="telebillrate" id="telebillrate" class="form-control" placeholder="Rate" required="true"  onchange="total('telebill')">    
+                   <input type="number" class="qtys" name="telebillrate" id="telebillrate" class="form-control" placeholder="Rate" required="true"  onchange="total('telebill')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Total</span></label>
 
-                  <input type="text" name="telebilltotal" id="telebilltotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="telebilltotal" id="telebilltotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -272,19 +272,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Electricity Bill Quantity</span></label>
 
-                   <input type="number" name="elecbillquant" id="elecbillquant" class="form-control" placeholder="Quantity" onchange="total('elecbill')">     
+                   <input type="number" class="qtys" name="elecbillquant" id="elecbillquant" class="form-control" placeholder="Quantity" onchange="total('elecbill')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info"Electricity Bill>Electricity Bill Rate</span></label>
-                   <input type="number" name="elecbillrate" id="elecbillrate" class="form-control" placeholder="Rate" required="true"  onchange="total('elecbill')">    
+                   <input type="number" class="qtys" name="elecbillrate" id="elecbillrate" class="form-control" placeholder="Rate" required="true"  onchange="total('elecbill')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Electricity Bill Total</span></label>
 
-                  <input type="text" name="elecbilltotal" id="elecbilltotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="elecbilltotal" id="elecbilltotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -304,19 +304,19 @@ $site=$_POST['siteid'];
           <div class="col-md-4 col-sm-4 col-xs-12"  >
                     <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Quantity</span></label>
 
-                   <input type="number" name="postchargequant" id="postchargequant" class="form-control" placeholder="Quantity" onchange="total('postcharge')">     
+                   <input type="number" class="qtys" name="postchargequant" id="postchargequant" class="form-control" placeholder="Quantity" onchange="total('postcharge')">     
 
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Rate</span></label>
-                   <input type="number" name="postchargerate" id="postchargerate" class="form-control" placeholder="Rate" required="true"  onchange="total('postcharge')">    
+                   <input type="number" class="qtys" name="postchargerate" id="postchargerate" class="form-control" placeholder="Rate" required="true"  onchange="total('postcharge')">    
 
                  
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  ><
                    <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Total</span></label>
 
-                  <input type="text" name="postchargetotal" id="postchargetotal" class="form-control" placeholder="Total" readonly="true" >     
+                  <input type="text" class="tots" name="postchargetotal" id="postchargetotal" class="form-control" placeholder="Total" readonly="true" >     
             </div>
 
 
@@ -352,7 +352,7 @@ if($result=mysqli_query($conn,$query))
           $totalid=$val."total";
           $oc="'$val'";
 
-            echo "<div class='row'> <div class='ln_solid'></div><div class='col-md-4 col-sm-4 col-xs-12'  ><label for='$quantid' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>$val Quantity</span></label><input type='text' name='$quantid' id='$quantid' class='form-control'";
+            echo "<div class='row'> <div class='ln_solid'></div><div class='col-md-4 col-sm-4 col-xs-12'  ><label for='$quantid' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>$val Quantity</span></label><input type='text' class='qtys' name='$quantid' id='$quantid' class='form-control'";
                   echo 'placeholder="Quantity" onchange="total('.$oc.')"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
                       <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>';
@@ -362,7 +362,7 @@ if($result=mysqli_query($conn,$query))
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
                       <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>';
 
-                  echo "<input type='text' name='$totalid' id='$totalid' class='form-control'";
+                  echo "<input type='text' class='tots' name='$totalid' id='$totalid' class='form-control'";
                   echo"placeholder='Total' readonly='true'>     
             </div></div><br>";
 
@@ -374,12 +374,39 @@ if($result=mysqli_query($conn,$query))
 
 ?>
 
+<div class="row">
+
+            <div class="ln_solid"></div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Total Quantity</span></label>
+
+                   <input type="number" class="qtyst" name="totalquant" id="totalquant" class="form-control" placeholder="Total Quantity" >     
+
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  >
+              <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Total Rate</span></label>
+                   <input type="number" class="qtys" name="tr" id="tr" class="form-control" placeholder="NA" required="true" >    
+
+                 
+            </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"  ><
+                   <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Grand Total</span></label>
+
+                  <input type="text" class="tots" name="grandtotal" id="grandtotal" class="form-control" placeholder="Grand Total" readonly="true" >     
+            </div>
+
+
+          
+
+      </div>
+
                     <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Tddransaction</button>
 
                     </div>
                     </form>
                     </div>
-                    </body>
+              </body>
 
 	
 
@@ -405,6 +432,14 @@ if($result=mysqli_query($conn,$query))
       }
 
 
+
+      $(document).on("change", ".qtys", function() {
+    var sum = 0;
+    $(".qtys").each(function(){
+        sum += +$(this).val();
+    });
+    $(".qtyst").val(sum);
+});
 
 
       
