@@ -8,11 +8,14 @@ if($result=mysqli_query($conn,$query))
 {
    while ($row=mysqli_fetch_row($result))
     {	
-		foreach ($row as $val) 
+
+    	echo $row;
+		/*foreach ($row as $val) 
+
 		{ 
 		  echo $val[0];
 
-    	}   
+    	}  */ 
     }
 }
 ?>
