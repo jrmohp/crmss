@@ -333,6 +333,7 @@
                             <thead>
                            
                               <tr>
+                                 <th>SmartSolar ID</th>
                                 <th>Name</th>
                                 <th>Type</th>
                                 <th>Email</th>
@@ -354,21 +355,7 @@
 
                             <tbody>
                               
-                              <tr>
-                                <td>Donna Snider</td>
-                                <td>Customer Support</td>
-                                <td>New York</td>
-                                <td>27</td>
-                                <td>2011/01/25</td>
-                                <td>$112,000</td>
-                                <td>$112,000</td>
-                                <td>Donna Snider</td>
-                                <td>Customer Support</td>
-                                <td>New York</td>
-                                <td>27</td>
-                                <td>2011/01/25</td>
-                                
-                              </tr>
+                            
 
 
                                 <?php
@@ -382,10 +369,26 @@
                                                     while ($row=$result->fetch_array())
                                                   { 
 
-                                                              echo "<tr>";
-                                                              echo "<td>".$row['username']."</td>";
-
-                                                              echo "</tr>";
+                                                             echo "<tr align='center'>";
+        echo "<td>".$row['username']."</td>";
+        echo "<td>".$row['firstname'].$row['lastname']."</td>";
+        echo "<td>".$row['type']."</td>";
+        
+      
+        echo "<td>".$row['email']."</td>";
+        echo "<td>".$row['mobile']."</td>";
+        echo "<td>".$row['city']."</td>";
+        echo "<td>".$row['peraddress']."</td>";
+        
+      echo "<td>".$row['mbill']."</td>";
+        echo "<td>".$row['cload']."</td>";
+        echo "<td>".$row['rarea']."</td>";
+        echo "<td>".$row['phase']."</td>";
+        echo "<td>".$row['referredby']."</td>";
+           echo "<td>".$row['req']."</td>";
+        echo "<td>".$row['remarks']."</td>";
+     
+        echo "</tr>";
 
                                                     }
                                                             }
