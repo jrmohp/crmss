@@ -10,7 +10,7 @@ if($result=mysqli_query($conn,$query))
     {	
 		foreach ($row as $val) 
 		{ 
-		  echo $val;
+		  echo $val[0];
 
     	}   
     }
