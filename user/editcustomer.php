@@ -63,7 +63,7 @@
                          
 
                       </div>
-                      <div class=" col-md-1 col-sm-1 col-xs-1">
+                      <div class=" ">
                       <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><span class="fa fa-info"></span></a> 
                         
                       </div>
