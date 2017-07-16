@@ -15,9 +15,9 @@
 
                                         $query = "SELECT * FROM user WHERE id=$editid"; 
 
-                                          $result=$conn->query($query))
+                                          $result=$conn->query($query);
                                               
-                                        $row=$result->fetch_array()
+                                        $row=$result->fetch_array();
 
 ?>
 
