@@ -57,7 +57,7 @@
                     <br />
                     <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
 
-                      <div class="col-md-5 col-sm-5 col-xs-11 form-group has-feedback">
+                      <div class="col-md-6 col-sm-6 col-xs-11 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                          
