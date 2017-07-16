@@ -358,8 +358,7 @@ if($result=mysqli_query($conn,$query))
                       <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>';
 
                   echo "<input type='text' name='$rateid' id='$rateid' class='form-control'";
-                  echo"placeholder='Rate' onchange='total($oc)'>     
-            </div>";
+                  echo 'placeholder="Rate" onchange="total($oc)"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
                       <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>
 
