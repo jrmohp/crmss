@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+
+
+
+
+
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -365,6 +369,31 @@
                                 <td>2011/01/25</td>
                                 
                               </tr>
+
+
+                                <?php
+
+                                    require("../php/connect.php");
+
+                                        $query = "SELECT * FROM user"; 
+
+                                          if($result=$conn->query($query))
+                                              {
+                                                    while ($row=$result->fetch_array())
+                                                  { 
+
+                                                              echo "<tr>";
+                                                              echo "<td>".$row['username']."</td>";
+
+                                                              echo "</tr>";
+
+                                                    }
+                                                            }
+                                        ?>
+                          
+                                
+
+                            
                             </tbody>
                           </table>
                         </div>
