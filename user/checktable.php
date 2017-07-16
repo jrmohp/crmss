@@ -92,12 +92,21 @@
                           <table id="datatable-keytable" class="table table-striped table-bordered">
                             <thead>
                               <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                 <td><big><b>User Name</b></big></td>
+                  <td><big><b>Type</b></big></td>
+                  <td><big><b>First Name</b></big></td>
+                  <td><big><b>Last Name</b></big></td>
+                  <td><big><b>Email</b></big></td>
+                  <td><big><b>Mobile</b></big></td>
+                  <td><big><b>Per Address</b></big></td>
+                    <td><big><b>City</b></big></td>
+                  <td><big><b>Mbill</b></big></td>
+                  <td><big><b>Cload</b></big></td>
+                  <td><big><b>Rarea</b></big></td>
+                  <td><big><b>Phase</b></big></td>
+                  <td><big><b>Reffered By</b></big></td>
+                  <td><big><b>Remarks</b></big></td>
+                  <td><big><b>Request</b></big></td>
                               </tr>
                             </thead>
 
