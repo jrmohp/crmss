@@ -199,10 +199,10 @@
         {
                
 
-               alert(btnid);
+              
                var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
 
-               alert(link);
+               window.location.assign(link);
 
               
         }
