@@ -123,7 +123,7 @@
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['mobile']."</td>";
         echo "<td>".$row['city']."</td>";
-        echo "<td><button class='btn btn-info editdata' id=".$row['id']." onclick='DB()'>Edit</button></td>";
+        echo "<td id=".$row['id']."><button class='btn btn-info editdata' id=".$row['id']." onclick='DB()'>Edit</button></td>";
        
         echo "</tr>";
 
