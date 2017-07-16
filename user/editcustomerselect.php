@@ -145,23 +145,7 @@
 
             
 
-            <script type="text/javascript">
-              
-
-                
-                function DB()
-        {
-               var btnid=this.id;
-
-               var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
-
-               alert(link);
-
-              
-        }
-
-
-            </script>
+            
         <!-- /page content -->
 
         <!-- footer content -->
@@ -204,6 +188,26 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+
+
+
+    <script type="text/javascript">
+              
+
+                
+                function DB()
+        {
+               var btnid=this.id;
+
+               var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
+
+               alert(link);
+
+              
+        }
+
+
+            </script>
 
   </body>
 </html>
