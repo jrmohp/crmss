@@ -116,14 +116,14 @@
                                               {
                                                     while ($row=$result->fetch_array())
                                                   { 
-
+                                                            $reqid=$row['id'];
                                                              echo "<tr align='center'>";
         echo "<td>".$row['username']."</td>";
         echo "<td>".$row['firstname'].$row['lastname']."</td>";
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['mobile']."</td>";
         echo "<td>".$row['city']."</td>";
-        echo '<td id="$row['id']"><button class="btn btn-info editdata" id="$row['id']" onclick="DB()">Edit</button></td>';
+        echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB()'>Edit</button></td>";
        
         echo "</tr>";
 
