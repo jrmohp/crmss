@@ -4,6 +4,8 @@
 
 
   include "header.php";
+
+
 ?>
 
 
@@ -121,7 +123,7 @@
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['mobile']."</td>";
         echo "<td>".$row['city']."</td>";
-        echo "<td><button class='btn btn-info' id=".$row['id'].">Edit</button></td>";
+        echo "<td><button class='btn btn-info editdata' id=".$row['id'].">Edit</button></td>";
        
         echo "</tr>";
 
@@ -142,6 +144,21 @@
               </div>
 
             
+
+            <script type="text/javascript">
+              
+
+                $(".answerquery").on("click",DB);
+                function DB()
+        {
+               var btnid=this.id;
+
+               window.location.assign("http://crm.smartsolar.co.in/user/editcustomer?id="+btnid);
+
+        }
+
+
+            </script>
         <!-- /page content -->
 
         <!-- footer content -->
