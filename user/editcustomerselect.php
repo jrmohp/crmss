@@ -153,8 +153,11 @@
         {
                var btnid=this.id;
 
-               window.location.assign("http://crm.smartsolar.co.in/user/editcustomer?id="+this.id);
+               var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
 
+               alert(link);
+
+              
         }
 
 
