@@ -58,28 +58,28 @@
                     <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required" value="<?php echo $row['username'];?>">
+                        <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required">
+                        <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required" value="<?php echo $row['lastname']?>">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true"  style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
+                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()"  value="<?php echo $row['email']?>">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span id="email_status" style="color: red"> </span> 
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone" required="true"> 
+                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone" required="true"   value="<?php echo $row['mobile']?>"> 
                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true">
+                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true" value="<?php echo $row['city']?>">
                         <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
