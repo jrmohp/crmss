@@ -17,7 +17,7 @@
 
                                           $result=$conn->query($query))
                                               
-                                        ?>
+                                        $row=$result->fetch_array()
 
 ?>
 
