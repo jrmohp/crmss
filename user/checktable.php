@@ -77,7 +77,7 @@
                       <div class="col-sm-12">
                         <div class="card-box table-responsive">
                           <p class="text-muted font-13 m-b-30">
-                            KeyTable provides Excel like cell navigation on any table. Events (focus, blur, action etc) can be assigned to individual cells, columns, rows or all cells.
+                           Empoloyee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
                           </p>
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">
