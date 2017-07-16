@@ -328,21 +328,12 @@
                           <table id="datatable-keytable" class="table table-striped table-bordered">
                             <thead>
                               <tr>
-                               <th>User Name</th>
-                  <th>Type</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Email</th>
-                  <th>Mobile</th>
-                  <th>Per Address</th>
-                    <th>City</th>
-                  <th>Mbill</th>
-                  <th>Cload</th>
-                  <th>Rarea</th>
-                  <th>Phase</th>
-                  <th>Reffered By</th>
-                  <th>Remarks</th>
-                  <th>Request</th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
                               </tr>
                             </thead>
 
