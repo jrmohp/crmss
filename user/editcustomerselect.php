@@ -148,12 +148,12 @@
             <script type="text/javascript">
               
 
-                $(".editdata").on("click",DB);
+                
                 function DB()
         {
                var btnid=this.id;
 
-               window.location.assign("http://crm.smartsolar.co.in/user/editcustomer?id="+btnid);
+               window.location.assign("http://crm.smartsolar.co.in/user/editcustomer?id="+this.id);
 
         }
 
