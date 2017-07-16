@@ -59,8 +59,8 @@
 
                       <div class="col-md-6 col-sm-6 col-xs-11 form-group has-feedback">
                      
-                         <input type="text" name="firstname" class="form-control has-feedback-left " id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
-                        <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen" data-balloon="Font Awesome: &#xf030; &#xf133; &#xf1fc; &#xf03e; &#xf1f8;" data-balloon-pos="up"></span>
                          
 
                       </div>
