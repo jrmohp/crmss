@@ -6,16 +6,16 @@ $query = "SELECT username,type,firstname,lastname,email,mobile,peraddress,city,m
 
 if($result=mysqli_query($conn,$query))
 {
-   while ($row=mysqli_fetch_row($result))
+   while ($row=mysqli_fetch_all($result,MYSQLI_ASSOC);)
     {	
 
-    	echo $row;
-		/*foreach ($row as $val) 
+    	
+		foreach ($row as $val) 
 
 		{ 
-		  echo $val[0];
+		  echo $val;
 
-    	}  */ 
+    	}  
     }
 }
 ?>
