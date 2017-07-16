@@ -353,7 +353,7 @@ if($result=mysqli_query($conn,$query))
           $onchange="total('$val')";
 
             echo "<div class='row'> <div class='ln_solid'></div><div class='col-md-4 col-sm-4 col-xs-12'  ><label for='$quantid' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>'.$val.' Quantity'.'</span></label><input type='text' name='$quantid' id='$quantid' class='form-control'";
-                  echo"placeholder='Quantity' onchange='$onchange'  > </div>";
+                  echo"placeholder='Quantity' onchange=$onchange> =</div>";
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
                       <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>';
 
