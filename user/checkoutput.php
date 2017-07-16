@@ -10,7 +10,7 @@ if($result=$conn->query($query))
     {	
 
     	
-		$row['username'];
+		echo $row['username'];
     }
 }
 ?>
