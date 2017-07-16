@@ -60,10 +60,10 @@
                       <div class="col-md-5 col-sm-5 col-xs-11 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
-
+                         <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><span class="fa fa-info col-md-1 col-sm-1 col-xs-1"></span></a> 
 
                       </div>
-                      <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><span class="fa fa-info"></span></a>
+                     
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required" value="<?php echo $row['lastname']?>">
