@@ -468,7 +468,7 @@
             }
             else if(info==0)
             {
-               alert("aila helani");
+               
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
