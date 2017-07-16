@@ -89,6 +89,7 @@
                                <th>Email</th>
                                 <th>Mobile</th>
                                 <th>City</th>
+                                <th>Edit</th>
                                
 
                                  
@@ -107,7 +108,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT id,username,firstname,lastname,email,mobile,city FROM user"; 
+                                        $query = "SELECT id,username,firstname,lastname,email,mobile FROM user"; 
 
                                           if($result=$conn->query($query))
                                               {
@@ -117,14 +118,10 @@
                                                              echo "<tr align='center'>";
         echo "<td>".$row['username']."</td>";
         echo "<td>".$row['firstname'].$row['lastname']."</td>";
-
-      
-       
-      
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['mobile']."</td>";
         echo "<td>".$row['city']."</td>";
-          echo "<td><button class='btn btn-info' id=".$row['id'].">Edit</button></td>";
+        echo "<td><button class='btn btn-info' id=".$row['id'].">Edit</button></td>";
        
         echo "</tr>";
 
