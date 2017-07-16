@@ -328,7 +328,7 @@
                           <table id="datatable-keytable" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                              <td align="center"><input type="text" class="global_filter" id="global_filter"></td>
+                              <td align="center"><input type="text" class="global_filter" id="global_filter" class="form-control"></td>
                               <td align="center"><input type="text" class="column_filter" id="col0_filter"></td>
                                <td align="center"><input type="text" class="column_filter" id="col1_filter"></td>
                                <td align="center"><input type="text" class="column_filter" id="col2_filter"></td>
