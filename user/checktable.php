@@ -82,7 +82,7 @@
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">
                             <thead>
-                           
+                           <center>
                               <tr>
                                  <th>ID</th>
                                 <th>Name</th>
@@ -102,6 +102,7 @@
                                  
 
                               </tr>
+                              </center>
                             </thead>
 
 
