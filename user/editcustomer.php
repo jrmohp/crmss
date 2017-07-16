@@ -79,7 +79,7 @@
                       </div>
 
                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true" value="<?php echo $row['city']?>">
+                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true"  value="<?php echo $row['peraddress']?>">
                         <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
@@ -87,7 +87,7 @@
                        
                        <select name="city" class="form-control" required="true">
                          
-                         <option disabled="true" selected="true"></option>
+                         <option disabled="true" selected="true"> <?php echo $row['city']?></option>
                          <option>Others</option>
                          <option> Agastinuagan  </option>
 <option>  Anandpur  </option>
@@ -385,27 +385,27 @@
                         
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
-                        <input type="text" name="units" class="form-control has-feedback-right has-feedback-left" id="units" placeholder="Units">
+                        <input type="text" name="units" class="form-control has-feedback-right has-feedback-left" id="units" placeholder="Units"  value="<?php echo $row['mbill']?>">
                         <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kWh</span>
                          <span class="form-control-feedback left fa fa-lightbulb-o" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
                       
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="monthlybill" class="form-control has-feedback-left has-feedback-right " id="monthly bill" placeholder="Monthly Bill">
+                        <input type="text" name="monthlybill" class="form-control has-feedback-left has-feedback-right " id="monthly bill" placeholder="Monthly Bill"  value="<?php echo $row['mbill']?>">
                         <span class="fa fa-file-text form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                          <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">INR</span>
                       </div>
                          <br>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="contractload" class="form-control has-feedback-left has-feedback-right" id="contract load" placeholder="Contract Load">
+                        <input type="text" name="contractload" class="form-control has-feedback-left has-feedback-right" id="contract load" placeholder="Contract Load"   value="<?php echo $row['cload']?>">
                         <span class="fa fa-bolt form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kW</span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="roofarea" class="form-control has-feedback-left has-feedback-right " id="roof area" placeholder="Roof Area">
+                        <input type="text" name="roofarea" class="form-control has-feedback-left has-feedback-right " id="roof area" placeholder="Roof Area"  value="<?php echo $row['rarea']?>">
                         <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                          <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
                       </div>
