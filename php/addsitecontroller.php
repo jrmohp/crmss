@@ -2,8 +2,8 @@
 
 require("connect.php");
 
-	$siteid=$_POST['siteid'];
-	$property=$_POST['prop'];
+	$siteid=mysqli_real_escape_string($conn, $_POST['siteid']);
+	$property=mysqli_real_escape_string($conn, $_POST['prop']);
 
 	$sql="INSERT INTO siteprop(siteid,property) VALUES ('$siteid','$property')";
 

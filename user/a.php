@@ -3,10 +3,10 @@ require("../phpmailer/class.phpmailer.php");
 require("../php/connect.php");
 
 
-	$from=$_POST['mfrom'];
-	$to=$_POST['mto'];
-	$subject=$_POST['subject'];
-	$body=$_POST['body'];
+	$from=mysqli_real_escape_string($conn, $_POST['mfrom']);
+	$to=mysqli_real_escape_string($conn, $_POST['mto']);
+	$subject=mysqli_real_escape_string($conn, $_POST['subject']);
+	$body=mysqli_real_escape_string($conn, $_POST['body']);
 
 
 $mail = new PHPMailer();

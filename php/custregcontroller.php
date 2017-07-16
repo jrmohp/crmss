@@ -4,18 +4,18 @@
 	
 	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))	
 	{
-	$firstname=$_POST['firstname'];
-	$lastname=$_POST['lastname'];
-	$email=$_POST['email'];
-	$phone=$_POST['phone'];
-	$address=$_POST['address'];
-	$city=$_POST['city'];
-	$type=$_POST['type'];
-	$units=$_POST['units'];
-	$monthlybill=$_POST['monthlybill'];
-	$contractload=$_POST['contractload'];
-	$roofarea=$_POST['roofarea'];
-	$phase=$_POST['phase'];
+	$firstname=mysqli_real_escape_string($conn, $_POST['firstname']);
+	$lastname=mysqli_real_escape_string($conn, $_POST['lastname']);
+	$email=mysqli_real_escape_string($conn, $_POST['email']);
+	$phone=mysqli_real_escape_string($conn, $_POST['phone']);
+	$address=mysqli_real_escape_string($conn, $_POST['address']);
+	$city=mysqli_real_escape_string($conn, $_POST['city']);
+	$type=mysqli_real_escape_string($conn, $_POST['type']);
+	$units=mysqli_real_escape_string($conn, $_POST['units']);
+	$monthlybill=mysqli_real_escape_string($conn, $_POST['monthlybill']);
+	$contractload=mysqli_real_escape_string($conn, $_POST['contractload']);
+	$roofarea=mysqli_real_escape_string($conn, $_POST['roofarea']);
+	$phase=mysqli_real_escape_string($conn, $_POST['phase']);
 
 	$query = $conn->query("SELECT MAX(id) FROM user"); // execute
 	$max_id = $query->fetch_array(); // fetch

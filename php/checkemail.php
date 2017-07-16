@@ -6,7 +6,7 @@ require "connect.php";
 		
 		if(isset($_POST['user_email']))
 		{
-			$iemail=$_POST['user_email'];
+			$iemail=mysqli_real_escape_string($conn, $_POST['user_email']);
 
 			$checkemailquery="SELECT email from user where email='$iemail'";
 

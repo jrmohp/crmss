@@ -3,11 +3,11 @@ require("../phpmailer/class.phpmailer.php");
 require("connect.php");
 
 
-	$from=$_POST['mfrom'];
-	$to=$_POST['mto'];
-	$subject=$_POST['subject'];
-	$body=$_POST['body'];
-	$fromname=$_POST['fromname'];
+	$from=mysqli_real_escape_string($conn, $_POST['mfrom']);
+	$to=mysqli_real_escape_string($conn, $_POST['mto']);
+	$subject=mysqli_real_escape_string($conn, $_POST['subject']);
+	$body=mysqli_real_escape_string($conn, $_POST['body']);
+	$fromname=mysqli_real_escape_string($conn, $_POST['fromname']);
 
 $sql="INSERT INTO sentmails (mfrom,mto,subject,body) VALUES ('$from','$to','$subject','$body')";
 

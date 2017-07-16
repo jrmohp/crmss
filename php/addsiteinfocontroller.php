@@ -2,9 +2,9 @@
 
 require("connect.php");
 
-	$siteid=$_POST['siteid'];
-	$sitename=$_POST['sitename'];
-	$supervisor=$_POST['supervisor'];
+	$siteid=mysqli_real_escape_string($conn, $_POST['siteid']);
+	$sitename=mysqli_real_escape_string($conn, $_POST['sitename']);
+	$supervisor=mysqli_real_escape_string($conn, $_POST['supervisor']);
 
 	$sql="INSERT INTO siteinfo(siteid,sitename,supervisor) VALUES ('$siteid','$sitename','$supervisor')";
 
