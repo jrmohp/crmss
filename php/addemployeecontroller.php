@@ -3,33 +3,33 @@ require("connect.php");
 
 if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && !empty($_POST['mn']) && !empty($_POST['gender'])&& !empty($_POST['dob'])&& !empty($_POST['bg'])&& !empty($_POST['pa'])&& !empty($_POST['ta'])&& !empty($_POST['acard'])&& !empty($_POST['accno'])&& !empty($_POST['ifsc'])&& !empty($_POST['cno'])&& !empty($_POST['email'])&& !empty($_POST['wphno'])&& !empty($_POST['wemail'])&& !empty($_POST['username'])&& !empty($_POST['password']) && !empty($_POST['empid']))	
 	{
-
-	$fname=$_POST['fname'];
-	$mname=$_POST['mname'];
-	$lname=$_POST['lname'];
-	$fn=$_POST['fn'];
-	$mn=$_POST['mn'];
-	$gender=$_POST['gender'];
-	$dob=$_POST['dob'];
-	$bg=$_POST['bg'];
-	$im=$_POST['im'];
-	$pa=$_POST['pa'];
-	$ta=$_POST['ta'];
-	$acard=$_POST['acard'];
-	$pcard=$_POST['pcard'];
-	$epf=$_POST['epf'];
-	$exp=$_POST['exp'];
-	$accno=$_POST['accno'];
-	$ifsc=$_POST['ifsc'];
-	$cno=$_POST['cno'];
-	$altcno=$_POST['altcno'];
-	$email=$_POST['email'];
-	$altemail=$_POST['altemail'];
-	$wphno=$_POST['wphno'];
-	$wemail=$_POST['wemail'];
-	$empid=$_POST['empid'];
-	$username=$_POST['username'];
-	$password=$_POST['password'];
+		
+	$fname=mysqli_real_escape_string($conn, $_POST['fname']);
+	$mname=mysqli_real_escape_string($conn, $_POST['mname']);
+	$lname=mysqli_real_escape_string($conn, $_POST['lname']);
+	$fn=mysqli_real_escape_string($conn, $_POST['fn']);
+	$mn=mysqli_real_escape_string($conn, $_POST['mn']);
+	$gender=mysqli_real_escape_string($conn, $_POST['gender']);
+	$dob=mysqli_real_escape_string($conn, $_POST['dob']);
+	$bg=mysqli_real_escape_string($conn, $_POST['bg']);
+	$im=mysqli_real_escape_string($conn, $_POST['im']);
+	$pa=mysqli_real_escape_string($conn, $_POST['pa']);
+	$ta=mysqli_real_escape_string($conn, $_POST['ta']);
+	$acard=mysqli_real_escape_string($conn, $_POST['acard']);
+	$pcard=mysqli_real_escape_string($conn, $_POST['pcard']);
+	$epf=mysqli_real_escape_string($conn, $_POST['epf']);
+	$exp=mysqli_real_escape_string($conn, $_POST['exp']);
+	$accno=mysqli_real_escape_string($conn, $_POST['accno']);
+	$ifsc=mysqli_real_escape_string($conn, $_POST['ifsc']);
+	$cno=mysqli_real_escape_string($conn, $_POST['cno']);
+	$altcno=mysqli_real_escape_string($conn, $_POST['altcno']);
+	$email=mysqli_real_escape_string($conn, $_POST['email']);
+	$altemail=mysqli_real_escape_string($conn, $_POST['altemail']);
+	$wphno=mysqli_real_escape_string($conn, $_POST['wphno']);
+	$wemail=mysqli_real_escape_string($conn, $_POST['wemail']);
+	$empid=mysqli_real_escape_string($conn, $_POST['empid']);
+	$username=mysqli_real_escape_string($conn, $_POST['username']);
+	$password=mysqli_real_escape_string($conn, $_POST['password']);
 	
 
 $sql="INSERT INTO addemployee(empid,username,password,fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$empid','$username','$password','$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc','$cno','$altcno','$email','$altemail','$wphno','$wemail')";
