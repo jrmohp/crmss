@@ -373,8 +373,8 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
-
-                    <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Transaction</button>
+sd
+                    <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Tddransaction</button>
 
                     </div>
                     </form>
