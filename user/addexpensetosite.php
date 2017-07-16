@@ -360,9 +360,9 @@ if($result=mysqli_query($conn,$query))
                   echo "<input type='text' name='$rateid' id='$rateid' class='form-control'";
                   echo 'placeholder="Rate" onchange="total('.$oc.')"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>
+                      <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>';
 
-                  <input type="text" name="$totalid" id="$totalid" class="form-control"';
+                  echo "<input type='text' name='$totalid' id='$totalid' class='form-control'";
                   echo"placeholder='Total' readonly='true'>     
             </div></div><br>";
 
