@@ -389,10 +389,10 @@
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="roofarea" class="form-control has-feedback-left has-feedback-right " id="roof area" placeholder="Roof Area">
-                        <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                        <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span></a>
                          <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
 
-                         <a target="_blank" href="#" title="Hi, I'm a tooltip thingy. Please add your name in the textbox to the right of me, thanks!"><span class="fa fa-info "  style="color:lightgreen"></span></a>
+
                       </div>
 
 
