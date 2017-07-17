@@ -119,7 +119,7 @@
                                                             $reqid=$row['id'];
                                                              echo "<tr align='center'>";
         echo "<td>".$row['empid']."</td>";
-        echo "<td>".$row['fname'].$row['mname'].$row['lname']."</td>";
+        echo "<td>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['accno']."</td>";
         echo "<td>".$row['ifsc']."</td>";

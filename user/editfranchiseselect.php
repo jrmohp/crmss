@@ -119,7 +119,7 @@
                                                             $reqid=$row['ID'];
                                                              echo "<tr align='center'>";
         echo "<td>".$row['ownerid']."</td>";
-        echo "<td>".$row['ofirstname'].$row['omiddlename'].$row['olastname']."</td>";
+        echo "<td>".$row['ofirstname']." ".$row['omiddlename']." ".$row['olastname']."</td>";
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['contact']."</td>";
         echo "<td>".$row['gst']."</td>";
