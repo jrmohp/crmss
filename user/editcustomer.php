@@ -430,7 +430,9 @@
                       </div>
                       <div class="ln_solid"></div>
                       <div class="form-group">
+
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <input type="text" value="<?php echo $editid?>" name="">
                           <button type="button" class="btn btn-primary">Cancel</button>
                <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
@@ -474,6 +476,7 @@ $(document).ready(function(){
         var monthlybill=$('#monthlybill').val();
         var contractload=$('#contractload').val();
         var roofarea=$('#roofarea').val();
+
        
        
 
