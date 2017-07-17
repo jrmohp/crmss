@@ -26,7 +26,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                 <form  method="post" data-parsley-validate>
+                 <form  method="post" data-parsley-validate onsubmit="return false">
                       
 
                   <h2>Franchise Registration</h2>
@@ -173,7 +173,7 @@
                     </div>
                   
                      </div>
-                     </form>
+                    </form>
 
 <script src="../vendors/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../js/alertify.js"></script>
