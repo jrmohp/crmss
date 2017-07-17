@@ -3,7 +3,6 @@ require("connect.php");
 
 	if( !empty($_POST['lfname']) && !empty($_POST['lmname']) && !empty($_POST['llname']) && !empty($_POST['ofname']) && !empty($_POST['omname']) && !empty($_POST['olname']) && !empty($_POST['ownerid']) && !empty($_POST['panno']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['GST']) && !empty($_POST['address']))
 	{
-		echo "Part 1";
 		$lfname = mysqli_real_escape_string($_POST['lfname']);
 		echo "$lfname<br>";
 		$lmname = mysqli_real_escape_string($_POST['lmname']);
@@ -19,11 +18,10 @@ require("connect.php");
 		$address= mysqli_real_escape_string($_POST['address']);
 
 		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$GST','$address')";                        	
+		echo "Part 1";
 	}
 	else
 	{
-		echo "Part 2";
-		
 		if(empty($_POST['lfname']))
 		{
 			echo "Legal First Name Cannot Be Empty<br>";
@@ -72,9 +70,7 @@ require("connect.php");
 		{
 			echo "Address Cannot Be Empty<br>";
 		}	
-		echo "Part 3";
 		exit;	
-		echo "Part 4";
 	}
 
 if($conn->query($query))
