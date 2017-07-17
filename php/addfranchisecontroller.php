@@ -1,7 +1,7 @@
 <?php 
 require("connect.php");
 
-	if( !empty($_POST['lfname']) && !empty($_POST['lmname']) && !empty($_POST['llname']) && !empty($_POST['ofname']) && !empty($_POST['omname']) && !empty($_POST['olname']) && !empty($_POST['ownerid']) && !empty($_POST['panno']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['GST']) && !empty($_POST['address']))
+	if( !empty($_POST['lfname']) && !empty($_POST['lmname']) && !empty($_POST['llname']) && !empty($_POST['ofname']) && !empty($_POST['omname']) && !empty($_POST['olname']) && !empty($_POST['ownerid']) && !empty($_POST['panno']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['gst']) && !empty($_POST['address']) && !empty($_POST['username']) && !empty($_POST['accountid']) && !empty($_POST['password']))
 	{
 		$lfname = mysqli_real_escape_string($conn, $_POST['lfname']);
 		$lmname = mysqli_real_escape_string($conn, $_POST['lmname']);
@@ -13,10 +13,13 @@ require("connect.php");
 		$panno 	= mysqli_real_escape_string($conn, $_POST['panno']);
 		$email 	= mysqli_real_escape_string($conn, $_POST['email']);
 		$contact= mysqli_real_escape_string($conn, $_POST['contact']);
-		$GST 	= mysqli_real_escape_string($conn, $_POST['GST']);
+		$GST 	= mysqli_real_escape_string($conn, $_POST['gst']);
 		$address= mysqli_real_escape_string($conn, $_POST['address']);
+		$address= mysqli_real_escape_string($conn, $_POST['username']);
+		$address= mysqli_real_escape_string($conn, $_POST['accountid']);
+		$address= mysqli_real_escape_string($conn, $_POST['password']);
 
-		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$GST','$address')";                        	
+		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,gst,address,username,accountid,password) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$gst','$address','$username','$accountid','$password')";                        	
 	}
 	else
 	{
@@ -60,7 +63,7 @@ require("connect.php");
 		{
 			echo "Contact No. Cannot Be Empty<br>";
 		}
-		if(empty($_POST['GST']))
+		if(empty($_POST['gst']))
 		{
 			echo "GST Cannot Be Empty<br>";
 		}
@@ -68,6 +71,18 @@ require("connect.php");
 		{
 			echo "Address Cannot Be Empty<br>";
 		}	
+		if(empty($_POST['username']))
+		{
+			echo "Username Cannot Be Empty<br>";
+		}
+		if(empty($_POST['accountid']))
+		{
+			echo "Account ID Cannot Be Empty<br>";
+		}
+		if(empty($_POST['password']))
+		{
+			echo "Password Cannot Be Empty<br>";
+		}
 		exit;	
 	}
 
