@@ -53,7 +53,7 @@
                       
                        <div class="col-md-4 col-sm-4 col-xs-12"  >
                          <label for="llname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Legal Last Name</span></label>
-                           <input type="text" name="llname" id="llname" class="form-control"  placeholder="Legal Last Name" value="<?php echo $row['llasttname']?>"> 
+                           <input type="text" name="llname" id="llname" class="form-control"  placeholder="Legal Last Name" value="<?php echo $row['llastname']?>"> 
                       </div>   
 
              </div>
@@ -80,7 +80,7 @@
                       
                     <div class="col-md-4 col-sm-4 col-xs-12"  >
                               <label for="olname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Owner Last Name</span></label>
-              <input type="text" name="olname" id="olname" class="form-control"  placeholder="Owner Last Name" value="<?php echo $row['olasstname']?>"> 
+              <input type="text" name="olname" id="olname" class="form-control"  placeholder="Owner Last Name" value="<?php echo $row['olastname']?>"> 
                       </div>   
 
              </div>
