@@ -143,12 +143,6 @@
 	                 </div>
 
 
-	                 <br>
-
-                  	 <div class="row">
-                    	 <div class="ln_solid"></div>
-                   			 <h2>Legal Information</h2 >
-           			 </div>
 
            			 <br>
 
