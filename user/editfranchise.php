@@ -26,7 +26,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                 <form  method="post" data-parsley-validate onsubmit="return false">
+                 <form  method="post" data-parsley-validate>
                       
 
                   <h2>Franchise Registration</h2>
