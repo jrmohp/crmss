@@ -14,21 +14,23 @@
                     
             	<table width="100%"  class="table table-striped table-bordered info-table">
              		<tr align="center">
-			            <td><big><b>User Name</b></big></td>
-			            <td><big><b>Type</b></big></td>
-			            <td><big><b>First Name</b></big></td>
-			            <td><big><b>Last Name</b></big></td>
-			            <td><big><b>Email</b></big></td>
-			            <td><big><b>Mobile</b></big></td>
-			            <td><big><b>Per Address</b></big></td>
-                		<td><big><b>City</b></big></td>
-			            <td><big><b>Mbill</b></big></td>
-			            <td><big><b>Cload</b></big></td>
-			            <td><big><b>Rarea</b></big></td>
-			            <td><big><b>Phase</b></big></td>
-			            <td><big><b>Reffered By</b></big></td>
-			            <td><big><b>Remarks</b></big></td>
-			            <td><big><b>Request</b></big></td>
+             		<thead>
+			            <th>User Name</th>
+			            <th>Type</th>
+			            <th>First Name</th>
+			            <th>Last Name</th>
+			            <th>Email</th>
+			            <th>Mobile</th>
+			            <th>Per Address</th>
+                		<th>City</th>
+			            <th>Mbill</th>
+			            <th>Cload</th>
+			            <th>Rarea</th>
+			            <th>Phase</th>
+			            <th>Reffered By</th>
+			            <th>Remarks</th>
+			            <th>Request</th>
+			        </thead>
 			        </tr>
 <?php
 
