@@ -137,7 +137,7 @@
         
         echo "<td>".$row['empid']."</td>";
         echo "<td>".$row['username']."</td>";
-        echo "<td>".$row['fname'].$row['mname'].$row['lname']."</td>";
+        echo "<td>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
         echo "<td>".$row['fn']."</td>";
         echo "<td>".$row['mn']."</td>";
       
