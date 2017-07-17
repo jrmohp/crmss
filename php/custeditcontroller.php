@@ -6,7 +6,7 @@
 
 
 	
-	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&&  !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))	
+	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&&  !empty($_POST['phone']) )	
 	{
 	$firstname=mysqli_real_escape_string($conn, $_POST['firstname']);
 	$lastname=mysqli_real_escape_string($conn, $_POST['lastname']);
