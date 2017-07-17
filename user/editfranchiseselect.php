@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Edit Customers | Smart Solar  </title>
+  <title>Edit Franchise | Smart Solar  </title>
 
 
 
