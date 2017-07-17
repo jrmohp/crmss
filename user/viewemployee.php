@@ -153,6 +153,19 @@
 
                                                     }
                                                             }
+ 
+            if($conn->query($sql))
+{
+    echo 1;
+
+}
+else
+{
+   
+  echo mysqli_error($conn);
+
+}
+
                                         ?>
                           
                                 
