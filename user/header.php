@@ -98,7 +98,7 @@
                     <ul class="nav child_menu">
                       <li><a href="http://crm.smartsolar.co.in/user/addfranchise">Add Franchise</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/viewfranchise">View Franchise</a></li>
-                      <li><a href="http://crm.smartsolar.co.in/user/editfranchise">Edit Franchise</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/editfranchiseselect">Edit Franchise</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/franchisebilling">Billing</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/assigntofranchise">Assign Project</a></li>
                       
