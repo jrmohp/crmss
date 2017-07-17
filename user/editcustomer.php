@@ -489,7 +489,7 @@
             if(info!=0)
             {
                
-                    alertify.alert("Thank You  "+firstname+info);                  
+                    alertify.alert(info);                  
         
 
             }
