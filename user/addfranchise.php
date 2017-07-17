@@ -122,9 +122,9 @@
 
          	<div class="row">
              		<div class="col-md-12 col-sm-12 col-xs-12" >
-      					   	<label for="GST" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">GST</span></label>
+      					   	<label for="gst" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">gst</span></label>
 
-    						<input type="text" name="GST" id="GST" class="form-control" placeholder="GST">			
+    						<input type="text" name="gst" id="gst" class="form-control" placeholder="gst">			
                    			
 					</div>
 			</div>
