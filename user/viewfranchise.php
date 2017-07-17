@@ -84,20 +84,20 @@
                             <thead>
                            
                               <tr align="center">
-                  <td><big><b>Username</b></big></td>
-                  <td><big><b>Account ID</b></big></td>
-                  <td><big><b>Legal First Name</b></big></td>
-                  <td><big><b>Legal Middle Name</b></big></td>
-                  <td><big><b>Legal Last Name</b></big></td>
-                  <td><big><b>Owner First Name</b></big></td>
-                  <td><big><b>Owner Middle Name</b></big></td>
-                  <td><big><b>Owner Last Name</b></big></td>
-                  <td><big><b>Owner ID</b></big></td>
-                    <td><big><b>Pan No.</b></big></td>
-                  <td><big><b>Email ID</b></big></td>
-                  <td><big><b>Contact No.</b></big></td>
-                  <td><big><b>GST</b></big></td>
-                  <td><big><b>Address</b></big></td>
+                  <th>Username</th>
+                  <th>Account ID</th>
+                  <th>Legal First Name</th>
+                  <th>Legal Middle Name</th>
+                  <th>Legal Last Name</th>
+                  <th>Owner First Name</th>
+                  <th>Owner Middle Name</th>
+                  <th>Owner Last Name</th>
+                  <th>Owner ID</th>
+                    <th>Pan No.</th>
+                  <th>Email ID</th>
+                  <th>Contact No.</th>
+                  <th>GST</th>
+                  <th>Address</th>
                   
                   
               </tr>
