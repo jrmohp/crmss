@@ -158,7 +158,7 @@
                   		  <div class="col-md-6 col-sm-6 col-xs-12 "  >
                   		   <label for="acard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Aadhar Card</span></label>
 
-                    			<input type="text" name="acard" id="acard" class="form-control has-feedback-right has-feedback-left" data-parsley-minlength="12" data-parsley-maxlength="12" data-parsley-minlength-message="Enter 12 digit aadhar card no..."required="required" placeholder="Aadhar Card">			
+                    			<input type="text" name="acard" id="acard" class="form-control has-feedback-right has-feedback-left" data-parsley-minlength="12" data-parsley-maxlength="12" data-parsley-minlength-message="Enter 12 digit aadhar card no..." required="required" placeholder="Aadhar Card">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12 "  >
