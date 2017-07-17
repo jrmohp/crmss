@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Mega ATV Championship  </title>
+  <title>View Site | Smart Solar  </title>
 </head>
 <body>
 
