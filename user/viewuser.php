@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Faculty | Smart Solar  </title>
+  <title>View User | Smart Solar  </title>
 </head>
 <body>
  	<div class="row" id="body2">
