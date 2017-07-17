@@ -462,6 +462,7 @@ $(document).ready(function(){
 
         function regc()
         {
+           alert("aila");
            
 
         var firstname=$('#firstname').val();
@@ -477,13 +478,15 @@ $(document).ready(function(){
         var contractload=$('#contractload').val();
         var roofarea=$('#roofarea').val();
         var editid=$('#editid').val();
+
+         alert("aila2");
        
        
 
 
         var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase,'editid':editid};
 
-        alert("aila");
+       
         
         
         $.post('../php/custeditcontroller.php',data,function(info){
