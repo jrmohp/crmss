@@ -82,9 +82,9 @@
 
              <div class="row">
              		<div class="col-md-6 col-sm-6 col-xs-12" >
-                  					   <label for="oid" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Owner Id</span></label>
+                  					   <label for="orderid" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Owner Id</span></label>
 
-                    						<input type="number" name="oid" id="oid" class="form-control" placeholder="Owner Id">			
+                    						<input type="number" name="orderid" id="orderid" class="form-control" placeholder="Owner Id">			
                    			
 					</div>			
 									<div class="col-md-6 col-sm-6 col-xs-12" >

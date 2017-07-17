@@ -9,11 +9,76 @@ require("connect.php");
 		$ofname = mysqli_real_escape_string($_POST['ofname']);
 		$omname = mysqli_real_escape_string($_POST['omname']);
 		$olname = mysqli_real_escape_string($_POST['olname']);
-		$oid 	= mysqli_real_escape_string($_POST['oid']);
+		$orderid= mysqli_real_escape_string($_POST['orderid']);
 		$panno 	= mysqli_real_escape_string($_POST['panno']);
 		$email 	= mysqli_real_escape_string($_POST['email']);
 		$contact= mysqli_real_escape_string($_POST['contact']);
 		$GST 	= mysqli_real_escape_string($_POST['GST']);
 		$address= mysqli_real_escape_string($_POST['address']);
+	
+
+		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,orderid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$orderid','$panno','$email','$contact','$GST','$address')";                        	
 	}
+	else
+	{
+		if(empty($_POST['lfname']))
+		{
+			echo "Legal First Name Cannot Be Empty<br>";
+		}
+		if(empty($_POST['lmname']))
+		{
+			echo "Legal Middle Name Cannot Be Empty<br>";
+		}
+		if(empty($_POST['llname']))
+		{
+			echo "Legal Last Name Cannot Be Empty<br>";
+		}
+		if(empty($_POST['ofname']))
+		{
+			echo "Owner First Name Cannot Be Empty<br>";
+		}
+		if(empty($_POST['omname']))
+		{
+			echo "Owner Middle Name Cannot Be Empty<br>";
+		}
+		if(empty($_POST['olname']))
+		{
+			echo "Owner Last Name Cannot Be Empty<br>";
+		}
+		if(empty($_POST['orderid']))
+		{
+			echo "Owner ID Cannot Be Empty<br>";
+		}
+		if(empty($_POST['panno']))
+		{
+			echo "Pan No. Cannot Be Empty<br>";
+		}
+		if(empty($_POST['email']))
+		{
+			echo "Email Id Cannot Be Empty<br>";
+		}
+		if(empty($_POST['contact']))
+		{
+			echo "Contact No. Cannot Be Empty<br>";
+		}
+		if(empty($_POST['GST']))
+		{
+			echo "GST Cannot Be Empty<br>";
+		}
+		if(empty($_POST['address']))
+		{
+			echo "Address Cannot Be Empty<br>";
+		}	
+		exit;	
+	}
+
+if($conn->query($query))
+	{
+		echo 1;
+	}
+else
+	{
+  		echo mysqli_error($conn);
+	}
+
 ?>
