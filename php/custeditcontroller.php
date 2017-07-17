@@ -2,9 +2,11 @@
 
 	require("connect.php");
 
-	echo $_POST['editid'];
 	
-	/*if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))	
+
+
+	
+	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))	
 	{
 	$firstname=mysqli_real_escape_string($conn, $_POST['firstname']);
 	$lastname=mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -18,18 +20,16 @@
 	$contractload=mysqli_real_escape_string($conn, $_POST['contractload']);
 	$roofarea=mysqli_real_escape_string($conn, $_POST['roofarea']);
 	$phase=mysqli_real_escape_string($conn, $_POST['phase']);
+	$editid=mysqli_real_escape_string($conn, $_POST['editid']);
 
-	$query = $conn->query("SELECT MAX(id) FROM user"); // execute
-	$max_id = $query->fetch_array(); // fetch
-		$tid=$max_id[0];
-		$new_id=$tid+1;
-		$ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
+	
 
-	$sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('$ssid','$gender','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
+
+	$sql="UPDATE user SET type='$gender',firstname='$firstname',lastname='$lastname',email='$email',mobile='$phone',peraddress='$address',city='$city',mbill='$monthlybill',cload='$contractload',rarea='$roofarea',phase='$phase' WHERE id=$editid ";
 	
 	if($conn->query($sql))
 	{
-		echo $ssid;
+		echo " for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:".$ssid." for future reference";
 	}
 	else 
 	{
@@ -68,5 +68,5 @@
 			}
 			exit;
 	}
-	*/
+	
 	?>

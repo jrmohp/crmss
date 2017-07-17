@@ -27,7 +27,7 @@
 	
 	if($conn->query($sql))
 	{
-		echo $ssid;
+		echo  "for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:".$ssid." for future reference";
 	}
 	else 
 	{
