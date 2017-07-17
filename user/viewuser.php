@@ -42,21 +42,21 @@ if($result=mysqli_query($conn,$query))
     {	
 		
 		  echo "<tr align='center'>";
-	      echo "<td>".$val['username']."</td>";
-	      echo "<td>".$val['type']."</td>";
-	      echo "<td>".$val['firstname']."</td>";
-	      echo "<td>".$val['lastname']."</td>";
-	      echo "<td>".$val['email']."</td>";
-	      echo "<td>".$val['mobile']."</td>";
-	      echo "<td>".$val['peraddress']."</td>";
-	      echo "<td>".$val['city']."</td>";
-		  echo "<td>".$val['mbill']."</td>";
-	      echo "<td>".$val['cload']."</td>";
-	      echo "<td>".$val['rarea']."</td>";
-	      echo "<td>".$val['phase']."</td>";
-	      echo "<td>".$val['referredby']."</td>";
-	      echo "<td>".$val['remarks']."</td>";
-	      echo "<td>".$val['req']."</td>";
+	      echo "<th>".$val['username']."</th>";
+	      echo "<th>".$val['type']."</th>";
+	      echo "<th>".$val['firstname']."</th>";
+	      echo "<th>".$val['lastname']."</th>";
+	      echo "<th>".$val['email']."</th>";
+	      echo "<th>".$val['mobile']."</th>";
+	      echo "<th>".$val['peraddress']."</th>";
+	      echo "<th>".$val['city']."</th>";
+		  echo "<th>".$val['mbill']."</th>";
+	      echo "<th>".$val['cload']."</th>";
+	      echo "<th>".$val['rarea']."</th>";
+	      echo "<th>".$val['phase']."</th>";
+	      echo "<th>".$val['referredby']."</th>";
+	      echo "<th>".$val['remarks']."</th>";
+	      echo "<th>".$val['req']."</th>";
 	      echo "</tr>";
 
     	  
