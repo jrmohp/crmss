@@ -483,7 +483,7 @@ $(document).ready(function(){
 
         var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase,'editid':editid};
 
-        
+        alert("aila");
         
         
         $.post('../php/custeditcontroller.php',data,function(info){
