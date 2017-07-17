@@ -432,7 +432,7 @@
                       <div class="form-group">
 
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
-                        <input type="text" value="<?php echo $editid?>" name="">
+                        <input type="hidden" value="<?php echo $editid?>" name="" id="editid">
                           <button type="button" class="btn btn-primary">Cancel</button>
                <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
@@ -476,17 +476,17 @@ $(document).ready(function(){
         var monthlybill=$('#monthlybill').val();
         var contractload=$('#contractload').val();
         var roofarea=$('#roofarea').val();
-
+        var editid=$('#editid').val();
        
        
 
 
-        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase,'editid':editid};
 
         
         
         
-        $.post('../php/custregcontroller.php',data,function(info){
+        $.post('../php/custeditcontroller.php',data,function(info){
             if(info!=0)
             {
                
