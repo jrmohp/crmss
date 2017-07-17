@@ -152,7 +152,7 @@
         echo "<td>".$row['pcard']."</td>";
         echo "<td>".$row['epf']."</td>";
         echo "<td>".$row['exp']."</td>";
-        echo "<td>".$row['ifsc']."</td>";
+        echo "<td>".$row['accno']."</td>";
         echo "<td>".$row['ifsc']."</td>";
         echo "<td>".$row['cno']."</td>";
         echo "<td>".$row['altcno']."</td>";
