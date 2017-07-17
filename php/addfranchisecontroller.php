@@ -9,15 +9,16 @@ require("connect.php");
 		$ofname = mysqli_real_escape_string($_POST['ofname']);
 		$omname = mysqli_real_escape_string($_POST['omname']);
 		$olname = mysqli_real_escape_string($_POST['olname']);
-		$orderid= mysqli_real_escape_string($_POST['orderid']);
+		$ownerid= mysqli_real_escape_string($_POST['ownerid']);
 		$panno 	= mysqli_real_escape_string($_POST['panno']);
 		$email 	= mysqli_real_escape_string($_POST['email']);
 		$contact= mysqli_real_escape_string($_POST['contact']);
 		$GST 	= mysqli_real_escape_string($_POST['GST']);
 		$address= mysqli_real_escape_string($_POST['address']);
 	
+		echo $lfname . "<br>" . $lmname . "<br>" . $llname . "<br>" . $ofname . "<br>" . $omname . "<br>" . $olname . "<br>" . $ownerid . "<br>" . $panno . "<br>" . $email . "<br>" . $contact . "<br>" . $GST . "<br>" . $address . "<br>";
 
-		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,orderid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$orderid','$panno','$email','$contact','$GST','$address')";                        	
+		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$GST','$address')";                        	
 	}
 	else
 	{
@@ -45,7 +46,7 @@ require("connect.php");
 		{
 			echo "Owner Last Name Cannot Be Empty<br>";
 		}
-		if(empty($_POST['orderid']))
+		if(empty($_POST['ownerid']))
 		{
 			echo "Owner ID Cannot Be Empty<br>";
 		}
