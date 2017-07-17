@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>View Franchise | Smart Solar  </title>
+  <title>View User | Smart Solar  </title>
 
 
 
@@ -108,10 +108,10 @@ require("../php/connect.php");
 
 $query = "SELECT * FROM user"; 
 
-if($result=mysqli_query($conn,$query))
+if($result=$conn->query($query))
 {
-   while ($val=mysqli_fetch_row($result))
-    { 
+  while ($val=$result->fetch_array())
+  { 
     
       echo "<tr align='center'>";
         echo "<th>".$val['username']."</th>";
