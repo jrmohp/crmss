@@ -127,7 +127,7 @@
                      <div class="row">
                      		</div class="col-md-9 col-sm-9 col-xs-12">
       		              	 <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Permanent Address</span></label>
-            		          <textarea class="pa form-control" required="required" placeholder="Permanent Address" rows="5"  id="pa" name="pa"></textarea>
+            		          <textarea class="pa form-control" required="" placeholder="Permanent Address" rows="5"  id="pa" name="pa"></textarea>
                      			</div>
                      </div>
 
@@ -138,11 +138,17 @@
 	                 <div class="row">
 	                 		</div class="col-md-9 col-sm-9 col-xs-12">
 	      	              	 <label for="ta" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Temporary Address</span></label>
-	           		          <textarea class="ta form-control" required="required" placeholder="Temporary Address" rows="5" id="ta" name="ta"></textarea>
+	           		          <textarea class="ta form-control" required="" placeholder="Temporary Address" rows="5" id="ta" name="ta"></textarea>
 	           		          </div>
 	                 </div>
 
 
+	                 <br>
+
+                  	 <div class="row">
+                    	 <div class="ln_solid"></div>
+                   			 <h2>Legal Information</h2 >
+           			 </div>
 
            			 <br>
 
