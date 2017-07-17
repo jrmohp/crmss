@@ -116,10 +116,7 @@
                                     require("../php/connect.php");
 
                                         $query = "SELECT * FROM addemployee"; 
-                                         if($conn->query($sql))
-
-
-
+                                         
 
                                           if($result=$conn->query($query))
                                               {
@@ -128,7 +125,7 @@
 
                                                              echo "<tr align='center'>";
         
-        echo "<td>".$row['empid']."</td>"
+        echo "<td>".$row['empid']."</td>";
         echo "<td>".$row['username']."</td>";
         echo "<td>".$row['fname'].$row['mname'].$row['lname']."</td>";
         echo "<td>".$row['fn']."</td>";
@@ -158,7 +155,7 @@
                                                     }
                                                             }
  
-           
+           */
 
                                         ?>
                           
