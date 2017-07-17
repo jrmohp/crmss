@@ -118,13 +118,13 @@
                                          
 
                                          
-                                          if($result=$conn->query($query))
+                                         if($result=$conn->query($query))
                                               {
-                                                    while ($row=$result->fetch_array())
+                                                    while ($val=$result->fetch_array())
                                                   { 
 
                                                             echo "<tr align='center'>";
-        echo "<td>".$val['username']."</td>";
+         echo "<td>".$val['username']."</td>";
         echo "<td>".$val['accountid']."</td>";
         echo "<td>".$val['lfirstname']."</td>";
         echo "<td>".$val['lmiddlename']."</td>";
