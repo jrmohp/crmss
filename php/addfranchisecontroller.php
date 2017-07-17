@@ -23,6 +23,7 @@ require("connect.php");
 	else
 	{
 		echo "Part 2";
+		
 		if(empty($_POST['lfname']))
 		{
 			echo "Legal First Name Cannot Be Empty<br>";
