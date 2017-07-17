@@ -22,6 +22,8 @@ require("connect.php");
 	}
 	else
 	{
+		echo "Part 2";
+
 		if(empty($_POST['lfname']))
 		{
 			echo "Legal First Name Cannot Be Empty<br>";
@@ -70,7 +72,9 @@ require("connect.php");
 		{
 			echo "Address Cannot Be Empty<br>";
 		}	
+		echo "Part 3";
 		exit;	
+		echo "Part 4";
 	}
 
 if($conn->query($query))
