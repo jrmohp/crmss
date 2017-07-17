@@ -46,14 +46,14 @@
                         <div class="col-md-4 col-sm-4 col-xs-12" >
                          <label for="lmname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Legal Middle Name</span></label>
 
-                          <input type="text" name="lmname" id="lmname" class="form-control" placeholder="Legal Middle Name" value="<?php echo $row['lfirstname']?>">
+                          <input type="text" name="lmname" id="lmname" class="form-control" placeholder="Legal Middle Name" value="<?php echo $row['lmiddlename']?>">
                         </div>
 
 
                       
                        <div class="col-md-4 col-sm-4 col-xs-12"  >
                          <label for="llname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Legal Last Name</span></label>
-                           <input type="text" name="llname" id="llname" class="form-control"  placeholder="Legal Last Name" value="<?php echo $row['lfirstname']?>"> 
+                           <input type="text" name="llname" id="llname" class="form-control"  placeholder="Legal Last Name" value="<?php echo $row['llasttname']?>"> 
                       </div>   
 
              </div>
