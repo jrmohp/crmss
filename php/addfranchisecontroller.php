@@ -17,6 +17,7 @@ require("connect.php");
 		$address= mysqli_real_escape_string($conn, $_POST['address']);
 
 		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$GST','$address')";                        	
+		
 	}
 	else
 	{
