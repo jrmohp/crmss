@@ -158,13 +158,13 @@
                   		  <div class="col-md-6 col-sm-6 col-xs-12"  >
                   		   <label for="acard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Aadhar Card</span></label>
 
-                    			<input type="text" name="acard" id="acard" class="form-control" placeholder="Aadhar Card">			
+                    			<input type="text" name="acard" id="acard" class="form-control" data-parsley-minlength="12" data-parsley-maxlength="12" data-parsley-minlength-message="Enter 12 digit aadhar card no..."placeholder="Aadhar Card">			
                    			 </div>
 
                    		 <div class="col-md-6 col-sm-6 col-xs-12"  >
                   		   <label for="pcard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Pan Card</span></label>
 
-                    			<input type="text" name="pcard" id="pcard" class="form-control" placeholder="Pan Card">			
+                    			<input type="text" name="pcard" id="pcard" class="form-control" data-parsley-minlength="10" data-parsley-maxlength="10" data-parsley-minlength-message="Enter 10 digit aadhar card no..." placeholder="Pan Card">			
                    			 </div>
 	                 </div>
 
