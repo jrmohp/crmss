@@ -40,8 +40,7 @@ if($result=mysqli_query($conn,$query))
 {
    while ($row=mysqli_fetch_row($result))
     {	
-		foreach ($row as $val) 
-		{ 
+		
 		  echo "<tr align='center'>";
 	      echo "<td>".$val['username']."</td>";
 	      echo "<td>".$val['type']."</td>";
@@ -60,7 +59,7 @@ if($result=mysqli_query($conn,$query))
 	      echo "<td>".$val['req']."</td>";
 	      echo "</tr>";
 
-    	}   
+    	  
     }
 }
 ?>
