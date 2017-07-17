@@ -86,7 +86,7 @@
                               <tr align='center'>
                                 <th>Employee ID</th>
                                 <th>Username</th>
-                                <th>Name</th>
+                                <th>Employee Name</th>
                                 <th>Father's Name</th>
                                 <th>Mother's Name</th>
                                 <th>Gender</th>
