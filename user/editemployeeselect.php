@@ -110,7 +110,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT empid,fname,mname,lname,email,accno,ifsc FROM addemployee"; 
+                                        $query = "SELECT id,empid,fname,mname,lname,email,accno,ifsc FROM addemployee"; 
 
                                           if($result=$conn->query($query))
                                               {
