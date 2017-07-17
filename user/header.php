@@ -79,7 +79,7 @@
                     
                       <li><a href="http://crm.smartsolar.co.in/user/addemployee">Add Employee</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/viewemployee">view Employee</a></li>
-                      <li><a href="http://crm.smartsolar.co.in/user/editemployee">Edit Employee</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/editemployeeselect">Edit Employee</a></li>
                      
                     </ul>
                   </li>

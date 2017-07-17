@@ -199,7 +199,7 @@
                
 
               
-               var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
+               var link="http://crm.smartsolar.co.in/user/editfranchise?id="+btnid;
 
                window.location.assign(link);
 
