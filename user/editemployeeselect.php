@@ -200,7 +200,7 @@
                
 
               
-               var link="http://crm.smartsolar.co.in/user/editcustomer?id="+btnid;
+               var link="http://crm.smartsolar.co.in/user/editemployee?id="+btnid;
 
                window.location.assign(link);
 
