@@ -2,8 +2,7 @@
 
 
   include "header.php";
-  $editid=1;
-
+  $editid=$_GET['id'];
 
 
 
@@ -317,7 +316,67 @@
 
 
 
+               <script src="../vendors/jquery/dist/jquery.min.js"></script>
+ <script type="text/javascript" src="../js/alertify.js"></script>
+ <link rel="stylesheet" href="../css/alertify.core.css" />
+  <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
+<script type="text/javascript">
+
+
+ 
+    $("#senddata").on("click",regc);
+
+
+        function regc()
+        {
+          
+           
+
+        var firstname=$('#firstname').val();
+        var lastname=$('#lastname').val();
+        var email=$('#email').val();
+        var phone=$('#phone').val();
+        var address=$('#address').val();
+        var city=$('#city').val();
+        var gender=$('[name="type"]').val();
+          var phase=$('[name="phase"]').val();
+        var units=$('#units').val();
+        var monthlybill=$('#monthlybill').val();
+        var contractload=$('#contractload').val();
+        var roofarea=$('#roofarea').val();
+        var editid=$('#editid').val();
+
+        
+       
+       
+
+
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase,'editid':editid};
+
+       
+        
+        
+        $.post('../php/custeditcontroller.php',data,function(info){
+            if(info!=0)
+            {
                
+                    alertify.alert(info);                  
+        
+
+            }
+            else if(info==0)
+            {
+               
+            $("#querymsg").addClass('alert alert-danger');
+              $('#querymsg').fadeIn();
+            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
+             $('#querymsg').delay(2000).fadeOut();
+            
+            }
+        });
+
+
+    }
 
 
 
@@ -335,7 +394,7 @@
                     </div>
                     </div>
                     </body>
-
+                
 	
 <?php
 
