@@ -19,7 +19,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate action="../php/addemployeecontroller.php">
+                    <form  method="post" data-parsley-validate onsubmit="return false" action="../php/addemployeecontroller.php">
                     	
 
                 	<h2>Employee Registration</h2>
@@ -385,19 +385,7 @@
 
 
     }
-</script>
-<script type="text/javascript">
-$(function () {
-  $('#demo-form').parsley().on('field:validated', function() {
-    var ok = $('.parsley-error').length === 0;
-    $('.bs-callout-info').toggleClass('hidden', !ok);
-    $('.bs-callout-warning').toggleClass('hidden', ok);
-  })
-  .on('form:submit', function() {
-    return false; // Don't submit form for this demo
-  });
-});
-</script>
+
 <?php
 
 
