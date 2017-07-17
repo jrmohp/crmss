@@ -171,24 +171,19 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                     <button  class="btn btn-success col-md-12 " type="submit" align='center' id="senddata">Send</button>
                     </div>
-                  
-                     </div>
+                    </div>
                     </form>
 
-<script src="../vendors/jquery/dist/jquery.min.js">alert('Hello 1');</script>
-<script type="text/javascript" src="../js/alertify.js">alert('Hello 2');</script>
-<link rel="stylesheet" href="../css/alertify.core.css" />
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../js/alertify.js"></script>
+<link rel="stylesheet" href="../css/alertify.core.css"/>
 <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
+
 <script type="text/javascript">
-    alert('Hello 3');
-
-
     $("#senddata").on("click",regc);
-      
-
         function regc()
         {
-
+        alert('Hello internal');
         var lfname   =$('#lfname').val();
         var lmname   =$('#lmname').val();
         var llname   =$('#llname').val();
