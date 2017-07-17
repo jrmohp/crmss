@@ -184,10 +184,11 @@
 
 
     $("#senddata").on("click",regc);
-
+      alert('Hello');
 
         function regc()
         {
+          alert('Function!!');
         var lfname   =$('#lfname').val();
         var lmname   =$('#lmname').val();
         var llname   =$('#llname').val();
