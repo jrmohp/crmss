@@ -84,22 +84,31 @@
                             <thead>
                            
                               <tr align='center'>
-                                 <th>ID</th>
+                                <th>Employee ID</th>
+                                <th>Username</th>
                                 <th>Name</th>
-                                <th>Type</th>
-                                <th>Email</th>
-                                <th>Mobile</th>
-                                <th>City</th>
-                                <th>Address</th>
-                                <th>Monthly Bill</th>
-                                <th>Load</th>
-                                <th>Roof Srea(in sq.ft)</th>
-                                <th>Phase</th>
-                                <th>Referred By</th>
-                                <th>Requirement</th>
-                                <th>Remarks</th>
-
-                                 
+                                <th>Father's Name</th>
+                                <th>Mother's Name</th>
+                                <th>Gender</th>
+                                <th>Date Of Birth</th>
+                                <th>Blood Group</th>
+                                <th>Identification Mark</th>
+                                <th>Permanentt Address</th>
+                                <th>Temporary Address</th>
+                                <th>Aadhar Card No.</th>
+                                <th>Pan Card No.</th>
+                                <th>EPF No.</th>
+                                <th>Experience</th>
+                                <th>Bank Account No.</th>
+                                <th>Bank IFSC Code</th>
+                                <th>Contact No.</th>
+                                <th>Alternate Contact No.</th>
+                                <th>Email Id</th>
+                                <th>Alternate Email ID</th>
+                                <th>Work Phone No.</th>
+                                <th>Work Email ID</th>
+                               
+                                
 
                               </tr>
                              
@@ -142,7 +151,8 @@
         echo "<td>".$row['acard']."</td>";
         echo "<td>".$row['pcard']."</td>";
         echo "<td>".$row['epf']."</td>";
-           echo "<td>".$row['exp']."</td>";
+        echo "<td>".$row['exp']."</td>";
+        echo "<td>".$row['ifsc']."</td>";
         echo "<td>".$row['ifsc']."</td>";
         echo "<td>".$row['cno']."</td>";
         echo "<td>".$row['altcno']."</td>";
