@@ -143,17 +143,17 @@
                       <br>
 
                       <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12" >
-                        <label for="username" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Username</span></label>
+                        <div class="col-md-4 col-sm-4 col-xs-12" >
+                        <label for="username" class="col-4md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Username</span></label>
 
                         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12" >
+                        <div class="col-md-4 col-sm-4 col-xs-12" >
                         <label for="accountid" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Account ID</span></label>
 
                         <input type="text" name="accountid" id="accountid" class="form-control" placeholder="Account ID">
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12" >
+                        <div class="col-md-4 col-sm-4 col-xs-12" >
                         <label for="password" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label     label-info">Password</span></label>
 
                         <input type="text" name="password" id="password" class="form-control" placeholder="Password">
