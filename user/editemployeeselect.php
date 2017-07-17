@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>View Customers | Smart Solar  </title>
+  <title>Edit Customers | Smart Solar  </title>
 
 
 
@@ -86,11 +86,11 @@
                             <thead>
                            
                               <tr align='center'>
-                                 <th>ID</th>
+                                <th>ID</th>
                                 <th>Name</th>
-                               <th>Email</th>
-                                <th>Mobile</th>
-                                <th>City</th>
+                                <th>Email</th>
+                                <th>Account No.</th>
+                                <th>IFSC</th>
                                 <th>Edit</th>
                                
 
@@ -110,7 +110,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT id,username,firstname,lastname,email,mobile FROM addemployee"; 
+                                        $query = "SELECT empid,fname,mname,lname,email,accno,ifsc FROM addemployee"; 
 
                                           if($result=$conn->query($query))
                                               {
@@ -118,11 +118,11 @@
                                                   { 
                                                             $reqid=$row['id'];
                                                              echo "<tr align='center'>";
-        echo "<td>".$row['username']."</td>";
-        echo "<td>".$row['firstname'].$row['lastname']."</td>";
+        echo "<td>".$row['empid']."</td>";
+        echo "<td>".$row['fname'].$row['mname'].$row['lname']."</td>";
         echo "<td>".$row['email']."</td>";
-        echo "<td>".$row['mobile']."</td>";
-        echo "<td>".$row['city']."</td>";
+        echo "<td>".$row['accno']."</td>";
+        echo "<td>".$row['ifsc']."</td>";
         echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
        
         echo "</tr>";
