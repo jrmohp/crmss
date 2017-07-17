@@ -4,6 +4,7 @@ require("connect.php");
 	if( !empty($_POST['lfname']) && !empty($_POST['lmname']) && !empty($_POST['llname']) && !empty($_POST['ofname']) && !empty($_POST['omname']) && !empty($_POST['olname']) && !empty($_POST['ownerid']) && !empty($_POST['panno']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['GST']) && !empty($_POST['address']))
 	{
 		$lfname = mysqli_real_escape_string($_POST['lfname']);
+		echo "$lfname<br>";
 		$lmname = mysqli_real_escape_string($_POST['lmname']);
 		$llname = mysqli_real_escape_string($_POST['llname']);
 		$ofname = mysqli_real_escape_string($_POST['ofname']);
@@ -16,9 +17,8 @@ require("connect.php");
 		$GST 	= mysqli_real_escape_string($_POST['GST']);
 		$address= mysqli_real_escape_string($_POST['address']);
 
-		echo "$lfname<br>$lmname<br>$llname<br>$ofname<br>$omname<br>$olname<br>$ownerid<br>$panno<br>$email<br>$contact<br>$GST<br>$address<br>";
-
 		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$GST','$address')";                        	
+		echo "Part 1";
 	}
 	else
 	{
@@ -70,7 +70,6 @@ require("connect.php");
 		{
 			echo "Address Cannot Be Empty<br>";
 		}	
-		echo "second";
 		exit;	
 	}
 
