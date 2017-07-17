@@ -38,7 +38,7 @@ $query = "SELECT * FROM user";
 
 if($result=mysqli_query($conn,$query))
 {
-   while ($row=mysqli_fetch_row($result))
+   while ($val=mysqli_fetch_row($result))
     {	
 		
 		  echo "<tr align='center'>";
