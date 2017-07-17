@@ -125,6 +125,7 @@ else
 {
    
   echo mysqli_error($conn);
+}
 /*
 }
 
