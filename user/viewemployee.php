@@ -117,17 +117,9 @@
 
                                         $query = "SELECT * FROM addemployee"; 
                                          if($conn->query($sql))
-{
-    echo 1;
 
-}
-else
-{
-   
-  echo mysqli_error($conn);
-}
-/*
-}
+
+
 
                                           if($result=$conn->query($query))
                                               {
@@ -166,7 +158,7 @@ else
                                                     }
                                                             }
  
-           */
+           
 
                                         ?>
                           
