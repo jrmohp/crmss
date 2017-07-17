@@ -6,7 +6,7 @@
 
 
 	
-	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))	
+	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&&  !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))	
 	{
 	$firstname=mysqli_real_escape_string($conn, $_POST['firstname']);
 	$lastname=mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -50,10 +50,7 @@
 			{
 				echo "Last Name Cannot Be Empty<br>";
 			}
-		if(empty($_POST['email']))
-			{
-				echo "Email Cannot Be Empty<br>";
-			}
+		
 		if(empty($_POST['phone']))
 			{
 				echo "Phone No. Cannot Be Empty<br>";
