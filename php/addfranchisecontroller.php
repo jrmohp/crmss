@@ -3,22 +3,20 @@ require("connect.php");
 
 	if( !empty($_POST['lfname']) && !empty($_POST['lmname']) && !empty($_POST['llname']) && !empty($_POST['ofname']) && !empty($_POST['omname']) && !empty($_POST['olname']) && !empty($_POST['ownerid']) && !empty($_POST['panno']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['GST']) && !empty($_POST['address']))
 	{
-		$lfname = mysqli_real_escape_string($_POST['lfname']);
-		echo "$lfname<br>";
-		$lmname = mysqli_real_escape_string($_POST['lmname']);
-		$llname = mysqli_real_escape_string($_POST['llname']);
-		$ofname = mysqli_real_escape_string($_POST['ofname']);
-		$omname = mysqli_real_escape_string($_POST['omname']);
-		$olname = mysqli_real_escape_string($_POST['olname']);
-		$ownerid= mysqli_real_escape_string($_POST['ownerid']);
-		$panno 	= mysqli_real_escape_string($_POST['panno']);
-		$email 	= mysqli_real_escape_string($_POST['email']);
-		$contact= mysqli_real_escape_string($_POST['contact']);
-		$GST 	= mysqli_real_escape_string($_POST['GST']);
-		$address= mysqli_real_escape_string($_POST['address']);
+		$lfname = mysqli_real_escape_string($conn, $_POST['lfname']);
+		$lmname = mysqli_real_escape_string($conn, $_POST['lmname']);
+		$llname = mysqli_real_escape_string($conn, $_POST['llname']);
+		$ofname = mysqli_real_escape_string($conn, $_POST['ofname']);
+		$omname = mysqli_real_escape_string($conn, $_POST['omname']);
+		$olname = mysqli_real_escape_string($conn, $_POST['olname']);
+		$ownerid= mysqli_real_escape_string($conn, $_POST['ownerid']);
+		$panno 	= mysqli_real_escape_string($conn, $_POST['panno']);
+		$email 	= mysqli_real_escape_string($conn, $_POST['email']);
+		$contact= mysqli_real_escape_string($conn, $_POST['contact']);
+		$GST 	= mysqli_real_escape_string($conn, $_POST['GST']);
+		$address= mysqli_real_escape_string($conn, $_POST['address']);
 
 		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,GST,address) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$GST','$address')";                        	
-		echo "Part 1";
 	}
 	else
 	{
