@@ -207,7 +207,7 @@
 
         var data={'lfname':lfname,'lmname':lmname,'llname':llname,'ofname':ofname,'omname':omname,'olname':olname,'ownerid':ownerid,'panno':panno,'email':email,'contact':contact,'gst':gst.'address':address,'username':username,'accountid':accountid,'password':password};
 
-        $.post('../php/addfranchisecontroller.php',data,function(info)
+        $.post('../php/franchiseeditcontroller.php?id=$editid',data,function(info)
         {
             if(info!=0)
             {   
