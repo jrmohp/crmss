@@ -126,7 +126,6 @@
         echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
        
         echo "</tr>";
-
                                                     }
                                                             }
                                         ?>
