@@ -15,9 +15,9 @@ require("connect.php");
 		$contact= mysqli_real_escape_string($conn, $_POST['contact']);
 		$GST 	= mysqli_real_escape_string($conn, $_POST['gst']);
 		$address= mysqli_real_escape_string($conn, $_POST['address']);
-		$address= mysqli_real_escape_string($conn, $_POST['username']);
-		$address= mysqli_real_escape_string($conn, $_POST['accountid']);
-		$address= mysqli_real_escape_string($conn, $_POST['password']);
+		$username= mysqli_real_escape_string($conn, $_POST['username']);
+		$accountid= mysqli_real_escape_string($conn, $_POST['accountid']);
+		$password= mysqli_real_escape_string($conn, $_POST['password']);
 
 		$query = "INSERT INTO franchise(lfirstname,lmiddlename,llastname,ofirstname,omiddlename,olastname,ownerid,panno,email,contact,gst,address,username,accountid,password) values('$lfname','$lmname','$llname','$ofname','$omname','$olname','$ownerid','$panno','$email','$contact','$gst','$address','$username','$accountid','$password')";                        	
 	}
