@@ -175,20 +175,20 @@
                      </div>
                     </form>
 
-<script src="../vendors/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../js/alertify.js"></script>
+<script src="../vendors/jquery/dist/jquery.min.js">alert('Hello 1');</script>
+<script type="text/javascript" src="../js/alertify.js">alert('Hello 2');</script>
 <link rel="stylesheet" href="../css/alertify.core.css" />
 <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 <script type="text/javascript">
-  
+    alert('Hello 3');
 
 
     $("#senddata").on("click",regc);
-      alert('Hello');
+      
 
         function regc()
         {
-          alert('Function!!');
+
         var lfname   =$('#lfname').val();
         var lmname   =$('#lmname').val();
         var llname   =$('#llname').val();
