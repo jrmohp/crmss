@@ -86,14 +86,14 @@
                               <tr align='center'>
                                 <th>Employee ID</th>
                                 <th>Username</th>
-                                <th>Employee Name</th>
+                                <th>           Employee Name           </th>
                                 <th>Father's Name</th>
                                 <th>Mother's Name</th>
                                 <th>Gender</th>
                                 <th>Date Of Birth</th>
                                 <th>Blood Group</th>
                                 <th>Identification Mark</th>
-                                <th>Permanentt Address</th>
+                                <th>Permanent Address</th>
                                 <th>Temporary Address</th>
                                 <th>Aadhar Card No.</th>
                                 <th>Pan Card No.</th>
