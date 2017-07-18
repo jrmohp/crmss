@@ -42,7 +42,7 @@ $sql="UPDATE addemployee SET empid='$empid',username='$username',pass='$password
 	{
 		echo 0;
 	}
-*/
+
 }
 else
 {
