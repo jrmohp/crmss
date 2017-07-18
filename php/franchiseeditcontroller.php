@@ -1,7 +1,7 @@
 <?php 
+require("connect.php");
 
 $editid=$_GET['id'];
-require("connect.php");
 
 	if( !empty($_POST['lfname']) && !empty($_POST['lmname']) && !empty($_POST['llname']) && !empty($_POST['ofname']) && !empty($_POST['omname']) && !empty($_POST['olname']) && !empty($_POST['ownerid']) && !empty($_POST['panno']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['gst']) && !empty($_POST['address']) && !empty($_POST['username']) && !empty($_POST['accountid']) && !empty($_POST['password']))
 	{
@@ -21,7 +21,7 @@ require("connect.php");
 		$accountid= mysqli_real_escape_string($conn, $_POST['accountid']);
 		$password= mysqli_real_escape_string($conn, $_POST['password']);
 
-		$query = "UPDATE franchise SET lfirstname='$lfname',lmiddlename='$lmname',llastname='$llname',ofirstname='$ofname',omiddlename='$omname',olastname='$olname',ownerid='$ownerid',panno='$panno',email='$email',contact='$contact',gst='$GST',address='$address',username='$username',accountid='$accountid',password='$password' WHERE ID='$editid' ";
+		$query = "UPDATE franchise SET lfirstname='$lfname',lmiddlename='$lmname',llastname='$llname',ofirstname='$ofname',omiddlename='$omname',olastname='$olname',ownerid='$ownerid',panno='$panno',email='$email',contact='$contact',gst='$GST',address='$address',username='$username',accountid='$accountid',password='$password' WHERE ID=$editid";
 		if($conn->query($sql))
 		{
 			echo "Customer Data Edited Succesfully";

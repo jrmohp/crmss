@@ -173,11 +173,9 @@
                     </div>
                     </div>
                     </form>
-
-<script src="../vendors/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../js/alertify.js"></script>
-<link rel="stylesheet" href="../css/alertify.core.css"/>
-<link rel="stylesheet" href="../css/alertify.bootstrap.css" />
+                    </div>
+                    </div>
+                    </body>
 
 <script type="text/javascript">
     $("#senddata").on("click",regc);
@@ -218,14 +216,12 @@
         });
     }
 
-                    </script>
-                    </div>
-                    </div>
-                    </body>
-
+</script>
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../js/alertify.js"></script>
+<link rel="stylesheet" href="../css/alertify.core.css"/>
+<link rel="stylesheet" href="../css/alertify.bootstrap.css" />
   
 <?php
-
-
   include "footer.php";
 ?>
