@@ -341,6 +341,8 @@
         var mn=$('#mn').val();
         var gender=$('#gender').val();
         var dob=$('#dob').val();
+        var bg=$('#bg').val();
+        var im=$('#im').val();
         var pa=$('#pa').val();
         var ta=$('#ta').val();
         var acard=$('#acard').val();
@@ -357,12 +359,12 @@
         var wemail=$('#wemail').val();
        
       
-        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
+        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
 
         
         
         
-        $.post('../php/custregcontroller.php',data,function(info){
+        $.post('../php/addemployeecontroller.php',data,function(info){
             if(info!=0)
             {
                

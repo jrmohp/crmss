@@ -329,34 +329,41 @@
 
         function regc()
         {
-          
+       
+      var empid=$('#empid')   
+      var username=$('#username').val();
+      var password=$('#password').val();   
+      var fname=$('#fname').val();
+      var mname=$('#mname').val();
+      var lname=$('#lname').val();
+      var fn=$('#fn').val();
+      var mn=$('#mn').val();
+      var gender=$('#gender').val();
+      var dob=$('#dob').val();
+      var bg=$('#bg').val();
+      var im=$('#im').val();
+      var pa=$('#pa').val();
+      var ta=$('#ta').val();
+      var acard=$('#acard').val();
+      var pcard=$('#pcard').val();
+      var epf=$('#epf').val();
+      var exp=$('#exp').val();
+      var accno=$('#accno').val();
+      var ifsc=$('#ifsc').val();
+      var cno=$('#cno').val();
+      var altcno=$('#altcno').val();
+      var email=$('#email').val();
+      var altemail=$('#altemail').val();
+      var wphno=$('#wphno').val();
+      var wemail=$('#wemail').val();
            
 
-        var firstname=$('#firstname').val();
-        var lastname=$('#lastname').val();
-        var email=$('#email').val();
-        var phone=$('#phone').val();
-        var address=$('#address').val();
-        var city=$('#city').val();
-        var gender=$('[name="type"]').val();
-          var phase=$('[name="phase"]').val();
-        var units=$('#units').val();
-        var monthlybill=$('#monthlybill').val();
-        var contractload=$('#contractload').val();
-        var roofarea=$('#roofarea').val();
-        var editid=$('#editid').val();
-
-        
-       
-       
-
-
-        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase,'editid':editid};
+        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
 
        
         
         
-        $.post('../php/custeditcontroller.php',data,function(info){
+        $.post('../php/employeeeditcontroller.php',data,function(info){
             if(info!=0)
             {
                
