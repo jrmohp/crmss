@@ -166,7 +166,7 @@
                           <span class="time"></span>
                         </span>
                         <span class="message">
-                          Signed up for Mega ATV Championship
+                          Signed up for Smart Solar
 
                         </span>
                       </a>
