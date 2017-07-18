@@ -30,7 +30,7 @@ if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && 
 	$empid=mysqli_real_escape_string($conn, $_POST['empid']);
 	$username=mysqli_real_escape_string($conn, $_POST['username']);
 	$password=mysqli_real_escape_string($conn, $_POST['password']);
-	
+	$editid=mysqli_real_escape_string($conn, $_POST['editid']);
 
 $sql="UPDATE addemployee SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',bg='$bg',im='$im',pa='$pa',ta='$ta',acard='$acard',pcard='$pcard',epf='$epf',exp='$exp',accno='$accno',ifsc='$ifsc',cno='$cno',altcno='$altcno',email='$email',altemail='$altemail',wphone='$wphone',wemail='$wemail',empid='$empid',username='$username',pass='$password' WHERE id=$editid ";
 	
