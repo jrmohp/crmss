@@ -180,7 +180,7 @@
 <script type="text/javascript">
     $("#senddata").on("click",regc);
         function regc()
-        {
+        {alert('Hello');
         var lfname   =$('#lfname').val();
         var lmname   =$('#lmname').val();
         var llname   =$('#llname').val();
