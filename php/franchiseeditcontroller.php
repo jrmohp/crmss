@@ -25,6 +25,7 @@ $editid=$_GET['id'];
 		if($conn->query($query))
 		{
 			echo "Franchise Data Edited Succesfully";
+			header("location:../user/editfranchiseselect.php");
 		}
 		else 
 		{
