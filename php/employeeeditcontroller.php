@@ -1,6 +1,6 @@
 <?php
 require("connect.php"); 
-
+$editid=$_GET['id'];
 if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && !empty($_POST['mn']) && !empty($_POST['gender'])&& !empty($_POST['dob'])&& !empty($_POST['bg'])&& !empty($_POST['pa'])&& !empty($_POST['ta'])&& !empty($_POST['acard'])&& !empty($_POST['accno'])&& !empty($_POST['ifsc'])&& !empty($_POST['cno'])&& !empty($_POST['email'])&& !empty($_POST['wphno'])&& !empty($_POST['wemail'])&& !empty($_POST['username'])&& !empty($_POST['password']) && !empty($_POST['empid']))	
 	{
 		
@@ -30,7 +30,7 @@ if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && 
 	$empid=mysqli_real_escape_string($conn, $_POST['empid']);
 	$username=mysqli_real_escape_string($conn, $_POST['username']);
 	$password=mysqli_real_escape_string($conn, $_POST['password']);
-	$editid=mysqli_real_escape_string($conn, $_POST['editid']);
+	//$editid=mysqli_real_escape_string($conn, $_POST['editid']);
 
 $sql="UPDATE addemployee SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',bg='$bg',im='$im',pa='$pa',ta='$ta',acard='$acard',pcard='$pcard',epf='$epf',exp='$exp',accno='$accno',ifsc='$ifsc',cno='$cno',altcno='$altcno',email='$email',altemail='$altemail',wphone='$wphone',wemail='$wemail',empid='$empid',username='$username',pass='$password' WHERE id=$editid ";
 	
