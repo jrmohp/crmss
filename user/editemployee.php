@@ -298,7 +298,7 @@
                    
                     <div class="col-md-12 col-sm-12 col-xs-12">
                     <input type="hidden" value="<?php echo $editid?>" name="" id="editid">
-                    <button  class="btn btn-success col-md-12 " type="submit" align='center' id="senddata">Send</button>
+                    <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                     </div>
                     
                   </div>
