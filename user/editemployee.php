@@ -31,7 +31,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate onsubmit="return false" >
+                    <form  method="post" data-parsley-validate action="../php/franchiseeditcontroller.php?id=<?php echo $editid;?> " >
                     	
 
                 	<h2>Employee Registration</h2>
@@ -309,88 +309,7 @@
 
 
 
-               <script src="../vendors/jquery/dist/jquery.min.js"></script>
- <script type="text/javascript" src="../js/alertify.js"></script>
- <link rel="stylesheet" href="../css/alertify.core.css" />
-  <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
-<script type="text/javascript">
-
-
- 
-    $("#senddata").on("click",regc);
-
-
-        function regc()
-        {
-       
-      var empid=$('#empid')   
-      var username=$('#username').val();
-      var password=$('#password').val();   
-      var fname=$('#fname').val();
-      var mname=$('#mname').val();
-      var lname=$('#lname').val();
-      var fn=$('#fn').val();
-      var mn=$('#mn').val();
-      var gender=$('#gender').val();
-      var dob=$('#dob').val();
-      var bg=$('#bg').val();
-      var im=$('#im').val();
-      var pa=$('#pa').val();
-      var ta=$('#ta').val();
-      var acard=$('#acard').val();
-      var pcard=$('#pcard').val();
-      var epf=$('#epf').val();
-      var exp=$('#exp').val();
-      var accno=$('#accno').val();
-      var ifsc=$('#ifsc').val();
-      var cno=$('#cno').val();
-      var altcno=$('#altcno').val();
-      var email=$('#email').val();
-      var altemail=$('#altemail').val();
-      var wphno=$('#wphno').val();
-      var wemail=$('#wemail').val();
-       var editid=$('#editid').val();    
-
-        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail,'editid':editid};
-
-       
-        
-        
-        $.post('../php/employeeeditcontroller.php',data,function(info){
-            if(info!=0)
-            {
-               
-                    alertify.alert(info);                  
-        
-
-            }
-            else if(info==0)
-            {
-               
-            $("#querymsg").addClass('alert alert-danger');
-              $('#querymsg').fadeIn();
-            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
-             $('#querymsg').delay(2000).fadeOut();
-            
-            }
-        });
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
+              
                     </div>
                     </div>
                     </body>
