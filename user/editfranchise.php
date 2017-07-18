@@ -26,7 +26,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                 <form  method="post" data-parsley-validate>
+                 <form  method="post" action="../php/franchiseeditcontroller.php?id=<?php echo $editid;?> " class="form-horizontal form-label-left input_mask">
                       
 
                   <h2>Franchise Registration</h2>
@@ -165,67 +165,19 @@
 
                         <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="<?php echo $row['password']?>">
                         </div>
-                        </div>
-                        <br>
+                      </div>
+                      <br>
                       <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 " type="submit" align='center' id="senddata">Send</button>
-                    </div>
-                    </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                          <button  class="btn btn-success col-md-12 " type="submit" name="senddata" align='center' id="senddata">Send</button>
+                        </div>
+                      </div>
                     </form>
-
-<script src="../vendors/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../js/alertify.js"></script>
-<link rel="stylesheet" href="../css/alertify.core.css"/>
-<link rel="stylesheet" href="../css/alertify.bootstrap.css" />
-
-<script type="text/javascript">
-    $("#senddata").on("click",regc);
-        function regc()
-        {
-        var lfname   =$('#lfname').val();
-        var lmname   =$('#lmname').val();
-        var llname   =$('#llname').val();
-        var ofname   =$('#ofname').val();
-        var omname   =$('#omname').val();
-        var olname   =$('#olname').val();
-        var ownerid  =$('#ownerid').val();
-        var panno    =$('#panno').val();
-        var email    =$('#email').val();
-        var contact  =$('#contact').val();
-        var gst      =$('#gst').val();
-        var address  =$('#address').val();
-        var username =$('#username').val();
-        var accountid=$('#accountid').val();
-        var password =$('#password').val();
-        
-
-        var data={'lfname':lfname,'lmname':lmname,'llname':llname,'ofname':ofname,'omname':omname,'olname':olname,'ownerid':ownerid,'panno':panno,'email':email,'contact':contact,'gst':gst.'address':address,'username':username,'accountid':accountid,'password':password};
-
-        $.post('../php/franchiseeditcontroller.php?id=$editid',data,function(info)
-        {
-            if(info!=0)
-            {   
-                alertify.alert(info);                  
-            }
-            else if(info==0)
-            {
-                $("#querymsg").addClass('alert alert-danger');
-                $('#querymsg').fadeIn();
-                $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
-                $('#querymsg').delay(2000).fadeOut();
-            }
-        });
-    }
-
-                    </script>
                     </div>
                     </div>
-                    </body>
 
+</body>
   
 <?php
-
-
   include "footer.php";
 ?>
