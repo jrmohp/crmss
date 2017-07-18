@@ -39,6 +39,7 @@ $sql="UPDATE addemployee SET fname='$fname',mname='$mname',lname='$lname',fn='$f
 	if($conn->query($sql))
 	{
 		echo "Customer Data Edited Succesfully";
+		header("location:../user/editemployeeselect.php");
 	}
 	else 
 	{
