@@ -26,7 +26,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                 <form  method="post" action="../php/franchiseeditcontroller.php?id=$editid" class="form-horizontal form-label-left input_mask">
+                 <form  method="post" action="../php/franchiseeditcontroller.php?id=<?php echo $editid;?> " class="form-horizontal form-label-left input_mask">
                       
 
                   <h2>Franchise Registration</h2>
