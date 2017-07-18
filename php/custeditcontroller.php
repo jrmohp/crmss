@@ -4,7 +4,7 @@
 
 	
 
-
+ 
 	
 	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&&  !empty($_POST['phone']) )	
 	{
@@ -33,7 +33,7 @@
 	}
 	else 
 	{
-		echo 0;
+		echo "Connection error: " . mysqli_connect_error() ";
 	}
 
 
