@@ -23,7 +23,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Employee Registration | Smart Solar </title>
+  <title>Edit Employee | Smart Solar </title>
 </head>
 <body>
 
@@ -31,7 +31,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate action="../php/addemployeecontroller.php">
+                    <form  method="post" data-parsley-validate action="../php/editemployeecontroller.php">
                     	
 
                 	<h2>Employee Registration</h2>
