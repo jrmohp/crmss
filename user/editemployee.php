@@ -297,6 +297,7 @@
                   <div class="row">
                    
                     <div class="col-md-12 col-sm-12 col-xs-12">
+                    <input type="hidden" value="<?php echo $editid?>" name="" id="editid">
                     <button  class="btn btn-success col-md-12 " type="submit" align='center' id="sendmail">Send</button>
                     </div>
                     
@@ -354,9 +355,9 @@
       var altemail=$('#altemail').val();
       var wphno=$('#wphno').val();
       var wemail=$('#wemail').val();
-           
+       var editid=$('#editid').val();    
 
-        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
+        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail,'editid':editid};
 
        
         
