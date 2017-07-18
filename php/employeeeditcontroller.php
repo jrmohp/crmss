@@ -32,8 +32,8 @@ if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && 
 	$wemail=mysqli_real_escape_string($conn, $_POST['wemail']);
 	
 	$editid=mysqli_real_escape_string($conn, $_POST['editid']);
-	echo "$editid";
-$query = "UPDATE addemployee SET empid='$empid',username='$username',pass='$password',fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',bg='$bg',im='$im',pa='$pa',ta='$ta',acard='$acard',pcard='$pcard',epf='$epf',exp='$exp',accno='$accno',ifsc='$ifsc',cno='$cno',altcno='$altcno',email='$email',altemail='$altemail',wphone='$wphone',wemail='$wemail' WHERE id=$editid ";
+	
+$query = "UPDATE addemployee SET empid='$empid',username='$username',pass='$password',position='',fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',bg='$bg',im='$im',pa='$pa',ta='$ta',acard='$acard',pcard='$pcard',epf='$epf',exp='$exp',accno='$accno',ifsc='$ifsc',cno='$cno',altcno='$altcno',email='$email',altemail='$altemail',wphone='$wphone',wemail='$wemail' WHERE id=$editid ";
 	
 	if($conn->query($query))
 	{
