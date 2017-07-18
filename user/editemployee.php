@@ -31,7 +31,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate action="../php/franchiseeditcontroller.php?id=<?php echo $editid;?> " >
+                    <form  method="post" data-parsley-validate action="../php/employeeeditcontroller.php?id=<?php echo $editid;?> " >
                     	
 
                 	<h2>Employee Registration</h2>
