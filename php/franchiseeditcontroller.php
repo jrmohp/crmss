@@ -24,14 +24,12 @@ $editid=$_GET['id'];
 		$query = "UPDATE franchise SET lfirstname='$lfname',lmiddlename='$lmname',llastname='$llname',ofirstname='$ofname',omiddlename='$omname',olastname='$olname',ownerid='$ownerid',panno='$panno',email='$email',contact='$contact',gst='$GST',address='$address',username='$username',accountid='$accountid',password='$password' WHERE ID=$editid";
 		if($conn->query($sql))
 		{
-			echo "Customer Data Edited Succesfully";
+			echo "Franchise Data Edited Succesfully";
 		}
 		else 
 		{
 			echo "Sorry,Something went wrong!";;
-		}
-
-                        	
+		}                        	
 	}
 	else
 	{
