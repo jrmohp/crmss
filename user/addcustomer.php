@@ -510,18 +510,18 @@
      
 
   
-   if(response=="") 
+   if(response=="Email Already Registered") 
    {
-    $(':input[type="submit"]').prop('disabled', false);
-    return true;
+    $(':input[type="submit"]').prop('disabled', true);
+    return false;
 
 
    }
    else 
    {
-    $(':input[type="submit"]').prop('disabled', true);
+    $(':input[type="submit"]').prop('disabled', false);
        
-    return false; 
+    return true; 
 
    }
   }
