@@ -368,9 +368,8 @@
         
         
 
-       /* $.post('../php/addemployeecontroller.php',data,function(info){
-
-          alert("aila bhiaraku");
+     $.post('../php/custregcontroller.php',data,function(info){
+      alert("bhitare");
             if(info!=0)
             {
                
@@ -388,7 +387,6 @@
             
             }
         });
-*/
 
 alert("aila bsjasdjhiaraku");
 
