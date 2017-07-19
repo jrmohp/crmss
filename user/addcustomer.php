@@ -527,12 +527,7 @@
   }
   });
  }
- else
- {
-  $( '#email_status' ).html("");
-  $(':input[type="submit"]').prop('disabled', false);
-  return false;
- }
+ 
 }
 
 </script>\
