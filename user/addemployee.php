@@ -330,6 +330,8 @@
 
         function regc()
         {
+
+          alert("sila");
         
         var empid=$('#empid')   
         var username=$('#username').val();
@@ -365,6 +367,7 @@
         
         
         $.post('../php/addemployeecontroller.php',data,function(info){
+          alert("entry gela");
             if(info==1)
             {
                
