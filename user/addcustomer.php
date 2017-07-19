@@ -510,16 +510,17 @@
      
 
   
-   if(response=="") 
+   if(response=="NA") 
    {
     $(':input[type="submit"]').prop('disabled', false);
     return true;
 
 
    }
-   else
+   else 
    {
-       $(':input[type="submit"]').prop('disabled', true);
+    $(':input[type="submit"]').prop('disabled', true);
+       
     return false; 
 
    }
