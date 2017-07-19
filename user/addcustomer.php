@@ -70,7 +70,7 @@
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select name="city" class="form-control" required="true">
+                       <select name="city" class="form-control" required="true" id="city">
                          
                          <option disabled="true" selected="true">Select Your City</option>
                          <option>Others</option>
