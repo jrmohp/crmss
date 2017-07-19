@@ -512,7 +512,7 @@
   
    if(response=="Email Already Registered") 
    {
-    $('#senddata').prop('disabled', true);
+    $('#senddata').prop('disabled',true);
     return false;
 
 
