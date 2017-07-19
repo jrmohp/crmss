@@ -17,6 +17,10 @@ require "connect.php";
 			{
 				echo "Email Already Registered";
 			}
+			else
+			{
+				echo "";
+			}
 
 			
 

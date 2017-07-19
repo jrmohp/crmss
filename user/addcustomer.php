@@ -510,28 +510,24 @@
      
 
   
-   if(response=="") 
+   if(response=="Email Already Registered") 
    {
-    $(':input[type="submit"]').prop('disabled', false);
-    return true;
+    $('#senddata').prop('disabled',true);
+    return false;
 
 
    }
-   else
+   else 
    {
-       $(':input[type="submit"]').prop('disabled', true);
-    return false; 
+    $(':input[type="submit"]').prop('disabled', false);
+       
+    return true; 
 
    }
   }
   });
  }
- else
- {
-  $( '#email_status' ).html("");
-  $(':input[type="submit"]').prop('disabled', false);
-  return false;
- }
+ 
 }
 
 </script>\
