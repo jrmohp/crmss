@@ -2,6 +2,7 @@
 
 
   include "header.php";
+  $siteid=$_GET['id'];
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@
 require("../php/connect.php");
 
 
-$query ="SELECT property FROM siteprop WHERE siteid='SITE0001'"; 
+$query ="SELECT property FROM siteprop WHERE siteid=$siteid"; 
 
 
 if($result=mysqli_query($conn,$query))
