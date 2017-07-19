@@ -102,7 +102,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT siteid FROM siteprop"; 
+                                        $query = "SELECT * FROM siteprop"; 
 
                                           if($result=$conn->query($query))
                                               {
