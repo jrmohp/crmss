@@ -108,7 +108,7 @@
                                               {
                                                     while ($row=$result->fetch_array())
                                                   { 
-                                                            $reqid=$row['id'];
+                                                            $reqid=$row['siteid'];
                                                              echo "<tr align='center'>";
         echo "<td>".$row['siteid']."</td>";
         
