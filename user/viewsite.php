@@ -22,7 +22,7 @@
 require("../php/connect.php");
 
 
-$query ="SELECT property FROM siteprop WHERE siteid=$siteid"; 
+$query ="SELECT property FROM siteprop WHERE id=$siteid"; 
 
 
 if($result=mysqli_query($conn,$query))
