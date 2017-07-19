@@ -459,7 +459,7 @@
         
         
         $.post('../php/custregcontroller.php',data,function(info){
-        
+
             if(info!=0)
             {
                
@@ -507,7 +507,7 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-      $(':input[type="submit"]').prop('disabled', true);
+     
 
   
    if(response=="") 
@@ -519,7 +519,7 @@
    }
    else
    {
-
+       $(':input[type="submit"]').prop('disabled', true);
     return false; 
 
    }
