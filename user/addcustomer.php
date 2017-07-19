@@ -459,6 +459,7 @@
         
         
         $.post('../php/custregcontroller.php',data,function(info){
+          alert("hello");
             if(info!=0)
             {
                
