@@ -369,7 +369,7 @@
         
         $.post('../php/addemployeecontroller.php',data,function(info){
           alert("entry gela");
-            if(info==1)
+           /* if(info==1)
             {
                
                     alertify.alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
@@ -384,7 +384,7 @@
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
              $('#querymsg').delay(2000).fadeOut();
             
-            }
+            }*/
         });
 
 
