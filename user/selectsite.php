@@ -102,7 +102,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT * FROM siteprop"; 
+                                        $query = "SELECT DISTINCT(siteid) FROM siteprop"; 
 
                                           if($result=$conn->query($query))
                                               {
