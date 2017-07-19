@@ -510,7 +510,7 @@
      
 
   
-   if(response=="NA") 
+   if(response=="") 
    {
     $(':input[type="submit"]').prop('disabled', false);
     return true;

@@ -19,7 +19,7 @@ require "connect.php";
 			}
 			else
 			{
-				echo "NA";
+				echo "";
 			}
 
 			
