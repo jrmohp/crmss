@@ -508,26 +508,30 @@
    $( '#email_status' ).html(response);
    
      
-
+$(':input[type="submit"]').prop('disabled', true); 
   
-   if(response=="Email Already Registered") 
+   if(response=="") 
    {
-    $('#senddata').prop('disabled',true);
-    return false;
+    $(':input[type="submit"]').prop('disabled', false);
+    return true;
 
 
    }
-   else 
+   else
    {
-    $(':input[type="submit"]').prop('disabled', false);
        
-    return true; 
+    return false; 
 
    }
   }
   });
  }
- 
+ else
+ {
+  $( '#email_status' ).html("");
+  $(':input[type="submit"]').prop('disabled', false);
+  return false;
+ }
 }
 
 </script>\

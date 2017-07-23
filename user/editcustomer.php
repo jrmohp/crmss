@@ -489,7 +489,7 @@
             if(info!=0)
             {
                
-                    alertify.alert(info);                  
+                    alertify.alert(info);                  nNZ
         
 
             }
