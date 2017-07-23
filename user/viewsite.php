@@ -20,9 +20,9 @@
 <?php
 
 require("../php/connect.php");
+echo "<h1>"."$siteid"."</h1>";
 
-
-$query ="SELECT property FROM siteprop WHERE siteid=$siteid"; 
+$query ="SELECT property FROM siteprop WHERE siteid='$siteid'"; 
 
 
 if($result=mysqli_query($conn,$query))
