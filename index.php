@@ -1,6 +1,6 @@
 <?php
 
-echo "hello world hauchi";
+echo "hello world push hauchi";
 
 
 ?>
