@@ -426,7 +426,7 @@
         var email=$('#email').val();
         var phone=$('#phone').val();
         var address=$('#address').val();
-        var city=$('#city').val();
+        var city=$('#city option:selected').text();
         var gender=$('[name="type"]').val();
           var phase=$('[name="phase"]').val();
         var units=$('#units').val();
