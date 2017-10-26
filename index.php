@@ -1,6 +1,6 @@
 <?php
 
-echo "hello world push hauchi";
+echo "hello world ftploy";
 
 
 ?>
