@@ -490,12 +490,12 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-      $(':input[type="submit"]').prop('disabled', true);
+      $(':input[type="submit"]').prop('disabled', false);
 
   
    if(response=="Email Not Registered") 
    {
-    $(':input[type="submit"]').prop('disabled', false);
+    $(':input[type="submit"]').prop('disabled', true);
     return true;
 
 
