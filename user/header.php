@@ -88,7 +88,7 @@
                   <li><a><i class="fa fa-edit"></i>Site Management<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="http://crm.smartsolar.co.in/user/addsite">Add Sites</a></li>
-                      <li><a href="http://crm.smartsolar.co.in/user/viewsites">View Sites</a></li>
+                      <li><a href="http://crm.smartsolar.co.in/user/viewsite">View Sites</a></li>
                       <li><a href="http://crm.smartsolar.co.in/user/addexpenses">Add Expense To Site</a></li>
                       
                     </ul>
