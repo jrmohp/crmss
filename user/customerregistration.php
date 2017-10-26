@@ -475,7 +475,7 @@
 
 
    
-          /*function checkemail()
+          function checkemail()
 {
  var email=document.getElementById( "email" ).value;
   
@@ -515,7 +515,7 @@
   $(':input[type="submit"]').prop('disabled', false);
   return false;
  }
-}*/
+}
 
 </script>
 <?php
