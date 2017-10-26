@@ -9,7 +9,6 @@ require "connect.php";
 			$iemail=mysqli_real_escape_string($conn, $_POST['user_email']);
 
 			$checkemailquery="SELECT email from user where email='$iemail'";
-
 			
 			$result=mysqli_query($conn,$checkemailquery);
 
