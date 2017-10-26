@@ -18,7 +18,7 @@ require "connect.php";
 			}
 			else
 			{
-				echo "";
+				echo "Email Not Registered";
 			}
 
 			
