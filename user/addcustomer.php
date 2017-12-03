@@ -508,7 +508,7 @@
    $( '#email_status' ).html(response);
    
      
-$(':input[type="submit"]').prop('disabled', true); 
+ 
   
    if(response=="") 
    {
