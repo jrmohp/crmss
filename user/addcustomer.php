@@ -519,7 +519,7 @@
    }
    else
    {
-       
+        $(':input[type="submit"]').prop('disabled', true);
     return false; 
 
    }
