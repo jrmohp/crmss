@@ -534,7 +534,7 @@ $(':input[type="submit"]').prop('disabled', true);
  }
 }
 
-</script>\
+</script>
 
 </div>
                     
