@@ -529,7 +529,7 @@ $(':input[type="submit"]').prop('disabled', true);
  else
  {
   $( '#email_status' ).html("");
-  $(':input[type="submit"]').prop('disabled', false);
+  $(':input[type="submit"]').prop('disabled', true);
   return false;
  }
 }
@@ -560,7 +560,7 @@ $(':input[type="submit"]').prop('disabled', true);
                     </div>
                     </div>
                     </body>
-
+                    </html>
 	
 <?php
 
