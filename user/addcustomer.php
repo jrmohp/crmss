@@ -507,13 +507,13 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-     $("#senddata").attr('disabled','disabled'); 
+     document.getElementByID("#senddata").disabled = true;
      
 
   
    if(response=="1") 
    {
-    $("#senddata").removeAttr('disabled');
+    document.getElementByID("#senddata").disabled = false;
     return true;
    }
     if(response=="0") 
@@ -528,7 +528,7 @@
  else
  {
   $( '#email_status' ).html("");
-  $("#senddata").attr('disabled','disabled');
+  document.getElementByID("#senddata").disabled = true;
   return false;
  }
 }
