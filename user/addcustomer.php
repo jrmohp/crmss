@@ -511,12 +511,12 @@
    
    if(response=="Email Not Registered") 
     {
-     $(':input[type="submit"]').prop('disabled', false);
+     $(':button[type="submit"]').prop('disabled', false);
      return true;
     }
     else
     {
-      $(':input[type="submit"]').prop('disabled', true);   
+      $(':button[type="submit"]').prop('disabled', true);   
       return false; 
  
     }
@@ -527,7 +527,7 @@
  else
  {
   $( '#email_status' ).html("");
-  $("#senddata").attr('disabled','disabled');
+  $(':button[type="submit"]').prop('disabled', true);
   return false;
  }
 }
