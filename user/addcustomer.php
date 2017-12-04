@@ -529,7 +529,7 @@ $(':input[type="submit"]').prop('disabled', true);
  else
  {
   $( '#email_status' ).html("");
-  $(':input[type="submit"]').prop('disabled', true);
+  //$(':input[type="submit"]').prop('disabled', true);
   return false;
  }
 }
