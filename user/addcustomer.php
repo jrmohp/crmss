@@ -524,12 +524,12 @@
 }
 
 
- else
+ /*else
  {
   $( '#email_status' ).html("");
   $(':button[type="submit"]').prop('disabled', true);
   return false;
- }
+ }*/
 }
 
 </script>
