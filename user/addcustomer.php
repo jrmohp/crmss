@@ -53,7 +53,7 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
+                        <input type="text" name="email" class="form-control has-feedback-left" value="" id="email" placeholder="Email" onkeyup="checkemail()">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span id="email_status" style="color: red"> </span> 
                       </div>
@@ -518,8 +518,8 @@
    }
     if(response=="0") 
    {
-    $("#senddata").removeAttr('disabled');
-    return true;
+    
+    return false;
     }
   }});
 }
