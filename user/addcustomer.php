@@ -525,7 +525,7 @@
  }
  else
  {
-  $( '#email_status' ).html("");
+  $( '#email_status' ).html(response);
   $('#senddata').prop('disabled', true);
   return false;
  }
