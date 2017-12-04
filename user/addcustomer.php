@@ -512,7 +512,7 @@ $(':input[type="submit"]').prop('disabled', true);
   
    if('#email_status'=="Email Not Registered") 
    {
-    $(':input[type="submit"]').prop('enabled', true);
+    $(':input[type="submit"]').prop('enabled', false);
     return true;
 
 
