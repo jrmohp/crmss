@@ -507,19 +507,18 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-     $("#senddata").attr('disabled','disabled'); 
-     
-
-  
+  $(':input[type="submit"]').prop('disabled', true);
+   
    if(response=="Email Not Registered") 
-   {
-    $("#senddata").removeAttr('disabled');
-    return true;
-   }
-    if(response=="Email Already Registered") 
-   {
-    
-    return false;
+    {
+     $(':input[type="submit"]').prop('disabled', false);
+     return true;
+    }
+    else
+    {
+         
+      return false; 
+ 
     }
   }});
 }
