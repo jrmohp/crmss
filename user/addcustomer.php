@@ -2,8 +2,8 @@
 
 
   include "header.php";
-
 ?>
+
 
 
 
@@ -53,7 +53,7 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" value="" id="email" placeholder="Email" onkeyup="checkemail()">
+                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span id="email_status" style="color: red"> </span> 
                       </div>
@@ -507,29 +507,31 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
+     
+$(':input[type="submit"]').prop('disabled', true); 
   
-   
-   if(response=="Email Not Registered") 
-    {
-     $(':button[type="submit"]').prop('disabled', false);
-     return true;
-    }
-    else if (response=="Email Already Registered")
-    {
-      $(':button[type="submit"]').prop('disabled', true);   
-      return false; 
- 
-    }
-  }});
-}
+   if(response=="") 
+   {
+    $(':input[type="submit"]').prop('disabled', false);
+    return true;
 
 
- /*else
+   }
+   else
+   {
+       
+    return false; 
+
+   }
+  }
+  });
+ }
+ else
  {
   $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
+  $(':input[type="submit"]').prop('disabled', false);
   return false;
- }*/
+ }
 }
 
 </script>
@@ -558,7 +560,7 @@
                     </div>
                     </div>
                     </body>
-                    </html>
+
 	
 <?php
 
