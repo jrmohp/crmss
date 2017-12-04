@@ -495,7 +495,7 @@
           function checkemail()
 {
  var email=document.getElementById( "email" ).value;
-  
+  $('#senddata').prop('disabled', true);
  if(email)
  {
   $.ajax({
@@ -506,9 +506,6 @@
   },
   success: function (response) {
    $( '#email_status' ).html(response);
-   
-     
-   $('#senddata').prop('disabled', true);
   
    if(response=="Email Not Registered") 
    {
