@@ -505,12 +505,12 @@
    user_email:email,
   },
   success: function (response) {
-   $( '#email_status' ).html(response);
+   $( '#email_status' ).text(response);
    
-     $(':input[type="submit"]').prop('disabled', true);
- 
+     
+$(':input[type="submit"]').prop('disabled', true); 
   
-   if(text(response)=="Email Not Registered") 
+   if($('#email_status')=="Email Not Registered") 
    {
     $(':input[type="submit"]').prop('disabled', false);
     return true;
@@ -529,6 +529,7 @@
  else
  {
   $( '#email_status' ).html("");
+  $(':input[type="submit"]').prop('disabled', true);
   return false;
  }
 }
