@@ -495,7 +495,7 @@
           function checkemail()
 {
  var email=document.getElementById( "email" ).value;
-  $('#senddata').prop('disabled', true);
+  
  if(email)
  {
   $.ajax({
@@ -516,7 +516,7 @@
    }
    else
    {
-    
+    $('#senddata').prop('disabled', true);
     return false; 
 
    }
