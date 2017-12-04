@@ -514,7 +514,7 @@
      $(':button[type="submit"]').prop('disabled', false);
      return true;
     }
-    else
+    else if (response=="Email Already Registered")
     {
       $(':button[type="submit"]').prop('disabled', true);   
       return false; 
