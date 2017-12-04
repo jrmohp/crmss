@@ -2,8 +2,8 @@
 
 
   include "header.php";
-?>
 
+?>
 
 
 
@@ -507,13 +507,13 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-     document.getElementByID("#senddata").disabled = true;
+     $("#senddata").attr('disabled','disabled'); 
      
 
   
    if(response=="Email Not Registered") 
    {
-    document.getElementByID("#senddata").disabled = false;
+    $("#senddata").removeAttr('disabled');
     return true;
    }
     if(response=="Email Already Registered") 
@@ -528,7 +528,7 @@
  else
  {
   $( '#email_status' ).html("");
-  document.getElementByID("#senddata").disabled = true;
+  $("#senddata").attr('disabled','disabled');
   return false;
  }
 }
