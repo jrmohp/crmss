@@ -508,7 +508,7 @@
    $( '#email_status' ).html(response);
    
      
-$(':button[type="submit"]').prop('disabled', true); 
+
   
    if(response=="") 
    {
@@ -519,7 +519,7 @@ $(':button[type="submit"]').prop('disabled', true);
    }
    else
    {
-       
+       $(':button[type="submit"]').prop('disabled', true); 
     return false; 
 
    }
