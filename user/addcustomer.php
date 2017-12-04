@@ -507,29 +507,25 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
+     $("#senddata").attr('disabled','disabled'); 
      
 
   
    if(response=="Email Not Registered") 
    {
-    $(':button[type="submit"]').prop('disabled', false);
+    $("#senddata").removeAttr('disabled');
     return true;
 
-
-   }
-   if (response=="Email Already Registered")
-   {
-       $(':button[type="submit"]').prop('disabled', true); 
-    return false; 
 
    }
   }
   });
  }
+
  else
  {
   $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
+  $("#senddata").attr('disabled','disabled');
   return false;
  }
 }
