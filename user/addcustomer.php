@@ -505,12 +505,12 @@
    user_email:email,
   },
   success: function (response) {
-   $( '#email_status' ).text(response);
+   $( '#email_status' ).html(response);
    
      $(':input[type="submit"]').prop('disabled', true);
  
   
-   if(response=="Email Not Registered") 
+   if(text(response)=="Email Not Registered") 
    {
     $(':input[type="submit"]').prop('disabled', false);
     return true;
