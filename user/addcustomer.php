@@ -510,7 +510,7 @@
      
 $(':input[type="submit"]').prop('disabled', true); 
   
-   if(response=="") 
+   if(response=="Email Not Registered") 
    {
     $(':input[type="submit"]').prop('disabled', false);
     return true;
