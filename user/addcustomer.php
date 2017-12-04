@@ -511,16 +511,19 @@
      
 
   
-   if(response=="Email Not Registered") 
+   if(response=="1") 
    {
     $("#senddata").removeAttr('disabled');
     return true;
-
-
    }
-  }
-  });
- }
+    if(response=="0") 
+   {
+    $("#senddata").removeAttr('disabled');
+    return true;
+    }
+  }});
+}
+
 
  else
  {
