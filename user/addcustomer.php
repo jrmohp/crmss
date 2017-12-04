@@ -508,7 +508,7 @@
    $( '#email_status' ).text(response);
    
      
-$(':input[type="submit"]').prop('disabled', true); 
+
   
    if('#email_status'=="Email Not Registered") 
    {
@@ -519,7 +519,7 @@ $(':input[type="submit"]').prop('disabled', true);
    }
    else
    {
-       
+       $(':input[type="submit"]').prop('disabled', true); 
     return false; 
 
    }
