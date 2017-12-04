@@ -505,7 +505,7 @@
    user_email:email,
   },
   success: function (response) {
-   $( '#email_status' ).html(response);
+   $( '#email_status' ).text(response);
    
      $(':input[type="submit"]').prop('disabled', true);
  
