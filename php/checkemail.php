@@ -15,12 +15,12 @@ require "connect.php";
 			if(mysqli_num_rows($result)>0)
 			{
 				echo "Email Already Registered";
-				return 0;
+				
 			}
 			else
 			{
 				echo "Email Not Registered";
-				return 1;
+
 			}
 
 			

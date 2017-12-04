@@ -511,12 +511,12 @@
      
 
   
-   if(response=="1") 
+   if(response=="Email Not Registered") 
    {
     document.getElementByID("#senddata").disabled = false;
     return true;
    }
-    if(response=="0") 
+    if(response=="Email Already Registered") 
    {
     
     return false;
