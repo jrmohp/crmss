@@ -1,4 +1,6 @@
-
+<?php
+include "header.php";
+?>
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -6,7 +8,7 @@
 
 
 <?php
-include "header.php";
+
 require("../php/connect.php");
 
 
