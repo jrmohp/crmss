@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HEROOO | Smart Solar  </title>
+  <title>Add Customer | Smart Solar  </title>
 </head>
 <body>
 
