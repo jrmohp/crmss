@@ -2,13 +2,20 @@
 
 
   include "header.php";
+?>
+
+
+  <title>Select Site | Smart Soalar </title>
+
+
+ 	<div class="row" id="body2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+
+
+
+<?php
+
 require("../php/connect.php");
-
- 	echo'<div class="row" id="body2">
-            <div class="col-md-12 col-sm-12 col-xs-12">';
-
-
-
 
 
 
@@ -36,7 +43,11 @@ if($result=mysqli_query($conn,$query))
 
 }
 
-echo "</div></div>";
+?>
+
+</div>
+                    </div>
+                    
 
 	
 <?php
