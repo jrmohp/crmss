@@ -2,11 +2,37 @@
 
 
   include "header.php";
+
+
+
+  $editid=$_GET['id'];
+
+
+
+
+
+   require("../php/connect.php");
+
+                                        $query = "SELECT * FROM user WHERE id=$editid"; 
+
+                                          $result=$conn->query($query);
+                                              
+                                        $row=$result->fetch_array();
+
 ?>
 
 
 
- 	  <div class="row" id="body2">
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Customer | Smart Solar  </title>
+</head>
+<body>
+
+  <div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -31,39 +57,42 @@
                     <br />
                     <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
 
-                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
-                        <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
-                          
+                      <div class="col-md-6 col-sm-6 col-xs-11 form-group has-feedback">
+                     
+                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required"  value="<?php echo $row['firstname']?>">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen" ></span>
+                         
+
                       </div>
-
+                    
+                     
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required">
+                        <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required" value="<?php echo $row['lastname']?>">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true"  style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
+                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()"  value="<?php echo $row['email']?>">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span id="email_status" style="color: red"> </span> 
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone" required="true"> 
+                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone" required="true"   value="<?php echo $row['mobile']?>"> 
                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true">
+                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true"  value="<?php echo $row['peraddress']?>">
                         <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select name="city" class="form-control" required="true" id="city">
+                       <select name="city" class="form-control" required="true">
                          
-                         <option disabled="true" selected="true">Select Your City</option>
+                         <option disabled="true" selected="true"> <?php echo $row['city']?></option>
                          <option>Others</option>
                          <option> Agastinuagan  </option>
 <option>  Anandpur  </option>
@@ -361,31 +390,32 @@
                         
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
-                        <input type="text" name="units" class="form-control has-feedback-right has-feedback-left" id="units" placeholder="Units">
+                        <input type="text" name="units" class="form-control has-feedback-right has-feedback-left" id="units" placeholder="Units"  value="<?php echo $row['mbill']?>">
                         <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kWh</span>
                          <span class="form-control-feedback left fa fa-lightbulb-o" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
                       
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="monthlybill" class="form-control has-feedback-left has-feedback-right " id="monthly bill" placeholder="Monthly Bill">
+                        <input type="text" name="monthlybill" class="form-control has-feedback-left has-feedback-right " id="monthly bill" placeholder="Monthly Bill"  value="<?php echo $row['mbill']?>">
                         <span class="fa fa-file-text form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                          <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">INR</span>
                       </div>
                          <br>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="contractload" class="form-control has-feedback-left has-feedback-right" id="contract load" placeholder="Contract Load">
+                        <input type="text" name="contractload" class="form-control has-feedback-left has-feedback-right" id="contract load" placeholder="Contract Load"   value="<?php echo $row['cload']?>">
                         <span class="fa fa-bolt form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kW</span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="roofarea" class="form-control has-feedback-left has-feedback-right " id="roof area" placeholder="Roof Area">
+                        <input type="text" name="roofarea" class="form-control has-feedback-left has-feedback-right " id="roof area" placeholder="Roof Area"  value="<?php echo $row['rarea']?>">
                         <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                          <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
                       </div>
 
+                      
 
 
 
@@ -400,8 +430,9 @@
                       </div>
                       <div class="ln_solid"></div>
                       <div class="form-group">
-                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
+                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <input type="hidden" value="<?php echo $editid?>" name="" id="editid">
                           <button type="button" class="btn btn-primary">Cancel</button>
                <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
@@ -420,12 +451,14 @@
   <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 <script type="text/javascript">
 
+
  
     $("#senddata").on("click",regc);
 
 
         function regc()
         {
+          
            
 
         var firstname=$('#firstname').val();
@@ -440,21 +473,23 @@
         var monthlybill=$('#monthlybill').val();
         var contractload=$('#contractload').val();
         var roofarea=$('#roofarea').val();
+        var editid=$('#editid').val();
+
+        
        
        
 
 
-        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase,'editid':editid};
 
+       
         
         
-        
-        $.post('../php/custregcontroller.php',data,function(info){
-
+        $.post('../php/custeditcontroller.php',data,function(info){
             if(info!=0)
             {
                
-                    alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
+                    alertify.alert(info);                  nNZ
         
 
             }
@@ -498,18 +533,20 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-     
+      $(':input[type="submit"]').prop('disabled', true);
 
   
-   if(html(response)=="Email Not Registered") 
+   if(response=="") 
    {
-    $(':button[type="submit"]').prop('disabled', false);
-    
+    $(':input[type="submit"]').prop('disabled', false);
+    return true;
+
+
    }
-   else 
+   else
    {
-       $(':button[type="submit"]').prop('disabled', true);
-    
+
+    return false; 
 
    }
   }
@@ -518,12 +555,12 @@
  else
  {
   $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
-  
+  $(':input[type="submit"]').prop('disabled', false);
+  return false;
  }
 }
 
-</script>
+</script>\
 
 </div>
                     
@@ -548,8 +585,9 @@
 
                     </div>
                     </div>
+                    </body>
 
-	
+  
 <?php
 
 

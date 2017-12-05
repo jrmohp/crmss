@@ -2,11 +2,20 @@
 
 
   include "header.php";
+
 ?>
 
 
 
- 	  <div class="row" id="body2">
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Customer | Smart Solar  </title>
+</head>
+<body>
+
+ 	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -44,7 +53,7 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
+                        <input type="text" name="email" class="form-control has-feedback-left" value="" id="email" placeholder="Email" onkeyup="checkemail()">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span id="email_status" style="color: red"> </span> 
                       </div>
@@ -403,7 +412,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
                           <button type="button" class="btn btn-primary">Cancel</button>
-               <button class="btn btn-primary" type="reset">Reset</button>
+						   <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -498,29 +507,29 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-     
-
   
-   if(html(response)=="Email Not Registered") 
-   {
-    $(':button[type="submit"]').prop('disabled', false);
-    
-   }
-   else 
-   {
-       $(':button[type="submit"]').prop('disabled', true);
-    
+   
+   if(response=="Email Not Registered") 
+    {
+     $(':button[type="submit"]').prop('disabled', false);
+     return true;
+    }
+    else if (response=="Email Already Registered")
+    {
+      $(':button[type="submit"]').prop('disabled', true);   
+      return false; 
+ 
+    }
+  }});
+}
 
-   }
-  }
-  });
- }
- else
+
+ /*else
  {
   $( '#email_status' ).html("");
   $(':button[type="submit"]').prop('disabled', true);
-  
- }
+  return false;
+ }*/
 }
 
 </script>
@@ -548,7 +557,8 @@
 
                     </div>
                     </div>
-
+                    </body>
+                    </html>
 	
 <?php
 

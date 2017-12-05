@@ -1,15 +1,11 @@
 <?php
 
 
-  include "header.php";
+  include "regheader.php";
 ?>
 
 
-
- 	  <div class="row" id="body2">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-
-            <div class="row">
+<div class="row">
 <center>
               <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
@@ -34,9 +30,7 @@
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
-                          
                       </div>
-
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required">
@@ -61,7 +55,7 @@
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select name="city" class="form-control" required="true" id="city">
+                       <select name="city" class="form-control" required="true">
                          
                          <option disabled="true" selected="true">Select Your City</option>
                          <option>Others</option>
@@ -401,9 +395,8 @@
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
-
                           <button type="button" class="btn btn-primary">Cancel</button>
-               <button class="btn btn-primary" type="reset">Reset</button>
+						   <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -433,7 +426,7 @@
         var email=$('#email').val();
         var phone=$('#phone').val();
         var address=$('#address').val();
-        var city=$('#city').val();
+        var city=$('#city option:selected').text();
         var gender=$('[name="type"]').val();
           var phase=$('[name="phase"]').val();
         var units=$('#units').val();
@@ -451,7 +444,13 @@
         
         $.post('../php/custregcontroller.php',data,function(info){
 
-            if(info!=0)
+            if(info="First Name Cannot Be Empty<br>")
+            {
+              alertify.alert("Name Cant be empty");       
+
+            }
+
+            else if(info!=0)
             {
                
                     alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
@@ -460,7 +459,7 @@
             }
             else if(info==0)
             {
-               
+             
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
@@ -498,18 +497,20 @@
   success: function (response) {
    $( '#email_status' ).html(response);
    
-     
+      $(':input[type="submit"]').prop('disabled', false);
 
   
-   if(html(response)=="Email Not Registered") 
+   if(response=="Email Not Registered") 
    {
-    $(':button[type="submit"]').prop('disabled', false);
-    
+    $(':input[type="submit"]').prop('disabled', true);
+    return true;
+
+
    }
-   else 
+   else
    {
-       $(':button[type="submit"]').prop('disabled', true);
-    
+
+    return false; 
 
    }
   }
@@ -518,38 +519,12 @@
  else
  {
   $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
-  
+  $(':input[type="submit"]').prop('disabled', false);
+  return false;
  }
 }
 
 </script>
-
-</div>
-                    
-
-
-
-
-               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </div>
-                    </div>
-
-	
 <?php
 
 
