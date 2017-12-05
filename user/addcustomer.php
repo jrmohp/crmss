@@ -6,10 +6,6 @@
 
 
 
-
- 
-
-
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
@@ -418,7 +414,6 @@
 
 
 
- 
  <script src="../vendors/jquery/dist/jquery.min.js"></script>
  <script type="text/javascript" src="../js/alertify.js"></script>
  <link rel="stylesheet" href="../css/alertify.core.css" />
@@ -553,7 +548,8 @@
 
                     </div>
                     </div>
-                    
+                  
+
 	
 <?php
 
