@@ -510,14 +510,14 @@
      
 
   
-   if(html(response)=="Email Not Registered") 
+   if('#email_status'=="Email Not Registered") 
    {
     $(':input[type="submit"]').prop('disabled', false);
     
 
 
    }
-   else if(html(response)=="Email Already Registered")
+   else 
    {
        $(':input[type="submit"]').prop('disabled', true);
     
