@@ -14,12 +14,9 @@ $site=$_POST['siteid'];
 
 
  
-<!DOCTYPE html>
-<html>
-<head>
+
   <title>Add Expense Site | Smart Solar  </title>
-</head>
-<body>
+
 
  	<div class="row" id="body2">
   <form>
@@ -406,7 +403,7 @@ if($result=mysqli_query($conn,$query))
                     </div>
                     </form>
                     </div>
-              </body>
+              
 
 	
 
