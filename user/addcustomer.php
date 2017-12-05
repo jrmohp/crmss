@@ -1,7 +1,7 @@
 <?php
 
 
-  include "header.php";
+  include "../ampleadmin/header.php";
 ?>
 
 
@@ -563,5 +563,5 @@
 <?php
 
 
-  include "footer.php";
+  include "../ampleadmin/footer.php";
 ?>
