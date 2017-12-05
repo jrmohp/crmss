@@ -1,12 +1,12 @@
 <?php
 
 
-  include "../header.php";
+  include "../ampleadmin/header.php";
 ?>
 
 
 
- 	<div class="row" id="body2">
+ 	  <div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -403,7 +403,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
                           <button type="button" class="btn btn-primary">Cancel</button>
-						   <button class="btn btn-primary" type="reset">Reset</button>
+               <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -548,11 +548,10 @@
 
                     </div>
                     </div>
-                  
 
 	
 <?php
 
 
-  include "../footer.php";
+  include "../ampleadmin/footer.php";
 ?>
