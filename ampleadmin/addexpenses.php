@@ -1,15 +1,4 @@
-<?php
 
-
-  include "header.php";
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Select Site | Smart Soalar </title>
-</head>
-<body>
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -17,7 +6,7 @@
 
 
 <?php
-
+include "header.php";
 require("../php/connect.php");
 
 
@@ -47,10 +36,11 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
-</table>
+
+
 </div>
                     </div>
-                    </body>
+                    
 
 	
 <?php
