@@ -14,11 +14,11 @@ require "connect.php";
 
 			if(mysqli_num_rows($result)>0)
 			{
-				return 0;
+				echo "Email Already Registered";
 			}
 			else
 			{
-				return 1;
+				echo "Email Not Registered";
 			}
 
 			
