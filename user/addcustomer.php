@@ -1,7 +1,7 @@
 <?php
 
 
-  include "../ampleadmin/header.php";
+  include "http://crm.smartsolar.co.in/ampleadmin/header.php";
 ?>
 
 
@@ -554,5 +554,5 @@
 <?php
 
 
-  include "../ampleadmin/footer.php";
+  include "http://crm.smartsolar.co.in/ampleadmin/footer.php";
 ?>
