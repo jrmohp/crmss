@@ -1,7 +1,7 @@
 <?php
 
 
-  include "../ampleadmin/header.php";
+  include "header.php";
 ?>
 
 
@@ -141,5 +141,5 @@ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
 <?php
 
 
- include "../ampleadmin/footer.php";
+ include "footer.php";
 ?>
