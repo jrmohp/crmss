@@ -528,7 +528,7 @@
  }
  else
  {
-  $( '#email_status' ).html("");
+  $( '#email_status' ).html(response);
   $(':input[type="submit"]').prop('disabled', true);
   return false;
  }
