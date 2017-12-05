@@ -513,14 +513,14 @@ $(':input[type="submit"]').prop('disabled', true);
    if(html(response)=="Email Not Registered") 
    {
     $(':input[type="submit"]').prop('disabled', false);
-    return true;
+    
 
 
    }
    else if(html(response)=="Email Already Registered")
    {
        $(':input[type="submit"]').prop('disabled', true);
-    return false; 
+    
 
    }
   }
@@ -530,7 +530,7 @@ $(':input[type="submit"]').prop('disabled', true);
  {
   
   $(':input[type="submit"]').prop('disabled', true);
-  return false;
+  
  }
 }
 
