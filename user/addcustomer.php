@@ -510,7 +510,7 @@
      
 
   
-   if('#email_status'==1) 
+   if('#email_status'=="1") 
    {
     $(':input[type="submit"]').prop('enabled', false);
     return true;
