@@ -505,7 +505,7 @@
    user_email:email,
   },
   success: function (response) {
-   $( '#email_status' ).text(response);
+   $( '#email_status' ).html(response);
    
      
 
