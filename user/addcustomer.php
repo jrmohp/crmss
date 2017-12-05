@@ -512,7 +512,7 @@
   
    if('#email_status'=="1") 
    {
-    $(':input[type="submit"]').prop('enabled', false);
+    $(':input[type="submit"]').prop('disabled', false);
     return true;
 
 
