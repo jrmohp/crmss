@@ -1,7 +1,7 @@
 <?php
 
 
-  include "regheader.php";
+  include "header.php";
 ?>
 
 
@@ -525,6 +525,9 @@
 }
 
 </script>
+
+</div>
+
 <?php
 
 
