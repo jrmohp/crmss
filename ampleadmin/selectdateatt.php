@@ -15,9 +15,7 @@
 		<div class="row ">
 
 			<div class="col-md-4"></div>
-
-			<div class="col-md-4">b</div>
-			<div class="col-md-4 col-sm-12">
+<div class="col-md-4 col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title m-b-0">Sample Forms with icon</h3>
                             <p class="text-muted m-b-30 font-13"> Bootstrap Elements </p>
@@ -67,6 +65,8 @@
                             </div>
                         </div>
                     </div>
+			<div class="col-md-4"></div>
+
 
 			<div class="col-md-4"></div>
                     
