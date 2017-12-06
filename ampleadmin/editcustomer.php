@@ -557,7 +557,7 @@
  }
 }
 
-</script>\
+</script>
 
 </div>
                     
