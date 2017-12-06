@@ -28,6 +28,7 @@
       <div class="form-group"> <!-- Date input -->
         <label class="control-label" for="date">Date</label>
         <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+        
           <div class="form-group"> <!-- Submit button -->
         <center><button class="btn btn-primary " name="submit" type="submit">Submit</button></center>
       </div>
