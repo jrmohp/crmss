@@ -30,7 +30,7 @@
         <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
       </div>
       <div class="form-group"> <!-- Submit button -->
-        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+        <center><button class="btn btn-primary " name="submit" type="submit">Submit</button></center>
       </div>
      </form>
      <!-- Form code ends --> 
@@ -40,7 +40,7 @@
  </div>
 </div>
                                         
-                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
+                                        
                                         
                                     </form>
                                 </div>
