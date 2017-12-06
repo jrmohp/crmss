@@ -11,8 +11,16 @@
 
 
 
+	<form>
+		
+
+<div class="row">
 		<input type="date" name="date">
-	
+	</div>
+
+	</form>
+
+			
 
 
 
