@@ -526,7 +526,6 @@
 
 </script>
 
-</div>
 
 <?php
 
