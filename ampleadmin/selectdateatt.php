@@ -21,17 +21,15 @@
                                     	<div class="bootstrap-iso">
  <div class="container-fluid">
   <div class="row">
-   <div class="col-md-6 col-sm-6 col-xs-12">
+   <div class="col-md-6 col-sm-12 col-xs-12">
 
     <!-- Form code begins -->
     <form method="post">
       <div class="form-group"> <!-- Date input -->
         <label class="control-label" for="date">Date</label>
-        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/><br>
+        <input class="form-control" id="date" name="date"  type="date"/><br>
         <br>
-        <br>
-
-          <div class="form-group"> <!-- Submit button -->
+                  <div class="form-group"> <!-- Submit button -->
         <center><button class="btn btn-primary " name="submit" type="submit">Submit</button></center>
       </div>
      </form>
