@@ -12,7 +12,7 @@
 
 
 	<form>
-		<div class="row show-grid">
+		<div class="row ">
 
 			<div class="col-md-4"></div>
 
