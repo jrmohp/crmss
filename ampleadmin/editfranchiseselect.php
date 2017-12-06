@@ -164,7 +164,7 @@
                
 
               
-               var link="http://crm.smartsolar.co.in/user/editfranchise?id="+btnid;
+               var link="http://crm.smartsolar.co.in/ampleadmin/editfranchise?id="+btnid;
 
                window.location.assign(link);
 
