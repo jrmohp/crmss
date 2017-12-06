@@ -11,6 +11,9 @@
 
 
 
+		<input type="date" name="date">
+	
+
 
 
 <?php
