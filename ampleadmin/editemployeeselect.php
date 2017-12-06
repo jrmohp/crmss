@@ -49,7 +49,7 @@
                             <thead>
                            
                               <tr align='center'>
-                                 <th>ID</th>
+                                 <th>Employee ID</th>
                                 <th>Name</th>
                               </tr>
                              
@@ -65,7 +65,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT id,empid,firstname,lastname FROM addemployee"; 
+                                        $query = "SELECT id,empid,fname,lname FROM addemployee"; 
 
                                           if($result=$conn->query($query))
                                               {
@@ -74,7 +74,7 @@
                                                             $reqid=$row['id'];
                                                              echo "<tr align='center'>";
         echo "<td>".$row['empid']."</td>";
-        echo "<td>".$row['firstname']." ".$row['lastname']."</td>";
+        echo "<td>".$row['fname']." ".$row['lname']."</td>";
        
         echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
        
