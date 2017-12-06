@@ -298,7 +298,6 @@
                         <li><a href="addexpensetosite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Expense To Site</span></a></li>
                     </ul>
                 </li>
-                <li class="devider"></li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addfranchise.php"><span class="hide-menu">Add Franchise</span></a></li>
@@ -308,6 +307,7 @@
                         <li><a href="assigntofranchise.php"><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
                 </li>
+                <li class="devider"></li>
                 
         </div>
     </div>
