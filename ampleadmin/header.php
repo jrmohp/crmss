@@ -278,7 +278,7 @@
                 </li>
                 <li> <a href="#" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="addcustomer.php"><i data-icon="&#xe026;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Add Customers</span></a></li>
+                        <li><a href="addcustomer.php"><i data-icon="&#xe026;" class="ti-user"></i> <span class="hide-menu">Add Customers</span></a></li>
                         <li><a href="viewcustomer.php"><i data-icon="&#xe025;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">View Customers</span></a></li>
                         <li><a href="editcustomerselect.php"><i class="ti-layout-menu fa-fw"></i> <span class="hide-menu">Edit Customers</span></a></li>
                         <li><a href="singlemail.php"><i class="ti-alert fa-fw"></i> <span class="hide-menu">Send Mail to Customers</span></a></li>
