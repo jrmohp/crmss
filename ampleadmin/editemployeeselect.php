@@ -51,14 +51,6 @@
                               <tr align='center'>
                                  <th>ID</th>
                                 <th>Name</th>
-                               <th>Email</th>
-                                <th>Mobile</th>
-                                <th>City</th>
-                                <th>Edit</th>
-                               
-
-                                 
-
                               </tr>
                              
                             </thead>
@@ -73,7 +65,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT * FROM addemployee"; 
+                                        $query = "SELECT id,empid,firstname,lastname FROM addemployee"; 
 
                                           if($result=$conn->query($query))
                                               {
@@ -81,11 +73,9 @@
                                                   { 
                                                             $reqid=$row['id'];
                                                              echo "<tr align='center'>";
-        echo "<td>".$row['username']."</td>";
-        echo "<td>".$row['firstname'].$row['lastname']."</td>";
-        echo "<td>".$row['email']."</td>";
-        echo "<td>".$row['mobile']."</td>";
-        echo "<td>".$row['city']."</td>";
+        echo "<td>".$row['empid']."</td>";
+        echo "<td>".$row['firstname']." ".$row['lastname']."</td>";
+       
         echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
        
         echo "</tr>";
