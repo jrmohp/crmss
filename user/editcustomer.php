@@ -25,12 +25,9 @@
 
 
  
-<!DOCTYPE html>
-<html>
-<head>
+
   <title>Edit Customer | Smart Solar  </title>
-</head>
-<body>
+
 
   <div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -585,7 +582,7 @@
 
                     </div>
                     </div>
-                    </body>
+                    
 
   
 <?php
