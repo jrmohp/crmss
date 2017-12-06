@@ -273,7 +273,7 @@
                 </li>
                 <li> <a href="index.html" class="waves-effect active"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">4</span></span></a>
                     <ul class="nav nav-second-level">
-                        <li> <a href="index.html"><i class=" fa-fw">1</i><span class="hide-menu">Dashboard </span></a> </li>
+                        <li> <a href="index.html"><span class="hide-menu">Dashboard </span></a> </li>
                     </ul>
                 </li>
                 <li> <a href="#" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">UI Elements<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">20</span> </span></a>
