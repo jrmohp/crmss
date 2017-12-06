@@ -5,12 +5,9 @@
   $siteid=$_GET['id'];
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
+
   <title>View Site | Smart Solar  </title>
-</head>
-<body>
+
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -49,7 +46,7 @@ if($result=mysqli_query($conn,$query))
 </table>
 </div>
                     </div>
-                    </body>
+                    
 
 	
 <?php
