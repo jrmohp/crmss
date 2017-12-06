@@ -112,7 +112,7 @@
                
 
               
-               var link="http://crm.smartsolar.co.in/ampleadmin/editcustomer?id="+btnid;
+               var link="http://crm.smartsolar.co.in/ampleadmin/editemployee?id="+btnid;
 
                window.location.assign(link);
 
