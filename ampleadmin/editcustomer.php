@@ -442,7 +442,10 @@
 
 
 
-
+ <script src="../vendors/jquery/dist/jquery.min.js"></script>
+ <script type="text/javascript" src="../js/alertify.js"></script>
+ <link rel="stylesheet" href="../css/alertify.core.css" />
+  <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 <script type="text/javascript">
 
 
