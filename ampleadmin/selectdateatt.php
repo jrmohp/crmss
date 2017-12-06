@@ -15,7 +15,9 @@
 		
 
 <div class="row">
-		<input type="date" name="date">
+	<div class="col-xs-12 col-md-4"></div>
+		<div class="col-xs-12 col-md-4"><input type="date" name="date"></div>
+		<div class="col-xs-12 col-md-4"></div>
 	</div>
 
 	</form>
