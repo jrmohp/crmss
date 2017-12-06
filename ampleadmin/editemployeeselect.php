@@ -73,7 +73,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT empid,fname,mname,lname,gender FROM addemployee"; 
+                                        $query = "SELECT * FROM addemployee"; 
 
                                           if($result=$conn->query($query))
                                               {
