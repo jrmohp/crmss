@@ -349,15 +349,15 @@ if($result=mysqli_query($conn,$query))
           $totalid=$val."total";
           $oc="'$val'";
 
-            echo "<div class='row'> <div class='ln_solid'></div><div class='col-md-4 col-sm-4 col-xs-12'  ><label for='$quantid' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>$val Quantity</span></label><input type='text'  name='$quantid' id='$quantid' class='form-control qtys'";
-                  echo 'placeholder="Quantity" onchange="total('.$oc.')"> </div>';
+            echo "<div class='row'> <div class='ln_solid'></div><div class='col-md-4 col-sm-4 col-xs-12'  ><label for='$val' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>$val Quantity</span></label><input type='text'  name='$quantid' id='$quantid' class='form-control qtys'";
+                  echo 'placeholder="Quantity" onchange="total('.$val.')"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$rateid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>';
+                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>';
 
                   echo "<input type='text' name='$rateid' id='$rateid' class='form-control'";
-                  echo 'placeholder="Rate" onchange="total('.$oc.')"> </div>';
+                  echo 'placeholder="Rate" onchange="total('.$val.')"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$totalid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>';
+                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>';
 
                   echo "<input type='text' class='tots' name='$totalid' id='$totalid' class='form-control'";
                   echo"placeholder='Total' readonly='true'>     
