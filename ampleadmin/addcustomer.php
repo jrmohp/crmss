@@ -419,7 +419,7 @@
  <link rel="stylesheet" href="../css/alertify.core.css" />
   <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 <script type="text/javascript">
-window.onload=checkemail;
+
  
     $("#senddata").on("click",regc);
 
@@ -479,7 +479,7 @@ window.onload=checkemail;
 
  var email=document.getElementById( "email" ).value;
   
- if(email)
+ if(email!="")
  {
   $.ajax({
   type: 'post',
@@ -502,7 +502,7 @@ window.onload=checkemail;
    }
    else 
    {
-      document.getElementById("myBtn").disabled = true;
+      document.getElementById("senddata").disabled = true;
     
 
    }
@@ -512,7 +512,7 @@ window.onload=checkemail;
  else
  {
   $( '#email_status' ).html("");
-  document.getElementById("myBtn").disabled = true;
+  document.getElementById("senddata").disabled = true;
   
  }
 }
