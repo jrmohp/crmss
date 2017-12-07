@@ -60,7 +60,8 @@ include "header.php";
 
                                         <input class="form-control" id="date" name="date"  type="date"/><br>
                                         <br>
-                                       <input type="submit" name="" class="btn-success">
+                                        <div class="form-group"> <!-- Submit button -->
+                                            <center><input type="submit" class="btn btn-primary " name=""></center>
                                     </form>
                                 </div>
                             </div>
