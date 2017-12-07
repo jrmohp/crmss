@@ -424,7 +424,7 @@
  <link rel="stylesheet" href="../css/alertify.core.css" />
   <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 <script type="text/javascript">
- $("input[name='submit']").attr('disabled', 'disabled');
+
  
     $("#senddata").on("click",regc);
 
@@ -492,14 +492,14 @@
 {
  
 
+var button = document.getElementById("senddata");
 
-$('input[type="submit"], input[name="email"]').change(function(){
-  if ($(this).val()!="")
-  {
-    $("input[name='submit']").removeAttr('disabled');
-  }
-});
+if(button.value=="")
+button.disabled = true;
 
+//add event listener
+clickBtn.addEventListener('click', function(event) {
+    button.disabled = !button.disabled;
 
  /*else
  {

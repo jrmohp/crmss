@@ -419,7 +419,7 @@
  <link rel="stylesheet" href="../css/alertify.core.css" />
   <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 <script type="text/javascript">
-
+window.onload=checkemail;
  
     $("#senddata").on("click",regc);
 
@@ -473,18 +473,10 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-   
           function checkemail()
 {
+
+
  var email=document.getElementById( "email" ).value;
   
  if(email)
@@ -503,12 +495,14 @@
   
    if(html(response)=="Email Not Registered") 
    {
-    $(':button[type="submit"]').prop('disabled', false);
+
+      document.getElementById("senddata").disabled = false;
+    
     
    }
    else 
    {
-       $(':button[type="submit"]').prop('disabled', true);
+      document.getElementById("myBtn").disabled = true;
     
 
    }
@@ -518,7 +512,7 @@
  else
  {
   $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
+  document.getElementById("myBtn").disabled = true;
   
  }
 }
