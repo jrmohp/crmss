@@ -25,7 +25,7 @@ include "header.php";
                             <div class="panel-heading"><i class="ti-settings"></i> Choose The Date</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
-                                    <form method="get" action="viewsitetrans.php" >
+                                    <form method="post" action="viewsitetrans.php" >
 
                                         <select class="form-control" id="siteid" name="siteid" >
 
@@ -60,8 +60,7 @@ include "header.php";
 
                                         <input class="form-control" id="date" name="date"  type="date"/><br>
                                         <br>
-                                        <div class="form-group"> <!-- Submit button -->
-                                            <center><button class="btn btn-primary " name="submit" type="submit">Submit</button></center>
+                                       <input type="submit" name="">
                                     </form>
                                 </div>
                             </div>
