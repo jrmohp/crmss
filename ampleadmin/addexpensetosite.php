@@ -29,7 +29,7 @@ $site=$_POST['siteid'];
           <form action="../php/addexpensetositecontroller.php" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
-                         <?php echo"<input type='text'  readonly='true' id='siteid' value='$site' class='form-control'>" ?>
+                         <?php echo"<input type='text'  readonly='true' name='siteid' value='$site' class='form-control'>" ?>
                 </div>
 
             

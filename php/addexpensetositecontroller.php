@@ -76,7 +76,7 @@ if($result=mysqli_query($conn,$query))
 
           if(!empty($_POST['$quantid']) && !empty($_POST['$rateid'])&& !empty($_POST['$totalid']))	
 			{
-				$a = ",(".$_POST['$quantid'].",".$_POST['$rateid'].",".$_POST['$totalid'].")";
+				$a = ",('".$_POST['$quantid']."','".$_POST['$rateid']."','".$_POST['$totalid']."'')";
 				$txt .= $a;
 			}
       }
