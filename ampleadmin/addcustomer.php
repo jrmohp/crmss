@@ -485,14 +485,11 @@
   type: 'post',
   url: '../php/checkemail.php',
   data: {
-   user_email:email,
-  },
+   user_email:email },
   success: function (data) {
    $( '#email_status' ).html(data);
    
-     
 
-  
    if(html(data)=="Email Not Registered") 
    {
       document.getElementById("senddata").disabled = false;
