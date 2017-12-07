@@ -60,7 +60,7 @@ include "header.php";
 
                                         <input class="form-control" id="date" name="date"  type="date"/><br>
                                         <br>
-                                       <input type="submit" name="">
+                                       <input type="submit" name="" class="btn-success">
                                     </form>
                                 </div>
                             </div>
