@@ -487,13 +487,13 @@
   data: {
    user_email:email,
   },
-  success: function (response) {
-   $( '#email_status' ).html(response);
+  success: function (data) {
+   $( '#email_status' ).html(data);
    
      
 
   
-   if(html(response)=="Email Not Registered") 
+   if(html(data)=="Email Not Registered") 
    {
       document.getElementById("senddata").disabled = false;
    }
