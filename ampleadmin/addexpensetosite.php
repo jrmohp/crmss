@@ -428,7 +428,7 @@ $("#senddata").on("click",regc);
          var pre = ["fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge"];
 
   var val = " <?php echo $proparr ?> ";
-    var allprop = pre.concat(val);
+    var allprop = pre.concat(proparr);
 
 
        var i;
