@@ -324,7 +324,7 @@
                     <h4 class="page-title">Dashboard 3</h4>
                 </div>
 
-
+                    </div>
 
                     <br>
                 <br>

@@ -12,46 +12,38 @@
 
 
 	
-		<div class="row ">
 
-			<div class="col-md-4"></div>
-<div class="col-md-4 col-sm-12">
                         
                                     <form>
                                     	<div class="bootstrap-iso">
  <div class="container-fluid">
   <div class="row">
-   <div class="col-md-6 col-sm-6 col-xs-12">
 
-    <!-- Form code begins -->
-    <form method="post">
-      <div class="form-group"> <!-- Date input -->
-        <label class="control-label" for="date">Date</label>
-        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-      </div>
-      <div class="form-group"> <!-- Submit button -->
-        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
-      </div>
-     </form>
-     <!-- Form code ends --> 
-
-    </div>
-  </div>    
+    <div class="col-md-4"></div>
+   
+   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><i class="ti-settings"></i> Choose The Date</div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                  <form>
+                                    <input class="form-control" id="date" name="date"  type="date"/><br>
+        <br>
+                  <div class="form-group"> <!-- Submit button -->
+        <center><button class="btn btn-primary " name="submit" type="submit">Submit</button></center>
+        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
  </div>
 </div>
                                         
-                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
+                                        
                                         
                                     </form>
-                                </div>
-                         
-			<div class="col-md-4"></div>
-
-
-			<div class="col-md-4"></div>
-                    
                                 
-                            </div>
+                            
 			
 
 
