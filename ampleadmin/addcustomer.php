@@ -7,14 +7,18 @@
 
 
  	  <div class="row" id="body2">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-
+            
             <div class="row">
 <center>
-              <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
+              <div class="col-md-11 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Tell Us Something About Yourself ! </h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><i class="ti-settings"></i>Customer Details</div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <h2>Tell Us Something About Yourself ! </h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -548,6 +552,11 @@
 
                     </div>
                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
 
 	
 <?php
