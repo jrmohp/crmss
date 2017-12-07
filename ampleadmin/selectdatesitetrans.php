@@ -14,7 +14,6 @@ include "header.php";
 
 
 
-    <form>
         <div class="bootstrap-iso">
             <div class="container-fluid">
                 <div class="row">
@@ -26,9 +25,9 @@ include "header.php";
                             <div class="panel-heading"><i class="ti-settings"></i> Choose The Date</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
-                                    <form  action="viewsitetrans.php">
+                                    <form  action="/viewsitetrans.php" method="post">
 
-                                        <select class="form-control" id="siteid" name="siteid">
+                                        <select class="form-control" id="siteid" name="siteid" >
 
 
                                             <?php
@@ -73,7 +72,6 @@ include "header.php";
 
 
 
-    </form>
 
 
 
