@@ -495,10 +495,7 @@
   
    if(html(response)=="Email Not Registered") 
    {
-
       document.getElementById("senddata").disabled = false;
-    
-    
    }
    else 
    {
@@ -509,12 +506,7 @@
   }
   });
  }
- else
- {
-  $( '#email_status' ).html("");
-  document.getElementById("senddata").disabled = true;
-  
- }
+
 }
 
 </script>
