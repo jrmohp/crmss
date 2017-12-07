@@ -19,7 +19,7 @@ $site=$_POST['siteid'];
 
 
  	<div class="row" id="body2">
-  <form>
+
 
             <div class="col-md-12 col-sm-12 col-xs-12">
 
