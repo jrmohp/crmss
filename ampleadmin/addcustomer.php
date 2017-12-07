@@ -486,7 +486,7 @@
   url: '../php/checkemail.php',
   data: {
    user_email:email },
-  success: function (data) {
+  success: function (response) {
    $( '#email_status' ).html(data);
    
 
