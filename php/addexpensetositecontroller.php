@@ -8,55 +8,55 @@ $txt = "INSERT INTO sitetrans VALUES ";
 
 if(!empty($_POST['fuelquant']) && !empty($_POST['fuelrate'])&& !empty($_POST['fueltotal']))	
 	{
-		$a = "(".$_POST['fuelquant'].",".$_POST['fuelrate'].",".$_POST['fueltotal'].")";
+		$a = "('".$_POST['fuelquant']."','".$_POST['fuelrate']."','".$_POST['fueltotal']."')";
 		$txt .= $a; 
 	}
 
 if(!empty($_POST['ecquant']) && !empty($_POST['ecrate'])&& !empty($_POST['ectotal']))	
 	{
-		$a = ",(".$_POST['ecquant'].",".$_POST['ecrate'].",".$_POST['ectotal'].")";
+		$a = ",('".$_POST['ecquant']."','".$_POST['ecrate']."','".$_POST['ectotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['transquant']) && !empty($_POST['transrate'])&& !empty($_POST['transtotal']))	
 	{
-		$a = ",(".$_POST['transquant'].",".$_POST['transrate'].",".$_POST['transtotal'].")";
+		$a = ",('".$_POST['transquant']."','".$_POST['transrate']."','".$_POST['transtotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['advtquant']) && !empty($_POST['advtrate'])&& !empty($_POST['advttotal']))	
 	{
-		$a = ",(".$_POST['advtquant'].",".$_POST['advtrate'].",".$_POST['advttotal'].")";
+		$a = ",('".$_POST['advtquant']."','".$_POST['advtrate']."','".$_POST['advttotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['foodquant']) && !empty($_POST['foodrate'])&& !empty($_POST['foodtotal']))	
 	{
-		$a = ",(".$_POST['foodquant'].",".$_POST['foodrate'].",".$_POST['foodtotal'].")";
+		$a = ",('".$_POST['foodquant']."','".$_POST['foodrate']."','".$_POST['foodtotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['rentquant']) && !empty($_POST['rentrate'])&& !empty($_POST['renttotal']))	
 	{
-		$a = ",(".$_POST['rentquant'].",".$_POST['rentrate'].",".$_POST['renttotal'].")";
+		$a = ",('".$_POST['rentquant']."','".$_POST['rentrate']."','".$_POST['renttotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['telebillquant']) && !empty($_POST['telebillrate'])&& !empty($_POST['telebilltotal']))	
 	{
-		$a = ",(".$_POST['telebillquant'].",".$_POST['telebillrate'].",".$_POST['telebilltotal'].")";
+		$a = ",('".$_POST['telebillquant']."','".$_POST['telebillrate']."','".$_POST['telebilltotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['elecbillquant']) && !empty($_POST['elecbillrate'])&& !empty($_POST['elecbilltotal']))	
 	{
-		$a = ",(".$_POST['elecbillquant'].",".$_POST['elecbillrate'].",".$_POST['elecbilltotal'].")";
+		$a = ",('".$_POST['elecbillquant']."','".$_POST['elecbillrate']."','".$_POST['elecbilltotal']."')";
 		$txt .= $a;
 	}
 
 if(!empty($_POST['postchargequant']) && !empty($_POST['postchargerate'])&& !empty($_POST['postchargetotal']))	
 	{
-		$a = ",(".$_POST['postchargequant'].",".$_POST['postchargerate'].",".$_POST['postchargetotal'].")";
+		$a = ",('".$_POST['postchargequant']."','".$_POST['postchargerate']."','".$_POST['postchargetotal']."')";
 		$txt .= $a;
 	}
 
@@ -76,7 +76,7 @@ if($result=mysqli_query($conn,$query))
 
           if(!empty($_POST['$quantid']) && !empty($_POST['$rateid'])&& !empty($_POST['$totalid']))	
 			{
-				$a = ",('".$_POST['$quantid']."','".$_POST['$rateid']."','".$_POST['$totalid']."'')";
+				$a = ",('".$_POST['$quantid']."','".$_POST['$rateid']."','".$_POST['$totalid']."')";
 				$txt .= $a;
 			}
       }
