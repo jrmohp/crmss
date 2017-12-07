@@ -29,7 +29,7 @@
 
                             require("../php/connect.php");
 
-                              $siteids="SELECT DISTINCT siteid FROM siteprop";
+                              $siteids="SELECT  siteid FROM siteinfo";
 
                              if($result=mysqli_query($conn,$siteids))
                               {
