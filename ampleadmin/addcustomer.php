@@ -477,54 +477,37 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-   
           function checkemail()
 {
+
+
  var email=document.getElementById( "email" ).value;
   
- if(email)
+ if(email!="")
  {
   $.ajax({
   type: 'post',
   url: '../php/checkemail.php',
   data: {
-   user_email:email,
-  },
+   user_email:email },
   success: function (response) {
-   $( '#email_status' ).html(response);
+   $( '#email_status' ).html(data);
    
-     
 
-  
-   if(html(response)=="Email Not Registered") 
+   if(html(data)=="Email Not Registered") 
    {
-    $(':button[type="submit"]').prop('disabled', false);
-    
+      document.getElementById("senddata").disabled = false;
    }
    else 
    {
-       $(':button[type="submit"]').prop('disabled', true);
+      document.getElementById("senddata").disabled = true;
     
 
    }
   }
   });
  }
- else
- {
-  $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
-  
- }
+
 }
 
 </script>

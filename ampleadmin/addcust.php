@@ -8,12 +8,8 @@
 
 
  
-<!DOCTYPE html>
-<html>
-<head>
+
   <title>Add Customer | Smart Solar  </title>
-</head>
-<body>
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -494,35 +490,16 @@
    
           function checkemail()
 {
- var email=document.getElementById( "email" ).value;
-  
- if(email)
- {
-  $.ajax({
-  type: 'post',
-  url: '../php/checkemail.php',
-  data: {
-   user_email:email,
-  },
-  success: function (response) {
-   $( '#email_status' ).html(response);
-   
-  
-   
-   if(response=="Email Not Registered") 
-    {
-     $(':button[type="submit"]').prop('disabled', false);
-     return true;
-    }
-    else if (response=="Email Already Registered")
-    {
-      $(':button[type="submit"]').prop('disabled', true);   
-      return false; 
  
-    }
-  }});
-}
 
+var button = document.getElementById("senddata");
+
+if(button.value=="")
+button.disabled = true;
+
+//add event listener
+clickBtn.addEventListener('click', function(event) {
+    button.disabled = !button.disabled;
 
  /*else
  {
@@ -557,8 +534,7 @@
 
                     </div>
                     </div>
-                    </body>
-                    </html>
+                    
 	
 <?php
 
