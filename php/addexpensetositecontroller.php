@@ -78,9 +78,9 @@ if($result=mysqli_query($conn,$query))
           $rateid=$val."rate";
           $totalid=$val."total";
 
-          if(!empty($_POST['$quantid']) && !empty($_POST['$rateid'])&& !empty($_POST['$totalid']))	
+          if(!empty($_POST[$quantid]) && !empty($_POST[$rateid])&& !empty($_POST[$totalid]))	
 			{
-				$a = ",('".$_POST['siteid']."','".$val."','".$date."','".$_POST['$quantid']."','".$_POST['$rateid']."','".$_POST['$totalid']."')";
+				$a = ",('".$_POST[$siteid]."','".$val."','".$date."','".$_POST[$quantid]."','".$_POST[$rateid]."','".$_POST[$totalid]."')";
 				$txt .= $a;
 			}
       }
