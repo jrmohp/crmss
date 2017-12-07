@@ -26,7 +26,7 @@ $site=$_POST['siteid'];
             <div class="row">
 
           <div class="col-md-12 col-sm-12 col-xs-12" >
-          <form action="" method="post">
+          <form action="../php/addexpensetositecontroller.php" method="post">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
                          <?php echo"<input type='text'  readonly='true' id='siteid' value='$site' class='form-control'>" ?>
@@ -422,7 +422,7 @@ $("#senddata").on("click",regc);
         
         
 
-     function regc()
+    /* function regc()
         {
 
          var pre = ["fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge"];
@@ -478,7 +478,7 @@ $("#senddata").on("click",regc);
 
     
   }
-}
+}*/
 
   </script>
 

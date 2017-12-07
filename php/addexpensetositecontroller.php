@@ -82,8 +82,10 @@ if($result=mysqli_query($conn,$query))
       }
     }
 }
+$a = " WHERE siteid='".$siteid."';";
+$txt .= $a;
 
-$txt .= ";";
+echo $txt;
 
 
 
