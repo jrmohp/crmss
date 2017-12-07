@@ -49,7 +49,7 @@ $site=$_POST['siteid'];
 	    			</div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Rate</span></label>
-                   <input type="number" class="qtys form-control" name="fuelrate" id="fuelrate"  placeholder="Rate" required="true"  onchange="total('fuel')">    
+                   <input type="number" class="qtys form-control" name="fuelrate" id="fuelrate"  placeholder="Rate"   onchange="total('fuel')">    
 
                  
             </div>
@@ -82,7 +82,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="ec" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Conveyance Rate</span></label>
-                   <input type="number" class="qtys form-control" name="ecrate" id="ecrate"  placeholder="Rate" required="true"  onchange="total('ec')">    
+                   <input type="number" class="qtys form-control" name="ecrate" id="ecrate"  placeholder="Rate"  onchange="total('ec')">    
 
                  
             </div>
@@ -114,7 +114,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="trans" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Transportation Rate</span></label>
-                   <input type="number" class="qtys form-control" name="transrate" id="transrate"  placeholder="Rate" required="true"  onchange="total('trans')">    
+                   <input type="number" class="qtys form-control" name="transrate" id="transrate"  placeholder="Rate"  onchange="total('trans')">    
 
                  
             </div>
@@ -146,7 +146,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Advertisement Rate</span></label>
-                   <input type="number" class="qtys form-control" name="advtrate" id="advtrate"  placeholder="Rate" required="true"  onchange="total('advt')">    
+                   <input type="number" class="qtys form-control" name="advtrate" id="advtrate"  placeholder="Rate"  onchange="total('advt')">    
 
                  
             </div>
@@ -178,7 +178,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="food" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fooding Rate</span></label>
-                   <input type="number" class="qtys form-control" name="foodrate" id="foodrate"  placeholder="Rate" required="true"  onchange="total('food')">    
+                   <input type="number" class="qtys form-control" name="foodrate" id="foodrate"  placeholder="Rate" onchange="total('food')">    
 
                  
             </div>
@@ -210,7 +210,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="rent" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Rent For Room Rate</span></label>
-                   <input type="number" class="qtys form-control" name="rentrate" id="rentrate"  placeholder="Rate" required="true"  onchange="total('rent')">    
+                   <input type="number" class="qtys form-control" name="rentrate" id="rentrate"  placeholder="Rate"  onchange="total('rent')">    
 
                  
             </div>
@@ -242,7 +242,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="telebill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Telephone Bill Rate</span></label>
-                   <input type="number" class="qtys form-control" name="telebillrate" id="telebillrate"  placeholder="Rate" required="true"  onchange="total('telebill')">    
+                   <input type="number" class="qtys form-control" name="telebillrate" id="telebillrate"  placeholder="Rate"  onchange="total('telebill')">    
 
                  
             </div>
@@ -274,7 +274,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="elecbill" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info"Electricity Bill>Electricity Bill Rate</span></label>
-                   <input type="number" class="qtys form-control" name="elecbillrate" id="elecbillrate"  placeholder="Rate" required="true"  onchange="total('elecbill')">    
+                   <input type="number" class="qtys form-control" name="elecbillrate" id="elecbillrate"  placeholder="Rate"   onchange="total('elecbill')">    
 
                  
             </div>
@@ -306,7 +306,7 @@ $site=$_POST['siteid'];
             </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Postal Cahrges Rate</span></label>
-                   <input type="number" class="qtys form-control" name="postchargerate" id="postchargerate"  placeholder="Rate" required="true"  onchange="total('postcharge')">    
+                   <input type="number" class="qtys form-control" name="postchargerate" id="postchargerate"  placeholder="Rate"   onchange="total('postcharge')">    
 
                  
             </div>
@@ -332,7 +332,7 @@ $site=$_POST['siteid'];
 
 require("../php/connect.php");
 
-
+$count =0;
 $query ="SELECT property FROM siteprop WHERE siteid='$site'"; 
 
 
@@ -343,7 +343,7 @@ if($result=mysqli_query($conn,$query))
     
       foreach ($row as $val) 
       { 
-
+          $proparr[]+=$val;
           $quantid=$val."quant";
           $rateid=$val."rate";
           $totalid=$val."total";
@@ -371,32 +371,7 @@ if($result=mysqli_query($conn,$query))
 
 ?>
 
-<div class="row">
 
-            <div class="ln_solid"></div>
-
-          <div class="col-md-4 col-sm-4 col-xs-12"  >
-                    <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Total Quantity</span></label>
-
-                   <input type="number" class="qtyst" name="totalquant" id="totalquant"  placeholder="Total Quantity" >     
-
-            </div>
-              <div class="col-md-4 col-sm-4 col-xs-12"  >
-              <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Total Rate</span></label>
-                   <input type="number" class="qtys form-control" name="tr" id="tr"  placeholder="NA" required="true" >    
-
-                 
-            </div>
-              <div class="col-md-4 col-sm-4 col-xs-12"  ><
-                   <label for="postcharge" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Grand Total</span></label>
-
-                  <input type="text" class="tots form-control" name="grandtotal" id="grandtotal"  placeholder="Grand Total" readonly="true" >     
-            </div>
-
-
-          
-
-      </div>
 
                     <button class="btn btn-success col-md-7 pull-center col-sm-7 col-xs-7" style="margin-top:8px"> Add Tddransaction</button>
 
@@ -439,7 +414,72 @@ if($result=mysqli_query($conn,$query))
 });
 
 
+$("#senddata").on("click",regc);
+
+
+        
       
+        
+        
+
+     function regc()
+        {
+
+         var pre = ["fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge"];
+
+  var val = " <?php echo $proparr ?> ";
+    var allprop = pre.concat(val);
+
+
+       var i;
+  for (i = 0; i < allprop.length; i++)
+  {
+    
+    
+
+      var str = "total";
+      var str1 = "quantity";
+      var str2 = "rate";
+      var tot = allprop[i].concat(str);
+      var quant = allprop[i].concat(str1);
+      var ratee =allprop[i].concat(str2);
+      if(document.getElementById(tot).value > 0)
+      {
+         var siteid=$('#siteid')   
+        var property=allprop[i];
+        var date = new Date();
+        var quantity=document.getElementById(quant).value;
+        var rate=document.getElementById(ratee).value;
+        var total=document.getElementById(tot).value;
+
+        var data={'siteid':siteid,'property':property,'date':date,'quantity':quantity,'rate':rate,'total':total};
+
+        $.post('../php/addexpensetositecontroller.php',data,function(info){
+      alert("bhitare");
+            if(info!=0)
+            {
+               
+                    alertify.alert("Succesful");                  
+        
+
+            }
+            else if(info==0)
+            {
+               
+            $("#querymsg").addClass('alert alert-danger');
+              $('#querymsg').fadeIn();
+            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
+             $('#querymsg').delay(2000).fadeOut();
+            
+            }
+        });
+      }
+
+
+    
+  }
+}
+
   </script>
 
 
