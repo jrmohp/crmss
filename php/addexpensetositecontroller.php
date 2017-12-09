@@ -86,7 +86,7 @@ if($result=mysqli_query($conn,$query))
       }
     }
 }
-$a = " WHERE siteid='".$site."';";
+$a = ";";
 $sql .= $a;
 
 echo $sql;
