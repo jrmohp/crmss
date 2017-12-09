@@ -25,7 +25,7 @@ include "header.php";
                             <div class="panel-heading"><i class="ti-settings"></i> Choose The Date</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
-                                    <form method="post" action="viewsitetrans.php" >
+                                    <form method="post" action="viewsitetrans" >
 
                                         <select class="form-control" id="siteid" name="siteid" >
 
