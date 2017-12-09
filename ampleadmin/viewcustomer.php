@@ -13,7 +13,7 @@
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
-                            <div class="panel-heading">customer details</div>
+                            <div class="panel-heading"><h3>customer details</h3></div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
                                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
