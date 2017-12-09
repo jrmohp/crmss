@@ -8,7 +8,7 @@ $mydate=getdate(date("U"));
 $date= "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
 
 
-$sql = "INSERT INTO sitetrans VALUES ";
+$sql = "INSERT INTO sitetrans (siteid,property,date,quantity,rate,total) VALUES ";
 
 if(!empty($_POST['fuelquant']) && !empty($_POST['fuelrate'])&& !empty($_POST['fueltotal']))	
 	{
