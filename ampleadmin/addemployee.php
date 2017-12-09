@@ -383,7 +383,7 @@
         
         
 
-     $.post('../php/custregcontroller.php',data,function(info){
+     $.post('../php/addemployeecontroller.php',data,function(info){
       alert("bhitare");
             if(info!=0)
             {
