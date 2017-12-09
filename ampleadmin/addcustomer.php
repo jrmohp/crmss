@@ -477,7 +477,7 @@
     }
 
 
-          function checkemail()
+     /*     function checkemail()
 {
 
 
@@ -489,7 +489,7 @@
   type: 'post',
   url: '../php/checkemail.php',
   data: {
-   user_email:email },
+   'user_email':email },
   success: function (response) {
    $( '#email_status' ).html(data);
    
@@ -508,6 +508,47 @@
   });
  }
 
+}
+*/
+
+          function checkemail()
+{
+ var email=document.getElementById( "email" ).value;
+  
+ if(email)
+ {
+  $.ajax({
+  type: 'post',
+  url: '../php/checkemail.php',
+  data: {
+   'user_email':email,
+  },
+  success: function (response) {
+   $( '#email_status' ).html(response);
+   
+     
+
+  
+   if(html(response)=="Email Not Registered") 
+   {
+    $(':button[type="submit"]').prop('disabled', false);
+    
+   }
+   else 
+   {
+       $(':button[type="submit"]').prop('disabled', true);
+    
+
+   }
+  }
+  });
+ }
+ else
+ {
+  $( '#email_status' ).html("");
+  $(':button[type="submit"]').prop('disabled', true);
+  
+ }
 }
 
 </script>
