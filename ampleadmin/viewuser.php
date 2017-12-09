@@ -17,7 +17,20 @@
                             <div class="panel-heading">customer database</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
-                                   <div class="row" id="body2">
+                                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                     <div class="row" id="body2">
+            
+
+
+
+
+
+
+
                                      <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
@@ -48,6 +61,8 @@
                           <p class="text-muted font-13 m-b-30">
                            Empoloyee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
                           </p>
+
+
  <div class="row">
         <div class="col-sm-12">
             <div class="white-box">
@@ -122,8 +137,7 @@ if($result=$conn->query($query))
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                
 
                                 </div>
                             </div>
@@ -135,6 +149,8 @@ if($result=$conn->query($query))
                             </div>
                         </div>
                     </div>
+
+                    
   <footer class="footer text-center"> &copy Smart Solar</footer>
 
     <!-- /#page-wrapper -->
