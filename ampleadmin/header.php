@@ -167,64 +167,7 @@ require("../php/connect.php");
                         </li>
                     </ul>
                 </li>
-                <!-- .Megamenu -->
-                <li class="mega-dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><span class="hidden-xs">Mega</span> <i class="icon-options-vertical"></i></a>
-                    <ul class="dropdown-menu mega-dropdown-menu animated bounceInDown">
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Forms Elements</li>
-                                <li><a href="form-basic.html">Basic Forms</a></li>
-                                <li><a href="form-layout.html">Form Layout</a></li>
-                                <li><a href="form-advanced.html">Form Addons</a></li>
-                                <li><a href="form-material-elements.html">Form Material</a></li>
-                                <li><a href="form-float-input.html">Form Float Input</a></li>
-                                <li><a href="form-upload.html">File Upload</a></li>
-                                <li><a href="form-mask.html">Form Mask</a></li>
-                                <li><a href="form-img-cropper.html">Image Cropping</a></li>
-                                <li><a href="form-validation.html">Form Validation</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Advance Forms</li>
-                                <li><a href="form-dropzone.html">File Dropzone</a></li>
-                                <li><a href="form-pickers.html">Form-pickers</a></li>
-                                <li><a href="form-wizard.html">Form-wizards</a></li>
-                                <li><a href="form-typehead.html">Typehead</a></li>
-                                <li><a href="form-xeditable.html">X-editable</a></li>
-                                <li><a href="form-summernote.html">Summernote</a></li>
-                                <li><a href="form-bootstrap-wysihtml5.html">Bootstrap wysihtml5</a></li>
-                                <li><a href="form-tinymce-wysihtml5.html">Tinymce wysihtml5</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Table Example</li>
-                                <li><a href="basic-table.html">Basic Tables</a></li>
-                                <li><a href="table-layouts.html">Table Layouts</a></li>
-                                <li><a href="data-table.html">Data Table</a></li>
-                                <li><a href="bootstrap-tables.html">Bootstrap Tables</a></li>
-                                <li><a href="responsive-tables.html">Responsive Tables</a></li>
-                                <li><a href="editable-tables.html">Editable Tables</a></li>
-                                <li><a href="foo-tables.html">FooTables</a></li>
-                                <li><a href="jsgrid.html">JsGrid Tables</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Charts</li>
-                                <li> <a href="flot.html">Flot Charts</a> </li>
-                                <li><a href="morris-chart.html">Morris Chart</a></li>
-                                <li><a href="chart-js.html">Chart-js</a></li>
-                                <li><a href="peity-chart.html">Peity Charts</a></li>
-                                <li><a href="knob-chart.html">Knob Charts</a></li>
-                                <li><a href="sparkline-chart.html">Sparkline charts</a></li>
-                                <li><a href="extra-charts.html">Extra Charts</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <!-- /.Megamenu -->
+              
             </ul>
             <ul class="nav navbar-top-links navbar-right pull-right">
                 <li>
@@ -244,7 +187,7 @@ require("../php/connect.php");
                         </li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
-                        <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                        
                         <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
@@ -275,7 +218,7 @@ require("../php/connect.php");
                     </a>
                     <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                         <li><a href="javascript:void(0)"><i class="ti-user"></i> <span class="hide-menu">My Profile</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="ti-wallet"></i> <span class="hide-menu">My Balance</span></a></li>
+                        
                         <li><a href="javascript:void(0)"><i class="ti-email"></i> <span class="hide-menu">Inbox</span></a></li>
                         <li><a href="javascript:void(0)"><i class="ti-settings"></i> <span class="hide-menu">Account Setting</span></a></li>
                         <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span class="hide-menu">Logout</span></a></li>
@@ -304,7 +247,7 @@ require("../php/connect.php");
                 <li><a href="inbox.html" class="waves-effect"><i class="mdi mdi-apps fa-fw"></i> <span class="hide-menu">Site Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Sites</span></a></li>
-                        <li><a href="viewsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View Sites</span></a></li>
+                        <li><a href="selectsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View/Edit Sites</span></a></li>
                         <li><a href="addexpensetosite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Expense To Site</span></a></li>
                     </ul>
                 </li>
@@ -331,7 +274,7 @@ require("../php/connect.php");
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">Dashboard 3</h4>
+                    <h4 class="page-title">Dashboard </h4>
                 </div>
 
                     </div>
