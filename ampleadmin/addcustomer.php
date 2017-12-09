@@ -518,10 +518,10 @@
  if(email)
  {
   $.ajax({
-  type: 'post',
+  type: 'POST',
   url: '../php/checkemail.php',
   data: {
-   'user_email':email,
+   user_email:email,
   },
   success: function (response) {
    $( '#email_status' ).html(response);
