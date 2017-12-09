@@ -78,6 +78,7 @@
                           </table>
                         </div>
                       </div>
+                      <div class="panel-footer">   Empoloyee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials. </div>
                     </div>
                   </div>
                 </div>
