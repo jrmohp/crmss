@@ -29,7 +29,7 @@ $site=$_POST['siteid'];
 
  	<div class="row" id="body2">
 
->>>>>>> cfae3758da21cc64b3f26bd04f6590dbc1cfc569
+
 
             <div class="col-md-12 col-sm-12 col-xs-12">
 

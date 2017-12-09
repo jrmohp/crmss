@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c392015b-e88f-41aa-9cbd-48dc0f20f6df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ampleadmin/addexpensetosite.php" afterPath="$PROJECT_DIR$/ampleadmin/addexpensetosite.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,13 +89,13 @@
       <file leaf-file-name="addexpensetosite.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ampleadmin/addexpensetosite.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="454" column="42" lean-forward="true" selection-start-line="454" selection-start-column="42" selection-end-line="454" selection-end-column="42" />
+            <state relative-caret-position="425">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#13990#14012#0#HTML" expanded="true" />
-                <marker date="1512813803747" expanded="true" signature="12369:12419" ph="SELECT prope... siteprop" />
-                <marker date="1512813803747" expanded="true" signature="13148:13288" ph="..." />
-                <marker date="1512813803747" expanded="true" signature="13523:13664" ph="..." />
+                <element signature="e#13942#13964#0#HTML" expanded="true" />
+                <marker date="1512813951163" expanded="true" signature="12321:12371" ph="SELECT prope... siteprop" />
+                <marker date="1512813951163" expanded="true" signature="13100:13240" ph="..." />
+                <marker date="1512813951163" expanded="true" signature="13475:13616" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,7 +164,7 @@
     <handled-path value="$PROJECT_DIR$/plugins/bower_components/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="49" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -242,15 +241,15 @@
       <workItem from="1508392206503" duration="26000" />
       <workItem from="1512467737997" duration="5185000" />
       <workItem from="1512639609070" duration="5847000" />
-      <workItem from="1512809912245" duration="1504000" />
+      <workItem from="1512809912245" duration="1650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12562000" />
+    <option name="totallyTimeSpent" value="12708000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -631,13 +630,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ampleadmin/addexpensetosite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="454" column="42" lean-forward="true" selection-start-line="454" selection-start-column="42" selection-end-line="454" selection-end-column="42" />
+        <state relative-caret-position="425">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#13990#14012#0#HTML" expanded="true" />
-            <marker date="1512813803747" expanded="true" signature="12369:12419" ph="SELECT prope... siteprop" />
-            <marker date="1512813803747" expanded="true" signature="13148:13288" ph="..." />
-            <marker date="1512813803747" expanded="true" signature="13523:13664" ph="..." />
+            <element signature="e#13942#13964#0#HTML" expanded="true" />
+            <marker date="1512813951163" expanded="true" signature="12321:12371" ph="SELECT prope... siteprop" />
+            <marker date="1512813951163" expanded="true" signature="13100:13240" ph="..." />
+            <marker date="1512813951163" expanded="true" signature="13475:13616" ph="..." />
           </folding>
         </state>
       </provider>
