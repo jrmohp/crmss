@@ -26,7 +26,7 @@ $site=$_POST['siteid'];
             <div class="row">
 
           <div class="col-md-12 col-sm-12 col-xs-12" >
-          <form action="../php/addexpensetositecontroller.php" method="post">
+          <form action="../php/addexpensetositecontroller.php" method="post" onsubmit="return false">
                       <label for="advt" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site</span></label>
 
                          <?php echo"<input type='text'  readonly='true' name='siteid' value='$site' class='form-control'>" ?>
@@ -332,6 +332,8 @@ $site=$_POST['siteid'];
 
 require("../php/connect.php");
 
+$a=array("fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge");
+
 $count =0;
 $query ="SELECT property FROM siteprop WHERE siteid='$site'"; 
 
@@ -343,7 +345,7 @@ if($result=mysqli_query($conn,$query))
     
       foreach ($row as $val) 
       { 
-          $proparr[]+=$val;
+          array_push($a,$val);
           $quantid=$val."quant";
           $rateid=$val."rate";
           $totalid=$val."total";
@@ -414,29 +416,23 @@ if($result=mysqli_query($conn,$query))
 });
 
 
+
 $("#senddata").on("click",regc);
-
-
         
-      
-        
-        
-
-    /* function regc()
-        {
-
-         var pre = ["fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge"];
-
-  var val = " <?php echo $proparr ?> ";
-    var allprop = pre.concat(val);
-
-
-       var i;
-  for (i = 0; i < allprop.length; i++)
+function regc()
   {
-    
-    
+    var siteid=$('#siteid');   ;
+        var property='fuel';
+        var date = new Date();
+        var quantity=$('#fuelquantity');
+        var rate=$('#fuelrate');
+        var total=$('#fueltotal');
 
+    var data={'siteid':siteid,'property':property,'date':date,'quantity':quantity,'rate':rate,'total':total};
+  var allprop = " <?php echo $a ?> ";
+   var i;
+  for (i = 1; i < allprop.length; i++)
+  {
       var str = "total";
       var str1 = "quantity";
       var str2 = "rate";
@@ -445,16 +441,17 @@ $("#senddata").on("click",regc);
       var ratee =allprop[i].concat(str2);
       if(document.getElementById(tot).value > 0)
       {
-         var siteid=$('#siteid')   
-        var property=allprop[i];
-        var date = new Date();
-        var quantity=document.getElementById(quant).value;
-        var rate=document.getElementById(ratee).value;
-        var total=document.getElementById(tot).value;
+         data.siteid=$('#siteid')   
+         data.property=allprop[i];
+         data.date = new Date();
+         data.quantity=document.getElementById(quant).value;
+         data.rate=document.getElementById(ratee).value;
+         data.total=document.getElementById(tot).value;
+       
+      }    
+  }
 
-        var data={'siteid':siteid,'property':property,'date':date,'quantity':quantity,'rate':rate,'total':total};
-
-        $.post('../php/addexpensetositecontroller.php',data,function(info){
+   $.post('../php/addexpensetositecontroller.php',data,function(info){
       alert("bhitare");
             if(info!=0)
             {
@@ -473,12 +470,7 @@ $("#senddata").on("click",regc);
             
             }
         });
-      }
-
-
-    
-  }
-}*/
+}
 
   </script>
 
