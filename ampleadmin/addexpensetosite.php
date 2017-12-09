@@ -17,7 +17,7 @@ $site=$_POST['siteid'];
 
   <title>Add Expense Site | Smart Solar  </title>
 
-<<<<<<< HEAD
+
    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading"></div>
@@ -25,7 +25,7 @@ $site=$_POST['siteid'];
                                 <div class="panel-body">
                                   <div class="row" id="body2">
   <form>
-=======
+
 
  	<div class="row" id="body2">
 
