@@ -80,7 +80,7 @@ if($result=mysqli_query($conn,$query))
 
           if(!empty($_POST[$quantid]) && !empty($_POST[$rateid])&& !empty($_POST[$totalid]))	
 			{
-				$a = ",('".$_POST[$siteid]."','".$val."','".$date."','".$_POST[$quantid]."','".$_POST[$rateid]."','".$_POST[$totalid]."')";
+				$a = ",('".$site."','".$val."','".$date."','".$_POST[$quantid]."','".$_POST[$rateid]."','".$_POST[$totalid]."')";
 				$sql .= $a;
 			}
       }
