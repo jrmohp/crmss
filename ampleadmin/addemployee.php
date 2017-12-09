@@ -23,7 +23,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate="" onsubmit="return false" action="../php/addemployeecontrollerjrm.php">
+                    <form  method="post" data-parsley-validate="" onsubmit="return false" action="../php/addemployeecontroller.php">
                       
 
                   <h2>Employee Registration</h2>
@@ -348,7 +348,7 @@
 
           alert("sila");
         
-        var empid=$('#empid')   
+        var empid=$('#empid').val();
         var username=$('#username').val();
         var password=$('#password').val();
         var fname=$('#fname').val();
@@ -388,7 +388,7 @@
             if(info!=0)
             {
                
-                    alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
+                    alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
         
 
             }
