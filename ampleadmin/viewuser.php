@@ -56,13 +56,6 @@
 </div>
 
             
-                    <h2>Customer Database<small>  Please Wait Until The Page Fully Loads</small></h2>
-                 
-                          <p class="text-muted font-13 m-b-30">
-                           Empoloyee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
-                          </p>
-
-
  <div class="row">
         <div class="col-sm-12">
             <div class="white-box">
@@ -90,8 +83,12 @@
                   <th>Reffered By</th>
                   <th>Remarks</th>
                   <th>Request</th>
-              </thead>
-              </tr>
+                </tr>
+            </thead>
+            
+
+            <tbody>
+
 <?php
 
 require("../php/connect.php");
@@ -150,7 +147,7 @@ if($result=$conn->query($query))
                         </div>
                     </div>
 
-                    
+
   <footer class="footer text-center"> &copy Smart Solar</footer>
 
     <!-- /#page-wrapper -->
