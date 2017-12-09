@@ -11,7 +11,13 @@
 
   <title>Add Customer | Smart Solar  </title>
 
- 	<div class="row" id="body2">
+ 	
+     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -408,7 +414,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
                           <button type="button" class="btn btn-primary">Cancel</button>
-						   <button class="btn btn-primary" type="reset">Reset</button>
+               <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -533,6 +539,10 @@ clickBtn.addEventListener('click', function(event) {
 
 
                     </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
 	

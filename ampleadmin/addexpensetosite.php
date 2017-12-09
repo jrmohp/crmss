@@ -17,8 +17,12 @@ $site=$_POST['siteid'];
 
   <title>Add Expense Site | Smart Solar  </title>
 
-
- 	<div class="row" id="body2">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                  <div class="row" id="body2">
   <form>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -41,12 +45,12 @@ $site=$_POST['siteid'];
 
 
 
-					<div class="col-md-4 col-sm-4 col-xs-12"  >
-          		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Quantity</span></label>
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Quantity</span></label>
 
-            			 <input type="number" class="qtys form-control" name="fuelquant" id="fuelquant"  placeholder="Quantity" onchange="total('fuel')">     
+                   <input type="number" class="qtys form-control" name="fuelquant" id="fuelquant"  placeholder="Quantity" onchange="total('fuel')">     
 
-	    			</div>
+            </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Rate</span></label>
                    <input type="number" class="qtys form-control" name="fuelrate" id="fuelrate"  placeholder="Rate"   onchange="total('fuel')">    
@@ -60,14 +64,14 @@ $site=$_POST['siteid'];
             </div>
 
 
-	    		
+          
 
-			</div>
-
-
+      </div>
 
 
-			<br>
+
+
+      <br>
                 
 
             <div class="row">
@@ -378,6 +382,11 @@ if($result=mysqli_query($conn,$query))
                     </div>
                     </form>
                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
               
 
 	
