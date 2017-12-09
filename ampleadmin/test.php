@@ -47,20 +47,20 @@ include "header.php";
                         <thead>
 
                         <tr align='center'>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Email</th>
-                            <th>Mobile</th>
-                            <th>City</th>
-                            <th>Address</th>
-                            <th>Monthly Bill</th>
-                            <th>Load</th>
-                            <th>Roof Srea(in sq.ft)</th>
-                            <th>Phase</th>
-                            <th>Referred By</th>
-                            <th>Requirement</th>
-                            <th>Remarks</th>
+                            <th align='center'>ID</th>
+                            <th align='center'>Name</th>
+                            <th align='center'>Type</th>
+                            <th align='center'>Email</th>
+                            <th align='center'>Mobile</th>
+                            <th align='center'>City</th>
+                            <th align='center'>Address</th>
+                            <th align='center'>Monthly Bill</th>
+                            <th align='center'>Load</th>
+                            <th align='center'>Roof Srea(in sq.ft)</th>
+                            <th align='center'>Phase</th>
+                            <th align='center'>Referred By</th>
+                            <th align='center'>Requirement</th>
+                            <th align='center'>Remarks</th>
 
 
 
