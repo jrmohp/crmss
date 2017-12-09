@@ -23,7 +23,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate="" onsubmit="return false" action="../php/addemployeecontroller.php">
+                    <form  method="post" data-parsley-validate="" onsubmit="return false" action="../php/addemployeecontrollerjrm.php">
                       
 
                   <h2>Employee Registration</h2>
@@ -43,7 +43,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-12 " >
                          <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Middle Name</span></label>
 
-                          <input type="text" name="mname" id="mname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Middle Name">
+                          <input type="text" name="mname" id="mname" class="form-control has-feedback-right has-feedback-left"  placeholder="Middle Name">
                         </div>
 
 
@@ -69,7 +69,7 @@
                   <div class="col-md-6 col-sm-6 col-xs-12 " >
                                <label for="mn" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Mother's Name</span></label>
 
-                                <input type="text" name="mn" id="mn" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Mother's Name">     
+                                <input type="text" name="mn" id="mn" class="form-control has-feedback-right has-feedback-left"  placeholder="Mother's Name">     
                         
                   </div>
 
@@ -86,13 +86,19 @@
                               <div class="col-md-6 col-sm-6 col-xs-12 " >
                                <label for="gender" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Gender</span></label>
 
-                                <input type="text" name="gender" id="gender" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Male/Female">     
+                                
+
+                                <select name="gender" id="gender" class="form-control has-feedback-right has-feedback-left" required="true">
+                                  <option>Male</option>
+                                  <option>Female</option>
+                                  <option>Other</option>
+                                </select>    
                         
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12 " >
                                <label for="dob" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Date Of Birth</span></label>
 
-                                <input type="text" name="dob" id="dob" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="DD/MM/YYYY">      
+                                <input type="date" name="dob" id="dob" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="DD/MM/YYYY">      
                         
                   </div>
 
@@ -109,13 +115,13 @@
                               <div class="col-md-6 col-sm-6 col-xs-12 " >
                                <label for="bg" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Blood Group</span></label>
 
-                                <input type="text" name="bg" id="bg" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Blood Group">     
+                                <input type="text" name="bg" id="bg" class="form-control has-feedback-right has-feedback-left"  placeholder="Blood Group">     
                         
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12 " >
                                <label for="im" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Identification Mark</span></label>
 
-                                <input type="text" name="im" id="im" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Identification Mark">     
+                                <input type="text" name="im" id="im" class="form-control has-feedback-right has-feedback-left"  placeholder="Identification Mark">     
                         
                   </div>
 
@@ -166,7 +172,7 @@
                        <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="pcard" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Pan Card</span></label>
 
-                          <input type="text" name="pcard" id="pcard" class="form-control has-feedback-right has-feedback-left" data-parsley-minlength="10" data-parsley-maxlength="10" data-parsley-minlength-message="Enter 10 digit aadhar card no..." required="true" placeholder="Pan Card">      
+                          <input type="text" name="pcard" id="pcard" class="form-control has-feedback-right has-feedback-left" data-parsley-minlength="10" data-parsley-maxlength="10" data-parsley-minlength-message="Enter 10 digit aadhar card no..."  placeholder="Pan Card">      
                          </div>
                    </div>
 
@@ -179,13 +185,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="epf" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">EPF No.</span></label>
 
-                          <input type="text" name="epf" id="epf" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="EPF No.">     
+                          <input type="text" name="epf" id="epf" class="form-control has-feedback-right has-feedback-left"  placeholder="EPF No.">     
                          </div>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="exp" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Experience</span></label>
 
-                          <input type="text" name="exp" id="exp" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Experience">      
+                          <input type="text" name="exp" id="exp" class="form-control has-feedback-right has-feedback-left"  placeholder="Experience">      
                          </div>
 
                    </div>
@@ -197,13 +203,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="accno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank Account No.</span></label>
 
-                          <input type="text" name="accno" id="accno" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Bank Account No.">      
+                          <input type="text" name="accno" id="accno" class="form-control has-feedback-right has-feedback-left"  placeholder="Bank Account No.">      
                          </div>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="ifsc" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Bank IFSC Code</span></label>
 
-                          <input type="text" name="ifsc" id="ifsc" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Bank IFSC Code">      
+                          <input type="text" name="ifsc" id="ifsc" class="form-control has-feedback-right has-feedback-left" placeholder="Bank IFSC Code">      
                          </div>
 
                    </div>
@@ -221,7 +227,7 @@
                        <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="altcno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
 
-                          <input type="text" name="altcno" id="altcno" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Alternate Contact No.">     
+                          <input type="text" name="altcno" id="altcno" class="form-control has-feedback-right has-feedback-left"  placeholder="Alternate Contact No.">     
                          </div>
 
                    </div>
@@ -233,13 +239,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="email" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
 
-                          <input type="text" name="email" id="email" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Email Id">      
+                          <input type="text" name="email" id="email" class="form-control has-feedback-right has-feedback-left"  placeholder="Email Id">      
                          </div>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="altemail" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Email Id</span></label>
 
-                          <input type="text" name="altemail" id="altemail" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Alternate Email Id">      
+                          <input type="text" name="altemail" id="altemail" class="form-control has-feedback-right has-feedback-left"  placeholder="Alternate Email Id">      
                          </div>
 
                    </div>
@@ -251,13 +257,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="wphno" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Phone No.</span></label>
 
-                          <input type="text" name="wphno" id="wphno" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Phone No.">      
+                          <input type="text" name="wphno" id="wphno" class="form-control has-feedback-right has-feedback-left"  placeholder="Work Phone No.">      
                          </div>
 
                        <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="wemail" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Work Email</span></label>
 
-                          <input type="text" name="wemail" id="wemail" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Email">      
+                          <input type="text" name="wemail" id="wemail" class="form-control has-feedback-right has-feedback-left"  placeholder="Work Email">      
                          </div>
 
                    </div>

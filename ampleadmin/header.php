@@ -248,14 +248,16 @@ require("../php/connect.php");
                     <ul class="nav nav-second-level">
                         <li><a href="addsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Sites</span></a></li>
                         <li><a href="selectsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View/Edit Sites</span></a></li>
-                        <li><a href="addexpensetosite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Expense To Site</span></a></li>
+                        <li><a href="selectexpensesite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Expense To Site</span></a></li>
+                         <li><a href="addsiteproperty.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Property To Site</span></a></li>
+                         <li><a href="selectdatesitetrans.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View Transaction By Date</span></a></li>
                     </ul>
                 </li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addfranchise.php"><span class="hide-menu">Add Franchise</span></a></li>
                         <li><a href="viewfranchise.php"><span class="hide-menu">View Franchise</span></a></li>
-                        <li><a href="editfranchise.php"><span class="hide-menu">Edit Franchise</span></a></li>
+                        <li><a href="editfranchiseselect.php"><span class="hide-menu">Edit Franchise</span></a></li>
                         <li><a href="franchisebilling.php"><span class="hide-menu">Billing</span></a></li>
                         <li><a href="assigntofranchise.php"><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
