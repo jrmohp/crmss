@@ -4,8 +4,8 @@ require("connect.php");
 
 $site=$_POST['siteid'];
 
-$mydate=getdate(date("U"));
-$date= "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+$date=date('Y/m/d');
+
 
 
 $sql = "INSERT INTO sitetrans (siteid,property,date,quantity,rate,total) VALUES ";
