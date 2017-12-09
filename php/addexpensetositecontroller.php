@@ -89,11 +89,9 @@ if($result=mysqli_query($conn,$query))
 $a = ";";
 $sql .= $a;
 
-echo $sql;
-
 if($conn->query($sql))
 {
-		echo 1;
+		echo "successful";
 
 }
 else
