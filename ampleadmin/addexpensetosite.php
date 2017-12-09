@@ -349,7 +349,7 @@ $query ="SELECT property FROM siteprop WHERE siteid='$site'";
 
 
 if($result=mysqli_query($conn,$query))
-{ 
+{
    while ($row=mysqli_fetch_row($result))
     {
     
