@@ -50,10 +50,7 @@ else
 		{
 			echo "Father's Name Cannot Be Empty<br>";
 		}
-	if(empty($_POST['mn']))
-		{
-			echo "Mother's Name Cannot Be Empty<br>";
-		}
+
 	if(empty($_POST['gender']))
 		{
 			echo "Gender Cannot Be Empty<br>";
@@ -80,31 +77,10 @@ else
 		{
 			echo "Adhar Card Number Cannot Be Empty<br>";
 		}
-	if(empty($_POST['accno']))
-		{
-			echo "Bank Account Number Cannot Be Empty<br>";
-		}
 
-	if(empty($_POST['ifsc']))
-		{
-			echo "Bank IFSC Code Cannot Be Empty<br>";
-		}
-	if(empty($_POST['cno']))
-		{
-			echo "Contatct Number Cannot Be Empty<br>";
-		}
-	if(empty($_POST['email']))
-		{
-			echo "Email Id Cannot Be Empty<br>";
-		}
-	if(empty($_POST['wphno']))
-		{
-			echo "Work Phone No. Cannot Be Empty<br>";
-		}
-	if(empty($_POST['wemail']))
-		{
-			echo "Work Email Cannot Be Empty<br>";
-		}
+
+
+
 	if(empty($_POST['empid']))
 		{
 			echo "Employee Id Cannot Be Empty<br>";

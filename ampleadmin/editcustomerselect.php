@@ -79,7 +79,7 @@
 
                                     require("../php/connect.php");
 
-                                        $query = "SELECT id,username,firstname,lastname,email,mobile FROM user"; 
+                                        $query = "SELECT id,username,firstname,lastname,email,mobile,city FROM user"; 
 
                                           if($result=$conn->query($query))
                                               {
