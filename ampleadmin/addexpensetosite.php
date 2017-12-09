@@ -17,9 +17,19 @@ $site=$_POST['siteid'];
 
   <title>Add Expense Site | Smart Solar  </title>
 
+<<<<<<< HEAD
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                  <div class="row" id="body2">
+  <form>
+=======
 
  	<div class="row" id="body2">
 
+>>>>>>> cfae3758da21cc64b3f26bd04f6590dbc1cfc569
 
             <div class="col-md-12 col-sm-12 col-xs-12">
 
@@ -41,12 +51,12 @@ $site=$_POST['siteid'];
 
 
 
-					<div class="col-md-4 col-sm-4 col-xs-12"  >
-          		   		<label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Quantity</span></label>
+          <div class="col-md-4 col-sm-4 col-xs-12"  >
+                    <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Quantity</span></label>
 
-            			 <input type="number" class="qtys form-control" name="fuelquant" id="fuelquant"  placeholder="Quantity" onchange="total('fuel')">     
+                   <input type="number" class="qtys form-control" name="fuelquant" id="fuelquant"  placeholder="Quantity" onchange="total('fuel')">     
 
-	    			</div>
+            </div>
               <div class="col-md-4 col-sm-4 col-xs-12"  >
               <label for="fuel" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Fuel Rate</span></label>
                    <input type="number" class="qtys form-control" name="fuelrate" id="fuelrate"  placeholder="Rate"   onchange="total('fuel')">    
@@ -60,14 +70,14 @@ $site=$_POST['siteid'];
             </div>
 
 
-	    		
+          
 
-			</div>
-
-
+      </div>
 
 
-			<br>
+
+
+      <br>
                 
 
             <div class="row">
@@ -332,6 +342,8 @@ $site=$_POST['siteid'];
 
 require("../php/connect.php");
 
+$a=array("fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge");
+
 $count =0;
 $query ="SELECT property FROM siteprop WHERE siteid='$site'"; 
 
@@ -343,21 +355,21 @@ if($result=mysqli_query($conn,$query))
     
       foreach ($row as $val) 
       { 
-          $proparr[]+=$val;
+          array_push($a,$val);
           $quantid=$val."quant";
           $rateid=$val."rate";
           $totalid=$val."total";
           $oc="'$val'";
 
             echo "<div class='row'> <div class='ln_solid'></div><div class='col-md-4 col-sm-4 col-xs-12'  ><label for='$val' class='col-md-1 col-sm-1 col-xs-1'><span class='label label-info'>$val Quantity</span></label><input type='text'  name='$quantid' id='$quantid' class='form-control qtys'";
-                  echo 'placeholder="Quantity" onchange="total('.$val.')"> </div>';
+                  echo 'placeholder="Quantity" onchange="total('.$oc.')"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$oc.' Rate'.'</span></label>';
+                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Rate'.'</span></label>';
 
                   echo "<input type='text' name='$rateid' id='$rateid' class='form-control'";
-                  echo 'placeholder="Rate" onchange="total('.$val.')"> </div>';
+                  echo 'placeholder="Rate" onchange="total('.$oc.')"> </div>';
             echo'<div class="col-md-4 col-sm-4 col-xs-12"  >
-                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$oc.' Total'.'</span></label>';
+                      <label for="$val" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">'.$val.' Total'.'</span></label>';
 
                   echo "<input type='text' class='tots form-control' name='$totalid' id='$totalid' ";
                   echo"placeholder='Total' readonly='true'>     
@@ -378,6 +390,11 @@ if($result=mysqli_query($conn,$query))
                     </div>
                     </form>
                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
               
 
 	
@@ -414,29 +431,23 @@ if($result=mysqli_query($conn,$query))
 });
 
 
+/*
 $("#senddata").on("click",regc);
-
-
         
-      
-        
-        
-
-    /* function regc()
-        {
-
-         var pre = ["fuel", "ec", "trans", "advt", "food", "rent", "tele", "elec", "postcharge"];
-
-  var val = " <?php echo $proparr ?> ";
-    var allprop = pre.concat(val);
-
-
-       var i;
-  for (i = 0; i < allprop.length; i++)
+function regc()
   {
-    
-    
+    var siteid=$('#siteid');   ;
+        var property='fuel';
+        var date = new Date();
+        var quantity=$('#fuelquantity');
+        var rate=$('#fuelrate');
+        var total=$('#fueltotal');
 
+    var data={'siteid':siteid,'property':property,'date':date,'quantity':quantity,'rate':rate,'total':total};
+  var allprop = " <?php echo $a ?> ";
+   var i;
+  for (i = 1; i < allprop.length; i++)
+  {
       var str = "total";
       var str1 = "quantity";
       var str2 = "rate";
@@ -445,16 +456,17 @@ $("#senddata").on("click",regc);
       var ratee =allprop[i].concat(str2);
       if(document.getElementById(tot).value > 0)
       {
-         var siteid=$('#siteid')   
-        var property=allprop[i];
-        var date = new Date();
-        var quantity=document.getElementById(quant).value;
-        var rate=document.getElementById(ratee).value;
-        var total=document.getElementById(tot).value;
+         data.siteid=$('#siteid')   
+         data.property=allprop[i];
+         data.date = new Date();
+         data.quantity=document.getElementById(quant).value;
+         data.rate=document.getElementById(ratee).value;
+         data.total=document.getElementById(tot).value;
+       
+      }    
+  }
 
-        var data={'siteid':siteid,'property':property,'date':date,'quantity':quantity,'rate':rate,'total':total};
-
-        $.post('../php/addexpensetositecontroller.php',data,function(info){
+   $.post('../php/addexpensetositecontroller.php',data,function(info){
       alert("bhitare");
             if(info!=0)
             {
@@ -473,13 +485,8 @@ $("#senddata").on("click",regc);
             
             }
         });
-      }
-
-
-    
-  }
-}*/
-
+}
+*/
   </script>
 
 

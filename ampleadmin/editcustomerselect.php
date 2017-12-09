@@ -20,7 +20,12 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Customer Database<small>Please Wait Until The Page Fully Loads</small></h2>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <h2>Customer Database<small><br>Please Wait Until The Page Fully Loads</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -43,7 +48,7 @@
                       <div class="col-sm-12">
                         <div class="card-box table-responsive">
                           <p class="text-muted font-13 m-b-30">
-                           Empoloyee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
+                           Employee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
                           </p>
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">
@@ -106,6 +111,11 @@
                   </div>
                 </div>
               </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
 
             
 
