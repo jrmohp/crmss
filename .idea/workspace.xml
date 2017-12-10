@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c392015b-e88f-41aa-9cbd-48dc0f20f6df" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ampleadmin/viewcustomer.php" afterPath="$PROJECT_DIR$/ampleadmin/viewcustomer.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,9 +108,9 @@
         <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+              <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding>
-                <marker date="1512879991903" expanded="true" signature="2403:2421" ph="SELECT * FRO... user" />
+                <marker date="1512880026110" expanded="true" signature="2392:2410" ph="SELECT * FRO... user" />
               </folding>
             </state>
           </provider>
@@ -257,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14809000" />
+    <option name="totallyTimeSpent" value="14844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -436,7 +437,7 @@
         <state relative-caret-position="1955">
           <caret line="115" column="36" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="115" selection-end-column="36" />
           <folding>
-            <marker date="1512879991903" expanded="true" signature="2403:2421" ph="SELECT * FRO... user" />
+            <marker date="1512880026110" expanded="true" signature="2392:2410" ph="SELECT * FRO... user" />
           </folding>
         </state>
       </provider>
@@ -738,9 +739,9 @@
     <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
-            <marker date="1512879991903" expanded="true" signature="2403:2421" ph="SELECT * FRO... user" />
+            <marker date="1512880026110" expanded="true" signature="2392:2410" ph="SELECT * FRO... user" />
           </folding>
         </state>
       </provider>

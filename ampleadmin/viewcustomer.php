@@ -28,7 +28,7 @@
 
                   <div class="x_content">
                     <div class="row">
-                      <div class="col-sm-12 col-xs-12 ">
+                      <div class="col-sm-12">
                         <div class="card-box table-responsive">
 
 
