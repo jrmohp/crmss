@@ -72,12 +72,11 @@ include "header.php";
                     <?php
 
                     require("../php/connect.php");
+                        $query = "SELECT id,empid,fname,lname FROM addemployee"; 
 
-                    $query = "SELECT * FROM user";
-
-                    if($result=$conn->query($query))
-                    {
-                        while ($row=$result->fetch_array())
+                                          if($result=$conn->query($query))
+                                              {
+                                                    while ($row=$result->fetch_array())
                         {
 
                              $reqid=$row['id'];
