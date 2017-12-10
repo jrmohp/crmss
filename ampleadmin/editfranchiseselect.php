@@ -13,6 +13,17 @@
 
   <title>Edit Franchise | Smart Solar  </title>
 
+ <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Customer database</div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    
 
 
 
@@ -106,6 +117,18 @@
                   </div>
                 </div>
               </div>
+              
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
 
             
 
