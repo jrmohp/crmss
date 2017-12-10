@@ -1,19 +1,13 @@
+<?php
 
 
- <?php
 
 
-  include "header.php";
-
+include "header.php";
 
 ?>
 
-
- 
-
-  <title>Edit Customers | Smart Solar  </title>
-
- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading"></div>
                             <div class="panel-wrapper collapse in">
@@ -25,7 +19,9 @@
                                 <div class="panel-body">
                                      <div class="row" id="body2">
 
-                                      <!-- Bootstrap Core CSS -->
+
+
+<!-- Bootstrap Core CSS -->
 <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
@@ -49,62 +45,47 @@
 
 </div>
 
- 
-            
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                
-                            <div class="panel-heading"></div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <h2>Customer Database<small><br>Please Wait Until The Page Fully Loads</small></h2>
-                  
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="card-box table-responsive">
-                          <p class="text-muted font-13 m-b-30">
-                           Employee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
-                          </p>
 
-                          <table id="datatable-keytable" class="table table-striped table-bordered">
-                            <thead>
-                           
-                              <tr align='center'>
-                                 <th>ID</th>
-                                <th>Name</th>
-                               <th>Email</th>
-                                <th>Mobile</th>
-                                <th>City</th>
-                                <th>Edit</th>
-                               
+<!-- /row -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="white-box">
+            <h3 class="box-title m-b-0">Data Table</h3>
+            <p class="text-muted m-b-30">Data table example</p>
+            <div class="table-responsive">
+                <table id="myTable" class="table table-striped">
+                    <thead>
 
-                                 
-
-                              </tr>
-                             
-                            </thead>
+                    <tr align='center'>
+                        <th align='center'>ID</th>
+                        <th align='center'>Name</th>
+                        <th align='center'>Email</th>
+                        <th align='center'>Mobile</th>
+                        <th align='center'>City</th>
+                        <th align='edit'>edit</th>
 
 
-                            <tbody>
-                              
-                            
+                    </tr>
+
+                    </thead>
+                    <tbody>
 
 
-                                <?php
 
-                                    require("../php/connect.php");
 
-                                        $query = "SELECT id,username,firstname,lastname,email,mobile,city FROM user"; 
+                    <?php
 
-                                          if($result=$conn->query($query))
-                                              {
-                                                    while ($row=$result->fetch_array())
-                                                  { 
-                                                            $reqid=$row['id'];
-                                                             echo "<tr align='center'>";
+                    require("../php/connect.php");
+
+                    $query = "SELECT * FROM user";
+
+                    if($result=$conn->query($query))
+                    {
+                        while ($row=$result->fetch_array())
+                        {
+
+                             $reqid=$row['id'];
+                                                       echo "<tr align='center'>";
         echo "<td>".$row['username']."</td>";
         echo "<td>".$row['firstname'].$row['lastname']."</td>";
         echo "<td>".$row['email']."</td>";
@@ -114,26 +95,22 @@
        
         echo "</tr>";
 
-                                                    }
-                                                            }
-                                        ?>
-                          
-                                
+                        }
+                    }
+                    ?>
 
-                            
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
                                 </div>
                             </div>
                         </div>
@@ -144,8 +121,10 @@
                         </div>
                     </div>
   
+ 
 
-            
+
+
 <!-- /.container-fluid -->
 <footer class="footer text-center"> &copy Smart Solar</footer>
 
@@ -225,9 +204,10 @@
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 
 
-      
 
-    <script type="text/javascript">
+
+
+ <script type="text/javascript">
               
 
                 
@@ -245,4 +225,3 @@
 
 
             </script>
-
