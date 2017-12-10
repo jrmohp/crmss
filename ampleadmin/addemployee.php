@@ -23,7 +23,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate="" onsubmit="return false" >
+                    <form  method="post" data-parsley-validate="" onsubmit="return false" action="../php/addemployeecontroller.php">
                       
 
                   <h2>Employee Registration</h2>
@@ -383,7 +383,7 @@
         
         
 
-     $.post('../php/addemployeecontroller.php',data,function(info){
+     $.post('../php/custregcontroller.php',data,function(info){
       alert("bhitare");
             if(info!=0)
             {
