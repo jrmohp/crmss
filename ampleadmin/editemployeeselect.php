@@ -57,10 +57,9 @@ include "header.php";
                     <thead>
 
                     <tr align='center'>
-                        <th align='center'>Employee ID</th>
+                        <th align='center'> Employee ID</th>
                         <th align='center'>Name</th>
-                       
-
+                        
                     </tr>
 
                     </thead>
@@ -71,22 +70,25 @@ include "header.php";
 
                     <?php
 
-                    require("../php/connect.php");
-                        $query = "SELECT id,empid,fname,lname FROM addemployee"; 
+                   
+                                    require("../php/connect.php");
+
+                                        $query = "SELECT id,empid,fname,lname FROM addemployee"; 
 
                                           if($result=$conn->query($query))
                                               {
                                                     while ($row=$result->fetch_array())
-                        {
-
-                             $reqid=$row['id'];
-                                                       echo "<tr align='center'>";
+                                                  { 
+                                                            $reqid=$row['id'];
+                     
+                                        echo "<tr align='center'>";
         echo "<td>".$row['empid']."</td>";
         echo "<td>".$row['fname']." ".$row['lname']."</td>";
        
         echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
        
         echo "</tr>";
+
                         }
                     }
                     ?>
@@ -199,7 +201,7 @@ include "header.php";
 
 
 
- <script type="text/javascript">
+    <script type="text/javascript">
               
 
                 
@@ -208,7 +210,7 @@ include "header.php";
                
 
               
-               var link="http://crm.smartsolar.co.in/ampleadmin/editcustomer?id="+btnid;
+               var link="http://crm.smartsolar.co.in/ampleadmin/editemployee?id="+btnid;
 
                window.location.assign(link);
 
