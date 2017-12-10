@@ -23,7 +23,10 @@
                                 <div class="panel-body">
                                      <div class="row" id="body2">
             
-              
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                
+                        <div class="card-box table-responsive">
+
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">
                             <thead>

@@ -106,10 +106,10 @@
       <file leaf-file-name="viewcustomer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="252">
+              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
-                <marker date="1512879869346" expanded="true" signature="2119:2137" ph="SELECT * FRO... user" />
+                <marker date="1512879912336" expanded="true" signature="2244:2262" ph="SELECT * FRO... user" />
               </folding>
             </state>
           </provider>
@@ -257,7 +257,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14686000" />
+    <option name="totallyTimeSpent" value="14729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -436,7 +436,7 @@
         <state relative-caret-position="1955">
           <caret line="115" column="36" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="115" selection-end-column="36" />
           <folding>
-            <marker date="1512879869346" expanded="true" signature="2119:2137" ph="SELECT * FRO... user" />
+            <marker date="1512879912336" expanded="true" signature="2244:2262" ph="SELECT * FRO... user" />
           </folding>
         </state>
       </provider>
@@ -737,10 +737,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="252">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
-            <marker date="1512879869346" expanded="true" signature="2119:2137" ph="SELECT * FRO... user" />
+            <marker date="1512879912336" expanded="true" signature="2244:2262" ph="SELECT * FRO... user" />
           </folding>
         </state>
       </provider>
