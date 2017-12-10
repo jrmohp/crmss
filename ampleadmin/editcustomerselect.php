@@ -146,29 +146,6 @@
   
 
             
-
-        
-
-
-    <script type="text/javascript">
-              
-
-                
-                function DB(btnid)
-        {
-               
-
-              
-               var link="http://crm.smartsolar.co.in/ampleadmin/editcustomer?id="+btnid;
-
-               window.location.assign(link);
-
-              
-        }
-
-
-            </script>
-
 <!-- /.container-fluid -->
 <footer class="footer text-center"> &copy Smart Solar</footer>
 
@@ -248,6 +225,24 @@
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 
 
+      
+
+    <script type="text/javascript">
+              
+
+                
+                function DB(btnid)
+        {
+               
+
+              
+               var link="http://crm.smartsolar.co.in/ampleadmin/editcustomer?id="+btnid;
+
+               window.location.assign(link);
+
+              
+        }
 
 
+            </script>
 
