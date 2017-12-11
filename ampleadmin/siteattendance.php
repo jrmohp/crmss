@@ -83,7 +83,7 @@ include "header.php";
                             echo "<tr>";
 
                             echo "<td>".$row['fname'].$row['lname']."</td>";
-                             echo "<td> <input type='checkbox' class='form-control ' id='".$row['empid']."' name='".$row['empid']."'></td>";
+                             echo "<td> <input type='radio' class='form-control ' id='".$row['empid']."' name='".$row['empid']."'></td>";
 
 
                             echo "</tr>";
