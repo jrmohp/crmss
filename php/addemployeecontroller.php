@@ -30,9 +30,8 @@ if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && 
 	$empid=mysqli_real_escape_string($conn, $_POST['empid']);
 	$username=mysqli_real_escape_string($conn, $_POST['username']);
 	$password=mysqli_real_escape_string($conn, $_POST['password']);
-	$position=mysqli_real_escape_string($conn, $_POST['position']);
 
-$sql="INSERT INTO addemployee (empid,username,password,position,fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$empid','$username','$password','$position',$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc','$cno','$altcno','$email','$altemail','$wphno','$wemail')";
+$sql="INSERT INTO addemployee (empid,username,password,fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$empid','$username','$password','$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc','$cno','$altcno','$email','$altemail','$wphno','$wemail')";
 
 }
 else

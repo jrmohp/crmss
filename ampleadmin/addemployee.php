@@ -375,11 +375,10 @@
         var altemail=$('#altemail').val();
         var wphno=$('#wphno').val();
         var wemail=$('#wemail').val();
-        var position='a';
        
        alert("heh");
       
-        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'position':position,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
+        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
 
         alert("heh2");
         
