@@ -393,7 +393,7 @@
         
 
             }
-            else if(info==0)
+            else if(info!=1)
             {
                
             $("#querymsg").addClass('alert alert-danger');
