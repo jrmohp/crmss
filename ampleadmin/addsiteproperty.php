@@ -31,11 +31,7 @@
         <div class="ln_solid"></div>             
 
 
-            <div class="col-md-6 col-sm-6 col-xs-12"  >
-                      <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
-
-                    <select class="form-control" id="siteid">
-                    
+            
 
                       <?php 
 
@@ -85,7 +81,7 @@
 
       <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="regc()">Next</button>
+                    <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="inventc()">Next</button>
                     </div>
                     
             </div>
@@ -94,12 +90,7 @@
               
             </div>
 
-            <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                    <button  class="btn btn-success col-md-12 "  align='center' id="subm" onclick="addsite()">Add Site</button>
-                    </div>
-                    
-            </div>
+           
 
 
 
