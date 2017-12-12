@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="c392015b-e88f-41aa-9cbd-48dc0f20f6df" name="Default" comment="" />
+=======
     <list default="true" id="c392015b-e88f-41aa-9cbd-48dc0f20f6df" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ampleadmin/addcustomer.php" afterPath="$PROJECT_DIR$/ampleadmin/addcustomer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ampleadmin/addemployee.php" afterPath="$PROJECT_DIR$/ampleadmin/addemployee.php" />
     </list>
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="guda.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ampleadmin/guda.php">
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="addexpensetosite.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/addexpensetosite.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7276">
+              <caret line="428" column="7" lean-forward="false" selection-start-line="428" selection-start-column="7" selection-end-line="428" selection-end-column="7" />
+              <folding />
+=======
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/header.php">
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
               <caret line="169" column="22" lean-forward="false" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
@@ -77,6 +94,7 @@
               <folding>
                 <marker date="1513066485618" expanded="true" signature="2039:2432" ph="INSERT INTO addemployee... " />
               </folding>
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
             </state>
           </provider>
         </entry>
@@ -84,11 +102,22 @@
       <file leaf-file-name="inventories.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ampleadmin/inventories.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="289">
               <caret line="38" column="20" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="38" selection-end-column="20" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="578">
+              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding />
+=======
+            <state relative-caret-position="2538">
+              <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
               <folding>
                 <marker date="1513066481504" expanded="true" signature="61:86" ph="SELECT * fro... inventories" />
               </folding>
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
             </state>
           </provider>
         </entry>
@@ -96,9 +125,24 @@
       <file leaf-file-name="viewcustomer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="3825">
               <caret line="225" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
               <folding />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="550">
+              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <marker date="1512820731774" expanded="true" signature="2039:2432" ph="INSERT INTO addemployee... " />
+=======
+            <state relative-caret-position="2652">
+              <caret line="225" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+              <folding>
+                <marker date="1512894226268" expanded="true" signature="3153:3171" ph="SELECT * FRO... user" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+              </folding>
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
             </state>
           </provider>
         </entry>
@@ -106,33 +150,119 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/connect.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
             <state relative-caret-position="102">
               <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="viewcustomer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+=======
       <file leaf-file-name="addsiteproperty.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ampleadmin/addsiteproperty.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1887">
               <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="22" />
+<<<<<<< HEAD
               <folding />
+=======
+              <folding>
+                <marker date="1512819778918" expanded="true" signature="1059:1095" ph="SELECT DISTI... siteprop" />
+              </folding>
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="addsitecontroller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/addsitecontroller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <marker date="1512553944847" expanded="true" signature="162:230" ph="INSERT INTO siteprop... " />
+              </folding>
+=======
       <file leaf-file-name="format.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ampleadmin/format.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
               <folding />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addinv.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/addinv.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="60" column="78" lean-forward="true" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addinvcontroller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/addinvcontroller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <marker date="1513071746000" expanded="true" signature="158:225" ph="INSERT INTO siteprop... " />
+=======
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="89" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+              <folding>
+                <marker date="1512742022779" expanded="true" signature="2642:2660" ph="SELECT * FRO... user" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="89" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -162,12 +292,20 @@
         <option value="$PROJECT_DIR$/ampleadmin/addexpensetosite.php" />
         <option value="$PROJECT_DIR$/php/addemployeecontroller.php" />
         <option value="$PROJECT_DIR$/ampleadmin/viewcustomer.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/ampleadmin/addinv.php" />
+        <option value="$PROJECT_DIR$/php/addinvcontroller.php" />
+=======
         <option value="$PROJECT_DIR$/ampleadmin/addsiteproperty.php" />
         <option value="$PROJECT_DIR$/ampleadmin/addinventories.php" />
         <option value="$PROJECT_DIR$/ampleadmin/guda.php" />
         <option value="$PROJECT_DIR$/ampleadmin/inventories.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/ampleadmin/addcustomer.php" />
         <option value="$PROJECT_DIR$/ampleadmin/addemployee.php" />
+=======
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
       </list>
     </option>
   </component>
@@ -186,6 +324,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/plugins/bower_components/node_modules" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
     <include_path>
@@ -213,6 +354,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,18 +377,26 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
       <pane id="Scope" />
       <pane id="Scratches" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+=======
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\crmss\php" />
       <recent name="C:\xampp\htdocs\crmss\ampleadmin" />
     </key>
   </component>
@@ -275,18 +426,45 @@
       <workItem from="1512467737997" duration="5185000" />
       <workItem from="1512639609070" duration="5847000" />
       <workItem from="1512809912245" duration="3491000" />
+<<<<<<< HEAD
+      <workItem from="1513068428785" duration="3402000" />
+=======
       <workItem from="1512986337210" duration="5900000" />
+<<<<<<< HEAD
       <workItem from="1513066991407" duration="3346000" />
+=======
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="30641000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="20921000" />
+=======
+    <option name="totallyTimeSpent" value="27295000" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -297,11 +475,22 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -364,7 +553,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="115" column="36" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="115" selection-end-column="36" />
+<<<<<<< HEAD
           <folding />
+=======
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1512894226268" expanded="true" signature="3153:3171" ph="SELECT * FRO... user" />
+          </folding>
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
         </state>
       </provider>
     </entry>
@@ -533,7 +732,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1512819778929" expanded="true" signature="2459:2826" ph="..." />
+            <marker date="1512819778929" expanded="true" signature="2532:2823" ph="..." />
+            <marker date="1512819778929" expanded="true" signature="2610:2800" ph="{...}" />
+            <marker date="1512819778929" expanded="true" signature="2832:2857" ph="..." />
+          </folding>
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
         </state>
       </provider>
     </entry>
@@ -553,9 +765,20 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/ampleadmin/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
     <entry file="file://$PROJECT_DIR$/ampleadmin/selectdatesitetrans.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
+        <state relative-caret-position="0">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
@@ -581,11 +804,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ampleadmin/addemployee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ampleadmin/test.php">
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="89" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding />
+=======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="89" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
@@ -593,6 +833,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ampleadmin/addinventory2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ampleadmin/addinvcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/addemployeecontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <marker date="1512820731774" expanded="true" signature="2039:2432" ph="INSERT INTO addemployee... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ampleadmin/viewcustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/addsitecontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <marker date="1512553944847" expanded="true" signature="162:230" ph="INSERT INTO siteprop... " />
+          </folding>
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/php/addinvcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1513071746000" expanded="true" signature="158:225" ph="INSERT INTO siteprop... " />
+=======
     <entry file="file://$PROJECT_DIR$/ampleadmin/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -691,15 +992,28 @@
         <state relative-caret-position="289">
           <caret line="38" column="20" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="38" selection-end-column="20" />
           <folding>
+<<<<<<< HEAD
             <marker date="1513066481504" expanded="true" signature="61:86" ph="SELECT * fro... inventories" />
+=======
+            <marker date="1512991636657" expanded="true" signature="61:75" ph="SELECT * fro... siteinfo" />
+            <marker date="1512991636657" expanded="true" signature="61:86" ph="SELECT * fro... inventories" />
+>>>>>>> 2834eac4451922982383543cd6b5eb36a0ce94ff
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/ampleadmin/addemployee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+=======
+    <entry file="file://$PROJECT_DIR$/ampleadmin/addinv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="60" column="78" lean-forward="true" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
+>>>>>>> c62d758e01b7600ca1d1d5d786b91db3d328daaa
           <folding />
         </state>
       </provider>
