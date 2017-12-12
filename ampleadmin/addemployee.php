@@ -273,19 +273,19 @@
                         <div class="col-md-4 col-sm-4 col-xs-12 "  >
                          <label for="empid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Id</span></label>
 
-                          <input type="text" name="empid" id="empid" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Phone No.">     
+                          <input type="text" name="empid" id="empid" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Employee Id">     
                          </div>
 
                        <div class="col-md-4 col-sm-4 col-xs-12 "  >
                          <label for="username" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Username</span></label>
 
-                          <input type="text" name="username" id="username" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Email">     
+                          <input type="text" name="username" id="username" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Username">     
                          </div>
 
                        <div class="col-md-4 col-sm-4 col-xs-12 "  >
                          <label for="password" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Password</span></label>
 
-                          <input type="text" name="password" id="password" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Email">     
+                          <input type="text" name="password" id="password" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Password">     
                          </div>
 
                    </div>
@@ -346,7 +346,7 @@
         function regc()
         {
 
-          alert("sila");
+          
         
         var empid=$('#empid').val();
         var username=$('#username').val();
@@ -376,26 +376,26 @@
         var wphno=$('#wphno').val();
         var wemail=$('#wemail').val();
        
-       alert("heh");
+       
       
         var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
 
-        alert("heh2");
+        
         
         
 
      $.post('../php/addemployeecontroller.php',data,function(info){
-      alert("bhitare");
-            if(info!=0)
+      
+            if(info==1)
             {
                
                     alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
         
 
             }
-            else if(info==0)
+            else if(info!=1)
             {
-               
+               alert("Sorry : "+info);
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");

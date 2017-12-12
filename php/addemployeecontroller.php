@@ -33,48 +33,53 @@ if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && 
 
 $sql="INSERT INTO addemployee (empid,username,password,fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$empid','$username','$password','$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc','$cno','$altcno','$email','$altemail','$wphno','$wemail')";
 
+$query = $conn->query("SELECT MAX(id) FROM addemployee"); // execute
+	$max_id = $query->fetch_array(); // fetch
+		$tid=$max_id[0];
+		$new_id=$tid+1;
+		$ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
 }
 else
 {
 	if(empty($_POST['fname']))
 		{
-			echo "First Name Cannot Be Empty<br>";
+			echo "First Name Cannot Be Empty ";
 		}
 
 	if(empty($_POST['lname']))
 		{
-			echo "Last Name Cannot Be Empty<br>";
+			echo "Last Name Cannot Be Empty ";
 		}
 	if(empty($_POST['fn']))
 		{
-			echo "Father's Name Cannot Be Empty<br>";
+			echo "Father's Name Cannot Be Empty ";
 		}
 
 	if(empty($_POST['gender']))
 		{
-			echo "Gender Cannot Be Empty<br>";
+			echo "Gender Cannot Be Empty ";
 		}
 	if(empty($_POST['dob']))
 		{
-			echo "Date Of Birth Cannot Be Empty<br>";
+			echo "Date Of Birth Cannot Be Empty ";
 		}
 	if(empty($_POST['bg']))
 		{
-			echo "Blood Group Cannot Be Empty<br>";
+			echo "Blood Group Cannot Be Empty ";
 		}
 
 	if(empty($_POST['pa']))
 		{
-			echo "Permanent Address Cannot Be Empty<br>";
+			echo "Permanent Address Cannot Be Empty ";
 		}
 	if(empty($_POST['ta']))
 		{
-			echo "Temporary Address Cannot Be Empty<br>";
+			echo "Temporary Address Cannot Be Empty ";
 		}
 
 	if(empty($_POST['acard']))
 		{
-			echo "Adhar Card Number Cannot Be Empty<br>";
+			echo "Adhar Card Number Cannot Be Empty ";
 		}
 
 
@@ -82,15 +87,15 @@ else
 
 	if(empty($_POST['empid']))
 		{
-			echo "Employee Id Cannot Be Empty<br>";
+			echo "Employee Id Cannot Be Empty ";
 		}
 	if(empty($_POST['username']))
 		{
-			echo "Username Cannot Be Empty<br>";
+			echo "Username Cannot Be Empty ";
 		}
 	if(empty($_POST['password']))
 		{
-			echo "Password Cannot Be Empty<br>";
+			echo "Password Cannot Be Empty ";
 		}
 
 	exit ;
@@ -98,7 +103,7 @@ else
 
 if($conn->query($sql))
 {
-		echo 1;
+		echo $ssid;
 
 }
 else
