@@ -346,7 +346,7 @@
         function regc()
         {
 
-          alert("sila");
+          
         
         var empid=$('#empid').val();
         var username=$('#username').val();
@@ -376,16 +376,16 @@
         var wphno=$('#wphno').val();
         var wemail=$('#wemail').val();
        
-       alert("heh");
+       
       
         var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
 
-        alert("heh2");
+        
         
         
 
      $.post('../php/addemployeecontroller.php',data,function(info){
-      alert("bhitare");
+      
             if(info!=0)
             {
                
