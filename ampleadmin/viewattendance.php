@@ -13,7 +13,7 @@ include "header.php";
 
 
 
-$moradarkar="SELECT * from inventories";
+$moradarkar="SELECT * from empattn";
 
 $result=$conn->query($moradarkar);
 ?>
@@ -28,10 +28,9 @@ $result=$conn->query($moradarkar);
                     <thead>
 
                     <tr align='center'>
-                        <th align='center'>ID</th>
-                        <th align='center'>INVID</th>
+                        <th align='center'>SL</th>
                         <th align='center'>NAME</th>
-                        <th align='center'>QUANTITY</th>
+                        <th align='center'>DATE</th>
 
 
 
@@ -43,16 +42,13 @@ $result=$conn->query($moradarkar);
 
 
                     <?php
+
                     while ($row=$result->fetch_assoc())
                     {
                         echo "<tr>";
 
                         echo "<td>";
-                        echo $row['id'];
-                        echo "</td>";
-
-                        echo "<td>";
-                        echo $row['invid'];
+                        echo $row['sl'];
                         echo "</td>";
 
                         echo "<td>";
@@ -60,7 +56,7 @@ $result=$conn->query($moradarkar);
                         echo "</td>";
 
                         echo "<td>";
-                        echo $row['quantity'];
+                        echo $row['date'];
                         echo "</td>";
 
                         echo "</tr>";
