@@ -2,13 +2,6 @@
 
 
   include "header.php";
-
-  $query = $conn->query("SELECT MAX(id) FROM addemployee"); // execute
-                $max_id = $query->fetch_array(); // fetch
-                $tid=$max_id[0];
-                $new_id=$tid+1;
-                $ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
-
 ?>
 
 
@@ -393,20 +386,19 @@
 
      $.post('../php/addemployeecontroller.php',data,function(info){
       
-            if(info==1)
+            if(info!=0)
             {
-                var a= "<?php echo $ssid; ?>";
-}
-                    alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+a+" for future reference");
+               
+                    alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
         
 
             }
-            else if(info!=1)
+            else if(info==0)
             {
-               alert("Sorry : "+info);
+               
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
-            $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
+            $("#querymsg").text("Mail Not Sent,Contact 7978555567 ");
              $('#querymsg').delay(2000).fadeOut();
             
             }
