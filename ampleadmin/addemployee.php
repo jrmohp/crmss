@@ -291,10 +291,21 @@
                    </div>
                   <br>
                   <div class="row">
+
+
                     <div class="col-md-12 col-sm-12 col-xs-12">
                     <button  class="btn btn-success col-md-12 " type="submit" align='center' id="senddata">Send</button>
                     </div>
                   </div>
+
+                   <div class="row">
+
+                    
+                    <div class="col-md-12 col-sm-12 col-xs-12" id="querymsg">
+                   
+                    </div>
+                  </div>
+
 
 
 
