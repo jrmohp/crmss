@@ -39,8 +39,10 @@ $query = $conn->query("SELECT MAX(id) FROM addemployee"); // execute
 		$new_id=$tid+1;
 		$ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
 }
-
-
+else
+{
+	exit;
+}
 if($conn->query($sql))
 {
 		echo $ssid;
