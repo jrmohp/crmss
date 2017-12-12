@@ -9,7 +9,7 @@ if($result=$conn->query($query))
     {
         $emp_id=$row['empid'];
 
-        $attquery="INSERT into empattn(empid,absdate) VALUES ('$emp_id', '$attdate')";
+        $attquery="INSERT into empattn(empid,attdate) VALUES ('$emp_id', '$attdate')";
 
         if(isset($_POST[$emp_id]))
         {
