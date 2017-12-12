@@ -23,7 +23,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-                    <form  method="post" data-parsley-validate="" onsubmit="return false" action="../php/addemployeecontroller.php">
+                    <form  method="post" onsubmit="return false" action="../php/addemployeecontroller.php">
                       
 
                   <h2>Employee Registration</h2>
@@ -354,6 +354,7 @@
         var fname=$('#fname').val();
         var mname=$('#mname').val();
         var lname=$('#lname').val();
+        var position='we';
         var fn=$('#fn').val();
         var mn=$('#mn').val();
         var gender=$('#gender').val();
@@ -374,21 +375,22 @@
         var altemail=$('#altemail').val();
         var wphno=$('#wphno').val();
         var wemail=$('#wemail').val();
+        var position='a';
        
        alert("heh");
       
-        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
+        var data={'empid':empid,'username':username,'password':password,'fname':fname,'mname':mname,'lname':lname,'position':position,'fn':fn,'mn':mn,'gender':gender,'dob':dob,'bg':bg,'im':im,'pa':pa,'ta':ta,'acard':acard,'pcard':pcard,'epf':epf,'exp':exp,'accno':accno,'ifsc':ifsc,'cno':cno,'altcno':altcno,'email':email,'altemail':altemail,'wphno':wphno,'wemail':wemail};
 
         alert("heh2");
         
         
 
-     $.post('../php/custregcontroller.php',data,function(info){
+     $.post('../php/addemployeecontroller.php',data,function(info){
       alert("bhitare");
             if(info!=0)
             {
                
-                    alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
+                    alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
         
 
             }

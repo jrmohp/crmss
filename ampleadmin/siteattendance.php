@@ -5,7 +5,18 @@
 
 include "header.php";
 
+if(isset($_POST['attdate']))
+{
+    $attdate=$_POST['attdate'];
+}
+else
+{
+    echo "<script>alert('Please Select Proper Date');window.location.assign('selectdateatt.php')</script>";
+}
+
 ?>
+
+
 
    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
@@ -53,7 +64,7 @@ include "header.php";
             <h3 class="box-title m-b-0">Data Table</h3>
             <p class="text-muted m-b-30">Data table example</p>
             <div class="table-responsive">
-                <table id="myTable" class="table table-striped">
+                <table class="table table-striped">
                     <thead>
 
                     <tr align='center'>
@@ -67,8 +78,7 @@ include "header.php";
                     </thead>
                     <tbody>
 
-
-
+                    <form method="post" action="../php/attendancecontroller.php">
 
                     <?php
 
@@ -83,7 +93,7 @@ include "header.php";
                             echo "<tr>";
 
                             echo "<td>".$row['fname'].$row['lname']."</td>";
-                             echo "<td> <input type='radio' class='form-control ' id='".$row['empid']."' name='".$row['empid']."'></td>";
+                             echo "<td> <input type='checkbox' class='form-control' value='1' id='".$row['empid']."' name='".$row['empid']."'></td>";
 
 
                             echo "</tr>";
@@ -104,9 +114,19 @@ include "header.php";
 
                         }
                     }
+
+
+
+
+
+
                     ?>
 
+                        <input type="hidden" value="<?php echo $attdate?>" name="attdate">
 
+
+                        <input type="submit">
+                    </form>
 
 
                     </tbody>
