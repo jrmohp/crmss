@@ -32,14 +32,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectdatesitetrans.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ampleadmin/selectdatesitetrans.php">
+      <file leaf-file-name="selectdateatt.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ampleadmin/selectdateatt.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <marker date="1512816753264" expanded="true" signature="913:941" ph="SELECT sitei... siteinfo" />
-              </folding>
+            <state relative-caret-position="529">
+              <caret line="29" column="83" lean-forward="false" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,10 +79,20 @@
       <file leaf-file-name="siteattendance.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ampleadmin/siteattendance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="85" column="94" lean-forward="false" selection-start-line="85" selection-start-column="94" selection-end-line="85" selection-end-column="94" />
+            <state relative-caret-position="1010">
+              <caret line="127" column="45" lean-forward="true" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
               <folding>
-                <marker date="1513069460420" expanded="true" signature="2504:2529" ph="SELECT * FRO... addemployee" />
+                <marker date="1513070928510" expanded="true" signature="1772:1960" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2007:2342" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2035:2342" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2067:2342" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2230:2342" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2282:2342" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2310:2342" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2561:3032" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="2756:2781" ph="SELECT * FRO... addemployee" />
+                <marker date="1513070928510" expanded="true" signature="2983:3032" ph="..." />
+                <marker date="1513070928510" expanded="true" signature="5738:5750" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -93,10 +101,13 @@
       <file leaf-file-name="attendancecontroller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/attendancecontroller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="462">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <marker date="1513069783551" expanded="true" signature="40:69" ph="SELECT empid... addemployee" />
+                <marker date="1513073445512" expanded="true" signature="40:69" ph="SELECT empid... addemployee" />
+                <marker date="1513073445512" expanded="true" signature="233:298" ph="INSERT into empattn... " />
+                <marker date="1513073445512" expanded="true" signature="556:752" ph="INSERT into empattn... " />
+                <marker date="1513073445512" expanded="true" signature="638:744" ph="/* ${$at_sit... " />
               </folding>
             </state>
           </provider>
@@ -167,6 +178,7 @@
         <option value="$PROJECT_DIR$/php/addemployeecontroller.php" />
         <option value="$PROJECT_DIR$/ampleadmin/addemployee.php" />
         <option value="$PROJECT_DIR$/ampleadmin/viewcustomer.php" />
+        <option value="$PROJECT_DIR$/ampleadmin/selectdateatt.php" />
         <option value="$PROJECT_DIR$/ampleadmin/siteattendance.php" />
         <option value="$PROJECT_DIR$/php/attendancecontroller.php" />
       </list>
@@ -194,10 +206,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="49" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="110" />
+    <option name="y" value="-9" />
+    <option name="width" value="1932" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -244,6 +256,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/crmss/ampleadmin/selectdateatt.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -276,12 +289,12 @@
       <workItem from="1512467737997" duration="5185000" />
       <workItem from="1512639609070" duration="5847000" />
       <workItem from="1512809912245" duration="3491000" />
-      <workItem from="1513066416798" duration="3391000" />
+      <workItem from="1513066416798" duration="6970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20910000" />
+    <option name="totallyTimeSpent" value="24489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -591,14 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ampleadmin/selectdateatt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ampleadmin/viewuser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -629,16 +634,6 @@
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <marker date="1512816753264" expanded="true" signature="913:941" ph="SELECT sitei... siteinfo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/addemployeecontrollerjrm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512648207734" expanded="true" signature="689:1025" ph="INSERT INTO addemployee... " />
           </folding>
         </state>
       </provider>
@@ -700,22 +695,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ampleadmin/selectdateatt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="29" column="83" lean-forward="false" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/addemployeecontrollerjrm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512648207734" expanded="true" signature="689:1025" ph="INSERT INTO addemployee... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ampleadmin/siteattendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="85" column="94" lean-forward="false" selection-start-line="85" selection-start-column="94" selection-end-line="85" selection-end-column="94" />
+        <state relative-caret-position="1010">
+          <caret line="127" column="45" lean-forward="true" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
           <folding>
-            <marker date="1513069460420" expanded="true" signature="2504:2529" ph="SELECT * FRO... addemployee" />
+            <marker date="1513070928510" expanded="true" signature="1772:1960" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2007:2342" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2035:2342" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2067:2342" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2230:2342" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2282:2342" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2310:2342" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2561:3032" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="2756:2781" ph="SELECT * FRO... addemployee" />
+            <marker date="1513070928510" expanded="true" signature="2983:3032" ph="..." />
+            <marker date="1513070928510" expanded="true" signature="5738:5750" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/attendancecontroller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1513069783551" expanded="true" signature="40:69" ph="SELECT empid... addemployee" />
+            <marker date="1513073445512" expanded="true" signature="40:69" ph="SELECT empid... addemployee" />
+            <marker date="1513073445512" expanded="true" signature="233:298" ph="INSERT into empattn... " />
+            <marker date="1513073445512" expanded="true" signature="556:752" ph="INSERT into empattn... " />
+            <marker date="1513073445512" expanded="true" signature="638:744" ph="/* ${$at_sit... " />
           </folding>
         </state>
       </provider>

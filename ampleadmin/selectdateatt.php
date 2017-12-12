@@ -14,7 +14,7 @@
 	
 
                         
-                                    <form>
+                                    <form action="siteattendance.php" method="post">
                                     	<div class="bootstrap-iso">
  <div class="container-fluid">
   <div class="row">
@@ -27,7 +27,7 @@
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
                                   <form>
-                                    <input class="form-control" id="date" name="date"  type="date"/><br>
+                                    <input class="form-control" id="date" name="attdate"  type="date"/><br>
         <br>
                   <div class="form-group"> <!-- Submit button -->
         <center><button class="btn btn-primary " name="submit" type="submit">Submit</button></center>

@@ -1,20 +1,43 @@
 <?php
 require("connect.php");
 $query = "SELECT empid FROM addemployee";
-
+$attdate=$_POST['attdate'];
 if($result=$conn->query($query))
 {
     while ($row=$result->fetch_array())
 
     {
         $emp_id=$row['empid'];
-        $emp_stat=$_POST['$emp_id'];
 
-        if($emp_stat==1)
+        $attquery="INSERT into empattn(empid,absdate) VALUES ('$emp_id', '$attdate')";
+
+        if(isset($_POST[$emp_id]))
         {
-            $conn->
+
+            if($conn->query($attquery))
+            {
+                echo "inserted";
+
+            }
         }
 
+
+
+
+
+/*
+
+        if($emp_stat=='1')
+        {
+           if($conn->query($attquery))
+           {
+                echo "inserted";
+           }
+
+
+
+        }
+*/
     }
 
 
