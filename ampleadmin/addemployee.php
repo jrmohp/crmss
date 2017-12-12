@@ -395,7 +395,7 @@
             }
             else if(info!=1)
             {
-               
+               alert("Sorry : "+info);
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
