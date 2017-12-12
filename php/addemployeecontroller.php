@@ -98,13 +98,13 @@ else
 
 if($conn->query($sql))
 {
-		echo 1;
+		return 1;
 
 }
 else
 {
 	 
-  echo mysqli_error($conn);
+        return 0;
 
 }
 
