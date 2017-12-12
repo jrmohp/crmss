@@ -386,14 +386,14 @@
 
      $.post('../php/addemployeecontroller.php',data,function(info){
       
-            if(info!=0)
+            if(html(info)==1)
             {
                
                     alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
         
 
             }
-            else if(info==0)
+            else
             {
                
             $("#querymsg").addClass('alert alert-danger');
@@ -404,7 +404,7 @@
             }
         });
 
-alert("aila bsjasdjhiaraku");
+
 
     }
 
