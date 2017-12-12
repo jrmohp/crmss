@@ -386,7 +386,7 @@
 
      $.post('../php/addemployeecontroller.php',data,function(info){
       
-            if(html(info)==1)
+            if(info==1)
             {
                
                     alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
