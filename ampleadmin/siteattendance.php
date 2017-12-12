@@ -58,7 +58,7 @@ include "header.php";
 
                     <tr align='center'>
                       <th align='center'>name</th>
-                      <th align='center'>   </th>
+                      <th align='center'>ID   </th>
 
                     
 
@@ -74,16 +74,31 @@ include "header.php";
 
                     require("../php/connect.php");
 
-                    $query = "SELECT * FROM addEmployee";
+                    $query = "SELECT * FROM addemployee";
 
                     if($result=$conn->query($query))
                     {
                         while ($row=$result->fetch_array())
                         {
+                            echo "<tr>";
 
-                            echo "<tr align='center'>";
-                            echo "<td>".$row['firstname'].$row['lastname']."</td>";
-                            echo "</td>".$row['     ']."</td>";
+                            echo "<td>".$row['fname'].$row['lname']."</td>";
+                             echo "<td> <input type='radio' class='form-control ' id='".$row['empid']."' name='".$row['empid']."'></td>";
+
+
+                            echo "</tr>";
+
+                            /*
+                            $atname=$row[empid]
+
+                            if($_POST[$atname]==true)
+                            {
+                                INSERT INTO ATTENDACE date,empid
+
+    
+                            }
+
+                            */
                             
 
 
@@ -194,7 +209,6 @@ include "header.php";
 </script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
-
 
 
 
