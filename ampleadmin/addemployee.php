@@ -273,19 +273,19 @@
                         <div class="col-md-4 col-sm-4 col-xs-12 "  >
                          <label for="empid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Employee Id</span></label>
 
-                          <input type="text" name="empid" id="empid" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Phone No.">     
+                          <input type="text" name="empid" id="empid" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Employee Id">     
                          </div>
 
                        <div class="col-md-4 col-sm-4 col-xs-12 "  >
                          <label for="username" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Username</span></label>
 
-                          <input type="text" name="username" id="username" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Email">     
+                          <input type="text" name="username" id="username" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Username">     
                          </div>
 
                        <div class="col-md-4 col-sm-4 col-xs-12 "  >
                          <label for="password" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Password</span></label>
 
-                          <input type="text" name="password" id="password" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Work Email">     
+                          <input type="text" name="password" id="password" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Password">     
                          </div>
 
                    </div>
