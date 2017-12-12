@@ -2,6 +2,13 @@
 
 
   include "header.php";
+
+  $query = $conn->query("SELECT MAX(id) FROM addemployee"); // execute
+                $max_id = $query->fetch_array(); // fetch
+                $tid=$max_id[0];
+                $new_id=$tid+1;
+                $ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
+
 ?>
 
 
@@ -388,8 +395,9 @@
       
             if(info==1)
             {
-               
-                    alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
+                var a= "<?php echo $ssid; ?>";
+}
+                    alert("Thank You  "+fname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+a+" for future reference");
         
 
             }

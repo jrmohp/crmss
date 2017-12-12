@@ -33,12 +33,7 @@ if(!empty($_POST['fname']) && !empty($_POST['lname'])&& !empty($_POST['fn']) && 
 
 $sql="INSERT INTO addemployee (empid,username,password,fname,mname,lname,fn,mn,gender,dob,bg,im,pa,ta,acard,pcard,epf,exp,accno,ifsc,cno,altcno,email,altemail,wphno,wemail) VALUES ('$empid','$username','$password','$fname','$mname','$lname','$fn','$mn','$gender','$dob','$bg','$im','$pa','$ta','$acard','$pcard','$epf','$exp','$accno','$ifsc','$cno','$altcno','$email','$altemail','$wphno','$wemail')";
 
-$query = $conn->query("SELECT MAX(id) FROM addemployee"); // execute
-	$max_id = $query->fetch_array(); // fetch
-		$tid=$max_id[0];
-		$new_id=$tid+1;
-		$ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
-}
+
 else
 {
 	if(empty($_POST['fname']))
@@ -103,7 +98,7 @@ else
 
 if($conn->query($sql))
 {
-		echo $ssid;
+		echo 1;
 
 }
 else
