@@ -393,7 +393,7 @@
         
 
             }
-            else
+            else if(info==0)
             {
                
             $("#querymsg").addClass('alert alert-danger');
@@ -404,7 +404,7 @@
             }
         });
 
-
+alert("aila bsjasdjhiaraku");
 
     }
 

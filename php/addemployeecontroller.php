@@ -59,7 +59,7 @@ else
 			echo "Date Of Birth Cannot Be Empty <br>";
 		}
 	if(empty($_POST['bg']))
-		{ 
+		{
 			echo "Blood Group Cannot Be Empty <br>";
 		}
 
@@ -98,13 +98,13 @@ else
 
 if($conn->query($sql))
 {
-		return 1;
+		echo 1;
 
 }
 else
 {
 	 
-        return 0;
+  echo mysqli_error($conn);
 
 }
 
