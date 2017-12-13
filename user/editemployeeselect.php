@@ -212,7 +212,7 @@ include "header.php";
                
 
               
-               var link="http://crm.smartsolar.co.in/ampleadmin/editemployee?id="+btnid;
+               var link="editemployee.php?id="+btnid;
 
                window.location.assign(link);
 
