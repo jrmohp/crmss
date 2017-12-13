@@ -11,11 +11,13 @@ $editid=$_GET['id'];
 
                         require("../php/connect.php");
 
-                   $query = "SELECT * FROM inventories WHERE id=$editid";
+                   $query = "SELECT * FROM inventories WHERE invid='$editid'";
 
                              $result=$conn->query($query);
 
-                             $row=$result->fetch_array();
+                             $row=$result->fetch_assoc();
+
+                            echo "<script>alert(".$row['iname'].")</script>";
 ?>
 
 
@@ -26,7 +28,7 @@ $editid=$_GET['id'];
     <div class="col-md-12 col-sm-12 col-xs-12">
 
 
-        <form  method="post" data-parsley-validate action="../php/employeeeditcontroller.php?id=<?php echo $editid;?> " >
+        <form  method="post" data-parsley-validate action="../php/inventorieseditcontroller.php " >
             <h2>Inventories </h2>
             <div class="row">
                 <div class="ln_solid"></div>
