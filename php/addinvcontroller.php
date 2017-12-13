@@ -1,9 +1,9 @@
 <?php
 
-if(!empty($_POST['iname']) && !empty($_POST['quantity']))
+if(!empty($_POST['name']) && !empty($_POST['quantity']))
 {
 require("connect.php");
-$iname=mysqli_real_escape_string($conn, $_POST['iname']);
+$iname=mysqli_real_escape_string($conn, $_POST['name']);
 $quantity=mysqli_real_escape_string($conn, $_POST['quantity']);
 
 
