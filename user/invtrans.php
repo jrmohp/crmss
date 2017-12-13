@@ -51,38 +51,20 @@ include "header.php";
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="white-box">
-                                            <h3 class="box-title m-b-0">Data Table</h3>
-                                            <p class="text-muted m-b-30">Data table example</p>
+                                            <h3 class="box-title m-b-0">Inventories Transactions Per Site</h3>
                                             <div class="table-responsive">
                                                 <table id="myTable" class="table table-striped">
+                                                    
                                                     <thead>
 
                                                     <tr align='center'>
-                                                        <th align='center'>Employee ID</th>
-                                                        <th align='center'>Username</th>
-                                                        <th align='center'>Employee Name</th>
-                                                        <th align='center'>Father's Name</th>
-                                                        <th align='center'>Mother's Name</th>
-                                                        <th align='center'>Gender</th>
-                                                        <th align='center'>Date Of Birth</th>
-                                                        <th align='center'>Blood group</th>
-                                                        <th align='center'>Identification mark</th>
-                                                        <th align='center'>Permanent Address</th>
-                                                        <th align='center'>Temporary Address</th>
-                                                        <th align='center'>Aadhar card No.</th>
-                                                        <th align='center'>Pan Card No.</th>
-                                                        <th align='center'>EPF No.</th>
-                                                        <th align='center'>Experience</th>
-                                                        <th align='center'>Bank Account No.</th>
-                                                        <th align='center'>Bank IFSC code</th>
-                                                        <th align='center'>Contact No.</th>
-                                                        <th align='center'>Alternate Contact No.</th>
-                                                        <th align='center'>Email ID</th>
-                                                        <th align='center'>Alternate Email ID</th>
-                                                        <th align='center'>Work Phone no.</th>
-                                                        <th align='center'>Work Email ID</th>
 
 
+                                                        <th align='center'>Sl No.</th>
+                                                        <th align='center'>Site Id</th>
+                                                        <th align='center'>Inventories Id</th>
+                                                        <th align='center'>Quantity</th>
+                                                        <th align='center'>Date</th>
 
 
                                                     </tr>
