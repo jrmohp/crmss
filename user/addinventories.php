@@ -15,7 +15,7 @@
              <form method="post" onsubmit="return false" action="../php/addinvcontroller.php">
                    
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12" >
-                      <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Inventory Count</span></label>
+                      <label for="icount" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Inventory Count</span></label>
 
                           <input type="text" name="icount" id="icount" class="form-control" placeholder="Inventory Count">
                 </div>
@@ -137,7 +137,7 @@ var insertcount=0;
         var data={'name':invnamefinal,'quantity':invquantfinal};
         
         
-
+        document.write(data);
 
 
         $.post('../php/addinvcontroller.php',data,function(info){
