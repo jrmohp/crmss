@@ -17,9 +17,9 @@ $attdate=$_POST['attdate'];
 
 
 
-$moradarkar="SELECT empattn.empid,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
+$sqlq="SELECT empattn.empid,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
 
-$result=$conn->query($moradarkar);
+$result=$conn->query($sqlq);
 ?>
 
 <div class="row">
