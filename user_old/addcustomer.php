@@ -2,22 +2,11 @@
 
 
   include "header.php";
-
 ?>
 
 
 
- 
-
-  <title>Add Customer | Smart Solar  </title>
-
- 	
-     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading"></div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <div class="row" id="body2">
+ 	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -55,7 +44,7 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="email" class="form-control has-feedback-left" value="" id="email" placeholder="Email" onkeyup="checkemail()">
+                        <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
                         <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                         <span id="email_status" style="color: red"> </span> 
                       </div>
@@ -414,7 +403,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
                           <button type="button" class="btn btn-primary">Cancel</button>
-               <button class="btn btn-primary" type="reset">Reset</button>
+						   <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -496,23 +485,42 @@
    
           function checkemail()
 {
- 
+ var email=document.getElementById( "email" ).value;
+  
+ if(email)
+ {
+  $.ajax({
+  type: 'post',
+  url: '../php/checkemail.php',
+  data: {
+   user_email:email,
+  },
+  success: function (response) {
+   $( '#email_status' ).html(response);
+   
+     
 
-var button = document.getElementById("senddata");
+  
+   if(html(response)=="Email Not Registered") 
+   {
+    $(':button[type="submit"]').prop('disabled', false);
+    
+   }
+   else 
+   {
+       $(':button[type="submit"]').prop('disabled', true);
+    
 
-if(button.value=="")
-button.disabled = true;
-
-//add event listener
-clickBtn.addEventListener('click', function(event) {
-    button.disabled = !button.disabled;
-
- /*else
+   }
+  }
+  });
+ }
+ else
  {
   $( '#email_status' ).html("");
   $(':button[type="submit"]').prop('disabled', true);
-  return false;
- }*/
+  
+ }
 }
 
 </script>
@@ -540,11 +548,8 @@ clickBtn.addEventListener('click', function(event) {
 
                     </div>
                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                  
+
 	
 <?php
 

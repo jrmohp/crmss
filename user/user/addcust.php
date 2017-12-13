@@ -8,16 +8,14 @@
 
 
  
-
+<!DOCTYPE html>
+<html>
+<head>
   <title>Add Customer | Smart Solar  </title>
+</head>
+<body>
 
- 	
-     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading"></div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <div class="row" id="body2">
+ 	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="row">
@@ -414,7 +412,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
                           <button type="button" class="btn btn-primary">Cancel</button>
-               <button class="btn btn-primary" type="reset">Reset</button>
+						   <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -496,16 +494,35 @@
    
           function checkemail()
 {
+ var email=document.getElementById( "email" ).value;
+  
+ if(email)
+ {
+  $.ajax({
+  type: 'post',
+  url: '../php/checkemail.php',
+  data: {
+   user_email:email,
+  },
+  success: function (response) {
+   $( '#email_status' ).html(response);
+   
+  
+   
+   if(response=="Email Not Registered") 
+    {
+     $(':button[type="submit"]').prop('disabled', false);
+     return true;
+    }
+    else if (response=="Email Already Registered")
+    {
+      $(':button[type="submit"]').prop('disabled', true);   
+      return false; 
  
+    }
+  }});
+}
 
-var button = document.getElementById("senddata");
-
-if(button.value=="")
-button.disabled = true;
-
-//add event listener
-clickBtn.addEventListener('click', function(event) {
-    button.disabled = !button.disabled;
 
  /*else
  {
@@ -540,11 +557,8 @@ clickBtn.addEventListener('click', function(event) {
 
                     </div>
                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    </body>
+                    </html>
 	
 <?php
 

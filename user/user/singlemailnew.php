@@ -1,21 +1,16 @@
 <?php
 
 
-  include "header.php";
+  include "regheader.php";
 ?>
 
 
 <div class="row">
 <center>
-              <div class="col-md-11 col-xs-12 " style="float: none; margin: 0 auto;">
+              <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
                 <div class="x_panel">
                   <div class="x_title">
-                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading"></div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <h2>Send Mail </h2>
+                    <h2>Send Mail </h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -53,11 +48,6 @@
                         </form>
 </div></div></div></center></div>
                         
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
 
 
 
@@ -74,6 +64,3 @@
 
   </script>
 
-<?php
-include "footer.php";
-?>

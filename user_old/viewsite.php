@@ -2,25 +2,27 @@
 
 
   include "header.php";
+  $siteid=$_GET['id'];
 ?>
 
-
-  <title>Select Site | Smart Soalar </title>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Site | Smart Solar  </title>
+</head>
+<body>
 
  	<div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
 
-
+<table width="100%"  class="table table-striped table-bordered info-table">
 <?php
 
 require("../php/connect.php");
+echo "<h1>"."$siteid"."</h1>";
 
-
-
-$query ="SELECT property FROM siteprop WHERE siteid="; 
-
+$query ="SELECT property FROM siteprop WHERE siteid='$siteid'"; 
 
 
 if($result=mysqli_query($conn,$query))
@@ -44,10 +46,10 @@ if($result=mysqli_query($conn,$query))
 }
 
 ?>
-
+</table>
 </div>
                     </div>
-                    
+                    </body>
 
 	
 <?php
