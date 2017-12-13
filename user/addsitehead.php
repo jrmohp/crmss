@@ -196,7 +196,7 @@ var insertcount=0;
 
         $.post('../php/addsitecontroller.php',data,function(info){
             
-            alert(info);
+            
 
         });
 
