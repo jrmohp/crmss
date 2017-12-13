@@ -190,7 +190,7 @@ include "header.php";
     });
     $('#example23').DataTable({
         dom: 'Bfrtip',
-        buttons: [
+        buttons:
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
     });
