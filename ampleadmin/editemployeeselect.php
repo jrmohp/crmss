@@ -59,6 +59,7 @@ include "header.php";
                     <tr align='center'>
                         <th align='center'> Employee ID</th>
                         <th align='center'>Name</th>
+                        <th align='center'>Edit</th>
                         
                     </tr>
 
@@ -71,7 +72,7 @@ include "header.php";
                     <?php
 
                    
-                                    require("../php/connect.php");
+                                   require("../php/connect.php");
 
                                         $query = "SELECT id,empid,fname,lname FROM addemployee"; 
 
