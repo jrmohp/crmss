@@ -23,9 +23,7 @@ if($conn->query($sql))
 else
 {
 
-    echo $iname;
-    echo $quantity;
-    echo $ssid;
+    echo mysqli_error($conn);
 
 }
 }

@@ -75,7 +75,7 @@ $at_site=$row[empid]
         echo "<script> alert('Attendance Updated');window.location.assign('../index.php');</script>";
     }
     else{
-        echo "gmara";
+        echo "sorry";
     }
 
      }
