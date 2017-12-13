@@ -12,7 +12,7 @@
 <div class="row">
 
 	
-             <form method="post" action="../php/addinvcontroller.php">
+             <form method="post" onsubmit="return false" action="../php/addinvcontroller.php">
                    
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12" >
                       <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Inventory Count</span></label>
@@ -28,9 +28,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                     <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="inventc()">Next</button>
                     </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-              <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="inventc()">Next</button>
-          </div>
+          
 
                     
             </div>
@@ -39,7 +37,9 @@
               
             </div>
 
-
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="inventc()">Submit</button>
+          </div>
 
             <script type="text/javascript">
   
