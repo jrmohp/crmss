@@ -54,6 +54,7 @@ $editid=$_GET['id'];
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <input type="hidden" value="<?php echo $editid?>" name="editid" id="editid">
                         <button type="submit" class="btn btn-success" id="senddata">Submit</button>
+                        <button type="submit" class="btn btn-danger" id="deletedata">delete</button>
                     </div>
 
                 </div>
