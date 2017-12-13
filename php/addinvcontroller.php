@@ -1,5 +1,5 @@
 <?php
-
+ 
 if(!empty($_POST['name']) && !empty($_POST['quantity']))
 {
 require("connect.php");
