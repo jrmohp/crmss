@@ -137,12 +137,14 @@ var insertcount=0;
         var data={'name':invnamefinal,'quantity':invquantfinal};
         
         
-        document.write(data);
+
 
 
         $.post('../php/addinvcontroller.php',data,function(info){
             
-            
+            document.write(invnamefinal);
+
+            document.write(invquantfinal);
 
         });
 
