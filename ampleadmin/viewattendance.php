@@ -17,7 +17,7 @@ $moradarkar="SELECT * from empattn";
 
 $result=$conn->query($moradarkar);
 ?>
-
+<title>View Attendance | Smart Solar  </title>
 <div class="row">
     <div class="col-sm-12">
         <div class="white-box">

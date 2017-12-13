@@ -26,7 +26,7 @@
                     <form  method="post" onsubmit="return false" action="../php/addemployeecontroller.php">
                       
 
-                  <h2>Employee Registration</h2>
+                        <h1>Employee Registration</h1>
                     <div class="row">
                        <div class="ln_solid"></div>
                          <h2>Basic Information</h2 >

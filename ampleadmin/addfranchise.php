@@ -23,7 +23,7 @@
                  <form  method="post" data-parsley-validate action="../php/addfranchisecontroller.php">
                       
 
-                  <h2>Franchise Registration</h2>
+                  <h1>Franchise Registration</h1>
                     <div class="row">
                        <div class="ln_solid"></div>
                          <h2>Legal & Owner Details</h2 >

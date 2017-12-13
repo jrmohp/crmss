@@ -5,7 +5,7 @@
 ?>
 
 
-
+    <title>Add Faculty | Smart Solar  </title>
 	
                  <!-- page content -->
         <div class="right_col" role="main">

@@ -45,7 +45,7 @@
                       <div class="col-sm-12">
                         <div class="card-box table-responsive">
                           <p class="text-muted font-13 m-b-30">
-                           Empoloyee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
+                           Employee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.
                           </p>
 
                           <table id="datatable-keytable" class="table table-striped table-bordered">

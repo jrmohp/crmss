@@ -7,39 +7,46 @@
 
 ?>
 
-
-
+    <title>Add Inventories | Smart Solar  </title>
 <div class="row">
 
+    <div class="panel panel-default">
+        <div class="panel-heading"></div>
+        <div class="panel-wrapper collapse in">
+            <div class="panel-body">
+
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+                    <input type="text" class="form-control" placeholder="Inventories Count" id="icount">
+                </div>
 
 
-    <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
-        <input type="text" class="form-control" placeholder="Inventories Count" id="icount">
-    </div>
+
+            </div>
+            <div class="row">
+
+
+                <br>
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+                    <button class="btn btn-success btn-block" onclick="inventc()">Next</button>
+                </div>
+            </div>
 
 
 
-</div>
-    <div class="row">
+            <div id="ddata">
 
+            </div>
 
-    <br>
-        <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
-            <button class="btn btn-success btn-block" onclick="inventc()">Next</button>
+            <br>
+            <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+                <button class="btn btn-success btn-block">Submit</button>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
-
-
-
-    <div id="ddata">
-
-    </div>
-
-<br>
-
-    <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
-        <button class="btn btn-success btn-block">Submit</button>
-    </div>
+</div>
 
 
 

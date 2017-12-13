@@ -4,7 +4,7 @@
   include "header.php";
 ?>
 
-
+    <title>Add Customer | Smart Solar  </title>
 
  	  <div class="row" id="body2">
 
@@ -15,7 +15,7 @@
                   <div class="x_title">
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
-                            <div class="panel-heading"><i class="ti-settings"></i>Customer Details</div>
+                            <div class="panel-heading">Customer Details</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
                                     <h2>Tell Us Something About Yourself ! </h2>

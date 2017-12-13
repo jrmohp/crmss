@@ -4,7 +4,7 @@
   include "header.php";
 ?>
 
-
+    <title>Customer Registration| Smart Solar  </title>
 <div class="row">
 <center>
               <div class="col-md-11 col-xs-12 " style="float: none; margin: 0 auto;">
