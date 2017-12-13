@@ -151,7 +151,7 @@ var insertcount=0;
        
     }
 
-    alert("Inventories Added"); 
+    alert("Inventors Added"); 
 
 }
 
