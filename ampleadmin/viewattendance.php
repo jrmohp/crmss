@@ -12,8 +12,12 @@ include "header.php";
 <?php
 
 
+$attdate=$_POST['attdate'];
 
-$moradarkar="SELECT * from empattn";
+
+
+
+$moradarkar="SELECT empattn.empid,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
 
 $result=$conn->query($moradarkar);
 ?>
@@ -21,19 +25,15 @@ $result=$conn->query($moradarkar);
 <div class="row">
     <div class="col-sm-12">
         <div class="white-box">
-            <h3 class="box-title m-b-0">Data Table</h3>
+            <h3 class="box-title m-b-0">Attendance For <?php echo $attdate?></h3>
             <p class="text-muted m-b-30">Data table example</p>
             <div class="table-responsive">
-                <table id="myTable" class="table table-striped">
-                    <thead>
+                <table id="" class="table table-striped">
+                    <thead align='center'>
 
-                    <tr align='center'>
-                        <th align='center'>SL</th>
-                        <th align='center'>NAME</th>
-                        <th align='center'>DATE</th>
-
-
-
+                    <tr >
+                        <td align='center'><b>EMPID</b></td>
+                        <td align='center'><b>NAME</b></td>
 
                     </tr>
 
@@ -45,19 +45,13 @@ $result=$conn->query($moradarkar);
 
                     while ($row=$result->fetch_assoc())
                     {
-                        echo "<tr>";
+                        echo "<tr >";
 
-                        echo "<td>";
-                        echo $row['sl'];
+                        echo "<td align='center'>";
+                        echo $row['empid'];
                         echo "</td>";
 
-                        echo "<td>";
-                        echo $row['name'];
-                        echo "</td>";
-
-                        echo "<td>";
-                        echo $row['date'];
-                        echo "</td>";
+                        echo "<td align='center'>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
 
                         echo "</tr>";
                     }
@@ -72,8 +66,6 @@ $result=$conn->query($moradarkar);
 
 
 
-
-
                     </tbody>
 
                 </table>
@@ -83,12 +75,6 @@ $result=$conn->query($moradarkar);
 
 </div>
 
-
-
-
-
-
-
 </div>
 </div>
 </div>
@@ -98,6 +84,7 @@ $result=$conn->query($moradarkar);
 </div>
 </div>
 </div>
+
 
 
 
@@ -179,6 +166,9 @@ $result=$conn->query($moradarkar);
 </script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+
 
 
 
