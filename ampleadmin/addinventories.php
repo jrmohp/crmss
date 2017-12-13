@@ -54,8 +54,8 @@ function inventc()
   
 var c=1;
 var s1="<br><div class='row'>";
-var s2="<div class='col-md-5 col-lg-5 col-sm-5 col-xs-12' ><input type='text' name='name";
-var s3="' id='name";
+var s2="<div class='col-md-5 col-lg-5 col-sm-5 col-xs-12' ><input type='text' name='iname";
+var s3="' id='iname";
 var s4="' class='form-control' placeholder='Inventory name'></div><div class='col-md-5 col-lg-5 col-sm-5 col-xs-12' ><input type='text' name='quantity";
 var s5="' id='quantity";
 var s6="' class='form-control' placeholder='Inventory Quantity'></div></div>";
@@ -88,7 +88,7 @@ function addsite()
     while(c2<=ec)
     { 
       
-        invnamearr.push("#name"+c2);
+        invnamearr.push("#iname"+c2);
         invquantarr.push("#quantity"+c2);
         c2++;
        
@@ -134,7 +134,7 @@ var insertcount=0;
 
         var invquantfinal=$(invquantid[c2]).val();
         
-        var data={'name':invnamefinal,'quantity':invquantfinal};
+        var data={'iname':invnamefinal,'quantity':invquantfinal};
         
         
 
@@ -151,7 +151,7 @@ var insertcount=0;
        
     }
 
-    alert("Properties Added To Site"); 
+    alert("Inventories Added"); 
 
 }
 
