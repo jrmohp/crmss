@@ -7,34 +7,34 @@
 
 
 
- 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Edit Site | Smart Solar  </title>
-</head>
-<body>
 
- 	<div class="row" id="body2">
+  <title>Edit Site | Smart Solar  </title>
+
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="row" id="body2">
         <div class="col-md-12 col-sm-12 col-xs-12">
 
             
-       		
-                    	
+          
+                      
 
-			<h2>Add Site</h2>
-
-
-    		<div class="row">
+      <h2>Add Site</h2>
 
 
-				<div class="ln_solid"></div>             
+        <div class="row">
 
 
-	  				<div class="col-md-6 col-sm-6 col-xs-12"  >
-              		  	<label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
+        <div class="ln_solid"></div>             
 
-            		    <select class="form-control" id="siteid">
+
+            <div class="col-md-6 col-sm-6 col-xs-12"  >
+                      <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Site Id</span></label>
+
+                    <select class="form-control" id="siteid">
                     
 
                       <?php 
@@ -61,8 +61,8 @@
                                           ?>
 
 
-                    </select>			
-    				</div>
+                    </select>     
+            </div>
 
 
               <div class="col-md-6 col-sm-6 col-xs-12" >
@@ -71,24 +71,24 @@
                           <input type="text" name="ecount" id="ecount" class="form-control" placeholder="Expense Count">
                 </div>
 
-	  				
+            
 
-  			</div>
+        </div>
 
-  		  	<br>
+          <br>
 
-			
+      
       
 
 
-			<br>
+      <br>
 
-			<div class="row">
+      <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                     <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="regc()">Next</button>
                     </div>
                     
-          	</div>
+            </div>
 
             <div id="ddata">
               
@@ -251,8 +251,13 @@ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
 
                     </div>
                     </div>
-                    </body>
+                    
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
 	
 <?php
 

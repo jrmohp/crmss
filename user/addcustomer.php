@@ -6,15 +6,19 @@
 
 
 
- 	<div class="row" id="body2">
-            <div class="col-md-12 col-sm-12 col-xs-12">
+ 	  <div class="row" id="body2">
 
             <div class="row">
 <center>
-              <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
-                <div class="x_panel">
+              <div class="col-md-11 col-xs-12 " style="float: none; margin: 0 auto;">
+                <div class="x_panel"> 
                   <div class="x_title">
-                    <h2>Tell Us Something About Yourself ! </h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><i class="ti-settings"></i>Customer Details</div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <h2>Tell Us Something About Yourself ! </h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -403,7 +407,7 @@
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 
                           <button type="button" class="btn btn-primary">Cancel</button>
-						   <button class="btn btn-primary" type="reset">Reset</button>
+               <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -473,54 +477,37 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-   
           function checkemail()
 {
+
+
  var email=document.getElementById( "email" ).value;
   
- if(email)
+ if(email!="")
  {
   $.ajax({
   type: 'post',
   url: '../php/checkemail.php',
   data: {
-   user_email:email,
-  },
+   user_email:email },
   success: function (response) {
-   $( '#email_status' ).html(response);
+   $( '#email_status' ).html(data);
    
-     
 
-  
-   if(html(response)=="Email Not Registered") 
+   if(html(data)=="Email Not Registered") 
    {
-    $(':button[type="submit"]').prop('disabled', false);
-    
+      document.getElementById("senddata").disabled = false;
    }
    else 
    {
-       $(':button[type="submit"]').prop('disabled', true);
+      document.getElementById("senddata").disabled = true;
     
 
    }
   }
   });
  }
- else
- {
-  $( '#email_status' ).html("");
-  $(':button[type="submit"]').prop('disabled', true);
-  
- }
+
 }
 
 </script>
@@ -548,7 +535,11 @@
 
                     </div>
                     </div>
-                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
 
 	
 <?php
