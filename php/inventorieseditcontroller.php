@@ -1,4 +1,5 @@
 <?php
+
 require("connect.php");
 $editid=$_GET['id'];
 if(!empty($_POST['iname']) && !empty($_POST['quantity']))
