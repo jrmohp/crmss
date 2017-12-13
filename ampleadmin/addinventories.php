@@ -1,6 +1,6 @@
 <?php
 
-
+ 
 
 
     include "header.php";
@@ -28,7 +28,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                     <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="inventc()">Next</button>
                     </div>
-          
+          `
 
                     
             </div>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <button  class="btn btn-success col-md-12 "  align='center' id="next" >Submi</button>
+              <button  class="btn btn-success col-md-12 "  align='center' id="next" onclick="addsite()">Submit</button>
           </div>
 
             <script type="text/javascript">
@@ -76,9 +76,88 @@ while(c<=count)
 
 }
 
+function addsite()
+{ 
+    var ec=$('#icount').val();
+    
+    var c2=1;
+    
+    var invnamearr = new Array();
+    var invquantarr = new Array();
+    
+    while(c2<=ec)
+    { 
+      
+        invnamearr.push("#name"+c2);
+        invquantarr.push("#quantity"+c2);
+        c2++;
+       
+    }
+
+    
+    var invnameid=new Array();
+    var invquantid=new Array();
+    c2=0;
+    while(c2<ec)
+    {
+         
+        
+        invnameid.push(invnamearr[c2]);
+        invquantid.push(invquantarr[c2]);
+
+       
+        if(c2==ec)
+        {
+          break;
+        }
+        c2++;
+        
+    }
+
+    
+
+
+
+
+var insertcount=0;
+    c2=0;
+
+    while(c2<ec)
+      
+
+    {
+
+        
+        
+
+        var invnamefinal=$(invnameid[c2]).val();
+
+        var invquantfinal=$(invquantid[c2]).val();
+        
+        var data={'name':invnamefinal,'quantity':invquantfinal};
+        
+        
+
+
+
+        $.post('../php/addinvcontroller.php',data,function(info){
+            
+            
+
+        });
+
+     c2++;
+       
+       
+    }
+
+    alert("Inventories Added"); 
+
+}
+
 </script>
 
-             </form>
+</form>
 
 
 <?php
