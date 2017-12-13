@@ -1,8 +1,8 @@
 <?php
-
+ require("connect.php");
 if(!empty($_POST['name']) && !empty($_POST['quantity']))
 {
-require("connect.php");
+
 $iname=mysqli_real_escape_string($conn, $_POST['name']);
 $quantity=mysqli_real_escape_string($conn, $_POST['quantity']);
 
@@ -23,7 +23,7 @@ if($conn->query($sql))
 else
 {
 
-    echo "0";
+    echo mysqli_error($conn);
 
 }
 }

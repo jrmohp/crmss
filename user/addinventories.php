@@ -130,9 +130,9 @@ var insertcount=0;
         
         
 
-        var invnamefinal=$(invnameid[c2]).val();
+        var invnamefinal=$(invnamearr[c2]).val();
 
-        var invquantfinal=$(invquantid[c2]).val();
+        var invquantfinal=$(invquantarr[c2]).val();
         
         var data={'name':invnamefinal,'quantity':invquantfinal};
         
@@ -142,9 +142,7 @@ var insertcount=0;
 
         $.post('../php/addinvcontroller.php',data,function(info){
             
-            document.write(invnamefinal);
-
-            document.write(invquantfinal);
+          alert(info);
 
         });
 

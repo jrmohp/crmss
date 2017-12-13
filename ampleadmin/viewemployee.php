@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -5,22 +6,11 @@
 
 include "header.php";
 
-if(isset($_POST['attdate']))
-{
-    $attdate=$_POST['attdate'];
-}
-else
-{
-    echo "<script>alert('Please Select Proper Date');window.location.assign('selectdateatt.php')</script>";
-}
-
-?>
-
-<title>Site Attendance| Smart Solar  </title>
+?>  <title>Employee Table | Smart Solar  </title>
 
    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Site Attendance</div>
+                            <div class="panel-heading"></div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
                                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -61,74 +51,97 @@ else
 <div class="row">
     <div class="col-sm-12">
         <div class="white-box">
-            <h3 class="box-title m-b-0">Data Table</h3>
-            <p class="text-muted m-b-30">Data table example</p>
+            <h3 class="box-title m-b-0">Employee Table</h3>
+            <p class="text-muted m-b-30">
+                Employee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.</p>
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table id="myTable" class="table table-striped">
                     <thead>
 
                     <tr align='center'>
-                      <th align='center'>name</th>
-                      <th align='center'>ID   </th>
+                        <th align='center'>Employee ID</th>
+                        <th align='center'>Username</th>
+                        <th align='center'>Employee Name</th>
+                        <th align='center'>Father's Name</th>
+                        <th align='center'>Mother's Name</th>
+                        <th align='center'>Gender</th>
+                        <th align='center'>Date Of Birth</th>
+                        <th align='center'>Blood group</th>
+                        <th align='center'>Identification mark</th>
+                        <th align='center'>Permanent Address</th>
+                        <th align='center'>Temporary Address</th>
+                        <th align='center'>Aadhar card No.</th>
+                        <th align='center'>Pan Card No.</th>
+                        <th align='center'>EPF No.</th>
+                        <th align='center'>Experience</th>
+                        <th align='center'>Bank Account No.</th>
+                        <th align='center'>Bank IFSC code</th>
+                        <th align='center'>Contact No.</th>
+                        <th align='center'>Alternate Contact No.</th>
+                        <th align='center'>Email ID</th>
+                        <th align='center'>Alternate Email ID</th>
+                        <th align='center'>Work Phone no.</th>
+                        <th align='center'>Work Email ID</th>
 
-                    
+
+
 
                     </tr>
 
                     </thead>
                     <tbody>
 
-                    <form method="post" action="../php/attendancecontroller.php">
+
+
 
                     <?php
 
-                    require("../php/connect.php");
+                  require("../php/connect.php");
 
-                    $query = "SELECT * FROM addemployee";
+                                        $query = "SELECT * FROM addemployee"; 
+                                         
 
-                    if($result=$conn->query($query))
-                    {
-                        while ($row=$result->fetch_array())
-                        {
-                            echo "<tr>";
+                                         
+                                          if($result=$conn->query($query))
+                                              {
+                                                    while ($row=$result->fetch_array())
+                                                  { 
 
-                            echo "<td>".$row['fname'].$row['lname']."</td>";
-                             echo "<td> <input type='checkbox' class='form-control' value='1' id='".$row['empid']."' name='".$row['empid']."'></td>";
-
-
-                            echo "</tr>";
-
-
-
-                            /*
-                            $atname=$row[empid]
-
-                            if($_POST[$atname]==true)
-                            {
-                                INSERT INTO ATTENDACE date,empid
-
-    
-                            }
-
-                            */
-                            
-
+                                                             echo "<tr align='center'>";
+        
+        echo "<td>".$row['empid']."</td>";
+        echo "<td>".$row['username']."</td>";
+        echo "<td>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
+        echo "<td>".$row['fn']."</td>";
+        echo "<td>".$row['mn']."</td>";
+      
+        echo "<td>".$row['gender']."</td>";
+        echo "<td>".$row['dob']."</td>";
+        echo "<td>".$row['bg']."</td>";
+        echo "<td>".$row['im']."</td>";
+        
+        echo "<td>".$row['pa']."</td>";
+        echo "<td>".$row['ta']."</td>";
+        echo "<td>".$row['acard']."</td>";
+        echo "<td>".$row['pcard']."</td>";
+        echo "<td>".$row['epf']."</td>";
+        echo "<td>".$row['exp']."</td>";
+        echo "<td>".$row['accno']."</td>";
+        echo "<td>".$row['ifsc']."</td>";
+        echo "<td>".$row['cno']."</td>";
+        echo "<td>".$row['altcno']."</td>";
+        echo "<td>".$row['email']."</td>";
+        echo "<td>".$row['altemail']."</td>";
+        echo "<td>".$row['wphno']."</td>";
+        echo "<td>".$row['wemail']."</td>";
+        
+        echo "</tr>";
 
                         }
                     }
-
-
-
-
-
-
                     ?>
 
-                        <input type="hidden" value="<?php echo $attdate?>" name="attdate">
 
-
-                        <input type="submit">
-                    </form>
 
 
                     </tbody>
@@ -231,6 +244,7 @@ else
 </script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
 
 
 

@@ -1,16 +1,24 @@
 <?php
 
 
-  include "regheader.php";
+  include "header.php";
 ?>
 
-    <title>Customer Registration| Smart Solar  </title>
-<div class="row">
+    <title>Add Customer | Smart Solar  </title>
+
+ 	  <div class="row" id="body2">
+
+            <div class="row">
 <center>
-              <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
-                <div class="x_panel">
+              <div class="col-md-11 col-xs-12 " style="float: none; margin: 0 auto;">
+                <div class="x_panel"> 
                   <div class="x_title">
-                    <h2>Tell Us Something About Yourself ! </h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Customer Details</div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <h2>Tell Us Something About Yourself ! </h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -30,7 +38,9 @@
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+                          
                       </div>
+
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="lastname" class="form-control  has-feedback-left" id="lastname" placeholder="Last Name" required="required">
@@ -55,7 +65,7 @@
 
                        <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
                        
-                       <select name="city" class="form-control" required="true">
+                       <select name="city" class="form-control" required="true" id="city">
                          
                          <option disabled="true" selected="true">Select Your City</option>
                          <option>Others</option>
@@ -395,8 +405,9 @@
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+
                           <button type="button" class="btn btn-primary">Cancel</button>
-						   <button class="btn btn-primary" type="reset">Reset</button>
+               <button class="btn btn-primary" type="reset">Reset</button>
                           <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                         </div>
                       </div></center>
@@ -426,7 +437,7 @@
         var email=$('#email').val();
         var phone=$('#phone').val();
         var address=$('#address').val();
-        var city=$('#city option:selected').text();
+        var city=$('#city').val();
         var gender=$('[name="type"]').val();
           var phase=$('[name="phase"]').val();
         var units=$('#units').val();
@@ -444,13 +455,7 @@
         
         $.post('../php/custregcontroller.php',data,function(info){
 
-            if(info="First Name Cannot Be Empty<br>")
-            {
-              alertify.alert("Name Cant be empty");       
-
-            }
-
-            else if(info!=0)
+            if(info!=0)
             {
                
                     alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");                  
@@ -459,7 +464,7 @@
             }
             else if(info==0)
             {
-             
+               
             $("#querymsg").addClass('alert alert-danger');
               $('#querymsg').fadeIn();
             $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
@@ -472,59 +477,71 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-   
           function checkemail()
 {
+
+
  var email=document.getElementById( "email" ).value;
   
- if(email)
+ if(email!="")
  {
   $.ajax({
   type: 'post',
   url: '../php/checkemail.php',
   data: {
-   user_email:email,
-  },
+   user_email:email },
   success: function (response) {
-   $( '#email_status' ).html(response);
+   $( '#email_status' ).html(data);
    
-      $(':input[type="submit"]').prop('disabled', false);
 
-  
-   if(response=="Email Not Registered") 
+   if(html(data)=="Email Not Registered") 
    {
-    $(':input[type="submit"]').prop('disabled', true);
-    return true;
-
-
+      document.getElementById("senddata").disabled = false;
    }
-   else
+   else 
    {
-
-    return false; 
+      document.getElementById("senddata").disabled = true;
+    
 
    }
   }
   });
  }
- else
- {
-  $( '#email_status' ).html("");
-  $(':input[type="submit"]').prop('disabled', false);
-  return false;
- }
+
 }
 
 </script>
+
+</div>
+                    
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+	
 <?php
 
 

@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -5,22 +6,11 @@
 
 include "header.php";
 
-if(isset($_POST['attdate']))
-{
-    $attdate=$_POST['attdate'];
-}
-else
-{
-    echo "<script>alert('Please Select Proper Date');window.location.assign('selectdateatt.php')</script>";
-}
-
 ?>
-
-<title>Site Attendance| Smart Solar  </title>
-
+<title>View Franchise | Smart Solar  </title>
    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Site Attendance</div>
+                            <div class="panel-heading">Customer database</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
                                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -61,16 +51,27 @@ else
 <div class="row">
     <div class="col-sm-12">
         <div class="white-box">
-            <h3 class="box-title m-b-0">Data Table</h3>
-            <p class="text-muted m-b-30">Data table example</p>
+            <h3 class="box-title m-b-0">Franchise Table</h3>
+            <p class="text-muted m-b-30">Employee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials</p>
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table id="myTable" class="table table-striped">
                     <thead>
 
                     <tr align='center'>
-                      <th align='center'>name</th>
-                      <th align='center'>ID   </th>
-
+                        <th align='center'>User Name</th>
+                        <th align='center'>Account ID</th>
+                        <th align='center'>Legal First Name</th>
+                        <th align='center'>Legal Middle Name</th>
+                        <th align='center'>Legal Last Name</th>
+                        <th align='center'>Owner First Name</th>
+                        <th align='center'>Owner Middle Name</th>
+                        <th align='center'>Owner Last Name</th>
+                        <th align='center'>Owner ID</th>
+                        <th align='center'>Pan No.</th>
+                        <th align='center'>Email ID</th>
+                        <th align='center'>Contact No.</th>
+                        <th align='center'>GST</th>
+                        <th align='center'>Address</th>
                     
 
                     </tr>
@@ -78,57 +79,48 @@ else
                     </thead>
                     <tbody>
 
-                    <form method="post" action="../php/attendancecontroller.php">
+
+
 
                     <?php
 
-                    require("../php/connect.php");
+                  require("../php/connect.php");
 
-                    $query = "SELECT * FROM addemployee";
+                                  require("../php/connect.php");
 
-                    if($result=$conn->query($query))
-                    {
-                        while ($row=$result->fetch_array())
-                        {
-                            echo "<tr>";
+                                        $query = "SELECT * FROM franchise"; 
+                                         
 
-                            echo "<td>".$row['fname'].$row['lname']."</td>";
-                             echo "<td> <input type='checkbox' class='form-control' value='1' id='".$row['empid']."' name='".$row['empid']."'></td>";
+                                         
+                                         if($result=$conn->query($query))
+                                              {
+                                                    while ($val=$result->fetch_array())
+                                                  { 
 
-
-                            echo "</tr>";
-
-
-
-                            /*
-                            $atname=$row[empid]
-
-                            if($_POST[$atname]==true)
-                            {
-                                INSERT INTO ATTENDACE date,empid
-
-    
-                            }
-
-                            */
-                            
+                                                            echo "<tr align='center'>";
+         echo "<td>".$val['username']."</td>";
+        echo "<td>".$val['accountid']."</td>";
+        echo "<td>".$val['lfirstname']."</td>";
+        echo "<td>".$val['lmiddlename']."</td>";
+        echo "<td>".$val['llastname']."</td>";
+        echo "<td>".$val['ofirstname']."</td>";
+        echo "<td>".$val['omiddlename']."</td>";
+        echo "<td>".$val['olastname']."</td>";
+        echo "<td>".$val['ownerid']."</td>";
+      echo "<td>".$val['panno']."</td>";
+        echo "<td>".$val['email']."</td>";
+        echo "<td>".$val['contact']."</td>";
+        echo "<td>".$val['gst']."</td>";
+        echo "<td>".$val['address']."</td>";
+        
+        echo "</tr>";
 
 
                         }
                     }
-
-
-
-
-
-
                     ?>
 
-                        <input type="hidden" value="<?php echo $attdate?>" name="attdate">
 
-
-                        <input type="submit">
-                    </form>
 
 
                     </tbody>
@@ -231,6 +223,7 @@ else
 </script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
 
 
 
