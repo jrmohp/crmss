@@ -38,7 +38,7 @@
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <button  class="btn btn-success col-md-12 "  align='center' id="next" >Submi</button>
+              <button  class="btn btn-success col-md-12 "  align='center' id="next" >Submit</button>
           </div>
 
             <script type="text/javascript">
