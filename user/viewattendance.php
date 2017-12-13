@@ -36,7 +36,7 @@ $allempresult=$conn->query($allemp);
                         <td align='center'><b>EMPID</b></td>
                         <td align='center'><b>NAME</b></td>
                         <td align="center"><b>STATUS</b></td>
-
+                        <td align="center"><b>EDIT</b></td>
                     </tr>
 
                     </thead>
@@ -46,11 +46,11 @@ $allempresult=$conn->query($allemp);
                     <?php
 
                     while ($row=$result->fetch_assoc())
-                    {
+                    {$requid=$row['empid'];
                         echo "<tr >";
 
                         echo "<td align='center'>";
-                        echo $requid=$row['empid'];
+
                         echo $row['empid'];
                         echo "</td>";
 
@@ -58,24 +58,24 @@ $allempresult=$conn->query($allemp);
 
                         echo "<td align='center'>Absent</td>";
 
-                      /*  echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB(this.id)'>Edit</button></td>";
-                       */ echo "</tr>";
+                        echo "<td align='center'><button class='btn btn-success editdata' id='$requid' onclick='DB(this.id)'>Present</button></td>";
+                        echo "</tr>";
                     }
 
                     while ($allemprow=$allempresult->fetch_assoc())
                     {
-
+                        $req=$allemprow['empid'];
                         echo "<tr>";
 
                         echo "<td align='center'>";
-                        echo $allemprow['empid'];
+
                         echo "</td>";
 
                         echo "<td align='center'>".$allemprow['fname']." ".$allemprow['mname']." ".$allemprow['lname']."</td>";
 
                         echo "<td align='center'>Present</td>";
-                       /* echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB(this.id)'>Edit</button></td>";
-*/
+                        echo "<td align='center'><button class='btn btn-danger editdata' id='$req' onclick='DB(this.id)'>Absent</button></td>";
+
                         echo "</tr>";
 
 
@@ -91,6 +91,8 @@ $allempresult=$conn->query($allemp);
 
 
                     ?>
+
+
 
 
 
