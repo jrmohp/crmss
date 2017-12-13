@@ -1,7 +1,7 @@
 <?php
 
 
-  include "../ampleadmin/header.php";
+  include "header.php";
 ?>
 
 
@@ -16,8 +16,12 @@
             
           
                       
-
-      <h2>Add Site</h2>
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"></div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                   <h2>Add Site</h2>
 
 
         <div class="row">
@@ -63,6 +67,11 @@
                     </div>
                     
             </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
 
 
 
@@ -141,5 +150,5 @@ var sitedata={'siteid':siteid,'sitename':sitename,'supervisor':supervisor};
 <?php
 
 
- include "../ampleadmin/footer.php";
+ include "footer.php";
 ?>
