@@ -10,8 +10,7 @@ require("connect.php");
 
 	if($conn->query($sql))
 	{
-		echo $siteid;
-		echo $property;
+		echo 1;
 
 	}
 	else
