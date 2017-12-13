@@ -1,8 +1,8 @@
 <?php
- require("connect.php");
+
 if(!empty($_POST['name']) && !empty($_POST['quantity']))
 {
-
+require("connect.php");
 $iname=mysqli_real_escape_string($conn, $_POST['name']);
 $quantity=mysqli_real_escape_string($conn, $_POST['quantity']);
 
@@ -13,7 +13,7 @@ $query = $conn->query("SELECT MAX(id) FROM inventories"); // execute
 		$new_id=$tid+1;
 		$ssid = 'SSI' . sprintf ( "%04d" , $new_id ) ;
 
-$sql="INSERT INTO inventories(invid,iname,quantity) VALUES ('$ssid',$iname','$quantity')";
+$sql="INSERT INTO inventories(invid,iname,quantity) VALUES ('$ssid','$iname','$quantity')";
 
 if($conn->query($sql))
 {
@@ -23,7 +23,7 @@ if($conn->query($sql))
 else
 {
 
-    echo mysqli_error($conn);
+    echo "0";
 
 }
 }
