@@ -22,7 +22,7 @@ $allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHE
 $result=$conn->query($sqlq);
 $allempresult=$conn->query($allemp);
 ?>
-
+<title>View Attendance | Smart Solar  </title>
 <div class="row">
     <div class="col-sm-12">
         <div class="white-box">
@@ -50,6 +50,7 @@ $allempresult=$conn->query($allemp);
                         echo "<tr >";
 
                         echo "<td align='center'>";
+                        echo $requid=$row['empid'];
                         echo $row['empid'];
                         echo "</td>";
 
@@ -57,7 +58,8 @@ $allempresult=$conn->query($allemp);
 
                         echo "<td align='center'>Absent</td>";
 
-                        echo "</tr>";
+                      /*  echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB(this.id)'>Edit</button></td>";
+                       */ echo "</tr>";
                     }
 
                     while ($allemprow=$allempresult->fetch_assoc())
@@ -72,7 +74,8 @@ $allempresult=$conn->query($allemp);
                         echo "<td align='center'>".$allemprow['fname']." ".$allemprow['mname']." ".$allemprow['lname']."</td>";
 
                         echo "<td align='center'>Present</td>";
-
+                       /* echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB(this.id)'>Edit</button></td>";
+*/
                         echo "</tr>";
 
 

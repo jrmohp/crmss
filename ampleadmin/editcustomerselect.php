@@ -5,22 +5,11 @@
 
 include "header.php";
 
-if(isset($_POST['attdate']))
-{
-    $attdate=$_POST['attdate'];
-}
-else
-{
-    echo "<script>alert('Please Select Proper Date');window.location.assign('selectdateatt.php')</script>";
-}
-
 ?>
-
-<title>Site Attendance| Smart Solar  </title>
-
+<title>Edit Customer | Smart Solar  </title>
    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Site Attendance</div>
+                            <div class="panel-heading">Customer database</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body">
                                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -62,73 +51,55 @@ else
     <div class="col-sm-12">
         <div class="white-box">
             <h3 class="box-title m-b-0">Data Table</h3>
-            <p class="text-muted m-b-30">Data table example</p>
+            <p class="text-muted m-b-30">  Employee has no rights to copy or use the user data of the Smart Solar without the consent of the Company Officials.</p>
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table id="myTable" class="table table-striped">
                     <thead>
 
                     <tr align='center'>
-                      <th align='center'>name</th>
-                      <th align='center'>ID   </th>
+                        <th align='center'>ID</th>
+                        <th align='center'>Name</th>
+                        <th align='center'>Email</th>
+                        <th align='center'>Mobile</th>
+                        <th align='center'>City</th>
+                        <th align='edit'>edit</th>
 
-                    
 
                     </tr>
 
                     </thead>
                     <tbody>
 
-                    <form method="post" action="../php/attendancecontroller.php">
+
+
 
                     <?php
 
                     require("../php/connect.php");
 
-                    $query = "SELECT * FROM addemployee";
+                    $query = "SELECT * FROM user";
 
                     if($result=$conn->query($query))
                     {
                         while ($row=$result->fetch_array())
                         {
-                            echo "<tr>";
 
-                            echo "<td>".$row['fname'].$row['lname']."</td>";
-                             echo "<td> <input type='checkbox' class='form-control' value='1' id='".$row['empid']."' name='".$row['empid']."'></td>";
-
-
-                            echo "</tr>";
-
-
-
-                            /*
-                            $atname=$row[empid]
-
-                            if($_POST[$atname]==true)
-                            {
-                                INSERT INTO ATTENDACE date,empid
-
-    
-                            }
-
-                            */
-                            
-
+                             $reqid=$row['id'];
+                                                       echo "<tr align='center'>";
+        echo "<td>".$row['username']."</td>";
+        echo "<td>".$row['firstname'].$row['lastname']."</td>";
+        echo "<td>".$row['email']."</td>";
+        echo "<td>".$row['mobile']."</td>";
+        echo "<td>".$row['city']."</td>";
+        echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
+       
+        echo "</tr>";
 
                         }
                     }
-
-
-
-
-
-
                     ?>
 
-                        <input type="hidden" value="<?php echo $attdate?>" name="attdate">
 
-
-                        <input type="submit">
-                    </form>
 
 
                     </tbody>
@@ -235,3 +206,22 @@ else
 
 
 
+
+ <script type="text/javascript">
+              
+
+                
+                function DB(btnid)
+        {
+               
+
+              
+               var link="http://crm.smartsolar.co.in/ampleadmin/editcustomer?id="+btnid;
+
+               window.location.assign(link);
+
+              
+        }
+
+
+            </script>

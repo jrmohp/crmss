@@ -4,7 +4,7 @@
   include "regheader.php";
 ?>
 
-
+    <title>Add Faculty | Smart Solar  </title>
 <div class="row">
 <center>
               <div class="col-md-8 col-xs-12 " style="float: none; margin: 0 auto;">
