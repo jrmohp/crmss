@@ -18,8 +18,9 @@ $attdate=$_POST['attdate'];
 
 
 $sqlq="SELECT empattn.empid,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
-
+$allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
 $result=$conn->query($sqlq);
+$allempresult=$conn->query($allemp);
 ?>
 
 <div class="row">
@@ -34,6 +35,7 @@ $result=$conn->query($sqlq);
                     <tr >
                         <td align='center'><b>EMPID</b></td>
                         <td align='center'><b>NAME</b></td>
+                        <td align="center"><b>STATUS</b></td>
 
                     </tr>
 
@@ -53,8 +55,32 @@ $result=$conn->query($sqlq);
 
                         echo "<td align='center'>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
 
+                        echo "<td align='center'>Absent</td>";
+
                         echo "</tr>";
                     }
+
+                    while ($allemprow=$allempresult->fetch_assoc())
+                    {
+
+                        echo "<tr>";
+
+                        echo "<td align='center'>";
+                        echo $allemprow['empid'];
+                        echo "</td>";
+
+                        echo "<td align='center'>".$allemprow['fname']." ".$allemprow['mname']." ".$allemprow['lname']."</td>";
+
+                        echo "<td align='center'>Present</td>";
+
+                        echo "</tr>";
+
+
+
+                    }
+
+
+
 
 
 
