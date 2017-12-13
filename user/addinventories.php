@@ -142,9 +142,7 @@ var insertcount=0;
 
         $.post('../php/addinvcontroller.php',data,function(info){
             
-            document.write(invnamefinal);
-
-            document.write(invquantfinal);
+          alert(info);
 
         });
 
