@@ -11,16 +11,30 @@ include "header.php";
 
 <?php
 
+if(isset($_POST['attdate']))
+{
+    $attdate=$_POST['attdate'];
+}
+else
+{
+    $attdate=$_GET['attdate'];
+}
 
-$attdate=$_POST['attdate'];
 
 
 
 
-$sqlq="SELECT empattn.empid,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
-$allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
+
+
+$sqlq="SELECT empattn.empid,empattn.sl,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
+
+
+
+
 $result=$conn->query($sqlq);
-$allempresult=$conn->query($allemp);
+
+$count=0;
+
 ?>
 <title>View Attendance | Smart Solar  </title>
 <div class="row">
@@ -46,7 +60,12 @@ $allempresult=$conn->query($allemp);
                     <?php
 
                     while ($row=$result->fetch_assoc())
-                    {$requid=$row['empid'];
+
+                    {$requid=$row['sl'];
+
+
+                    $count++;
+
                         echo "<tr >";
 
                         echo "<td align='center'>";
@@ -58,9 +77,25 @@ $allempresult=$conn->query($allemp);
 
                         echo "<td align='center'>Absent</td>";
 
-                        echo "<td align='center'><button class='btn btn-success editdata' id='$requid' onclick='DB(this.id)'>Present</button></td>";
+                        $myline="DB(this.id,".$attdate.")";
+
+
+
+                        echo "<td align='center'><button class='btn btn-success editdata' id='$requid' onclick='$myline'>Absent</button></td>";
                         echo "</tr>";
                     }
+
+
+                    if($count==0)
+                    {
+                        $allemp="SELECT empid,fname,mname,lname FROM addemployee";
+                    }
+                    else
+                    {
+                        $allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
+                    }
+
+                    $allempresult=$conn->query($allemp);
 
                     while ($allemprow=$allempresult->fetch_assoc())
                     {
@@ -68,13 +103,13 @@ $allempresult=$conn->query($allemp);
                         echo "<tr>";
 
                         echo "<td align='center'>";
-
+                        echo $allemprow['empid'];
                         echo "</td>";
 
                         echo "<td align='center'>".$allemprow['fname']." ".$allemprow['mname']." ".$allemprow['lname']."</td>";
 
                         echo "<td align='center'>Present</td>";
-                        echo "<td align='center'><button class='btn btn-danger editdata' id='$req' onclick='DB(this.id)'>Absent</button></td>";
+                        echo "<td align='center'><button class='btn btn-danger editdata' id='$req' onclick='DB2(this.id)'>Absent</button></td>";
 
                         echo "</tr>";
 
@@ -106,6 +141,30 @@ $allempresult=$conn->query($allemp);
 
 </div>
 
+
+<script type="application/javascript">
+
+
+    function DB(btnid,mydate)
+    {
+
+        var editlink="../php/editattcontroller.php?empid="+btnid;
+
+        window.location.assign(editlink);
+
+
+    }
+
+
+    function DB2(presbtnid)
+    {
+        var editlink="../php/editattabscontroller.php?empid="+btnid;
+
+        window.location.assign(editlink);
+    }
+
+
+</script>
 </div>
 </div>
 </div>

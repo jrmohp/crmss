@@ -142,7 +142,6 @@ var insertcount=0;
 
         $.post('../php/addinvcontroller.php',data,function(info){
             
-          alert(info);
 
         });
 
