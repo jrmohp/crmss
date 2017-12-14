@@ -56,7 +56,7 @@ include "header.php";
                                                     <table id="myTable" class="table table-striped">
                                                         <thead>
 
-                                                        <tr>
+                                                        <tr align='center'>
                                                             <th align='center'>INVID</th>
                                                             <th align='center'>NAME</th>
                                                             <th align='center'>Edit</th>
