@@ -56,10 +56,10 @@ include "header.php";
                                                     <table id="myTable" class="table table-striped">
                                                         <thead>
 
-                                                        <tr align='center'>
-                                                            <th>INVID</th>
-                                                            <th>NAME</th>
-                                                            <th>Edit</th>
+                                                        <tr>
+                                                            <th align='center'>INVID</th>
+                                                            <th align='center'>NAME</th>
+                                                            <th align='center'>Edit</th>
 
                                                         </tr>
 
