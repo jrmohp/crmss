@@ -87,7 +87,7 @@ include "header.php";
                                                                 echo "<td>".$row['iname']."</td>";
 
                                                                 echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB1(this.id)'>Edit</button></td>";
-                                                                echo "<td id='$requid'><button class='btn btn-danger' id='$requid' onclick='DB2(this.id)'>Delete</button></td>";
+                                                               /* echo "<td id='$requid'><button class='btn btn-danger' id='$requid' onclick='DB2(this.id)'>Delete</button></td>";*/
 
                                                                 echo "</tr>";
 
@@ -218,7 +218,8 @@ include "header.php";
 
 
         }
-        function DB2(btnid)
+
+        /*function DB2(btnid)
         {
 
 
@@ -228,7 +229,7 @@ include "header.php";
             window.location.assign(link);
 
 
-        }
+        }*/
 
 
     </script>
