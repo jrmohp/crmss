@@ -57,9 +57,9 @@ include "header.php";
                                                         <thead>
 
                                                         <tr align='center'>
-                                                            <th align='center'>INVID</th>
-                                                            <th align='center'>NAME</th>
-                                                            <th align='center'>Edit</th>
+                                                            <th>INVID</th>
+                                                            <th>NAME</th>
+                                                            <th>Edit</th>
 
                                                         </tr>
 
@@ -86,9 +86,11 @@ include "header.php";
                                                                 echo "<td>".$row['invid']."</td>";
                                                                 echo "<td>".$row['iname']."</td>";
 
-                                                                echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB(this.id)'>Edit</button></td>";
+                                                                echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB1(this.id)'>Edit</button></td>";
+                                                                echo "<td id='$requid'><button class='btn btn-danger' id='$requid' onclick='DB2(this.id)'>Delete</button></td>";
 
                                                                 echo "</tr>";
+
 
                                                             }
                                                         }
@@ -205,12 +207,23 @@ include "header.php";
 
 
 
-        function DB(btnid)
+        function DB1(btnid)
         {
 
 
 
             var link="editinventories.php?id="+btnid;
+
+            window.location.assign(link);
+
+
+        }
+        function DB2(btnid)
+        {
+
+
+
+            var link="deleteinventories.php?id="+btnid;
 
             window.location.assign(link);
 
