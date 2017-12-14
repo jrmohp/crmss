@@ -338,7 +338,7 @@
 
 
                     <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 5px;">
-                          <div id="gender" class="btn-group" data-toggle="buttons">
+                          <div id="type" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                               <input type="radio" name="type" value="Domestic" required="true"> &nbsp; Domestic &nbsp;
                             </label>
@@ -438,7 +438,7 @@
         var phone=$('#phone').val();
         var address=$('#address').val();
         var city=$('#city').val();
-        var gender=$('[name="type"]').val();
+        var type=$('[name="type"]').val();
           var phase=$('[name="phase"]').val();
         var units=$('#units').val();
         var monthlybill=$('#monthlybill').val();
@@ -448,7 +448,7 @@
        
 
 
-        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'gender':gender,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
+        var data={'firstname':firstname,'lastname':lastname,'email':email,'phone':phone,'address':address,'city':city,'type':type,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
 
         
         
