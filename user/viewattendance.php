@@ -25,10 +25,16 @@ else
 
 
 
+
 $sqlq="SELECT empattn.empid,empattn.sl,addemployee.fname,addemployee.lname,addemployee.mname from empattn,addemployee WHERE empattn.attdate='$attdate' AND addemployee.empid=empattn.empid";
-$allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
+
+
+
+
 $result=$conn->query($sqlq);
-$allempresult=$conn->query($allemp);
+
+$count=0;
+
 ?>
 <title>View Attendance | Smart Solar  </title>
 <div class="row">
@@ -54,7 +60,12 @@ $allempresult=$conn->query($allemp);
                     <?php
 
                     while ($row=$result->fetch_assoc())
+
                     {$requid=$row['sl'];
+
+                    {$requid=$row['empid'];
+                    $count++;
+
                         echo "<tr >";
 
                         echo "<td align='center'>";
@@ -73,6 +84,18 @@ $allempresult=$conn->query($allemp);
                         echo "<td align='center'><button class='btn btn-success editdata' id='$requid' onclick='$myline'>Absent</button></td>";
                         echo "</tr>";
                     }
+
+
+                    if($count==0)
+                    {
+                        $allemp="SELECT empid,fname,mname,lname FROM addemployee";
+                    }
+                    else
+                    {
+                        $allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
+                    }
+
+                    $allempresult=$conn->query($allemp);
 
                     while ($allemprow=$allempresult->fetch_assoc())
                     {
