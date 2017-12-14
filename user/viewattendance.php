@@ -63,7 +63,7 @@ $count=0;
 
                     {$requid=$row['sl'];
 
-                    {$requid=$row['empid'];
+
                     $count++;
 
                         echo "<tr >";
@@ -109,7 +109,7 @@ $count=0;
                         echo "<td align='center'>".$allemprow['fname']." ".$allemprow['mname']." ".$allemprow['lname']."</td>";
 
                         echo "<td align='center'>Present</td>";
-                        echo "<td align='center'><button class='btn btn-danger editdata' id='$req' onclick='DB(this.id,".$attdate.")'>Absent</button></td>";
+                        echo "<td align='center'><button class='btn btn-danger editdata' id='$req' onclick='DB2(this.id)'>Absent</button></td>";
 
                         echo "</tr>";
 
@@ -153,6 +153,14 @@ $count=0;
         window.location.assign(editlink);
 
 
+    }
+
+
+    function DB2(presbtnid)
+    {
+        var editlink="../php/editattabscontroller.php?empid="+btnid;
+
+        window.location.assign(editlink);
     }
 
 
