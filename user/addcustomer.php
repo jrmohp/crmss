@@ -59,7 +59,7 @@
                       </div>
 
                       <div class="col-md-12 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" required="true">
+                        <input type="text" name="address" class="form-control has-feedback-left " id="address" placeholder="Address" >
                         <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                       </div>
 
