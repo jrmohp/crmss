@@ -52,9 +52,10 @@ include "header.php";
                                     <div class="col-sm-12">
                                         <div class="white-box">
                                             <h3 class="box-title m-b-0">Inventories Transactions Per Site</h3>
+                                            <br>
                                             <div class="table-responsive">
                                                 <table id="myTable" class="table table-striped">
-                                                    
+
                                                     <thead>
 
                                                     <tr align='center'>
@@ -62,7 +63,7 @@ include "header.php";
 
                                                         <th align='center'>Sl No.</th>
                                                         <th align='center'>Site Id</th>
-                                                        <th align='center'>Inventories Id</th>
+                                                        <th align='center'>Inventory Id</th>
                                                         <th align='center'>Quantity</th>
                                                         <th align='center'>Date</th>
 
@@ -79,7 +80,7 @@ include "header.php";
 
                                                     require("../php/connect.php");
 
-                                                    $query = "SELECT * FROM addemployee";
+                                                    $query = "SELECT * FROM invtrans";
 
 
 
@@ -88,33 +89,27 @@ include "header.php";
                                                         while ($row=$result->fetch_array())
                                                         {
 
-                                                            echo "<tr align='center'>";
+                                                            echo "<tr>";
 
-                                                            echo "<td>".$row['empid']."</td>";
-                                                            echo "<td>".$row['username']."</td>";
-                                                            echo "<td>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
-                                                            echo "<td>".$row['fn']."</td>";
-                                                            echo "<td>".$row['mn']."</td>";
+                                                            echo "<td>";
+                                                            echo $row['sl no.'];
+                                                            echo "</td>";
 
-                                                            echo "<td>".$row['gender']."</td>";
-                                                            echo "<td>".$row['dob']."</td>";
-                                                            echo "<td>".$row['bg']."</td>";
-                                                            echo "<td>".$row['im']."</td>";
+                                                            echo "<td>";
+                                                            echo $row['site id'];
+                                                            echo "</td>";
 
-                                                            echo "<td>".$row['pa']."</td>";
-                                                            echo "<td>".$row['ta']."</td>";
-                                                            echo "<td>".$row['acard']."</td>";
-                                                            echo "<td>".$row['pcard']."</td>";
-                                                            echo "<td>".$row['epf']."</td>";
-                                                            echo "<td>".$row['exp']."</td>";
-                                                            echo "<td>".$row['accno']."</td>";
-                                                            echo "<td>".$row['ifsc']."</td>";
-                                                            echo "<td>".$row['cno']."</td>";
-                                                            echo "<td>".$row['altcno']."</td>";
-                                                            echo "<td>".$row['email']."</td>";
-                                                            echo "<td>".$row['altemail']."</td>";
-                                                            echo "<td>".$row['wphno']."</td>";
-                                                            echo "<td>".$row['wemail']."</td>";
+                                                            echo "<td>";
+                                                            echo $row['inventory id'];
+                                                            echo "</td>";
+
+                                                            echo "<td>";
+                                                            echo $row['quantity'];
+                                                            echo "</td>";
+
+                                                            echo "<td>";
+                                                            echo $row['date'];
+                                                            echo "</td>";
 
                                                             echo "</tr>";
 
