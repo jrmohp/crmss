@@ -12,130 +12,337 @@ $franid="1541012381";
     <div class="panel panel-default">
         <div class="panel-heading"></div>
         <div class="panel-wrapper collapse in">
-            <div class="panel-body">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"></div>
-                        <div class="panel-wrapper collapse in">
-                            <div class="panel-body">
-                                <div class="row" id="body2">
+                <div class="panel-body">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-wrapper collapse in">
+
+                                    <div class="row" id="body2">
 
 
 
-                                    <!-- Bootstrap Core CSS -->
-                                    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-                                    <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-                                    <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
-                                    <!-- Menu CSS -->
-                                    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
-                                    <!-- animation CSS -->
-                                    <link href="css/animate.css" rel="stylesheet">
-                                    <!-- Custom CSS -->
-                                    <link href="css/style.css" rel="stylesheet">
-                                    <!-- color CSS -->
-                                    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
-                                    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                                    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-                                    <!--[if lt IE 9]>
-                                    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                                    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-                                    <![endif]-->
-
-
-
-
-                                </div>
-
-
-                                <!-- /row -->
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="white-box">
-                                            <h3 class="box-title m-b-0">Data Table</h3>
-                                            <p class="text-muted m-b-30">Data table example</p>
-                                            <div class="table-responsive">
-                                                <table id="myTable" class="table table-striped">
-                                                    <thead>
-
-                                                    <tr align='center'>
-                                                        <th align='center'>Order ID</th>
-                                                        <th align='center'>Customer ID</th>
-                                                        <th align='center'>Customer Name</th>
-                                                        <th align='center'>Contact Number</th>
-                                                        <th align='center'>Order Summary</th>
-                                                        <th align='center'>Total</th>
+                                        <!-- Bootstrap Core CSS -->
+                                        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+                                        <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+                                        <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+                                        <!-- Menu CSS -->
+                                        <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+                                        <!-- animation CSS -->
+                                        <link href="css/animate.css" rel="stylesheet">
+                                        <!-- Custom CSS -->
+                                        <link href="css/style.css" rel="stylesheet">
+                                        <!-- color CSS -->
+                                        <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+                                        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                        <!--[if lt IE 9]>
+                                        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                                        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                                        <![endif]-->
 
 
 
 
-                                                    </tr>
-
-                                                    </thead>
-                                                    <tbody>
+                                    </div>
 
 
+                                    <!-- /row -->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">Default Panel</div>
+                                                    <div class="panel-wrapper collapse in">
+                                                        <div class="panel-body">
+                                                            <div class="white-box">
+                                                                <h3 class="box-title m-b-0">Data Table</h3>
+                                                                <p class="text-muted m-b-30">Data table example</p>
+                                                                <div class="table-responsive">
+                                                                    <table id="myTable" class="table table-striped">
+                                                                        <thead>
 
-
-                                                    <?php
-
-
-
-                                                    $sqlup="SELECT * FROM ordersummary WHERE franid='$franid' AND status=0";
-
-                                                    if($resup=$conn->query($sqlup))
-                                                    {
-
-                                                        while ($rowup=$resup->fetch_assoc())
-                                                        {
-
-                                                            $custid=$rowup['custid'];
-
-                                                            $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
-
-                                                            $reqdata=$conn->query($sqlcust)->fetch_assoc();
-
-
-
-
-
-                                                            echo "<tr align='center'>";
-                                                            echo "<td>".$rowup['orderid']."</td>";
-                                                            echo "<td>".$rowup['custid']."</td>";
-                                                            echo "<td>".$reqdata['firstname'].$reqdata['lastname']."</td>";
-                                                            echo "<td>".$reqdata['mobile']."</td>";
-                                                            echo "<td>". $rowup['ordersummary']."</td>";
-
-
-                                                            echo "<td>".$rowup['total']."</td>";
-
-
-                                                            echo "</tr>";
-
-                                                        }
-                                                    }
-                                                    ?>
+                                                                        <tr align='center'>
+                                                                            <th align='center'>Order ID</th>
+                                                                            <th align='center'>Customer ID</th>
+                                                                            <th align='center'>Customer Name</th>
+                                                                            <th align='center'>Contact Number</th>
+                                                                            <th align='center'>Order Summary</th>
+                                                                            <th align='center'>Total</th>
 
 
 
 
-                                                    </tbody>
+                                                                        </tr>
 
-                                                </table>
+                                                                        </thead>
+
+
+                                                                        <tbody>
+
+
+
+
+                                                                        <?php
+
+
+
+                                                                        $sqlup="SELECT * FROM ordersummary WHERE franid='$franid' AND status=0";
+
+                                                                        if($resup=$conn->query($sqlup))
+                                                                        {
+
+                                                                            while ($rowup=$resup->fetch_assoc())
+                                                                            {
+
+                                                                                $custid=$rowup['custid'];
+
+                                                                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
+
+                                                                                $reqdata=$conn->query($sqlcust)->fetch_assoc();
+
+
+
+
+
+                                                                                echo "<tr align='center'>";
+                                                                                echo "<td>".$rowup['orderid']."</td>";
+                                                                                echo "<td>".$rowup['custid']."</td>";
+                                                                                echo "<td>".$reqdata['firstname'].$reqdata['lastname']."</td>";
+                                                                                echo "<td>".$reqdata['mobile']."</td>";
+                                                                                echo "<td>". $rowup['ordersummary']."</td>";
+
+
+                                                                                echo "<td>".$rowup['total']."</td>";
+
+
+                                                                                echo "</tr>";
+
+                                                                            }
+                                                                        }
+                                                                        ?>
+
+
+
+
+                                                                        </tbody>
+
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m-t-15 collapseblebox dn">
+                                                                <div class="well"> <code> &lt;div class="panel panel-default"&gt;<br/>
+                                                                        &nbsp; &nbsp;&lt;div class="panel-heading"&gt;Default Panel&lt;/div&gt; <br/>
+                                                                        <br/>
+                                                                        &lt;div class="panel-wrapper collapse in"&gt;<br/>
+                                                                        &nbsp;&nbsp; &lt;div class="panel-body"&gt;<br/>
+                                                                        ... ... ...<br/>
+                                                                        &nbsp;&nbsp; &lt;/div&gt;<br/>
+                                                                        &lt;/div&gt;<br/>
+                                                                        <br/>
+                                                                        &lt;div class="panel-footer"&gt; Panel Footer &lt;/div&gt;<br/>
+                                                                        &lt;/div&gt; </code> </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading">Default Panel</div>
+                                                                    <div class="panel-wrapper collapse in">
+                                                                        <div class="panel-body">
+                                                                            <div class="white-box">
+                                                                                <h3 class="box-title m-b-0">Data Table</h3>
+                                                                                <p class="text-muted m-b-30">Data table example</p>
+                                                                                <div class="table-responsive">
+                                                                                    <table id="myTable" class="table table-striped">
+                                                                                        <thead>
 
+                                                                                        <tr align='center'>
+                                                                                            <th align='center'>Order ID</th>
+                                                                                            <th align='center'>Customer ID</th>
+                                                                                            <th align='center'>Customer Name</th>
+                                                                                            <th align='center'>Contact Number</th>
+                                                                                            <th align='center'>Order Summary</th>
+                                                                                            <th align='center'>Total</th>
+
+
+
+
+                                                                                        </tr>
+
+                                                                                        </thead>
+
+                                                                                        <tbody>
+
+
+
+
+                                                                                        <?php
+                                                                                        $sqlpr="SELECT * FROM ordersummary WHERE franid='$franid' AND status=1";
+
+                                                                                        if($respr=$conn->query($sqlpr))
+                                                                                        {
+                                                                                            while ($rowpr=$respr->fetch_assoc())
+                                                                                            {
+                                                                                                $custid=$rowpr['custid'];
+
+                                                                                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
+
+                                                                                                $requdata=$conn->query($sqlcust)->fetch_assoc();
+
+                                                                                                echo "<tr align='center'>";
+                                                                                                echo "<td>".$rowpr['orderid']."</td>";
+                                                                                                echo "<td>".$rowpr['custid']."</td>";
+                                                                                                echo "<td>".$requdata['firstname'].$requdata['lastname']."</td>";
+                                                                                                echo "<td>".$requdata['mobile']."</td>";
+                                                                                                echo "<td>". $rowpr['ordersummary']."</td>";
+                                                                                                echo "<td>".$rowpr['total']."</td>";
+
+
+                                                                                                echo "</tr>";
+                                                                                            }
+                                                                                        }
+                                                                                        ?>
+
+
+
+
+                                                                                        </tbody>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="m-t-15 collapseblebox dn">
+                                                                                <div class="well"> <code> &lt;div class="panel panel-default"&gt;<br/>
+                                                                                        &nbsp; &nbsp;&lt;div class="panel-heading"&gt;Default Panel&lt;/div&gt; <br/>
+                                                                                        <br/>
+                                                                                        &lt;div class="panel-wrapper collapse in"&gt;<br/>
+                                                                                        &nbsp;&nbsp; &lt;div class="panel-body"&gt;<br/>
+                                                                                        ... ... ...<br/>
+                                                                                        &nbsp;&nbsp; &lt;/div&gt;<br/>
+                                                                                        &lt;/div&gt;<br/>
+                                                                                        <br/>
+                                                                                        &lt;div class="panel-footer"&gt; Panel Footer &lt;/div&gt;<br/>
+                                                                                        &lt;/div&gt; </code> </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="panel panel-default">
+                                                                                    <div class="panel-heading">Default Panel</div>
+                                                                                    <div class="panel-wrapper collapse in">
+                                                                                        <div class="panel-body">
+                                                                                            <div class="white-box">
+                                                                                                <h3 class="box-title m-b-0">Data Table</h3>
+                                                                                                <p class="text-muted m-b-30">Data table example</p>
+                                                                                                <div class="table-responsive">
+                                                                                                    <table id="myTable" class="table table-striped">
+                                                                                                        <thead>
+
+                                                                                                        <tr align='center'>
+                                                                                                            <th align='center'>Order ID</th>
+                                                                                                            <th align='center'>Customer ID</th>
+                                                                                                            <th align='center'>Customer Name</th>
+                                                                                                            <th align='center'>Contact Number</th>
+                                                                                                            <th align='center'>Order Summary</th>
+                                                                                                            <th align='center'>Total</th>
+
+
+
+
+                                                                                                        </tr>
+
+                                                                                                        </thead>
+
+                                                                                                        <tbody>
+
+
+
+
+                                                                                                        <?php
+                                                                                                        $sqlco="SELECT * FROM ordersummary WHERE franid='$franid' AND status=2";
+
+                                                                                                        if($resco=$conn->query($sqlco))
+                                                                                                        {
+                                                                                                            while ($rowco=$resco->fetch_assoc())
+                                                                                                            {
+                                                                                                                $custid=$rowco['custid'];
+
+                                                                                                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
+
+                                                                                                                $requsdata=$conn->query($sqlcust)->fetch_assoc();
+
+                                                                                                                echo "<tr align='center'>";
+                                                                                                                echo "<td>".$rowco['orderid']."</td>";
+                                                                                                                echo "<td>".$rowco['custid']."</td>";
+                                                                                                                echo "<td>".$requsdata['firstname'].$requsdata['lastname']."</td>";
+                                                                                                                echo "<td>".$requsdata['mobile']."</td>";
+                                                                                                                echo "<td>". $rowco['ordersummary']."</td>";
+                                                                                                                echo "<td>".$rowco['total']."</td>";
+
+
+                                                                                                                echo "</tr>";
+                                                                                                            }
+                                                                                                        }
+                                                                                                        ?>
+
+
+
+
+                                                                                                        </tbody>
+
+                                                                                                    </table>
+
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                            <div class="m-t-15 collapseblebox dn">
+                                                                                                <div class="well"> <code> &lt;div class="panel panel-default"&gt;<br/>
+                                                                                                        &nbsp; &nbsp;&lt;div class="panel-heading"&gt;Default Panel&lt;/div&gt; <br/>
+                                                                                                        <br/>
+                                                                                                        &lt;div class="panel-wrapper collapse in"&gt;<br/>
+                                                                                                        &nbsp;&nbsp; &lt;div class="panel-body"&gt;<br/>
+                                                                                                        ... ... ...<br/>
+                                                                                                        &nbsp;&nbsp; &lt;/div&gt;<br/>
+                                                                                                        &lt;/div&gt;<br/>
+                                                                                                        <br/>
+                                                                                                        &lt;div class="panel-footer"&gt; Panel Footer &lt;/div&gt;<br/>
+                                                                                                        &lt;/div&gt; </code> </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                            </div>
+                                        </div>
+
+
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
             </div>
         </div>
     </div>
-</div>
+
 
 
 
