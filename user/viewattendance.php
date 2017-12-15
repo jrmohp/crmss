@@ -81,7 +81,7 @@ $count=0;
                         echo "<td align='center'>";
 
                         echo $row['empid'];
-                        $abseids.="empattn.empid!=".$row['empid']." ";
+                        $abseids.="empid != ".'"'.$row['empid'].'"'." AND ";
                         echo "</td>";
 
                         echo "<td align='center'>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
@@ -97,16 +97,23 @@ $count=0;
                     }
 
 
-                    echo "<script>alert('$abseids')</script>";
+
+
+
+
+
                     if($count==0)
                     {
                         $allemp="SELECT empid,fname,mname,lname FROM addemployee";
                     }
                     else
                     {
-                        echo "<script>alert('2nd')</script>";
-                        $allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
+
+                        $allemp="SELECT empid,fname,lname,mname FROM addemployee WHERE $abseids id !=1";
                     }
+
+
+                   
 
                     $allempresult=$conn->query($allemp);
 
