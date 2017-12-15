@@ -10,8 +10,8 @@ if(!empty($_POST['custid']) && !empty($_POST['franid'])&& !empty($_POST['ordersu
     $ordersummary=mysqli_real_escape_string($conn, $_POST['ordersummary']);
     $year=date("Y");
     $query = $conn->query("SELECT MAX(id) FROM ordersummary"); // execute
-    $max_id = $query->fetch_array(); // fetch
-    $tid=$max_id[0];
+    $max_id = $query->fetch_assoc(); // fetch
+    $tid=$max_id['id'];
     $new_id=$tid+1;
     $ssid = 'SSO_' .$year. sprintf ( "%04d" , $new_id ) ;
     $sql= "INSERT INTO ordersummary(orderid,custid,franid,ordersummary) VALUES ('$ssid','$custid','$franid','$ordersummary')";

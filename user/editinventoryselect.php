@@ -60,6 +60,7 @@ include "header.php";
                                                             <th align='center'>INVID</th>
                                                             <th align='center'>NAME</th>
                                                             <th align='center'>Edit</th>
+                                                            <th align='center'></th>
 
                                                         </tr>
 
@@ -87,7 +88,7 @@ include "header.php";
                                                                 echo "<td>".$row['iname']."</td>";
 
                                                                 echo "<td id='$requid'><button class='btn btn-info editdata' id='$requid' onclick='DB1(this.id)'>Edit</button></td>";
-                                                               /* echo "<td id='$requid'><button class='btn btn-danger' id='$requid' onclick='DB2(this.id)'>Delete</button></td>";*/
+                                                                echo "<td id='$requid'><button class='btn btn-danger' id='$requid' onclick='DB2(this.id)'>Delete</button></td>";
 
                                                                 echo "</tr>";
 
@@ -219,17 +220,19 @@ include "header.php";
 
         }
 
-        /*function DB2(btnid)
+        function DB2(btnid)
         {
 
 
 
-            var link="deleteinventories.php?id="+btnid;
+            confirm("Are you sure about this?");
+
+            var link="../php/deleteinventoriescontroller.php?id="+btnid;
 
             window.location.assign(link);
 
 
-        }*/
+        }
 
 
     </script>
