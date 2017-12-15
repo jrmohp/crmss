@@ -49,11 +49,6 @@ $franid="1541012381";
                                     <!-- /row -->
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="panel panel-default">
-                                                    <div class="panel-heading">Default Panel</div>
-                                                    <div class="panel-wrapper collapse in">
-                                                        <div class="panel-body">
                                                             <div class="white-box">
                                                                 <h3 class="box-title m-b-0">Data Table</h3>
                                                                 <p class="text-muted m-b-30">Data table example</p>
@@ -127,24 +122,12 @@ $franid="1541012381";
                                                                         </tbody>
 
                                                                     </table>
+                                                                    <br>
+
+                                                                    <br>
                                                                 </div>
                                                             </div>
-                                                            <div class="m-t-15 collapseblebox dn">
-                                                                <div class="well"> <code> &lt;div class="panel panel-default"&gt;<br/>
-                                                                        &nbsp; &nbsp;&lt;div class="panel-heading"&gt;Default Panel&lt;/div&gt; <br/>
-                                                                        <br/>
-                                                                        &lt;div class="panel-wrapper collapse in"&gt;<br/>
-                                                                        &nbsp;&nbsp; &lt;div class="panel-body"&gt;<br/>
-                                                                        ... ... ...<br/>
-                                                                        &nbsp;&nbsp; &lt;/div&gt;<br/>
-                                                                        &lt;/div&gt;<br/>
-                                                                        <br/>
-                                                                        &lt;div class="panel-footer"&gt; Panel Footer &lt;/div&gt;<br/>
-                                                                        &lt;/div&gt; </code> </div>
-                                                            </div>
-                                                        </div>
 
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -152,11 +135,6 @@ $franid="1541012381";
 
                                                     <div class="row">
                                                         <div class="col-sm-12">
-                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                <div class="panel panel-default">
-                                                                    <div class="panel-heading">Default Panel</div>
-                                                                    <div class="panel-wrapper collapse in">
-                                                                        <div class="panel-body">
                                                                             <div class="white-box">
                                                                                 <h3 class="box-title m-b-0">Data Table</h3>
                                                                                 <p class="text-muted m-b-30">Data table example</p>
@@ -217,24 +195,13 @@ $franid="1541012381";
                                                                                         </tbody>
 
                                                                                     </table>
+                                                                                    <br>
+
+                                                                                    <br>
+
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="m-t-15 collapseblebox dn">
-                                                                                <div class="well"> <code> &lt;div class="panel panel-default"&gt;<br/>
-                                                                                        &nbsp; &nbsp;&lt;div class="panel-heading"&gt;Default Panel&lt;/div&gt; <br/>
-                                                                                        <br/>
-                                                                                        &lt;div class="panel-wrapper collapse in"&gt;<br/>
-                                                                                        &nbsp;&nbsp; &lt;div class="panel-body"&gt;<br/>
-                                                                                        ... ... ...<br/>
-                                                                                        &nbsp;&nbsp; &lt;/div&gt;<br/>
-                                                                                        &lt;/div&gt;<br/>
-                                                                                        <br/>
-                                                                                        &lt;div class="panel-footer"&gt; Panel Footer &lt;/div&gt;<br/>
-                                                                                        &lt;/div&gt; </code> </div>
-                                                                            </div>
-                                                                        </div>
 
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -242,11 +209,6 @@ $franid="1541012381";
 
                                                                     <div class="row">
                                                                         <div class="col-sm-12">
-                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                <div class="panel panel-default">
-                                                                                    <div class="panel-heading">Default Panel</div>
-                                                                                    <div class="panel-wrapper collapse in">
-                                                                                        <div class="panel-body">
                                                                                             <div class="white-box">
                                                                                                 <h3 class="box-title m-b-0">Data Table</h3>
                                                                                                 <p class="text-muted m-b-30">Data table example</p>
@@ -307,26 +269,14 @@ $franid="1541012381";
                                                                                                         </tbody>
 
                                                                                                     </table>
+                                                                                                    <br>
+
+                                                                                                    <br>
 
                                                                                                 </div>
 
                                                                                             </div>
-                                                                                            <div class="m-t-15 collapseblebox dn">
-                                                                                                <div class="well"> <code> &lt;div class="panel panel-default"&gt;<br/>
-                                                                                                        &nbsp; &nbsp;&lt;div class="panel-heading"&gt;Default Panel&lt;/div&gt; <br/>
-                                                                                                        <br/>
-                                                                                                        &lt;div class="panel-wrapper collapse in"&gt;<br/>
-                                                                                                        &nbsp;&nbsp; &lt;div class="panel-body"&gt;<br/>
-                                                                                                        ... ... ...<br/>
-                                                                                                        &nbsp;&nbsp; &lt;/div&gt;<br/>
-                                                                                                        &lt;/div&gt;<br/>
-                                                                                                        <br/>
-                                                                                                        &lt;div class="panel-footer"&gt; Panel Footer &lt;/div&gt;<br/>
-                                                                                                        &lt;/div&gt; </code> </div>
-                                                                                            </div>
-                                                                                        </div>
 
-                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                             </div>
