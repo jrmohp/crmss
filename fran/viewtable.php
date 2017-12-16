@@ -7,7 +7,7 @@ include "header.php";
 $franid="1541012381";
 
 ?>
-
+<title>View Table</title>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="panel panel-default">
         <div class="panel-heading"></div>
@@ -133,165 +133,158 @@ $franid="1541012381";
                                         </div>
                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                                            <div class="white-box">
-                                                                                <h3 class="box-title m-b-0">Data Table</h3>
-                                                                                <p class="text-muted m-b-30">Data table example</p>
-                                                                                <div class="table-responsive">
-                                                                                    <table id="myTable" class="table table-striped">
-                                                                                        <thead>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="white-box">
+                                    <h3 class="box-title m-b-0">Data Table</h3>
+                                    <p class="text-muted m-b-30">Data table example</p>
+                                        <div class="table-responsive">
+                                            <table id="myTable" class="table table-striped">
+                                                <thead>
 
-                                                                                        <tr align='center'>
-                                                                                            <th align='center'>Order ID</th>
-                                                                                            <th align='center'>Customer ID</th>
-                                                                                            <th align='center'>Customer Name</th>
-                                                                                            <th align='center'>Contact Number</th>
-                                                                                            <th align='center'>Order Summary</th>
-                                                                                            <th align='center'>Total</th>
-
-
-
-
-                                                                                        </tr>
-
-                                                                                        </thead>
-
-                                                                                        <tbody>
+                                                <tr align='center'>
+                                                    <th align='center'>Order ID</th>
+                                                    <th align='center'>Customer ID</th>
+                                                    <th align='center'>Customer Name</th>
+                                                    <th align='center'>Contact Number</th>
+                                                    <th align='center'>Order Summary</th>
+                                                    <th align='center'>Total</th>
 
 
 
 
-                                                                                        <?php
-                                                                                        $sqlpr="SELECT * FROM ordersummary WHERE franid='$franid' AND status=1";
+                                                </tr>
 
-                                                                                        if($respr=$conn->query($sqlpr))
-                                                                                        {
-                                                                                            while ($rowpr=$respr->fetch_assoc())
-                                                                                            {
-                                                                                                $custid=$rowpr['custid'];
+                                                </thead>
 
-                                                                                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
-
-                                                                                                $requdata=$conn->query($sqlcust)->fetch_assoc();
-
-                                                                                                echo "<tr align='center'>";
-                                                                                                echo "<td>".$rowpr['orderid']."</td>";
-                                                                                                echo "<td>".$rowpr['custid']."</td>";
-                                                                                                echo "<td>".$requdata['firstname'].$requdata['lastname']."</td>";
-                                                                                                echo "<td>".$requdata['mobile']."</td>";
-                                                                                                echo "<td>". $rowpr['ordersummary']."</td>";
-                                                                                                echo "<td>".$rowpr['total']."</td>";
-
-
-                                                                                                echo "</tr>";
-                                                                                            }
-                                                                                        }
-                                                                                        ?>
+                                                <tbody>
 
 
 
 
-                                                                                        </tbody>
+                                                <?php
+                                                $sqlpr="SELECT * FROM ordersummary WHERE franid='$franid' AND status=1";
 
-                                                                                    </table>
-                                                                                    <br>
+                                                if($respr=$conn->query($sqlpr))
+                                                {
+                                                    while ($rowpr=$respr->fetch_assoc())
+                                                    {
+                                                        $custid=$rowpr['custid'];
 
-                                                                                    <br>
+                                                        $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
 
-                                                                                </div>
-                                                                            </div>
+                                                        $requdata=$conn->query($sqlcust)->fetch_assoc();
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                        echo "<tr align='center'>";
+                                                        echo "<td>".$rowpr['orderid']."</td>";
+                                                        echo "<td>".$rowpr['custid']."</td>";
+                                                        echo "<td>".$requdata['firstname'].$requdata['lastname']."</td>";
+                                                        echo "<td>".$requdata['mobile']."</td>";
+                                                        echo "<td>". $rowpr['ordersummary']."</td>";
+                                                        echo "<td>".$rowpr['total']."</td>";
 
-                                                                    <div class="row">
-                                                                        <div class="col-sm-12">
-                                                                                            <div class="white-box">
-                                                                                                <h3 class="box-title m-b-0">Data Table</h3>
-                                                                                                <p class="text-muted m-b-30">Data table example</p>
-                                                                                                <div class="table-responsive">
-                                                                                                    <table id="myTable" class="table table-striped">
-                                                                                                        <thead>
 
-                                                                                                        <tr align='center'>
-                                                                                                            <th align='center'>Order ID</th>
-                                                                                                            <th align='center'>Customer ID</th>
-                                                                                                            <th align='center'>Customer Name</th>
-                                                                                                            <th align='center'>Contact Number</th>
-                                                                                                            <th align='center'>Order Summary</th>
-                                                                                                            <th align='center'>Total</th>
+                                                        echo "</tr>";
+                                                    }
+                                                }
+                                                ?>
 
 
 
 
-                                                                                                        </tr>
+                                                </tbody>
 
-                                                                                                        </thead>
+                                            </table>
+                                            <br>
 
-                                                                                                        <tbody>
+                                            <br>
 
-
-
-
-                                                                                                        <?php
-                                                                                                        $sqlco="SELECT * FROM ordersummary WHERE franid='$franid' AND status=2";
-
-                                                                                                        if($resco=$conn->query($sqlco))
-                                                                                                        {
-                                                                                                            while ($rowco=$resco->fetch_assoc())
-                                                                                                            {
-                                                                                                                $custid=$rowco['custid'];
-
-                                                                                                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
-
-                                                                                                                $requsdata=$conn->query($sqlcust)->fetch_assoc();
-
-                                                                                                                echo "<tr align='center'>";
-                                                                                                                echo "<td>".$rowco['orderid']."</td>";
-                                                                                                                echo "<td>".$rowco['custid']."</td>";
-                                                                                                                echo "<td>".$requsdata['firstname'].$requsdata['lastname']."</td>";
-                                                                                                                echo "<td>".$requsdata['mobile']."</td>";
-                                                                                                                echo "<td>". $rowco['ordersummary']."</td>";
-                                                                                                                echo "<td>".$rowco['total']."</td>";
-
-
-                                                                                                                echo "</tr>";
-                                                                                                            }
-                                                                                                        }
-                                                                                                        ?>
-
-
-
-
-                                                                                                        </tbody>
-
-                                                                                                    </table>
-                                                                                                    <br>
-
-                                                                                                    <br>
-
-                                                                                                </div>
-
-                                                                                            </div>
-
-                                                                                </div>
-                                                                            </div>
-                                            </div>
                                         </div>
-
-
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
-            </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="white-box">
+                                                <h3 class="box-title m-b-0">Data Table</h3>
+                                                    <p class="text-muted m-b-30">Data table example</p>
+                                                        <div class="table-responsive">
+                                                            <table id="myTable" class="table table-striped">
+                                                                <thead>
+
+                                                                <tr align='center'>
+                                                                    <th align='center'>Order ID</th>
+                                                                    <th align='center'>Customer ID</th>
+                                                                    <th align='center'>Customer Name</th>
+                                                                    <th align='center'>Contact Number</th>
+                                                                    <th align='center'>Order Summary</th>
+                                                                    <th align='center'>Total</th>
+
+
+
+
+                                                                </tr>
+
+                                                                </thead>
+
+                                                                <tbody>
+
+
+
+
+                                                                <?php
+                                                                $sqlco="SELECT * FROM ordersummary WHERE franid='$franid' AND status=2";
+
+                                                                if($resco=$conn->query($sqlco))
+                                                                {
+                                                                    while ($rowco=$resco->fetch_assoc())
+                                                                    {
+                                                                        $custid=$rowco['custid'];
+
+                                                                        $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
+
+                                                                        $requsdata=$conn->query($sqlcust)->fetch_assoc();
+
+                                                                        echo "<tr align='center'>";
+                                                                        echo "<td>".$rowco['orderid']."</td>";
+                                                                        echo "<td>".$rowco['custid']."</td>";
+                                                                        echo "<td>".$requsdata['firstname'].$requsdata['lastname']."</td>";
+                                                                        echo "<td>".$requsdata['mobile']."</td>";
+                                                                        echo "<td>". $rowco['ordersummary']."</td>";
+                                                                        echo "<td>".$rowco['total']."</td>";
+
+
+                                                                        echo "</tr>";
+                                                                    }
+                                                                }
+                                                                ?>
+
+
+
+
+                                                                </tbody>
+
+                                                            </table>
+                                                            <br>
+
+                                                            <br>
+
+                                                        </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
         </div>
     </div>
+
+
+
+</div>
 
 
 
