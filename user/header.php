@@ -262,6 +262,25 @@ require("../php/connect.php");
                         <li><a href="assigntofranchise.php"><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
                 </li>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Attendance Management<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="selectdateatt.php"><span class="hide-menu">Add Attendance</span></a></li>
+                        <li><a href="selectdateviewatt.php"><span class="hide-menu">View Attendance</span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Orders <span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="orderdetails.php"><span class="hide-menu">Order Details</span></a></li>
+                        <li><a href="ordersummary.php"><span class="hide-menu">Order Summary</span></a></li>
+                    </ul>
+                </li>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Inventories <span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="addinventories.php"><span class="hide-menu">Add Inventories</span></a></li>
+                        <li><a href="deleteinventories.php"><span class="hide-menu">Delete Inventories</span></a></li>
+                        <li><a href="editinventoryselect.php"><span class="hide-menu">Edit Inventories</span></a></li>
+                    </ul>
+                </li>
                 <li class="devider"></li>
                 
         </div>
