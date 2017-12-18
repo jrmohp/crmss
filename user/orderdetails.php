@@ -112,13 +112,13 @@ include "header.php";
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio2" id="radio3" value="option3">
-                                                    <label for="radio3">Yes</label>
+                                                    <input type="radio" name="radio2" id="radio3" value="Yes" onclick="yesnocheck1()">
+                                                    <label for="radio3" >Yes</label>
                                                 </div>
                                             </label>
                                             <label class="radio-inline">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio2" id="radio4" value="option4">
+                                                    <input type="radio" name="radio2" id="radio4" value="No" onclick="yesnocheck1()">
                                                     <label for="radio4">No</label>
 
                                                 </div>
