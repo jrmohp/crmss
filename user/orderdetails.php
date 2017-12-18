@@ -75,7 +75,7 @@ include "header.php";
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio1" id="radio1" value="option1" onchange="yesnoCheck1()">
+                                                    <input type="radio" name="radio1" id="radio1" value="option1" onchange="myFunction()">
                                                     <label for="radio1">Yes</label>
                                                 </div>
                                             </label>
@@ -106,14 +106,13 @@ include "header.php";
                                 </div>
 
                                 <script>
-                                function yesnoCheck1() {
 
-                                        $('#inv').attr("disabled","false");
-                                    
-                                }
+                                    function myFunction() {
+                                        document.getElementById("inv").disabled = false;
+                                        
 
+                                    }
 
-                                
 
                             </script>
 
@@ -125,7 +124,7 @@ include "header.php";
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio2" id="radio3" value="Yes" onchange="yesnoCheck2()">
+                                                    <input type="radio" name="radio2" id="radio3" value="Yes" onchange="myFunction2()">
                                                     <label for="radio3" >Yes</label>
                                                 </div>
                                             </label>
@@ -154,23 +153,14 @@ include "header.php";
                                         </select><span class="highlight"></span> <span class="bar"></span>
                                     </div>
                                 </div>
-                                <script type="text/javascript">
-                                function yesnoCheck2() {
+                              <script>
 
+                                  function myFunction2() {
+                                      document.getElementById("batt").disabled = false;
 
-                                    var che=$("input[name='radio2']:checked").val();
+                                  }
+                              </script>
 
-                                    if(che=="Yes")
-                                    {
-                                        $('#batt').attr("disabled","false");
-                                    }
-                                    else
-                                    {
-                                        $('#batt').attr("disabled","true");
-                                    }
-                                }
-                                </script>
-                                </div>
                                 <div class="row">
 
                                 <div class="col-md-4">
