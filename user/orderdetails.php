@@ -87,6 +87,7 @@ include "header.php";
                                             </div>
                                     </div>
                                 </div>
+
                                 <script>
                                     function yesnoCheck(that) {
 
@@ -140,59 +141,7 @@ include "header.php";
                                     </div>
                                 </div>
 
-                                <script>
-                                    function yesnoCheck(that) {
-
-
-                                        var che=$("input[name='radio2']:checked").val();
-
-                                        if(che=="Yes")
-                                        {
-                                            $('#batt').attr("disabled","false");
-                                        }
-                                        else
-                                        {
-                                            $('#batt').attr("disabled","true");
-                                        }
-                                    }
-                                </script>
-
-                                <div class="col-md-5">
-                                    <div class="form-group m-b-40">
-
-                                        <select class="form-control p-0" id="batt" required disabled="true">
-                                            <option>Battery Model</option>
-                                            <option>qwwd</option>
-                                            <option>rted</option>
-                                            <option>kdlf</option>
-                                            <option>htys</option>
-                                        </select><span class="highlight"></span> <span class="bar"></span>
-                                    </div>
-                                </div>
-
-                                
-
-
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="control-label" style="color: darkgrey">frame</label>
-                                        <div class="radio-list">
-                                            <label class="radio-inline p-0">
-                                                <div class="radio radio-info">
-                                                    <input type="radio" name="radio3" id="radio5" value="option3">
-                                                    <label for="radio5">Yes</label>
-                                                </div>
-                                            </label>
-                                            <label class="radio-inline">
-                                                <div class="radio radio-info">
-                                                    <input type="radio" name="radio3" id="radio6" value="option4">
-                                                    <label for="radio6">No</label>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
 
                                 </form>
                                 </div>
