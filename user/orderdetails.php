@@ -90,23 +90,6 @@ include "header.php";
                                     </div>
                                 </div>
 
-                                <script>
-                                    function yesnoCheck(that) {
-
-
-                                        var ch=$("input[name='radio1']:checked").val();
-
-                                        if(ch=="Yes")
-                                        {
-                                            $('#inv').attr("disabled","false");
-                                        }
-                                        else
-                                        {
-                                            $('#inv').attr("disabled","true");
-                                        }
-                                    }
-                                </script>
-
 
 
                                 <div class="col-md-5">
@@ -142,22 +125,7 @@ include "header.php";
                                         </div>
                                     </div>
                                 </div>
-                                <script>
-                                    function yesnoCheck(that) {
 
-
-                                        var che=$("input[name='radio2']:checked").val();
-
-                                        if(che=="Yes")
-                                        {
-                                            $('#batt').attr("disabled","false");
-                                        }
-                                        else
-                                        {
-                                            $('#batt').attr("disabled","true");
-                                        }
-                                    }
-                                </script>
 
 
                                 
@@ -196,6 +164,40 @@ include "header.php";
                                     </div>
                                 </div>
                                 </div>
+                            <script>
+                                function yesnoCheck1(that) {
+
+
+                                    var ch=$("input[name='radio1']:checked").val();
+
+                                    if(ch=="Yes")
+                                    {
+                                        $('#inv').attr("disabled","false");
+                                    }
+                                    else
+                                    {
+                                        $('#inv').attr("disabled","true");
+                                    }
+                                }
+
+
+                                function yesnoCheck2(that) {
+
+
+                                    var che=$("input[name='radio2']:checked").val();
+
+                                    if(che=="Yes")
+                                    {
+                                        $('#batt').attr("disabled","false");
+                                    }
+                                    else
+                                    {
+                                        $('#batt').attr("disabled","true");
+                                    }
+                                }
+
+                            </script>
+
                                 </form>
                                 </div>
                             </div>
