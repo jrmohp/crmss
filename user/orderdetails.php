@@ -106,7 +106,7 @@ include "header.php";
                                 </div>
 
                                 <script>
-                                function yesnoCheck1(that) {
+                                function yesnoCheck1() {
 
 
                                     var ch=$("input[name='radio1']:checked").val();
@@ -164,7 +164,7 @@ include "header.php";
                                     </div>
                                 </div>
                                 <script type="text/javascript">
-                                function yesnoCheck2(that) {
+                                function yesnoCheck2() {
 
 
                                     var che=$("input[name='radio2']:checked").val();
