@@ -53,7 +53,7 @@ include "header.php";
                                             <label for="input1" style="color: darkgrey;">Panel No.</label>
                                         </div>
 
-                                       </div>
+                                </div>
                                 <div class="col-md-5">
                                         <div class="form-group m-b-40">
 
@@ -65,8 +65,10 @@ include "header.php";
                                                 <option>500watt</option>
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
-                                        </div>
+                                </div>
+                                </div>
 
+                                <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" style="color: darkgrey">Inverter</label>
@@ -119,8 +121,8 @@ include "header.php";
                                         </select><span class="highlight"></span> <span class="bar"></span>
                                     </div>
                                 </div>
-
-
+                                </div>
+                                <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" style="color: darkgrey">Battery</label>
@@ -141,7 +143,7 @@ include "header.php";
                                     </div>
                                 </div>
 
-                               
+                                </div>
 
                                 </form>
                                 </div>
