@@ -54,29 +54,31 @@ include "header.php";
                                         </div>
 
                                        </div>
-                                <div class="col-md-5">
-                                        <div class="form-group m-b-40">
 
-                                            <select class="form-control p-0" id="input2" required>
-                                                <option>Panel Capacity</option>
-                                                <option>200watt</option>
-                                                <option>300watt</option>
-                                                <option>400watt</option>
-                                                <option>500watt</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
-                                        </div>
-                                        </div>
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="control-label" style="color: darkgrey">Inverter</label>
-                                        <div class="radio-list">
-                                            <label class="radio-inline p-0">
-                                                <div class="radio radio-info">
-                                                    <input type="radio" name="radio1" id="radio1" value="option1">
-                                                    <label for="radio1">Yes</label>
-                                                </div>
                                             </label>
+                                
+                                               <div class="col-md-5">
+                                                <div class="form-group m-b-40">
+
+                                                    <select class="form-control p-0" id="input2" required>
+                                                        <option>Panel Capacity</option>
+                                                        <option>200watt</option>
+                                                        <option>300watt</option>
+                                                        <option>400watt</option>
+                                                        <option>500watt</option>
+                                                    </select><span class="highlight"></span> <span class="bar"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color: darkgrey">Inverter</label>
+                                                    <div class="radio-list">
+                                                        <label class="radio-inline p-0">
+                                                            <div class="radio radio-info">
+                                                                <input type="radio" name="radio1" id="radio1" value="option1">
+                                                                <label for="radio1">Yes</label>
+                                                            </div>
                                             <label class="radio-inline">
                                                 <div class="radio radio-info">
                                                     <input type="radio" name="radio1" id="radio2" value="option2"
