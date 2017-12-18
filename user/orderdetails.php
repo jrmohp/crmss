@@ -120,7 +120,7 @@ include "header.php";
                                 </div>
 
 
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <div class="form-group">
                                         <label class="control-label" style="color: darkgrey">Battery</label>
                                         <div class="radio-list">
@@ -140,7 +140,7 @@ include "header.php";
                                     </div>
                                 </div>
 
-                                <div class="col-md-5">
+                                <div class="col-md-4">
                                     <div class="form-group m-b-40">
 
                                         <select class="form-control p-0" id="batt" required disabled="true">
@@ -172,7 +172,7 @@ include "header.php";
 
 
 
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <div class="form-group">
                                         <label class="control-label" style="color: darkgrey">frame</label>
                                         <div class="radio-list">
