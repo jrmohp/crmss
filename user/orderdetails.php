@@ -75,7 +75,7 @@ include "header.php";
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio1" id="radio1" value="option1">
+                                                    <input type="radio" name="radio1" id="radio1" value="option1" onchange="yesnoCheck1()">
                                                     <label for="radio1">Yes</label>
                                                 </div>
                                             </label>
@@ -134,7 +134,7 @@ include "header.php";
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio2" id="radio3" value="Yes" >
+                                                    <input type="radio" name="radio2" id="radio3" value="Yes" onchange="yesnoCheck2()">
                                                     <label for="radio3" >Yes</label>
                                                 </div>
                                             </label>
