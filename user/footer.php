@@ -114,6 +114,8 @@
 <script src="js/dashboard3.js"></script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<script src="js/alertify.js"></script>
+
 </body>
 
 </html>

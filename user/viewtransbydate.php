@@ -9,7 +9,7 @@ include "header.php";
 ?>
 
 
-
+<title>View Transactions By Date</title>
 
 
 <!-- Bootstrap Core CSS -->
@@ -33,41 +33,103 @@ include "header.php";
 
 
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="panel panel-default">
-        <div class="panel-heading"><i class="ti-settings"></i> Choose Site Id </div>
-        <div class="panel-wrapper collapse in">
-            <div class="panel-body">
-                <form method="post" action="invtrans.php" >
-
-                    <select class="form-control" id="siteid" name="siteid" >
-
-
-                        <?php
 
 
 
-                        $siteids="SELECT  siteid FROM siteinfo";
+                    <!-- /row -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="white-box">
+                                <h3 class="box-title m-b-0">Transactions By Date</h3>
+                                <br>
+                                <div class="table-responsive">
+                                    <table id="myTable" class="table table-striped">
 
-                        if($result=mysqli_query($conn,$siteids))
-                        {
-                            while ($row=mysqli_fetch_row($result))
-                            {
+                                        <thead>
 
-                                foreach ($row as $val)
-                                {
-                                    echo "<option>$val</option>" ;
+                                        <tr align='center'>
 
-                                }
 
-                            }
+                                            <th align='center'>Sl No.</th>
+                                            <th align='center'>Site Id</th>
+                                            <th align='center'>Inventories Name</th>
+                                            <th align='center'>Quantity</th>
 
-                        }
 
-                        ?>
-                                $quant=mysqli_query"SELECT quantity FROM inventories";
+                                        </tr>
 
-                    </select>
+                                        </thead>
+                                        <tbody>
+
+
+
+
+
+
+
+
+                                        <?php
+
+                                        require("../php/connect.php");
+
+                                        $query = "SELECT * FROM invtrans";
+
+
+
+
+                                        if($result=$conn->query($query))
+                                        {
+                                            while ($row=$result->fetch_array())
+
+                                            {
+
+                                                    $reqinvid=$row['invid'];
+
+                                                    $sqlinvname="SELECT iname FROM inventories WHERE invid='$reqinvid'";
+
+
+                                                    $invname=$conn->query($sqlinvname)->fetch_array();
+
+
+
+
+
+
+                                                echo "<tr>";
+
+                                                echo "<td>";
+                                                echo $row['id'];
+                                                echo "</td>";
+
+
+
+
+
+                                                echo "<td>";
+                                                echo $row['siteid'];
+                                                echo "</td>";
+
+                                                echo "<td>";
+
+                                                echo $invname['iname'];
+                                                echo "</td>";
+
+                                                echo "<td>";
+                                                echo $row['quantity'];
+                                                echo "</td>";
+
+                                                echo "</tr>";
+
+                                            }
+                                        }
+                                        ?>
+
+
+
+
+                                        </tbody>
+                                    </table>
+
 
 
                 </form>
@@ -80,83 +142,9 @@ include "header.php";
 
 
 
-<!-- /row -->
-<div class="row">
-    <div class="col-sm-12">
-        <div class="white-box">
-            <h3 class="box-title m-b-0">Inventories Transactions Per Site</h3>
-            <br>
-            <div class="table-responsive">
-                <table id="myTable" class="table table-striped">
-
-                    <thead>
-
-                    <tr align='center'>
-
-
-                        <th align='center'>Sl No.</th>
-                        <th align='center'>Inventory Id</th>
-                        <th align='center'>Name</th>
-                        <th align='center'>Quantity</th>
-
-
-                    </tr>
-
-                    </thead>
-                    <tbody>
-
-
-
-
-                    <?php
-
-                    require("../php/connect.php");
-
-                    $query = "SELECT * FROM inventories";
-
-
-
-                    if($result=$conn->query($query))
-                    {
-                        while ($row=$result->fetch_array())
-                        {
-
-                            echo "<tr>";
-
-                            echo "<td>";
-                            echo $row['id'];
-                            echo "</td>";
-
-
-                            echo "<td>";
-                            echo $row['invid'];
-                            echo "</td>";
-
-                            echo "<td>";
-                            echo $row['name'];
-                            echo "</td>";
-
-
-
-                            echo "<td>";
-                            echo $row['quantity'];
-                            echo "</td>";
-
-                            echo "</tr>";
-
-                        }
-                    }
-                    ?>
-
-
-
-
-                    </tbody>
-
-                </table>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 
 </div>
 
@@ -256,4 +244,3 @@ include "header.php";
 
 
 
-<?php echo 'max="' . ($product->product_in_stock - $product->product_ordered) . '"'; ?>

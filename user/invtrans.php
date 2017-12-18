@@ -8,18 +8,8 @@ include "header.php";
 
 ?>
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="panel panel-default">
-        <div class="panel-heading"></div>
-        <div class="panel-wrapper collapse in">
-            <div class="panel-body">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"></div>
-                        <div class="panel-wrapper collapse in">
-                            <div class="panel-body">
-                                <div class="row" id="body2">
 
+<title>Inventories Transactions Per Site</title>
 
 
                                     <!-- Bootstrap Core CSS -->
@@ -43,11 +33,51 @@ include "header.php";
 
 
 
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading"><i class="fa fa-user"></i> Choose Site Id </div>
+                                        <div class="panel-wrapper collapse in">
+                                            <div class="panel-body">
+                                                <form action="../php/invtranscontroller.php" method="post">
 
-                                </div>
+                                                    <select class="form-control" id="siteid" name="siteid" required="true">
 
 
-                                <!-- /row -->
+                                                        <?php
+
+
+
+                                                        $siteids="SELECT  siteid FROM siteinfo";
+
+                                                        if($result=mysqli_query($conn,$siteids))
+                                                        {
+                                                            while ($row=mysqli_fetch_row($result))
+                                                            {
+
+                                                                foreach ($row as $val)
+                                                                {
+                                                                    echo "<option>$val</option>" ;
+
+                                                                }
+
+                                                            }
+
+                                                        }
+
+                                                        ?>
+
+
+                                                    </select>
+
+                                                    <br/>
+
+                                                    <input type="date" class="form-control" name="invdate"  required="true">
+
+
+
+
+
+                            <!-- /row -->
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="white-box">
@@ -62,10 +92,9 @@ include "header.php";
 
 
                                                         <th align='center'>Sl No.</th>
-                                                        <th align='center'>Site Id</th>
                                                         <th align='center'>Inventory Id</th>
+                                                        <th align='center'>Name</th>
                                                         <th align='center'>Quantity</th>
-                                                        <th align='center'>Date</th>
 
 
                                                     </tr>
@@ -76,11 +105,15 @@ include "header.php";
 
 
 
+
+
+
+
                                                     <?php
 
                                                     require("../php/connect.php");
 
-                                                    $query = "SELECT * FROM invtrans";
+                                                    $query = "SELECT * FROM inventories";
 
 
 
@@ -92,23 +125,20 @@ include "header.php";
                                                             echo "<tr>";
 
                                                             echo "<td>";
-                                                            echo $row['sl no.'];
+                                                            echo $row['id'];
+                                                            echo "</td>";
+
+
+                                                            echo "<td>";
+                                                            echo $row['invid'];
                                                             echo "</td>";
 
                                                             echo "<td>";
-                                                            echo $row['site id'];
+                                                            echo $row['name'];
                                                             echo "</td>";
 
                                                             echo "<td>";
-                                                            echo $row['inventory id'];
-                                                            echo "</td>";
-
-                                                            echo "<td>";
-                                                            echo $row['quantity'];
-                                                            echo "</td>";
-
-                                                            echo "<td>";
-                                                            echo $row['date'];
+                                                            echo "<input name='".$row['invid']."'  type='number' min='0' max='".$row['quantity']."'>/"."<span style='font-size:1.3em'>".$row['quantity']."</span></span>";
                                                             echo "</td>";
 
                                                             echo "</tr>";
@@ -121,8 +151,23 @@ include "header.php";
 
 
                                                     </tbody>
-
                                                 </table>
+
+                                        <div class="form-group"> <!-- Submit button -->
+                                        <center><input type="submit" class="btn btn-primary " name=""></center>
+                                        </div>
+
+
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+</div>
+
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -215,6 +260,8 @@ include "header.php";
         dom: 'Bfrtip',
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
+
+
         ]
     });
 </script>

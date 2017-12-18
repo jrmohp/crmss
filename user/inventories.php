@@ -56,7 +56,7 @@ $result=$conn->query($moradarkar);
                         echo "</td>";
 
                         echo "<td>";
-                        echo $row['name'];
+                        echo $row['iname'];
                         echo "</td>";
 
                         echo "<td>";
