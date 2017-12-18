@@ -9,6 +9,10 @@
 
 
 $reqid=$_GET['empid'];
+$attdate=$_GET['attdate'];
+
+
+
 
 
 require ("connect.php");
@@ -17,12 +21,13 @@ $sql="DELETE FROM empattn WHERE sl=$reqid";
 
     if($conn->query($sql))
     {
-        echo "<script>alert('Attendance Updated Succesfully');window.location.assign('../user/viewattendance.php');</script>";
+        echo "<script>alert('Attendance Updated Successfully');window.location.assign('../user/viewattendance.php?attdate=$attdate');</script>";
 
     }
     else
     {
-        echo "<script>alert('Attendance Update Failed,Please Try Again');window.location.assign('../user/viewattendance.php');</script>";
+        echo "<script>alert('Attendance Update Failed,Please Try Again');window.location.assign('../user/viewattendance.php?attdate=$attdate');</script>";
+
 
     }
 

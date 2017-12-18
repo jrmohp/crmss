@@ -15,10 +15,18 @@ if(isset($_POST['attdate']))
 {
     $attdate=$_POST['attdate'];
 }
-else
+else if(isset($_GET['attdate']))
 {
     $attdate=$_GET['attdate'];
 }
+else
+{
+    echo "<script>alert('Please Select Date First');window.location.assign('selectdateviewatt.php')</script>";
+}
+
+
+
+
 
 
 
@@ -59,31 +67,39 @@ $count=0;
 
                     <?php
 
+                    $abseids="";
+
                     while ($row=$result->fetch_assoc())
 
                     {$requid=$row['sl'];
 
 
-                    $count++;
+                        $count++;
 
                         echo "<tr >";
 
                         echo "<td align='center'>";
 
                         echo $row['empid'];
+                        $abseids.="empid != ".'"'.$row['empid'].'"'." AND ";
                         echo "</td>";
 
                         echo "<td align='center'>".$row['fname']." ".$row['mname']." ".$row['lname']."</td>";
 
-                        echo "<td align='center'>Absent</td>";
-
-                        $myline="DB(this.id,".$attdate.")";
+                        echo "<td align='center' ><button class='btn btn-warning editdata' >Absent</button></td>";
 
 
 
-                        echo "<td align='center'><button class='btn btn-success editdata' id='$requid' onclick='$myline'>Absent</button></td>";
+
+
+                        echo "<td align='center'><button class='fcbtn btn btn-outline btn-primary btn-1d btn-success editdata' id='$requid' onclick='DB(this.id)'>Present</button></td>";
                         echo "</tr>";
                     }
+
+
+
+
+
 
 
                     if($count==0)
@@ -92,15 +108,19 @@ $count=0;
                     }
                     else
                     {
-                        $allemp="SELECT addemployee.empid,fname,lname,mname FROM addemployee,empattn WHERE empattn.empid!=addemployee.empid AND empattn.attdate='$attdate'";
+
+                        $allemp="SELECT empid,fname,lname,mname FROM addemployee WHERE $abseids id !=1";
                     }
+
+
+                   
 
                     $allempresult=$conn->query($allemp);
 
                     while ($allemprow=$allempresult->fetch_assoc())
                     {
                         $req=$allemprow['empid'];
-                        echo "<tr>";
+                        echo "<tr >";
 
                         echo "<td align='center'>";
                         echo $allemprow['empid'];
@@ -108,8 +128,8 @@ $count=0;
 
                         echo "<td align='center'>".$allemprow['fname']." ".$allemprow['mname']." ".$allemprow['lname']."</td>";
 
-                        echo "<td align='center'>Present</td>";
-                        echo "<td align='center'><button class='btn btn-danger editdata' id='$req' onclick='DB2(this.id)'>Absent</button></td>";
+                        echo "<td align='center' ><button class='btn btn-success editdata' >Present</button></td>";
+                        echo "<td align='center'><button class='fcbtn btn btn-danger btn-outline btn-1d' id='$req' onclick='DB2(this.id)'>Absent</button></td>";
 
                         echo "</tr>";
 
@@ -132,6 +152,7 @@ $count=0;
 
 
 
+
                     </tbody>
 
                 </table>
@@ -139,18 +160,26 @@ $count=0;
         </div>
     </div>
 
+
+
 </div>
 
 
 <script type="application/javascript">
 
 
+
+    var reqdate= "<?php echo $attdate?>";
+
+
     function DB(btnid,mydate)
     {
 
-        var editlink="../php/editattcontroller.php?empid="+btnid;
+        var editlink="../php/editattcontroller.php?empid="+btnid+"&attdate="+reqdate;
 
         window.location.assign(editlink);
+
+
 
 
     }
@@ -158,7 +187,7 @@ $count=0;
 
     function DB2(presbtnid)
     {
-        var editlink="../php/editattabscontroller.php?empid="+btnid;
+        var editlink="../php/editattabscontroller.php?empid="+presbtnid+"&attdate="+reqdate;
 
         window.location.assign(editlink);
     }

@@ -115,7 +115,10 @@
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 <script src="js/alertify.js"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 409ce6d16f0594264417935100f13f592f28248a
 </body>
 
 </html>
