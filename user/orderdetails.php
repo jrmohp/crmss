@@ -189,6 +189,7 @@ include "header.php";
                                     </div>
                                 </div>
                                 </div>
+                            <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                             
                                 </form>
                                 </div>
