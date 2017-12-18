@@ -438,7 +438,7 @@
         var phone=$('#phone').val();
         var address=$('#address').val();
         var city=$('#city').val();
-        var type=$('[name="type"]').val();
+        var type=$('#type').val();
           var phase=$('[name="phase"]').val();
         var units=$('#units').val();
         var monthlybill=$('#monthlybill').val();
