@@ -262,7 +262,7 @@ require("../php/connect.php");
                         <li><a href="assigntofranchise.php"><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Attendance Management<span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-book-minus fa-fw"></i> <span class="hide-menu">Attendance Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="selectdateatt.php"><span class="hide-menu">Add Attendance</span></a></li>
                         <li><a href="selectdateviewatt.php"><span class="hide-menu">View Attendance</span></a></li>
