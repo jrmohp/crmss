@@ -108,17 +108,8 @@ include "header.php";
                                 <script>
                                 function yesnoCheck1() {
 
-
-                                    var ch=$("input[name='radio1']:checked").val();
-
-                                    if(ch=="Yes")
-                                    {
                                         $('#inv').attr("disabled","false");
-                                    }
-                                    else
-                                    {
-                                        $('#inv').attr("disabled","true");
-                                    }
+                                    
                                 }
 
 
