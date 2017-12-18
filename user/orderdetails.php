@@ -166,12 +166,12 @@ include "header.php";
                                       document.getElementById("batt").disabled = true;
                                   }
                               </script>
-
+                                </div>
                                 <div class="row">
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" style="color: darkgrey">frame</label>
+                                        <label class="control-label" style="color: darkgrey">Frame</label>
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
