@@ -142,7 +142,18 @@ include "header.php";
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-5">
+                                    <div class="form-group m-b-40">
 
+                                        <select class="form-control p-0" id="batt" required disabled="true">
+                                            <option>Battery Model</option>
+                                            <option>qwwd</option>
+                                            <option>rted</option>
+                                            <option>kdlf</option>
+                                            <option>htys</option>
+                                        </select><span class="highlight"></span> <span class="bar"></span>
+                                    </div>
+                                </div>
                                 </div>
 
                                 </form>
