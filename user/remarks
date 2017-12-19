@@ -1,6 +1,7 @@
 
 0=completed
 3=not contacted
+5=normal
 1=priority
 2=processing
 4=ignore

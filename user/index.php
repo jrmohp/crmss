@@ -86,9 +86,10 @@
                             <thead>
 
                             <tr align='center' >
-                                <th align='center' style="padding-left:15%">ID</th>
-                                <th align='center' style="padding-left:7%">Customer Name</th>
-                                <th align='center' style="padding-left:4%">Contact Number</th>
+                                <th align='center' "></th>
+                                <th align='center' style="padding-left:10% ">ID</th>
+                                <th align='center' >Customer Name</th>
+                                <th align='center' >Contact Number</th>
 
 
                             </tr>
@@ -114,6 +115,7 @@
 
                                     $reqid=$row['id'];
                                     echo "<tr align='center'>";
+                                    echo "<td><button class='btn btn-success'>Contacted"."</button></td>";
                                     echo "<td>".$row['username']."</td>";
                                     echo "<td>".$row['firstname'].$row['lastname']."</td>";
                                     echo "<td>".$row['mobile']."</td>";
@@ -147,9 +149,10 @@
                         <thead>
 
                         <tr align='center'>
-                            <th align='center' style="padding-left:15%">ID</th>
-                            <th align='center' style="padding-left:7%">Customer Name</th>
-                            <th align='center' style="padding-left:4%">Contact Number</th>
+                            <th align='center' "></th>
+                            <th align='center' style="padding-left:10% ">ID</th>
+                            <th align='center' >Customer Name</th>
+                            <th align='center' >Contact Number</th>
 
 
                         </tr>
@@ -175,6 +178,7 @@
 
                                 $reqid=$row['id'];
                                 echo "<tr align='center'>";
+                                echo "<td><button class='btn btn-success'>Addressed"."</button></td>";
                                 echo "<td>".$row['username']."</td>";
                                 echo "<td>".$row['firstname'].$row['lastname']."</td>";
                                 echo "<td>".$row['mobile']."</td>";
