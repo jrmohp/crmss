@@ -107,7 +107,7 @@
         <div class="col-sm-6">
             <div class="table-responsive">
                 <div class="table-responsive">
-                    <table class="table color-table purple-table mydTable">
+                    <table class="table color-bordered-table purple-bordered-table" style="background-color: white">
                         <thead>
 
                         <tr align='center'>
