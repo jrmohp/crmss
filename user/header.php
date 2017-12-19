@@ -224,7 +224,7 @@ require("../php/connect.php");
                         <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span class="hide-menu">Logout</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="index.html" class="waves-effect"><i class="mdi mdi-home fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span></span></a>
+                <li> <a href="index.html" class="waves-effect active"><i class="mdi mdi-home fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li> <a href="index.php"><span class="hide-menu">Dashboard </span></a> </li>
                     </ul>
