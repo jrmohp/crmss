@@ -59,7 +59,7 @@ body {
   background: rgba(0, 0, 0, 0.07);
 }
 #side-menu > li > a.active {
-  background: #ff7676;
+  background: #8ae19a;
   color: #ffffff;
   font-weight: 500;
 }
