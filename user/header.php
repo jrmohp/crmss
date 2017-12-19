@@ -237,7 +237,7 @@ require("../php/connect.php");
                         <li><a href="singlemail.php"><i class="ti-alert fa-fw"></i> <span class="hide-menu">Send Mail to Customers</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#" class="waves-effect"><i class="mdi mdi-content-copy fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
+                <li> <a href="#" class="waves-effect"><i class="mdi mdi-account-multiple fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addemployee.php"><i class="ti-layout-width-default fa-fw"></i> <span class="hide-menu">Add Employee</span></a></li>
                         <li><a href="editemployeeselect.php"><i class="ti-layout-sidebar-left fa-fw"></i> <span class="hide-menu">Edit Employee</span></a></li>
