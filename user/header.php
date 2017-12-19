@@ -210,11 +210,11 @@ require("../php/connect.php");
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav slimscrollsidebar">
             <div class="sidebar-head">
-                <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">Smart Solar</span></h3>
+                <h3><span class="fa-fw open-close waves-effect active"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">Smart Solar</span></h3>
             </div>
             <ul class="nav" id="side-menu">
                 <li class="user-pro">
-                    <a href="#" class="waves-effect active"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Welcome<span class="fa arrow"></span></span>
+                    <a href="#" ><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Welcome<span class="fa arrow"></span></span>
                     </a>
                     <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                         <li><a href="javascript:void(0)"><i class="ti-user"></i> <span class="hide-menu">My Profile</span></a></li>
