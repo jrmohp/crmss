@@ -10,8 +10,35 @@
 
 ?>
 
+<script>
+    $(document).ready(function () {
+        if (!$.browser.webkit) {
+            $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+        }
+    });
+</script>
 
 <style>
+
+
+    #style-4::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    #style-4::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    #style-4::-webkit-scrollbar-thumb
+    {
+        background-color: #000000;
+        border: 2px solid #555555;
+    }
+
     table {
 
         table-layout:fixed;
@@ -80,9 +107,9 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <div class="table-responsive">
+                <div class="table-responsive" >
                     <div class="table-responsive">
-                        <table class="table color-bordered-table red-bordered-table" style="background-color: white;">
+                        <table class="table color-bordered-table red-bordered-table" style="background-color: white;" >
                             <thead>
 
                             <tr align='center' >
