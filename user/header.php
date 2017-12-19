@@ -274,7 +274,7 @@ require("../php/connect.php");
                         <li><a href="ordersummary.php"><span class="hide-menu">Order Summary</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Inventories <span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-package-variant fa-fw"></i> <span class="hide-menu">Inventories <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addinventories.php"><span class="hide-menu">Add Inventories</span></a></li>
                         <li><a href="deleteinventories.php"><span class="hide-menu">Delete Inventories</span></a></li>
