@@ -229,7 +229,7 @@ require("../php/connect.php");
                         <li> <a href="index.php"><span class="hide-menu">Dashboard </span></a> </li>
                     </ul>
                 </li>
-                <li> <a href="#" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
+                <li> <a href="#" class="waves-effect"><i class="mdi mdi-setting-variant fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addcustomer.php"><i data-icon="&#xe026;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Add Customers</span></a></li>
                         <li><a href="viewcustomer.php"><i data-icon="&#xe025;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">View Customers</span></a></li>
@@ -237,14 +237,14 @@ require("../php/connect.php");
                         <li><a href="singlemail.php"><i class="ti-alert fa-fw"></i> <span class="hide-menu">Send Mail to Customers</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#" class="waves-effect"><i class="mdi mdi-account-multiple fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
+                <li> <a href="#" class="waves-effect"><i class="mdi mdi-account-convert fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addemployee.php"><i class="ti-layout-width-default fa-fw"></i> <span class="hide-menu">Add Employee</span></a></li>
                         <li><a href="editemployeeselect.php"><i class="ti-layout-sidebar-left fa-fw"></i> <span class="hide-menu">Edit Employee</span></a></li>
                         <li><a href="viewemployee.php"><i class="ti-layout-sidebar-left fa-fw"></i> <span class="hide-menu">View Employee</span></a></li>
                     </ul>
                 </li>
-                <li><a href="inbox.html" class="waves-effect"><i class="mdi mdi-apps fa-fw"></i> <span class="hide-menu">Site Management<span class="fa arrow"></span></span></a>
+                <li><a href="inbox.html" class="waves-effect"><i class="mdi mdi-google-map fa-fw"></i> <span class="hide-menu">Site Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Sites</span></a></li>
                         <li><a href="selectsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View/Edit Sites</span></a></li>
