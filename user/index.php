@@ -9,6 +9,42 @@
 
 
 ?>
+
+
+<style>
+    table {
+
+        table-layout:fixed;
+        margin:auto;
+    }
+
+    thead, tfoot {
+
+        display:table;
+        width:100%;
+
+
+    }
+    tbody {
+        height:150px;
+        overflow:auto;
+        overflow-x:hidden;
+        display:block;
+        width:100%;
+    }
+    tbody tr {
+        display:table;
+        width:100%;
+        table-layout:fixed;
+    }
+
+    thead tr{
+        display:table;
+        width:100%;
+        table-layout:fixed;
+
+    }
+</style>
     <title>index</title>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
@@ -46,13 +82,13 @@
             <div class="col-sm-6">
                 <div class="table-responsive">
                     <div class="table-responsive">
-                        <table class="table color-table red-table mydTable">
+                        <table class="table color-bordered-table red-bordered-table" style="background-color: white;">
                             <thead>
 
-                            <tr align='center'>
-                                <th align='center'>ID</th>
-                                <th align='center'>Customer Name</th>
-                                <th align='center'>Contact Number</th>
+                            <tr align='center' >
+                                <th align='center' style="padding-left:15%">ID</th>
+                                <th align='center' style="padding-left:7%">Customer Name</th>
+                                <th align='center' style="padding-left:4%">Contact Number</th>
 
 
                             </tr>
@@ -111,9 +147,9 @@
                         <thead>
 
                         <tr align='center'>
-                            <th align='center'>ID</th>
-                            <th align='center'>Customer Name</th>
-                            <th align='center'>Contact Number</th>
+                            <th align='center' style="padding-left:15%">ID</th>
+                            <th align='center' style="padding-left:7%">Customer Name</th>
+                            <th align='center' style="padding-left:4%">Contact Number</th>
 
 
                         </tr>
