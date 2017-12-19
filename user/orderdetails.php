@@ -81,8 +81,8 @@ include "header.php";
                                             </label>
                                             <label class="radio-inline">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio1" id="radio2" value="option2"
-                                                   >
+                                                    <input type="radio" name="radio1" id="radio2" value="option2" onchange="myFunction3()">
+
                                                     <label for="radio2">No</label>
 
                                                 </div>
@@ -109,8 +109,10 @@ include "header.php";
 
                                     function myFunction() {
                                         document.getElementById("inv").disabled = false;
-                                        
+                                    }
+                                    function myFunction3() {
 
+                                        document.getElementById("inv").disabled = true;
                                     }
 
 
@@ -130,7 +132,7 @@ include "header.php";
                                             </label>
                                             <label class="radio-inline">
                                                 <div class="radio radio-info">
-                                                    <input type="radio" name="radio2" id="radio4" value="No" >
+                                                    <input type="radio" name="radio2" id="radio4" value="No" onchange="myFunction4()" >
                                                     <label for="radio4">No</label>
 
                                                 </div>
@@ -159,13 +161,17 @@ include "header.php";
                                       document.getElementById("batt").disabled = false;
 
                                   }
-                              </script>
 
+                                  function myFunction4() {
+                                      document.getElementById("batt").disabled = true;
+                                  }
+                              </script>
+                                </div>
                                 <div class="row">
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" style="color: darkgrey">frame</label>
+                                        <label class="control-label" style="color: darkgrey">Frame</label>
                                         <div class="radio-list">
                                             <label class="radio-inline p-0">
                                                 <div class="radio radio-info">
@@ -183,6 +189,7 @@ include "header.php";
                                     </div>
                                 </div>
                                 </div>
+                            <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                             
                                 </form>
                                 </div>
