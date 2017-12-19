@@ -26,7 +26,7 @@
 
     }
     tbody {
-        height:150px;
+        height:180px;
         overflow:auto;
         overflow-x:hidden;
         display:block;
