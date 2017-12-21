@@ -214,7 +214,7 @@ require("../php/connect.php");
             </div>
             <ul class="nav" id="side-menu">
                 <li class="user-pro">
-                    <a href="#" class="waves-effect"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Welcome<span class="fa arrow"></span></span>
+                    <a href="#" class="waves-effect active"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Welcome<span class="fa arrow"></span></span>
                     </a>
                     <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                         <li><a href="javascript:void(0)"><i class="ti-user"></i> <span class="hide-menu">My Profile</span></a></li>
@@ -224,12 +224,12 @@ require("../php/connect.php");
                         <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span class="hide-menu">Logout</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="index.html" class="waves-effect active"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span></span></a>
+                <li> <a href="index.html" class="waves-effect"><i class="mdi mdi-home fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li> <a href="index.php"><span class="hide-menu">Dashboard </span></a> </li>
                     </ul>
                 </li>
-                <li> <a href="#" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
+                <li> <a href="#" class="waves-effect"><i class="mdi mdi-human-male-female fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addcustomer.php"><i data-icon="&#xe026;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Add Customers</span></a></li>
                         <li><a href="viewcustomer.php"><i data-icon="&#xe025;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">View Customers</span></a></li>
@@ -237,14 +237,14 @@ require("../php/connect.php");
                         <li><a href="singlemail.php"><i class="ti-alert fa-fw"></i> <span class="hide-menu">Send Mail to Customers</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#" class="waves-effect"><i class="mdi mdi-content-copy fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
+                <li> <a href="#" class="waves-effect"><i class="mdi mdi-account-multiple fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addemployee.php"><i class="ti-layout-width-default fa-fw"></i> <span class="hide-menu">Add Employee</span></a></li>
                         <li><a href="editemployeeselect.php"><i class="ti-layout-sidebar-left fa-fw"></i> <span class="hide-menu">Edit Employee</span></a></li>
                         <li><a href="viewemployee.php"><i class="ti-layout-sidebar-left fa-fw"></i> <span class="hide-menu">View Employee</span></a></li>
                     </ul>
                 </li>
-                <li><a href="inbox.html" class="waves-effect"><i class="mdi mdi-apps fa-fw"></i> <span class="hide-menu">Site Management<span class="fa arrow"></span></span></a>
+                <li><a href="inbox.html" class="waves-effect"><i class="mdi mdi-google-maps fa-fw"></i> <span class="hide-menu">Site Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Sites</span></a></li>
                         <li><a href="selectsite.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View/Edit Sites</span></a></li>
@@ -253,7 +253,7 @@ require("../php/connect.php");
                          <li><a href="selectdatesitetrans.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View Transaction By Date</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-account-search fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addfranchise.php"><span class="hide-menu">Add Franchise</span></a></li>
                         <li><a href="viewfranchise.php"><span class="hide-menu">View Franchise</span></a></li>
@@ -262,19 +262,19 @@ require("../php/connect.php");
                         <li><a href="assigntofranchise.php"><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-book-minus fa-fw"></i> <span class="hide-menu">Attendance Management<span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-book-minus fa-fw"></i> <span class="hide-menu">Attendance <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="selectdateatt.php"><span class="hide-menu">Add Attendance</span></a></li>
                         <li><a href="selectdateviewatt.php"><span class="hide-menu">View Attendance</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Orders <span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-playlist-check fa-fw"></i> <span class="hide-menu">Orders <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="orderdetails.php"><span class="hide-menu">Order Details</span></a></li>
                         <li><a href="ordersummary.php"><span class="hide-menu">Order Summary</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Inventories <span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-package-variant fa-fw"></i> <span class="hide-menu">Inventories <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addinventories.php"><span class="hide-menu">Add Inventories</span></a></li>
                         <li><a href="deleteinventories.php"><span class="hide-menu">Delete Inventories</span></a></li>
@@ -299,55 +299,3 @@ require("../php/connect.php");
                 </div>
 
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

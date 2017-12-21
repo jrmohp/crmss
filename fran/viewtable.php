@@ -42,7 +42,7 @@ $franid="1541012381";
         <div class="col-sm-12">
             <div class="table-responsive">
                 <div class="table-responsive">
-                    <table class="table color-bordered-table warning-bordered-table mydTable">
+                    <table class="table color-bordered-table warning-bordered-table">
                         <thead>
 
                         <tr align='center'>
@@ -71,37 +71,50 @@ $franid="1541012381";
 
 
 
-                        $sqlpr="SELECT * FROM ordersummary WHERE franid='$franid' AND status=1";
+                        $sqlpr="SELECT * FROM ordersummary WHERE franid='$franid' AND status=1 ORDER BY id DESC";
+
+                        $count=1;
 
                         if($respr=$conn->query($sqlpr))
                         {
 
+
+
+
                             while ($rowpr=$respr->fetch_assoc())
                             {
 
-                                $custid=$rowpr['custid'];
-
-                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
-
-                                $requdata=$conn->query($sqlcust)->fetch_assoc();
 
 
+                                    $custid = $rowpr['custid'];
+
+                                    $sqlcust = "SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
 
 
 
-                                echo "<tr align='center'>";
-                                echo "<td align='center' ><button class='btn btn-info editdata' >Upcoming</button></td>";
-                                echo "<td>".$rowpr['orderid']."</td>";
-                                echo "<td>".$rowpr['custid']."</td>";
-                                echo "<td>".$requdata['firstname'].$requdata['lastname']."</td>";
-                                echo "<td>".$requdata['mobile']."</td>";
-                                echo "<td>". $rowpr['ordersummary']."</td>";
+                                    $requdata = $conn->query($sqlcust)->fetch_assoc();
 
 
-                                echo "<td>".$rowpr['total']."</td>";
+
+                                    echo "<tr align='center'>";
+                                    echo "<td align='center' ><button class='btn btn-warning editdata' >Processing</button></td>";
+                                    echo "<td>" . $rowpr['orderid'] . "</td>";
+                                    echo "<td>" . $rowpr['custid'] . "</td>";
+                                    echo "<td>" . $requdata['firstname'] . $requdata['lastname'] . "</td>";
+                                    echo "<td>" . $requdata['mobile'] . "</td>";
+                                    echo "<td>" . $rowpr['ordersummary'] . "</td>";
 
 
-                                echo "</tr>";
+                                    echo "<td>" . $rowpr['total'] . "</td>";
+
+
+                                    echo "</tr>";
+
+                                    $count++;
+
+
+                                    if($count==6)
+                                        break;
 
                             }
                         }
@@ -127,7 +140,7 @@ $franid="1541012381";
   <div class="row">
     <div class="col-sm-12">
             <div class="table-responsive">
-                <table class="table color-bordered-table info-bordered-table mydTable">
+                <table class="table color-bordered-table info-bordered-table">
                         <thead>
 
                         <tr align='center'>
@@ -156,7 +169,10 @@ $franid="1541012381";
 
 
 
-                        $sqlup="SELECT * FROM ordersummary WHERE franid='$franid' AND status=0";
+                        $sqlup="SELECT * FROM ordersummary WHERE franid='$franid' AND status=0 ORDER BY id DESC";
+
+                        $count=1;
+
 
                         if($resup=$conn->query($sqlup))
                         {
@@ -164,31 +180,35 @@ $franid="1541012381";
                             while ($rowup=$resup->fetch_assoc())
                             {
 
-                                $custid=$rowup['custid'];
 
-                                $sqlcust="SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
+                                    $custid = $rowup['custid'];
 
-                                $reqdata=$conn->query($sqlcust)->fetch_assoc();
+                                    $sqlcust = "SELECT firstname,lastname,mobile FROM user WHERE username='$custid'";
 
+                                    $reqdata = $conn->query($sqlcust)->fetch_assoc();
 
-
-
-
-                                echo "<tr align='center'>";
-                                echo "<td align='center' ><button class='btn btn-success editdata' >Completed</button></td>";
-                                echo "<td>".$rowup['orderid']."</td>";
-                                echo "<td>".$rowup['custid']."</td>";
-                                echo "<td>".$reqdata['firstname'].$reqdata['lastname']."</td>";
-                                echo "<td>".$reqdata['mobile']."</td>";
-                                echo "<td>". $rowup['ordersummary']."</td>";
+                                    echo "<tr align='center'>";
+                                    echo "<td align='center' ><button class='btn btn-success editdata' >Completed</button></td>";
+                                    echo "<td>" . $rowup['orderid'] . "</td>";
+                                    echo "<td>" . $rowup['custid'] . "</td>";
+                                    echo "<td>" . $reqdata['firstname'] . $reqdata['lastname'] . "</td>";
+                                    echo "<td>" . $reqdata['mobile'] . "</td>";
+                                    echo "<td>" . $rowup['ordersummary'] . "</td>";
 
 
-                                echo "<td>".$rowup['total']."</td>";
+                                    echo "<td>" . $rowup['total'] . "</td>";
 
 
-                                echo "</tr>";
+                                    echo "</tr>";
+                                    $count++;
 
-                            }
+                                    if($count==6)
+                                        break;
+
+
+                                }
+
+
                         }
                         ?>
 
@@ -214,7 +234,7 @@ $franid="1541012381";
         <div class="col-sm-12">
             <div class="table-responsive">
                 <div class="table-responsive">
-                    <table class="table color-bordered-table success-bordered-table mydTable">
+                    <table class="table color-bordered-table success-bordered-table">
                         <thead>
 
                         <tr align='center'>
@@ -243,7 +263,9 @@ $franid="1541012381";
 
 
 
-                        $sqlco="SELECT * FROM ordersummary WHERE franid='$franid' AND status=2";
+                        $sqlco="SELECT * FROM ordersummary WHERE franid='$franid' AND status=2 ORDER BY id DESC";
+
+                        $count=1;
 
                         if($resco=$conn->query($sqlco))
                         {
@@ -262,7 +284,7 @@ $franid="1541012381";
 
 
                                 echo "<tr align='center'>";
-                                echo "<td align='center' ><button class='btn btn-warning editdata' >Absent</button></td>";
+                                echo "<td align='center' ><button class='btn btn-success editdata' >Completed</button></td>";
                                 echo "<td>".$rowco['orderid']."</td>";
                                 echo "<td>".$rowco['custid']."</td>";
                                 echo "<td>".$requsdata['firstname'].$requsdata['lastname']."</td>";
@@ -274,6 +296,10 @@ $franid="1541012381";
 
 
                                 echo "</tr>";
+                                $count++;
+
+                                if($count==6)
+                                    break;
 
                             }
                         }
@@ -297,7 +323,6 @@ $franid="1541012381";
 
     </div>
             </div>
-
 
 
 
@@ -397,8 +422,6 @@ $franid="1541012381";
 </script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
-
-
 
 
 
