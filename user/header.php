@@ -262,9 +262,9 @@ require("../php/connect.php");
                         <li><a href="assigntofranchise.php"><i class="mdi mdi-checkbox-multiple-marked-outline mdi-18px fa-fw"></i><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-file-account fa-fw"></i> <span class="hide-menu">Attendance <span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-file-multiple fa-fw"></i> <span class="hide-menu">Attendance <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="selectdateatt.php"><i class="mdi mdi-file-plus mdi-18px fa-fw"></i><span class="hide-menu">Add Attendance</span></a></li>
+                        <li><a href="selectdateatt.php"><i class="mdi mdi-book-plus mdi-18px fa-fw"></i><span class="hide-menu">Add Attendance</span></a></li>
                         <li><a href="selectdateviewatt.php"><i class="mdi mdi-file-chart mdi-18px fa-fw"></i><span class="hide-menu">View Attendance</span></a></li>
                     </ul>
                 </li>
