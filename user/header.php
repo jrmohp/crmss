@@ -231,10 +231,10 @@ require("../php/connect.php");
                 </li>
                 <li> <a href="#" class="waves-effect"><i class="mdi mdi-human-male-female fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="addcustomer.php"><i data-icon="&#xe026;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Add Customers</span></a></li>
-                        <li><a href="viewcustomer.php"><i data-icon="&#xe025;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">View Customers</span></a></li>
-                        <li><a href="editcustomerselect.php"><i class="ti-layout-menu fa-fw"></i> <span class="hide-menu">Edit Customers</span></a></li>
-                        <li><a href="singlemail.php"><i class="ti-alert fa-fw"></i> <span class="hide-menu">Send Mail to Customers</span></a></li>
+                        <li><a href="addcustomer.php"><i data-icon="&#xe026;" class="mdi mdi-account-plus fa-fw"></i> <span class="hide-menu">Add Customers</span></a></li>
+                        <li><a href="viewcustomer.php"><i data-icon="&#xe025;" class="mdi mdi-account-box fa-fw"></i> <span class="hide-menu">View Customers</span></a></li>
+                        <li><a href="editcustomerselect.php"><i class="mdi mdi-account-edit fa-fw"></i> <span class="hide-menu">Edit Customers</span></a></li>
+                        <li><a href="singlemail.php"><i class="mdi mdi-email-variant fa-fw"></i> <span class="hide-menu">Send Mail to Customers</span></a></li>
                     </ul>
                 </li>
                 <li> <a href="#" class="waves-effect"><i class="mdi mdi-account-multiple fa-fw"></i> <span class="hide-menu">Employee<span class="fa arrow"></span></span></a>
