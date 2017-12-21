@@ -253,7 +253,7 @@ require("../php/connect.php");
                          <li><a href="selectdatesitetrans.php"><i class="mdi mdi-timetable mdi-18px fa-fw"></i><span class="hide-menu">View Transaction By Date</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-account-search mdi-36px fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-account-search mdi-24px fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="addfranchise.php"><i class="mdi mdi-plus-circle-multiple-outline mdi-18px fa-fw"></i><span class="hide-menu">Add Franchise</span></a></li>
                         <li><a href="viewfranchise.php"><i class="mdi mdi-account-location mdi-18px fa-fw"></i><span class="hide-menu">View Franchise</span></a></li>
@@ -268,7 +268,7 @@ require("../php/connect.php");
                         <li><a href="selectdateviewatt.php"><i class="mdi mdi-file-chart mdi-18px fa-fw"></i><span class="hide-menu">View Attendance</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-playlist-check mdi-36px fa-fw"></i> <span class="hide-menu">Orders <span class="fa arrow"></span></span></a>
+                <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-playlist-check mdi-24px fa-fw"></i> <span class="hide-menu">Orders <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="orderdetails.php"><span class="hide-menu">Order Details</span></a></li>
                         <li><a href="ordersummary.php"><span class="hide-menu">Order Summary</span></a></li>
