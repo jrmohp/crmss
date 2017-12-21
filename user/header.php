@@ -249,8 +249,8 @@ require("../php/connect.php");
                         <li><a href="addsite.php"><i class="mdi mdi-map-marker-plus mdi-18px fa-fw"></i><span class="hide-menu">Add Sites</span></a></li>
                         <li><a href="selectsite.php"><i class="mdi mdi-map-marker-radius mdi-18px fa-fw"></i><span class="hide-menu">View/Edit Sites</span></a></li>
                         <li><a href="selectexpensesite.php"><i class="mdi mdi-currency-inr mdi-18px fa-fw"></i><span class="hide-menu">Add Expense To Site</span></a></li>
-                         <li><a href="addsiteproperty.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Add Property To Site</span></a></li>
-                         <li><a href="selectdatesitetrans.php"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">View Transaction By Date</span></a></li>
+                         <li><a href="addsiteproperty.php"><i class="mdi mdi-file-plus mdi-18px fa-fw"></i><span class="hide-menu">Add Property To Site</span></a></li>
+                         <li><a href="selectdatesitetrans.php"><i class="mdi mdi-timetable mdi-18px fa-fw"></i><span class="hide-menu">View Transaction By Date</span></a></li>
                     </ul>
                 </li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-account-search fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
