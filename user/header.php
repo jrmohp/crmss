@@ -255,11 +255,11 @@ require("../php/connect.php");
                 </li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-account-search fa-fw"></i> <span class="hide-menu">Franchise Management<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="addfranchise.php"><i class="mdi mdi-account-plus-outline mdi-18px fa-fw"></i><span class="hide-menu">Add Franchise</span></a></li>
+                        <li><a href="addfranchise.php"><i class="mdi mdi-account-plus mdi-18px fa-fw"></i><span class="hide-menu">Add Franchise</span></a></li>
                         <li><a href="viewfranchise.php"><i class="mdi mdi-account-location mdi-18px fa-fw"></i><span class="hide-menu">View Franchise</span></a></li>
-                        <li><a href="editfranchiseselect.php"><i class="mdi mdi-account-setting-variant mdi-18px fa-fw"></i><span class="hide-menu">Edit Franchise</span></a></li>
+                        <li><a href="editfranchiseselect.php"><i class="mdi mdi-pencil-lock mdi-18px fa-fw"></i><span class="hide-menu">Edit Franchise</span></a></li>
                         <li><a href="franchisebilling.php"><i class="mdi mdi-format-list-numbers mdi-18px fa-fw"></i><span class="hide-menu">Billing</span></a></li>
-                        <li><a href="assigntofranchise.php"><i class="mdi mdi-checkbox-multiple-maked-outline mdi-18px fa-fw"></i><span class="hide-menu">Assign Project</span></a></li>
+                        <li><a href="assigntofranchise.php"><i class="mdi mdi-checkbox-multiple-marked-outline mdi-18px fa-fw"></i><span class="hide-menu">Assign Project</span></a></li>
                     </ul>
                 </li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-book-minus fa-fw"></i> <span class="hide-menu">Attendance <span class="fa arrow"></span></span></a>
