@@ -224,9 +224,9 @@ require("../php/connect.php");
                         <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span class="hide-menu">Logout</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="index.html" class="waves-effect"><i class="mdi mdi-home fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span></span></a>
+                <li> <a href="index.html" class="waves-effect"><i class="mdi mdi-home-variant mdi-24px fa-fw" data-icon="v"></i> <span class="hide-menu"> Home <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li> <a href="index.php"><span class="hide-menu">Dashboard </span></a> </li>
+                        <li> <a href="index.php"><i class="mdi mdi-gauge mdi-18px fa-fw" data-icon="v"></i><span class="hide-menu">Dashboard </span></a> </li>
                     </ul>
                 </li>
                 <li> <a href="#" class="waves-effect"><i class="mdi mdi-human-male-female fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
@@ -270,15 +270,15 @@ require("../php/connect.php");
                 </li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-playlist-check mdi-24px fa-fw"></i> <span class="hide-menu">Orders <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="orderdetails.php"><span class="hide-menu">Order Details</span></a></li>
-                        <li><a href="ordersummary.php"><span class="hide-menu">Order Summary</span></a></li>
+                        <li><a href="orderdetails.php"><i class="mdi mdi-format-indent-increase mdi-18px fa-fw"></i><span class="hide-menu">Order Details</span></a></li>
+                        <li><a href="ordersummary.php"><i class="mdi mdi-sort mdi-18px fa-fw"></i><span class="hide-menu">Order Summary</span></a></li>
                     </ul>
                 </li>
                 <li> <a href="forms.html" class="waves-effect"><i class="mdi mdi-package-variant fa-fw"></i> <span class="hide-menu">Inventories <span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="addinventories.php"><span class="hide-menu">Add Inventories</span></a></li>
-                        <li><a href="deleteinventories.php"><span class="hide-menu">Delete Inventories</span></a></li>
-                        <li><a href="editinventoryselect.php"><span class="hide-menu">Edit Inventories</span></a></li>
+                        <li><a href="addinventories.php"><i class="mdi mdi-package-down mdi-18px fa-fw"></i><span class="hide-menu">Add Inventories</span></a></li>
+                        <li><a href="deleteinventories.php"><i class="mdi mdi-delete-empty mdi-18px fa-fw"></i><span class="hide-menu">Delete Inventories</span></a></li>
+                        <li><a href="editinventoryselect.php"><i class="mdi mdi-pencil-box mdi-18px fa-fw"></i><span class="hide-menu">Edit Inventories</span></a></li>
                     </ul>
                 </li>
                 <li class="devider"></li>
