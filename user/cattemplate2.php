@@ -13,7 +13,7 @@ include "header.php";
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="panel panel-default">
-        <div class="panel-heading">Project Report for 9Watt Solar Street Light with 24hrs Back Up System</div>
+        <div class="panel-heading">Project Report for 12Watt Solar Street Light with 24hrs Back Up System</div>
         <div class="panel-wrapper collapse in">
             <div class="panel-body">
 
@@ -64,7 +64,7 @@ include "header.php";
 
                         <select class="form-control p-0" id="input3" required>
                             <option>Rating</option>
-                            <option>40Wp</option>
+                            <option>75Wp</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ include "header.php";
 
                         <select class="form-control p-0" id="input7" required>
                             <option>Rating</option>
-                            <option>9 Watt</option>
+                            <option>12 Watt</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ include "header.php";
 
                         <select class="form-control p-0" id="input11" required>
                             <option>Rating</option>
-                            <option>12V, 17Ah</option>
+                            <option>12V, 42Ah</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
                     </div>
                 </div>
@@ -274,13 +274,12 @@ include "header.php";
 </div>
 </div>
 
-
                 <button type="submit" class="btn btn-success" id="senddata">Submit</button>
+
             </div>
         </div>
     </div>
 </div>
-
 <br><br><br>
 
 <footer class="footer text-center"> &copy Smart Solar</footer>
