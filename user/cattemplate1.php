@@ -13,7 +13,7 @@ include "header.php";
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="panel panel-default">
-        <div class="panel-heading">Project Report for 9Watt Solar Street Light with 24hrs Back Up System</div>
+        <div class="panel-heading">Project Report for 9 Watt Solar Street Light with 24hrs Back Up System</div>
         <div class="panel-wrapper collapse in">
             <div class="panel-body">
 
@@ -267,6 +267,12 @@ include "header.php";
 
 
             </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group m-b-40">
+                        <input type="text" class="form-control" id="input25" required  placeholder="Total Price">
+                    </div>
+                </div>
 
         </div>
 

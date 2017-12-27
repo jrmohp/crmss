@@ -267,7 +267,14 @@ include "header.php";
 
 
             </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group m-b-40">
+                        <input type="text" class="form-control" id="input25" required  placeholder="Total Price">
+                    </div>
+                </div>
 
+            </div>
         </div>
 
     </div>
