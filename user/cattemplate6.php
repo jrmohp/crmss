@@ -208,6 +208,7 @@ include "header.php";
                                         <div class="form-group m-b-40">
 
                                             <select class="form-control p-0" id="input20" required>
+                                               <option>Brand</option>
                                                 <option>ISI</option>
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
