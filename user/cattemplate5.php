@@ -53,12 +53,15 @@ include "header.php";
                                     </div>
 
                                     <div class="col-md-2">
-                                        <form class="floating-labels ">
-                                            <div class="form-group m-b-40">
-                                                <input type="number" class="form-control" id="input2" required><span class="highlight"></span> <span class="bar"></span>
-                                                <label for="input2" style="color: darkgrey;">Quantity</label>
-                                            </div>
+                                        <div class="form-group m-b-40">
+
+                                            <select class="form-control p-0" id="input4" required>
+                                                <option>Brand</option>
+                                                <option>MNRE Approved</option>
+                                            </select><span class="highlight"></span> <span class="bar"></span>
+                                        </div>
                                     </div>
+
                                     <div class="col-md-2">
                                         <div class="form-group m-b-40">
 
@@ -68,14 +71,14 @@ include "header.php";
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group m-b-40">
 
-                                            <select class="form-control p-0" id="input4" required>
-                                                <option>Brand</option>
-                                                <option>MNRE Approved</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
-                                        </div>
+
+                                    <div class="col-md-2">
+                                        <form class="floating-labels ">
+                                            <div class="form-group m-b-40">
+                                                <input type="number" class="form-control" id="input2" required><span class="highlight"></span> <span class="bar"></span>
+                                                <label for="input2" style="color: darkgrey;">Quantity</label>
+                                            </div>
                                     </div>
 
 
@@ -88,14 +91,16 @@ include "header.php";
 
                                         </div>
                                     </div>
-
                                     <div class="col-md-2">
-                                        <form class="floating-labels ">
-                                            <div class="form-group m-b-40">
-                                                <input type="number" class="form-control" id="input6" required><span class="highlight"></span> <span class="bar"></span>
-                                                <label for="input6" style="color: darkgrey;">Quantity</label>
-                                            </div>
+                                        <div class="form-group m-b-40">
+
+                                            <select class="form-control p-0" id="input8" required>
+                                                <option>Brand</option>
+                                                <option>photonics</option>
+                                            </select><span class="highlight"></span> <span class="bar"></span>
+                                        </div>
                                     </div>
+
                                     <div class="col-md-2">
                                         <div class="form-group m-b-40">
 
@@ -105,14 +110,13 @@ include "header.php";
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group m-b-40">
 
-                                            <select class="form-control p-0" id="input8" required>
-                                                <option>Brand</option>
-                                                <option>photonics</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
-                                        </div>
+                                    <div class="col-md-2">
+                                        <form class="floating-labels ">
+                                            <div class="form-group m-b-40">
+                                                <input type="number" class="form-control" id="input6" required><span class="highlight"></span> <span class="bar"></span>
+                                                <label for="input6" style="color: darkgrey;">Quantity</label>
+                                            </div>
                                     </div>
 
 
@@ -127,23 +131,6 @@ include "header.php";
 
                                         </div>
                                     </div>
-
-                                    <div class="col-md-2">
-                                        <form class="floating-labels ">
-                                            <div class="form-group m-b-40">
-                                                <input type="number" class="form-control" id="input10" required><span class="highlight"></span> <span class="bar"></span>
-                                                <label for="input10" style="color: darkgrey;">Quantity</label>
-                                            </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group m-b-40">
-
-                                            <select class="form-control p-0" id="input11" required>
-                                                <option>Rating</option>
-                                                <option>12V, 42Ah</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
-                                        </div>
-                                    </div>
                                     <div class="col-md-2">
                                         <div class="form-group m-b-40">
 
@@ -155,6 +142,24 @@ include "header.php";
                                         </div>
                                     </div>
 
+                                    <div class="col-md-2">
+                                        <div class="form-group m-b-40">
+
+                                            <select class="form-control p-0" id="input11" required>
+                                                <option>Rating</option>
+                                                <option>12V, 42Ah</option>
+                                            </select><span class="highlight"></span> <span class="bar"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <form class="floating-labels ">
+                                            <div class="form-group m-b-40">
+                                                <input type="number" class="form-control" id="input10" required><span class="highlight"></span> <span class="bar"></span>
+                                                <label for="input10" style="color: darkgrey;">Quantity</label>
+                                            </div>
+                                    </div>
+
 
                                 </div>
                                 <div class="row">
@@ -162,23 +167,6 @@ include "header.php";
                                         <div class="form-group m-b-40">
                                             <input type="text" class="form-control" id="input13" required disabled="true" placeholder="CABLE">
 
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <form class="floating-labels ">
-                                            <div class="form-group m-b-40">
-                                                <input type="number" class="form-control" id="input14" required><span class="highlight"></span> <span class="bar"></span>
-                                                <label for="input14" style="color: darkgrey;">Quantity</label>
-                                            </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group m-b-40">
-
-                                            <select class="form-control p-0" id="input15" required>
-                                                <option>Rating</option>
-                                                <option>As Applicable</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
@@ -189,6 +177,25 @@ include "header.php";
                                                 <option>Ploycab</option>
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="form-group m-b-40">
+
+                                            <select class="form-control p-0" id="input15" required>
+                                                <option>Rating</option>
+                                                <option>As Applicable</option>
+                                            </select><span class="highlight"></span> <span class="bar"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-2">
+                                        <form class="floating-labels ">
+                                            <div class="form-group m-b-40">
+                                                <input type="number" class="form-control" id="input14" required><span class="highlight"></span> <span class="bar"></span>
+                                                <label for="input14" style="color: darkgrey;">Quantity</label>
+                                            </div>
                                     </div>
 
 
@@ -202,12 +209,15 @@ include "header.php";
                                     </div>
 
                                     <div class="col-md-2">
-                                        <form class="floating-labels ">
-                                            <div class="form-group m-b-40">
-                                                <input type="number" class="form-control" id="input18" required><span class="highlight"></span> <span class="bar"></span>
-                                                <label for="input18" style="color: darkgrey;">Quantity</label>
-                                            </div>
+                                        <div class="form-group m-b-40">
+
+                                            <select class="form-control p-0" id="input20" required>
+                                                <option>Brand</option>
+                                                <option>ISI</option>
+                                            </select><span class="highlight"></span> <span class="bar"></span>
+                                        </div>
                                     </div>
+
                                     <div class="col-md-2">
                                         <div class="form-group m-b-40">
 
@@ -217,13 +227,14 @@ include "header.php";
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group m-b-40">
 
-                                            <select class="form-control p-0" id="input20" required>
-                                                <option>ISI</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
-                                        </div>
+
+                                    <div class="col-md-2">
+                                        <form class="floating-labels ">
+                                            <div class="form-group m-b-40">
+                                                <input type="number" class="form-control" id="input18" required><span class="highlight"></span> <span class="bar"></span>
+                                                <label for="input18" style="color: darkgrey;">Quantity</label>
+                                            </div>
                                     </div>
 
 
@@ -236,13 +247,14 @@ include "header.php";
 
                                         </div>
                                     </div>
-
                                     <div class="col-md-2">
-                                        <form class="floating-labels ">
-                                            <div class="form-group m-b-40">
-                                                <input type="number" class="form-control" id="input22" required><span class="highlight"></span> <span class="bar"></span>
-                                                <label for="input22" style="color: darkgrey;">Quantity</label>
-                                            </div>
+                                        <div class="form-group m-b-40">
+
+                                            <select class="form-control p-0" id="input24" required>
+                                                <option>Brand</option>
+                                                <option>Galvanized</option>
+                                            </select><span class="highlight"></span> <span class="bar"></span>
+                                        </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group m-b-40">
@@ -255,14 +267,14 @@ include "header.php";
                                             </select><span class="highlight"></span> <span class="bar"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group m-b-40">
 
-                                            <select class="form-control p-0" id="input24" required>
-                                                <option>Brand</option>
-                                                <option>Galvanized</option>
-                                            </select><span class="highlight"></span> <span class="bar"></span>
-                                        </div>
+
+                                    <div class="col-md-2">
+                                        <form class="floating-labels ">
+                                            <div class="form-group m-b-40">
+                                                <input type="number" class="form-control" id="input22" required><span class="highlight"></span> <span class="bar"></span>
+                                                <label for="input22" style="color: darkgrey;">Quantity</label>
+                                            </div>
                                     </div>
 
 
@@ -282,7 +294,7 @@ include "header.php";
                 </div>
 
 
-                <button type="submit" class="btn btn-success" id="senddata">Submit</button>
+                <button type="submit" class="btn btn-success" id="senddata">Generate Quotation</button>
             </div>
         </div>
     </div>
