@@ -38,8 +38,24 @@ include "header.php";
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+                    <?php
+
+                    require("../php/connect.php");
 
 
+                    $query = "SELECT make  FROM inventories ";
+
+                    if($result=$conn->query($query))
+                    {
+                    while ($row=$result->fetch_array())
+                    {
+                     $brand = $row['make'];
+
+
+                    }
+                    }
+
+                    ?>
 
 <div class="row">
     <div class="col-sm-12">
@@ -54,7 +70,7 @@ include "header.php";
                 <div class="col-md-2">
                     <div class="form-group m-b-40">
 
-                        <select class="form-control p-0" id="input4" name="brand1" required>
+                        <select class="form-control p-0" id="input4" name="brand1" value = '<?php echo $brand; ?>' required>
                             <option>Brand</option>
                             <option>MNRE Approved</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
