@@ -174,7 +174,7 @@ include "header.php";
 
                         <select class="form-control p-0" id="input16" required>
                             <option>Brand</option>
-                            <option>Ploycab</option>
+                            <option>Polycab</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
                     </div>
                 </div>
