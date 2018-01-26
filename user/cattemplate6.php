@@ -289,7 +289,7 @@ include "header.php";
                     </div>
                 </div>
 
-
+                <input type="hidden" value="<?php echo $invid6?>" name="invid6" id="invid6">
                 <button type="submit" class="btn btn-success" id="senddata">Generate Quotation</button>
             </div>
         </div>

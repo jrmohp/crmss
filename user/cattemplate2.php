@@ -174,7 +174,7 @@ include "header.php";
 
                         <select class="form-control p-0" id="input16" required>
                             <option>Brand</option>
-                            <option>Ploycab</option>
+                            <option>Polycab</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
                     </div>
                 </div>
@@ -293,6 +293,7 @@ include "header.php";
 </div>
 </div>
 
+                <input type="hidden" value="<?php echo $invid2?>" name="invid2" id="invid2">
                 <button type="submit" class="btn btn-success" id="senddata">Generate Quotation</button>
 
             </div>

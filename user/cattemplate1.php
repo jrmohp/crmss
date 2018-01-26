@@ -4,7 +4,7 @@
 
 
 include "header.php";
-
+$invid1=$_GET['']
 
 
 
@@ -38,8 +38,28 @@ include "header.php";
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+                    <?php
 
+                    require("../php/connect.php");
+
+
+                    $query = "SELECT make  FROM inventories ";
+
+<<<<<<< HEAD
                     
+=======
+                    if($result=$conn->query($query))
+                    {
+                    while ($row=$result->fetch_array())
+                    {
+                     $brand = $row['make'];
+
+>>>>>>> 55d0c3ac0b8ea3f81682ef50b38b4f2cb4516bb0
+
+                    }
+                    }
+
+                    ?>
 
 <div class="row">
     <div class="col-sm-12">
@@ -54,7 +74,7 @@ include "header.php";
                 <div class="col-md-2">
                     <div class="form-group m-b-40">
 
-                        <select class="form-control p-0" id="input4" name="brand1" required>
+                        <select class="form-control p-0" id="input4" name="brand1" value = '<?php echo $brand; ?>' required>
                             <option>Brand</option>
                             <option>MNRE Approved</option>
                         </select><span class="highlight"></span> <span class="bar"></span>
@@ -288,8 +308,13 @@ include "header.php";
 </div>
 </div>
 
+<<<<<<< HEAD
 
                 <button type="submit" class="btn btn-success" id="senddata"> Generate Quotation </button>
+=======
+                    <input type="hidden" value="<?php echo $invid1?>" name="invid1" id="invid1">
+                <button type="submit" class="btn btn-success" id="senddata"> generate Quotation</button>
+>>>>>>> 55d0c3ac0b8ea3f81682ef50b38b4f2cb4516bb0
             </div>
         </div>
     </div>

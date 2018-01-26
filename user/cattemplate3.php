@@ -287,6 +287,7 @@ include "header.php";
                     </div>
                 </div>
 
+                <input type="hidden" value="<?php echo $invid3?>" name="invid3" id="invid3">
                 <button type="submit" class="btn btn-success" id="senddata">Generate Quotation</button>
 
             </div>
