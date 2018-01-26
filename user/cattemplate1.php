@@ -39,7 +39,7 @@ include "header.php";
 <![endif]-->
 
 
-
+                    
 
 <div class="row">
     <div class="col-sm-12">
@@ -289,7 +289,7 @@ include "header.php";
 </div>
 
 
-                <button type="submit" class="btn btn-success" id="senddata"> generate Quotation</button>
+                <button type="submit" class="btn btn-success" id="senddata"> Generate Quotation </button>
             </div>
         </div>
     </div>

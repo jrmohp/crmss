@@ -285,6 +285,14 @@ include "header.php";
 
 
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group m-b-40">
+                                            <input type="text" class="form-control" id="input25" required  placeholder="Total Price">
+                                        </div>
+                                    </div>
+
+                                </div>
 
 
 
@@ -302,6 +310,34 @@ include "header.php";
 <br>
                 <br>
                 <br>
+
+
+
+<?php
+
+require("../php/connect.php");
+
+$query = "SELECT make FROM inventories ";
+
+if($result=$conn->query($query))
+{
+    while ($row=$result->fetch_array())
+    {
+
+        $reqid=$row['id'];
+        echo "<tr align='center'>";
+        echo "<td>".$row['username']."</td>";
+        echo "<td>".$row['firstname'].$row['lastname']."</td>";
+        echo "<td>".$row['email']."</td>";
+        echo "<td>".$row['mobile']."</td>";
+        echo "<td>".$row['city']."</td>";
+        echo "<td id='$reqid'><button class='btn btn-info editdata' id='$reqid' onclick='DB(this.id)'>Edit</button></td>";
+
+        echo "</tr>";
+
+    }
+}
+?>
 
 <footer class="footer text-center"> &copy Smart Solar</footer>
 
