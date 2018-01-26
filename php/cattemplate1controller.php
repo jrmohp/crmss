@@ -31,7 +31,7 @@ if(!empty($_POST['model1']) && !empty($_POST['brand1'])&& !empty($_POST['rating1
     $rating6=mysqli_real_escape_string($conn, $_POST['rating6']);
     $quantity6=mysqli_real_escape_string($conn, $_POST['quantity6']);
 
-    $sql="UPDATE inventories SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',bg='$bg',im='$im',pa='$pa',ta='$ta',acard='$acard',pcard='$pcard',epf='$epf',exp='$exp',accno='$accno',ifsc='$ifsc',cno='$cno',altcno='$altcno',email='$email',altemail='$altemail',wphno='$wphno',wemail='$wemail',empid='$empid',username='$username',password='$password' WHERE id=$editid ";
+    $sql="INSERT into quotation(model1,brand1,rating1,quantity1,model2,brand2,rating2,quantity2,) SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',bg='$bg',im='$im',pa='$pa',ta='$ta',acard='$acard',pcard='$pcard',epf='$epf',exp='$exp',accno='$accno',ifsc='$ifsc',cno='$cno',altcno='$altcno',email='$email',altemail='$altemail',wphno='$wphno',wemail='$wemail',empid='$empid',username='$username',password='$password' WHERE id=$editid ";
 
     if($conn->query($sql))
     {

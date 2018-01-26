@@ -4,7 +4,7 @@
 
 
 include "header.php";
-
+$invid1=$_GET['']
 
 
 
@@ -304,7 +304,7 @@ include "header.php";
 </div>
 </div>
 
-
+                    <input type="hidden" value="<?php echo $invid1?>" name="invid1" id="invid1">
                 <button type="submit" class="btn btn-success" id="senddata"> generate Quotation</button>
             </div>
         </div>
