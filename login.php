@@ -1,3 +1,60 @@
+<?php
+    ob_start ( ) ;
+    session_start ( ) ;
+    $login_message = "" ;
+    if ( require 'php/connect.php' ) {
+        if ( isset ( $_SESSION [ 'username' ] ) === true ){
+            $login_message = "Seems You're already logged in " ;
+            header('Location: user/index.php');
+        } 
+        if ( ( isset ( $_POST [ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'username' ] )) ) {
+            $username = $_POST [ 'username' ];
+            $password = $_POST [ 'password' ] ;
+
+            if ( !( empty ( $username ) ) && !( empty ( $password ) )   ) {
+                $checkuserlogin = $conn -> prepare ( 'SELECT password FROM addemployee WHERE username = ? OR email=?' ) ;
+                $checkuserlogin -> execute ( array ($username,$username) ) ;
+                $loginarray = $checkuserlogin -> fetch ( ) ;
+                    if ( $password == $loginarray [ 'password' ] ) {
+                         
+                        if ( ( $_SESSION [ 'username' ] = $loginarray [ 'username' ] ) ) {
+                            $login_message = "Logging You in..." ;
+
+                            if($loginarray [ '12345' ]==1)
+                        {
+                            
+                           
+       
+      header ( "Location: user/index.php" ) ;
+
+
+                    }
+                      else
+                    {
+                        header ( "Location: index.html" ) ;
+                    }
+                    }
+                     
+
+                    }
+
+                    elseif (( $_SESSION [ 'tid' ] = $loginarray [ 'tid' ] ) && $password != $loginarray [ 'password' ]) {
+                        $login_message = "Invalid Password" ;
+                        # code...
+                    }
+                    else {
+                        $login_message = "Either this Account Isn't Registered With Us or the Registration Has Been Disabled Due To Non Payment<br />" ;
+                    }
+            }
+            else $login_message = "Oops! Couldn't log you in. Invalid credentials. :(" ;
+        }
+    }
+    else $login_message = "Sorry! Internal error occurred" ;
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +88,7 @@
 <section id="wrapper" class="login-register">
     <div class="login-box login-sidebar">
         <div class="white-box">
-            <form class="form-horizontal form-material" id="loginform" action="login.php">
+            <form class="form-horizontal form-material" id="loginform" action="" method="post">
                 <a href="javascript:void(0)" class="text-center db"><img src=" " alt="" /><br/><img src="" alt="" /></a>
 
                 <div class="form-group m-t-40">
