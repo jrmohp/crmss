@@ -95,13 +95,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <?php
-                        if ( ( isset ( $login_message ) === true ) && ( empty ( $login_message ) === false ) ) :
-                            ?>
-                            <strong><?php echo $login_message ; echo $loop; ?></strong>
-                            <?php
-                        endif ;
-                        ?>
+
                         <div class="checkbox checkbox-primary pull-left p-t-0">
                             <input id="checkbox-signup" type="checkbox">
                             <label for="checkbox-signup"> Remember me </label>
@@ -145,6 +139,13 @@
 
 
             </form>
+            <?php
+            if ( ( isset ( $login_message ) === true ) && ( empty ( $login_message ) === false ) ) :
+                ?>
+                <strong><?php echo $login_message ; echo $loop; ?></strong>
+                <?php
+            endif ;
+            ?>
 
         </div>
     </div>
