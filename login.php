@@ -20,7 +20,9 @@
                     if (($_SESSION ['username'] = $loginarray ['username'])) {
                         $login_message = "Logging You in...";
 
+                        echo "<script>alert('dfdsf');</script>";
                         header("Location: user/index.php");
+
 
                     }
 
