@@ -12,31 +12,21 @@
             $password = $_POST [ 'password' ] ;
 
             if ( !( empty ( $username ) ) && !( empty ( $password ) )   ) {
-                $checkuserlogin = $conn -> prepare ( 'SELECT password FROM addemployee WHERE username = ? OR email=?' ) ;
-                $checkuserlogin -> execute ( array ($username,$username) ) ;
-                $loginarray = $checkuserlogin -> fetch ( ) ;
-                    if ( $password == $loginarray [ 'password' ] ) {
-                         
-                        if ( ( $_SESSION [ 'username' ] = $loginarray [ 'username' ] ) ) {
-                            $login_message = "Logging You in..." ;
+                $checkuserlogin = $conn->prepare('SELECT password FROM addemployee WHERE username = ? OR email=?');
+                $checkuserlogin->execute(array($username, $username));
+                $loginarray = $checkuserlogin->fetch();
+                if ($password == $loginarray ['password']) {
 
-                            if($loginarray [ '12345' ]==1)
-                        {
-                            
-                           
-       
-      header ( "Location: user/index.php" ) ;
+                    if (($_SESSION ['username'] = $loginarray ['username'])) {
+                        $login_message = "Logging You in...";
 
+                        header("Location: user/index.php");
 
                     }
-                      else
-                    {
-                        header ( "Location: index.html" ) ;
-                    }
-                    }
-                     
 
-                    }
+
+                }
+            }
 
                     elseif (( $_SESSION [ 'tid' ] = $loginarray [ 'tid' ] ) && $password != $loginarray [ 'password' ]) {
                         $login_message = "Invalid Password" ;
@@ -47,7 +37,7 @@
                     }
             }
             else $login_message = "Oops! Couldn't log you in. Invalid credentials. :(" ;
-        }
+
     }
     else $login_message = "Sorry! Internal error occurred" ;
 ?>
