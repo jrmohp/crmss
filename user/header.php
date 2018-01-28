@@ -34,12 +34,22 @@
 
 
 <?php
+        require("../php/connect.php");
+
+
+        session_start();
+
+
+            $_SESSION['name'];
+            $_SESSION['prv'];
+            $_SESSION['emid'];
+            $_SESSION['pos'];
 
 
 
 
 
-require("../php/connect.php");
+
 ?>
 
 <body class="fix-header">
@@ -175,13 +185,13 @@ require("../php/connect.php");
                         <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b><span class="caret"></span> </a>
+                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs"><?php echo $_SESSION['name']?></b><span class="caret"></span> </a>
                     <ul class="dropdown-menu dropdown-user animated flipInY">
                         <li>
                             <div class="dw-user-box">
                                 <div class="u-img"><img src="../plugins/images/users/varun.jpg" alt="user" /></div>
                                 <div class="u-text">
-                                    <h4>Steave Jobs</h4>
+                                    <h4><?php echo $_SESSION['name']?></h4>
                                     <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
                             </div>
                         </li>

@@ -1,46 +1,53 @@
 <?php
 ob_start ();
 session_start();
-$login_message = " ";
+$login_message = "";
 if (require 'php/connect.php')
 {
-    if ( isset ( $_SESSION [ 'username' ] ) === true )
+    if (isset ($_SESSION['username'])==true || isset($_SESSION['name'])==true)
     {
-        $login_message = " You're already logged in " ;
+        $login_message = " You're already logged in ";
         header('Location: user/index.php');
     }
-    if ( ( isset ( $_POST [ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'username' ] )) )
+
+    else if (( isset ( $_POST[ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION[ 'username' ] )) )
     {
-        $username = $_POST [ 'username' ];
-        $password = $_POST [ 'password' ] ;
-        if ( !( empty ( $username ) ) && !( empty ( $password ) )   )
+        $username = $_POST ['username'];
+        $password = $_POST ['password'];
+        if (!(empty ($username)) && !(empty ($password)))
         {
-            $query="SELECT password FROM addemployee WHERE username='$username'";
-            if($pass= $conn->query($query))
+            $query = "SELECT empid,fname,prv,position,password FROM addemployee WHERE username='$username'";
+            if ($pass = $conn->query($query))
             {
-                if($row=$pass->fetch_assoc())
+                if ($row = $pass->fetch_assoc())
                 {
-                    if($row['password']==$password)
+                    if ($row['password'] == $password)
                     {
+                        $_SESSION['username']=$username;
+                        $_SESSION['name'] = $row['fname'];
+                        $_SESSION['prv'] = $row['prv'];
+                        $_SESSION['emid'] = $row['empid'];
+                        $_SESSION['pos'] = $row['position'];
+
                         header("Location:user/index.php");
+
                     }
                     else
                     {
-                        $login_message="Wrong Password";
+                        $login_message = "Wrong Password";
                     }
                 }
                 else
                 {
-                    $login_message="No User Found With Such User Name";
+                    $login_message = "No User Found With Such User Name";
                 }
             }
-            else
-            {
-            }
+
         }
-        else $login_message = "invalid credentials" ;
     }
+
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
