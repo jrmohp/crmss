@@ -1,52 +1,62 @@
 <?php
-    ob_start ( ) ;
-    session_start ( ) ;
-    $login_message = "" ;
-    if ( require 'php/connect.php' ) {
-        if ( isset ( $_SESSION [ 'username' ] ) === true ){
-            $login_message = "Seems You're already logged in " ;
-            header('Location: user/index.php');
-        } 
-        if ( ( isset ( $_POST [ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'username' ] )) ) {
-            $username = $_POST [ 'username' ];
-            $password = $_POST [ 'password' ] ;
-
-            if ( !( empty ( $username ) ) && !( empty ( $password ) )   ) {
-                $checkuserlogin = $conn->prepare('SELECT password FROM addemployee WHERE username = ? OR email=?');
-                $checkuserlogin->execute(array($username, $username));
-                $loginarray = $checkuserlogin->fetch();
-                if ($password == $loginarray ['password']) {
-
-                    if (($_SESSION ['username'] = $loginarray ['username'])) {
-                        $login_message = "Logging You in...";
-
-                        echo "<script>alert('dfdsf');</script>";
-                        header("Location: user/index.php");
-
-
-                    }
-
-
-                }
-            }
-
-                    elseif (( $_SESSION [ 'tid' ] = $loginarray [ 'tid' ] ) && $password != $loginarray [ 'password' ]) {
-                        $login_message = "Invalid Password" ;
-                        # code...
-                    }
-                    else {
-                        $login_message = "Either this Account Isn't Registered With Us or the Registration Has Been Disabled Due To Non Payment<br />" ;
-                    }
-            }
-            else $login_message = "Oops! Couldn't log you in. Invalid credentials. :(" ;
+ob_start ();
+session_start();
+$login_message = " ";
+if (require 'connect.php')
+{
+    if ( isset ( $_SESSION [ 'username' ] ) === true )
+    {
+        $login_message = " You're already logged in " ;
+        header('Location: user/index.php');
 
     }
-    else $login_message = "Sorry! Internal error occurred" ;
+    if ( ( isset ( $_POST [ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'username' ] )) )
+    {
+        $username = $_POST [ 'username' ];
+        $password = $_POST [ 'password' ] ;
+
+        if ( !( empty ( $username ) ) && !( empty ( $password ) )   )
+        {
+            $checkuserlogin = $conn -> prepare ( 'SELECT password FROM addemployee WHERE username = ? OR email=?' ) ;
+            $checkuserlogin -> execute ( array ( $username,$username) ) ;
+            $loginarray = $checkuserlogin -> fetch ( ) ;
+            if ( $password == $loginarray [ 'password' ] ) {
+                if (($_SESSION ['username'] = $loginarray ['username'])) {
+                    $login_message = "Logging You in...";
+
+                    if($loginarray [ 'asd' ]==1)
+                    {
+                        header ( "Location: user/index.php" ) ;
+
+                    }
+                    else
+                    {
+                        header ( "Location: php/login.php" ) ;
+                    }
+
+                }
+
+
+            }
+            elseif (( $_SESSION [ 'username' ] = $loginarray [ 'username' ] ) && $password != $loginarray [ 'password' ])
+            {
+                $login_message = "Invalid Password" ;
+
+            }
+            else
+            {
+
+                $login_message = "your ac has been disabled<br/>";
+            }
+
+        }
+        else $login_message = "invalid credentials" ;
+    }
+
+
+}
+
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +105,6 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-
                         <div class="checkbox checkbox-primary pull-left p-t-0">
                             <input id="checkbox-signup" type="checkbox">
                             <label for="checkbox-signup"> Remember me </label>
@@ -139,13 +148,6 @@
 
 
             </form>
-            <?php
-            if ( ( isset ( $login_message ) === true ) && ( empty ( $login_message ) === false ) ) :
-                ?>
-                <strong><?php echo $login_message ; echo $loop; ?></strong>
-                <?php
-            endif ;
-            ?>
 
         </div>
     </div>
@@ -168,3 +170,4 @@
 <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 </html>
+
