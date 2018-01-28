@@ -1,7 +1,16 @@
 <?php
 
+if($_SESSION['prv']==0)
+{
+
+    header("Location: index.php");
+
+}
 
   include "header.php";
+
+
+
 ?>
 
 

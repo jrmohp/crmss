@@ -1,3 +1,29 @@
+<?php
+
+session_start();
+
+
+$_SESSION['name'];
+$_SESSION['prv'];
+$_SESSION['emid'];
+$_SESSION['pos'];
+    if(!isset($_SESSION['username']))
+    {
+        session_abort();
+        header("Location:../login.php");
+    }
+
+
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,13 +63,7 @@
         require("../php/connect.php");
 
 
-        session_start();
 
-
-            $_SESSION['name'];
-            $_SESSION['prv'];
-            $_SESSION['emid'];
-            $_SESSION['pos'];
 
 
 
@@ -202,7 +222,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                        <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
