@@ -35,7 +35,7 @@ if (require 'php/connect.php')
 
                     if($row['password']==$password)
                     {
-                        header("Location:https://google.com");
+                        header("Location:user/cattemplate");
                     }
                     else
                     {
