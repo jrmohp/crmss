@@ -26,12 +26,12 @@ if (require 'php/connect.php')
 
                     if($loginarray [ 'asd' ]==1)
                     {
-                        header ( "Location: user/index.php" ) ;
+                        header ( "Location:php/login.php " ) ;
 
                     }
                     else
                     {
-                        header ( "Location: php/login.php" ) ;
+                        header ( "Location:   user/index.php" ) ;
                     }
 
                 }
