@@ -24,6 +24,18 @@
                         header("Location: user/index.php");
 
 
+<<<<<<< HEAD
+
+
+                    if($row['password']==$password)
+                    {
+                        header("Location:user/cattemplate");
+                    }
+                    else
+                    {
+                        $login_message="Wrong Password";
+=======
+>>>>>>> ce3a9c1ac0505dfcab885b2839e5a2cc035a8ccd
                     }
 
 
