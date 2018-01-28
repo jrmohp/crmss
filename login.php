@@ -16,7 +16,7 @@ if (require 'php/connect.php')
         $password = $_POST ['password'];
         if (!(empty ($username)) && !(empty ($password)))
         {
-            $query = "SELECT empid,fname,prv,position,password FROM addemployee WHERE username='$username'";
+            $query = "SELECT email,empid,fname,prv,position,password FROM addemployee WHERE username='$username'";
             if ($pass = $conn->query($query))
             {
                 if ($row = $pass->fetch_assoc())
@@ -28,7 +28,7 @@ if (require 'php/connect.php')
                         $_SESSION['prv'] = $row['prv'];
                         $_SESSION['emid'] = $row['empid'];
                         $_SESSION['pos'] = $row['position'];
-
+                        $_SESSION['email'] = $row['email'];
                         header("Location:user/index.php");
 
                     }
@@ -108,11 +108,7 @@ if (require 'php/connect.php')
                         <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Log In</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
-                        <div class="social"><a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip"  title="Login with Facebook"> <i aria-hidden="true" class="fa fa-facebook"></i> </a> <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip"  title="Login with Google"> <i aria-hidden="true" class="fa fa-google-plus"></i> </a> </div>
-                    </div>
-                </div>
+
                 <div class="form-group m-b-0">
                     <div class="col-sm-12 text-center">
                         <p>Don't have an account? <a href="register2.html" class="text-primary m-l-5"><b>Sign Up</b></a></p>

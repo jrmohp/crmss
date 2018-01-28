@@ -7,6 +7,7 @@ $_SESSION['name'];
 $_SESSION['prv'];
 $_SESSION['emid'];
 $_SESSION['pos'];
+$_SESSION['email'];
     if(!isset($_SESSION['username']))
     {
         session_abort();
@@ -212,7 +213,7 @@ $_SESSION['pos'];
                                 <div class="u-img"><img src="../plugins/images/users/varun.jpg" alt="user" /></div>
                                 <div class="u-text">
                                     <h4><?php echo $_SESSION['name']?></h4>
-                                    <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                    <p class="text-muted"><?php echo $_SESSION['email']?></p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
                             </div>
                         </li>
                         <li role="separator" class="divider"></li>
