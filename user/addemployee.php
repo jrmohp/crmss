@@ -3,7 +3,8 @@
 if($_SESSION['prv']==0)
 {
 
-    header("Location: index.php");
+
+    header("Location: na.php");
 
 }
 
