@@ -2,6 +2,7 @@
 ob_start ();
 session_start();
 $login_message = " ";
+
 if (require 'php/connect.php')
 {
     if ( isset ( $_SESSION [ 'username' ] ) === true )
@@ -17,36 +18,41 @@ if (require 'php/connect.php')
 
         if ( !( empty ( $username ) ) && !( empty ( $password ) )   )
         {
-            $checkuserlogin = $conn -> prepare ( 'SELECT password FROM addemployee WHERE username = ? OR email=?' ) ;
-            $checkuserlogin -> execute ( array ( $username,$username) ) ;
-            $loginarray = $checkuserlogin -> fetch ( ) ;
-            if ( $password == $loginarray [ 'password' ] ) {
-                if (($_SESSION ['username'] = $loginarray ['username'])) {
-                    $login_message = "Logging You in...";
 
-                    if($loginarray [ 'asd' ]==1)
+
+
+
+            $query="SELECT password FROM addemployee WHERE username='$username'";
+
+
+
+            if($pass= $conn->query($query))
+            {
+                if($row=$pass->fetch_assoc())
+                {
+
+
+
+                    if($row['password']==$password)
                     {
-                        header ( "Location: user/index.php" ) ;
-
+                        header("Location:https://google.com");
                     }
                     else
                     {
-                        header ( "Location: php/login.php" ) ;
+                        $login_message="Wrong Password";
                     }
 
                 }
+                else
+                {
+                    $login_message="No User Found With Such User Name";
 
-
-            }
-            elseif (( $_SESSION [ 'username' ] = $loginarray [ 'username' ] ) && $password != $loginarray [ 'password' ])
-            {
-                $login_message = "Invalid Password" ;
+                }
 
             }
             else
             {
 
-                $login_message = "your ac has been disabled<br/>";
             }
 
         }
@@ -148,6 +154,14 @@ if (require 'php/connect.php')
 
 
             </form>
+
+            <?php
+            if ( ( isset ( $login_message ) === true ) && ( empty ( $login_message ) === false ) ) :
+                ?>
+                <strong><?php echo $login_message ; ?></strong>
+                <?php
+            endif ;
+            ?>
 
         </div>
     </div>
