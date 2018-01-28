@@ -2,7 +2,7 @@
     ob_start ();
     session_start();
     $login_message = " ";
-    if (require 'php/connect.php')
+    if (require 'connect.php')
     {
         if ( isset ( $_SESSION [ 'username' ] ) === true )
         {
