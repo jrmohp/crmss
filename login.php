@@ -12,9 +12,10 @@
             $password = $_POST [ 'password' ] ;
 
             if ( !( empty ( $username ) ) && !( empty ( $password ) )   ) {
-                $checkuserlogin = $conn->prepare('SELECT password FROM addemployee WHERE username = ? OR email=?');
-                $checkuserlogin->execute(array($username, $username));
-                $loginarray = $checkuserlogin->fetch();
+                $checkuserlogin = $conn->query("SELECT password FROM addemployee WHERE username = '$username'");
+                $loginarray=$checkuserlogin->fetch_array();
+
+
                 if ($password == $loginarray ['password']) {
 
                     if (($_SESSION ['username'] = $loginarray ['username'])) {
