@@ -44,17 +44,14 @@ $invid1=$_GET['']
 
 
                     $query = "SELECT make  FROM inventories ";
-
-<<<<<<< HEAD
                     
-=======
+
                     if($result=$conn->query($query))
                     {
                     while ($row=$result->fetch_array())
                     {
                      $brand = $row['make'];
 
->>>>>>> 55d0c3ac0b8ea3f81682ef50b38b4f2cb4516bb0
 
                     }
                     }
@@ -303,7 +300,7 @@ $invid1=$_GET['']
                 </div>
 
         </div>
-
+            <a src="Quotation_Smart_Solar-541-250LPD_Solar_Water_Heate_html_a010a7a5.gif" target="_blank" download>Newsletter</a>
     </div>
 </div>
 </div>
