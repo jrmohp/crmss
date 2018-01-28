@@ -10,31 +10,49 @@ if (require 'php/connect.php')
         header('Location: user/index.php');
 
     }
-    if ( ( isset ( $_POST [ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'username' ] )) ) {
-        $username = $_POST ['username'];
-        $password = $_POST ['password'];
+    if ( ( isset ( $_POST [ 'username' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'username' ] )) )
+    {
+        $username = $_POST [ 'username' ];
+        $password = $_POST [ 'password' ] ;
 
-        if (!(empty ($username)) && !(empty ($password))) {
-            $checkuserlogin = $conn->prepare('SELECT password FROM addemployee WHERE username = ? OR email=?');
-            $checkuserlogin->execute(array($username, $username));
-            $loginarray = $checkuserlogin->fetch();
-            if ($password == $loginarray ['password']) {
+        if ( !( empty ( $username ) ) && !( empty ( $password ) )   )
+        {
+            $checkuserlogin = $conn -> prepare ( 'SELECT password FROM addemployee WHERE username = ? OR email=?' ) ;
+            $checkuserlogin -> execute ( array ( $username,$username) ) ;
+            $loginarray = $checkuserlogin -> fetch ( ) ;
+            if ( $password == $loginarray [ 'password' ] ) {
                 if (($_SESSION ['username'] = $loginarray ['username'])) {
                     $login_message = "Logging You in...";
 
-                    if ($loginarray ['asd'] == 1) {
-                        header("Location: user/index.php");
+                    if($loginarray [ 'asd' ]==1)
+                    {
+                        header ( "Location: user/index.php" ) ;
 
-                    } else {
-                        header("Location: php/login.php");
+                    }
+                    else
+                    {
+                        header ( "Location: php/login.php" ) ;
                     }
 
                 }
 
 
             }
+            elseif (( $_SESSION [ 'username' ] = $loginarray [ 'username' ] ) && $password != $loginarray [ 'password' ])
+            {
+                $login_message = "Invalid Password" ;
+
+            }
+            else
+            {
+
+                $login_message = "your ac has been disabled<br/>";
+            }
+
         }
+        else $login_message = "invalid credentials" ;
     }
+
 
 }
 
