@@ -75,7 +75,7 @@ if (require 'php/connect.php')
 <section id="wrapper" class="login-register">
     <div class="login-box login-sidebar">
         <div class="white-box">
-            <form class="form-horizontal form-material" id="loginform" action="" method="post">
+            <form class="form-horizontal form-material"  method="post">
                 <a href="javascript:void(0)" class="text-center db"><img src=" " alt="" /><br/><img src="" alt="" /></a>
 
                 <div class="form-group m-t-40">
