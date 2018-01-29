@@ -32,7 +32,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <br />
+                    <br>
                     <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
