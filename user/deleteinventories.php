@@ -1,6 +1,10 @@
 <?php
 
 
+if($_SESSION['prv']==0)
+{
+    header( "Location: na.php");
+}
 
 
 $reqid=$_GET['id'];
