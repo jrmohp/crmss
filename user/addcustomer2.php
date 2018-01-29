@@ -45,7 +45,7 @@ include "header.php";
                                                     </div>
 
                                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                        <input type="text" name="phone" class="form-control has-feedback-left " id="phone" placeholder="Phone" required="true">
+                                                        <input type="text" name="mobile" class="form-control has-feedback-left " id="mobile" placeholder="Mobile" required="true">
                                                         <span class="fa fa-phone form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
                                                     </div>
 
@@ -400,13 +400,72 @@ include "header.php";
                                                                                 <button class="btn btn-primary" type="reset">Reset</button>
                                                                                 <button type="submit" class="btn btn-success" id="senddata">Submit</button>
                                                                             </div>
-                                                                        </div></center>
+                                                                        </div>
+                                                                    </center>
 
                                                                 </form>
                                                             </div>
                                                         </div>
 
+                                                        <script src="../vendors/jquery/dist/jquery.min.js"></script>
+                                                        <script type="text/javascript" src="../js/alertify.js"></script>
+                                                        <link rel="stylesheet" href="../css/alertify.core.css" />
+                                                        <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
+                                                        <script type="text/javascript">
 
+
+                                                            $("#senddata").on("click",regc);
+
+
+                                                            function regc()
+                                                            {
+
+
+                                                                var firstname=$('#firstname').val();
+                                                                var lastname=$('#lastname').val();
+                                                                var email=$('#email').val();
+                                                                var mobile=$('#mobile').val();
+                                                                var address=$('#address').val();
+                                                                var city=$('#city').val();
+                                                                var type=$('#type').val();
+                                                                var phase=$('[name="phase"]').val();
+                                                                var units=$('#units').val();
+                                                                var monthlybill=$('#monthlybill').val();
+                                                                var contractload=$('#contractload').val();
+                                                                var roofarea=$('#roofarea').val();
+
+
+
+
+                                                                var data={'firstname':firstname,'lastname':lastname,'email':email,'mobile':mobile,'address':address,'city':city,'type':type,'units':units,'monthlybill':monthlybill,'contractload':contractload,'roofarea':roofarea,'phase':phase};
+
+
+
+
+                                                                $.post('../php/addcustomercontroller.php',data,function(info){
+
+                                                                    if(info!=0)
+                                                                    {
+
+                                                                        alertify.alert("Thank You  "+firstname+"  for registering with us.\nWe will get back to you shortly.\nPlease Note Your Smart Solar ID:"+info+" for future reference");
+
+
+                                                                    }
+                                                                    else if(info==0)
+                                                                    {
+
+                                                                        $("#querymsg").addClass('alert alert-danger');
+                                                                        $('#querymsg').fadeIn();
+                                                                        $("#querymsg").html("Mail Not Sent,Contact 7978555567 ");
+                                                                        $('#querymsg').delay(2000).fadeOut();
+
+                                                                    }
+                                                                });
+
+
+                                                            }
+
+                                                                </script>
 
                                                     </div>
                                     </div>
