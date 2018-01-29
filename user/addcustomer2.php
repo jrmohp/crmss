@@ -16,7 +16,7 @@ include "header.php";
                         <div class="x_title">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><i class="ti-settings"></i> Customer Details </div>
+                                    <div class="panel-heading"> Customer Details </div>
                                     <div class="panel-wrapper collapse in">
                                         <div class="panel-body">
 
@@ -307,9 +307,108 @@ include "header.php";
                                                 </select>
 
                                             </div>
+                                                    <div class="form-group">
+
+                                                    </div>
+                                                    <div class="ln_solid"></div>
+                                                    <div class="x_title">
+                                                        <h2>Tell Us About Your Usage ! </h2>
+
+                                                        <div class="form-group">
 
 
-                                        </div>
+
+                                                            <div class="x_content">
+                                                                <br>
+                                                                <form class="form-horizontal form-label-left input_mask">
+
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 5px;">
+                                                                        <div id="type" class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="type" value="Domestic" required="true"> &nbsp; Domestic &nbsp;
+                                                                            </label>
+                                                                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="type" value="Commercial"> Commercial
+                                                                            </label>
+                                                                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="type" value="Industrial"> &nbsp; Industrial &nbsp;
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12" >
+                                                                        <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 35px;">
+                                                                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="phase" value="one"> &nbsp; Single Phase &nbsp;
+                                                                            </label>
+                                                                            <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="phase" value="three"> Three Phase
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback"  >
+                                                                        <input type="text" name="units" class="form-control has-feedback-right has-feedback-left" id="units" placeholder="Units">
+                                                                        <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kWh</span>
+
+                                                                        <span class="form-control-feedback left fa fa-lightbulb-o" aria-hidden="true" style="color:lightgreen"></span>
+                                                                    </div>
+
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                        <input type="text" name="monthlybill" class="form-control has-feedback-left has-feedback-right " id="monthlybill" placeholder="Monthly Bill">
+                                                                        <span class="fa fa-file-text form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+
+                                                                        <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">INR</span>
+                                                                    </div>
+                                                                    <br>
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                        <input type="text" name="contractload" class="form-control has-feedback-left has-feedback-right" id="contractload" placeholder="Contract Load">
+                                                                        <span class="fa fa-bolt form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+
+                                                                        <span class="form-control-feedback right" aria-hidden="true" style="color:darkgrey">kW</span>
+                                                                    </div>
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                        <input type="text" name="roofarea" class="form-control has-feedback-left has-feedback-right " id="roofarea" placeholder="Roof Area">
+                                                                        <span class="fa fa-arrows form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
+
+                                                                        <span class=" form-control-feedback right" aria-hidden="true" style="color:darkgrey">sq.ft</span>
+                                                                    </div>
+
+
+
+
+
+
+
+
+
+                                                                    <center>
+                                                                        <div class="form-group">
+
+                                                                        </div>
+                                                                        <div class="ln_solid"></div>
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+
+                                                                                <button type="button" class="btn btn-primary">Cancel</button>
+                                                                                <button class="btn btn-primary" type="reset">Reset</button>
+                                                                                <button type="submit" class="btn btn-success" id="senddata">Submit</button>
+                                                                            </div>
+                                                                        </div></center>
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
                                     </div>
                                 </div>
                             </div>
