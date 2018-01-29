@@ -49,8 +49,8 @@
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                         <input type="text" name="email" class="form-control has-feedback-left" id="email" placeholder="Email" onkeyup="checkemail()">
-                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:lightgreen"></span>
-                        <span id="email_status" style="color: red"> </span> 
+                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true" style="color:#8aee85"></span>
+                        <span id="email_status" style="color: #ff0406"> </span>
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
@@ -439,7 +439,7 @@
         var address=$('#address').val();
         var city=$('#city').val();
         var type=$('#type').val();
-          var phase=$('[name="phase"]').val();
+        var phase=$('[name="phase"]').val();
         var units=$('#units').val();
         var monthlybill=$('#monthlybill').val();
         var contractload=$('#contractload').val();

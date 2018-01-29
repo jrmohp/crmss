@@ -2,7 +2,7 @@
 
 	require("connect.php");
 	
-	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['phone'])&& !empty($_POST['city'])&& !empty($_POST['type']))
+	if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['mobile'])&& !empty($_POST['city'])&& !empty($_POST['type']))
     {
 	$firstname=mysqli_real_escape_string($conn, $_POST['firstname']);
 	$lastname=mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -15,7 +15,7 @@
 	$monthlybill=mysqli_real_escape_string($conn, $_POST['monthlybill']);
 	$contractload=mysqli_real_escape_string($conn, $_POST['contractload']);
 	$roofarea=mysqli_real_escape_string($conn, $_POST['roofarea']);
-        $phase=mysqli_real_escape_string($conn, $_POST['phase']);
+	$phase=mysqli_real_escape_string($conn, $_POST['phase']);
 
 	$query = $conn->query("SELECT MAX(id) FROM user"); // execute
 	$max_id = $query->fetch_array(); // fetch
