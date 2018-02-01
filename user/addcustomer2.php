@@ -12,7 +12,7 @@ include "header.php";
                 <div class="panel-heading"><center>CUSTOMER DETAILS</center></div>
                 <div class="panel-wrapper collapse in" aria-expanded="true">
                     <div class="panel-body">
-                        <form action="#" class="form-horizontal">
+                        <form method="post" action="../php/addcustomercontroller.php" onsubmit="return false" class="form-horizontal">
                             <div class="form-body">
                                 <h2 class="box-title">Tell Us Something About Yourself !</h2>
                                 <hr class="m-t-0 m-b-40">

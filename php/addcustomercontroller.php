@@ -1,10 +1,12 @@
 <?php
 require("connect.php");
-if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['mobile'])&& !empty($_POST['city'])&& !empty($_POST['type'])) {
+
+if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['email']) && !empty($_POST['mobile'])&& !empty($_POST['city'])&& !empty($_POST['type']))
+{
     $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
     $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $phone = mysqli_real_escape_string($conn, $_POST['mobile']);
+    $mobile = mysqli_real_escape_string($conn, $_POST['mobile']);
     $address = mysqli_real_escape_string($conn, $_POST['address']);
     $city = mysqli_real_escape_string($conn, $_POST['city']);
     $type = mysqli_real_escape_string($conn, $_POST['type']);
@@ -15,7 +17,7 @@ if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['em
     $phase = mysqli_real_escape_string($conn, $_POST['phase']);
     $username=mysqli_real_escape_string($conn, $_POST['username']);
 
-    $sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('$ssid','$type','$firstname','$lastname','$email','$phone','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
+    $sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('$ssid','$type','$firstname','$lastname','$email','$mobile','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
 
     $query = $conn->query("SELECT MAX(id) FROM user");
     $max_id = $query->fetch_array(); // fetch
