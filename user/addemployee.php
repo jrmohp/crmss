@@ -1,9 +1,6 @@
 <?php
 
-if($_SESSION['prv']==0)
-{
-    header("Location: na.php");
-}
+
 
   include "header.php";
 

@@ -24,7 +24,7 @@ include "header.php";
 
                                             <div class="x_content">
                                                 <br>
-                                                <form class="form-horizontal form-label-left input_mask" onsubmit="return false" method="post">
+                                                <form class="form-horizontal form-label-left input_mask" onsubmit="return false" action="../php/addcustomercontroller.php" method="post">
 
                                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                                                         <input type="text" name="firstname" class="form-control has-feedback-left" id="firstname" placeholder="First Name" required="required">
@@ -465,6 +465,39 @@ include "header.php";
 
                                                             }
 
+
+                                                            function checkemail()
+                                                            {
+
+
+                                                                var email=document.getElementById( "email" ).value;
+
+                                                                if(email!="")
+                                                                {
+                                                                    $.ajax({
+                                                                        type: 'post',
+                                                                        url: '../php/checkemail.php',
+                                                                        data: {
+                                                                            user_email:email },
+                                                                        success: function (response) {
+                                                                            $( '#email_status' ).html(data);
+
+
+                                                                            if(html(data)=="Email Not Registered")
+                                                                            {
+                                                                                document.getElementById("senddata").disabled = false;
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                document.getElementById("senddata").disabled = true;
+
+
+                                                                            }
+                                                                        }
+                                                                    });
+                                                                }
+
+                                                            }
                                                                 </script>
 
                                                     </div>

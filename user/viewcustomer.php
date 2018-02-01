@@ -8,7 +8,7 @@ include "header.php";
 ?>
 
 
-
+<title>View Customer | Smart Solar</title>
 
 
 <!-- Bootstrap Core CSS -->
