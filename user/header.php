@@ -8,12 +8,12 @@ $_SESSION['prv'];
 $_SESSION['emid'];
 $_SESSION['pos'];
 $_SESSION['email'];
-    if(!isset($_SESSION['username']))
+   /* if(!isset($_SESSION['username']))
     {
         session_abort();
         header("Location:../login.php");
     }
-
+*/
 
 
 
