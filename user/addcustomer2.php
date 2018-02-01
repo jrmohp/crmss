@@ -23,7 +23,7 @@ include "header.php";
                                             <label class="control-label col-md-3">First Name</label>
                                             <div class="col-md-9">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="First Name"> <span class="help-block"></span>
+                                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name"> <span class="help-block"></span>
                                                     <div class="input-group-addon"><i class="ti-user"></i></div>
                                                 </div>
                                                 </div>
@@ -36,7 +36,7 @@ include "header.php";
                                             <label class="control-label col-md-3">Last Name</label>
                                             <div class="col-md-9">
                                                 <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Last Name"> <span class="help-block"></span>
+                                                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name"> <span class="help-block"></span>
                                                 <div class="input-group-addon"><i class="ti-user"></i></div>
                                             </div>
                                             </div>
@@ -48,7 +48,7 @@ include "header.php";
                                             <label class="control-label col-md-3">Email</label>
                                             <div class="col-md-9">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Email"> <span class="help-block"></span>
+                                                    <input type="text" name="email" id="email" class="form-control" placeholder="Email"> <span class="help-block"></span>
                                                     <div class="input-group-addon"><i class="ti-email"></i></div>
                                                 </div>
                                                 </div>
@@ -62,7 +62,7 @@ include "header.php";
                                             <label class="control-label col-md-3">Mobile</label>
                                             <div class="col-md-9">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Mobile"> <span class="help-block"></span>
+                                                    <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Mobile"> <span class="help-block"></span>
                                                     <div class="input-group-addon"><i class="ti-mobile"></i></div>
                                             </div>
                                                 </div>
