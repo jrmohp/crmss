@@ -15,15 +15,16 @@ if(!empty($_POST['firstname']) && !empty($_POST['lastname'])&& !empty($_POST['em
     $contractload = mysqli_real_escape_string($conn, $_POST['contractload']);
     $roofarea = mysqli_real_escape_string($conn, $_POST['roofarea']);
     $phase = mysqli_real_escape_string($conn, $_POST['phase']);
-    $username=mysqli_real_escape_string($conn, $_POST['username']);
 
-    $sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('$ssid','$type','$firstname','$lastname','$email','$mobile','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
 
     $query = $conn->query("SELECT MAX(id) FROM user");
     $max_id = $query->fetch_array(); // fetch
     $tid=$max_id[0];
     $new_id=$tid+1;
     $ssid = 'SS' . sprintf ( "%04d" , $new_id ) ;
+
+
+    $sql= "INSERT INTO user(username,type,firstname,lastname,email,mobile,peraddress,city,mbill,cload,rarea,phase) VALUES ('$ssid','$type','$firstname','$lastname','$email','$mobile','$address','$city','$monthlybill','$contractload','$roofarea','$phase')";
 }
 else
 {

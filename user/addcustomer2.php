@@ -12,7 +12,7 @@ include "header.php";
                 <div class="panel-heading"><center>CUSTOMER DETAILS</center></div>
                 <div class="panel-wrapper collapse in" aria-expanded="true">
                     <div class="panel-body">
-                        <form method="post" action="../php/addcustomercontroller.php" onsubmit="return false" class="form-horizontal">
+                        <form method="post" action="../php/addcustomercontroller.php"  class="form-horizontal">
                             <div class="form-body">
                                 <h2 class="box-title">Tell Us Something About Yourself !</h2>
                                 <hr class="m-t-0 m-b-40">
@@ -362,7 +362,7 @@ include "header.php";
 
 
                                 <div class="col-md-6 col-sm-6 col-xs-12" >
-                                    <div id="gender" class="btn-group" data-toggle="buttons" style="margin-bottom: 35px;">
+                                    <div id="phase" class="btn-group" data-toggle="buttons" style="margin-bottom: 35px;">
                                         <label class="btn btn-success" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                                             <input type="radio" name="phase" value="one"> &nbsp; Single Phase &nbsp;
                                         </label>
@@ -453,14 +453,13 @@ include "header.php";
                             </div>
                                     </div>
 
-                                                </div>
 
+        </div>
 
-
-
-
-
-
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/alertify.js"></script>
+    <link rel="stylesheet" href="../css/alertify.core.css" />
+    <link rel="stylesheet" href="../css/alertify.bootstrap.css" />
 
 <?php
 
